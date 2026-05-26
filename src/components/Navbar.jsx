@@ -41,6 +41,7 @@ const Navbar = () => {
                 absolute top-0 left-0 w-full z-50
                 h-[80px] sm:h-[100px] lg:h-[80px] xl:h-[90px] 2xl:h-[180px]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
+                pt-[1rem]
             `}>
 
                 <header>
@@ -54,7 +55,7 @@ const Navbar = () => {
                     </div>
                 </header>
 
-                <div className="flex items-center justify-between relative h-[80px] mt-[2rem]">
+                <div className="flex items-center justify-between relative h-[80px]">
 
                     {/* Center Links */}
                     <ul className="hidden md:flex items-center gap-[2rem] sm:gap-[1.5rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[3rem]">
