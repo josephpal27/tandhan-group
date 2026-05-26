@@ -16,7 +16,7 @@ export default function HeroBanner() {
     }, []);
 
     return (
-        <section className="relative h-screen overflow-hidden">
+        <section className="relative h-[112dvh] overflow-hidden">
 
             {/* Parallax Background */}
             <div className="absolute inset-0 overflow-hidden">
@@ -31,7 +31,7 @@ export default function HeroBanner() {
             <div className="absolute inset-0 bg-gradient-to-b from-red-900/80 via-red-900/60 via-50% to-transparent z-10" />
 
             {/* Content */}
-            <div className="relative z-20 px-[7%] text-white flex flex-col justify-end h-full pb-[4rem]">
+            <div className="relative z-20 px-[7%] text-white flex flex-col justify-end h-full pb-[11rem]">
                 <h1 className="text-[5rem] leading-[1.1] font-bold">
                     Delivering Beyond <br /> Possible Solutions
                 </h1>
@@ -39,6 +39,7 @@ export default function HeroBanner() {
                     Amwerk supports customers through every step of the manufacturing process. From prototyping to delivery, each customer is assigned a dedicated support team to seamlessly move programs through production.
                 </p>
             </div>
+
         </section>
     );
 }
