@@ -57,7 +57,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between relative h-[80px] mt-[2rem]">
 
                     {/* Center Links */}
-                    <ul className="hidden md:flex items-center gap-[2rem] sm:gap-[1.5rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem]">
+                    <ul className="hidden md:flex items-center gap-[2rem] sm:gap-[1.5rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[3rem]">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
                             return (
@@ -66,7 +66,6 @@ const Navbar = () => {
                                         href={link.href}
                                         className={`
                                             relative
-                                            px-[1.3rem] sm:px-[1.2rem] lg:px-[1.1rem] xl:px-[1.2rem] 2xl:px-[1.3rem]
                                             py-[0.5rem] sm:py-[0.5rem] lg:py-[0.4rem] xl:py-[0.45rem] 2xl:py-[0.5rem]
                                             rounded-full transition-colors duration-200 text-white
                                             ${isActive ? "font-bold underline" : ""}

@@ -20,7 +20,6 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
-        <div className="h-[300vh]"></div>
       </body>
     </html>
   );
