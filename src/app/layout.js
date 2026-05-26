@@ -1,5 +1,6 @@
 import { Anek_Bangla } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const anekBangla = Anek_Bangla({
   subsets: ["latin"],
@@ -16,7 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${anekBangla.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <div className="h-[300vh]"></div>
+      </body>
     </html>
   );
 }
