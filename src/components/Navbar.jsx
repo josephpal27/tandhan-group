@@ -1,50 +1,18 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const [visible, setVisible] = useState(true);
-
-    const lastScrollRef = useRef(0);
-    const ticking = useRef(false);
-
     const pathname = usePathname();
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (ticking.current) return;
-            ticking.current = true;
-
-            requestAnimationFrame(() => {
-                const currentScroll = window.scrollY;
-                const prev = lastScrollRef.current;
-
-                if (currentScroll <= 0) {
-                    setVisible(true);
-                } else if (currentScroll > prev) {
-                    setVisible(false); // scrolling down
-                } else {
-                    setVisible(true);  // scrolling up
-                }
-
-                lastScrollRef.current = currentScroll;
-                ticking.current = false;
-            });
-        };
-
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     // Body scroll lock
     useEffect(() => {
         if (open) {
-            const scrollBarWidth =
-                window.innerWidth - document.documentElement.clientWidth;
+            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
             document.body.style.overflow = "hidden";
             document.body.style.paddingRight = `${scrollBarWidth}px`;
         } else {
@@ -70,11 +38,9 @@ const Navbar = () => {
     return (
         <>
             <nav className={`
-                fixed top-0 left-0 w-full z-50
+                absolute top-0 left-0 w-full z-50
                 h-[80px] sm:h-[100px] lg:h-[80px] xl:h-[90px] 2xl:h-[180px]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                transition-transform duration-300 ease-in-out
-                ${visible ? "translate-y-0" : "-translate-y-full"}
             `}>
 
                 <header>
@@ -86,27 +52,12 @@ const Navbar = () => {
                             className="w-[300px]"
                         />
                     </div>
-                    <div>
-
-                    </div>
                 </header>
 
                 <div className="flex items-center justify-between relative h-[80px] mt-[2rem]">
 
-                    {/* Logo */}
-                    {/* <Link href="/">
-                            <img
-                                src="/images/logo/logo.png"
-                                alt="Tandhan Group"
-                                className="w-[110px] sm:w-[100px] lg:w-[110px] xl:w-[120px] 2xl:w-[130px]"
-                            />
-                        </Link> */}
-
                     {/* Center Links */}
-                    <ul className="
-                        hidden md:flex items-center 
-                        gap-[2rem] sm:gap-[1.5rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem]
-                    ">
+                    <ul className="hidden md:flex items-center gap-[2rem] sm:gap-[1.5rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem]">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
                             return (
@@ -117,11 +68,9 @@ const Navbar = () => {
                                             relative
                                             px-[1.3rem] sm:px-[1.2rem] lg:px-[1.1rem] xl:px-[1.2rem] 2xl:px-[1.3rem]
                                             py-[0.5rem] sm:py-[0.5rem] lg:py-[0.4rem] xl:py-[0.45rem] 2xl:py-[0.5rem]
-                                            rounded-full transition-colors duration-200
-                                        ${isActive
-                                                ? "text-primary font-bold"
-                                                : "text-black"
-                                            }`}
+                                            rounded-full transition-colors duration-200 text-white
+                                            ${isActive ? "font-bold underline" : ""}
+                                        `}
                                     >
                                         {link.name}
                                     </Link>
@@ -134,12 +83,7 @@ const Navbar = () => {
                     <div className="hidden md:block z-10">
                         <Link
                             href="/contact/"
-                            className="
-                                bg-primary hover:bg-[#a90b2d] text-white 
-                                px-5
-                                py-[0.7rem] sm:py-[0.6rem] lg:py-[0.6rem] xl:py-[0.65rem] 2xl:py-[0.7rem]
-                                rounded-md transition-colors duration-200
-                            "
+                            className="bg-primary hover:bg-[#a90b2d] text-white px-5 py-[0.7rem] sm:py-[0.6rem] lg:py-[0.6rem] xl:py-[0.65rem] 2xl:py-[0.7rem] rounded-md transition-colors duration-200"
                         >
                             Get a Quote
                         </Link>
