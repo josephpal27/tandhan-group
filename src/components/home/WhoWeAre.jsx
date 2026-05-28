@@ -67,7 +67,7 @@ const WhoWeAre = () => {
                         ref={prevRef}
                         className="
                             w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-gray-100 transition 
-                            text-[2rem]
+                            text-[2.2rem]
                         "
                         aria-label="Previous"
                     >
@@ -77,7 +77,7 @@ const WhoWeAre = () => {
                         ref={nextRef}
                         className="
                             w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-gray-100 transition 
-                            text-[2rem]
+                            text-[2.2rem]
                         "
                         aria-label="Next"
                     >
