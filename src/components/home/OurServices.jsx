@@ -39,7 +39,7 @@ const OurServices = () => {
             </div>
 
             {/* Row */}
-            <div className="flex justify-between flex-wrap mt-[2rem] border-b-[10px] border-primary">
+            <div className="flex justify-between flex-wrap mt-[2rem] border-b-[10px] border-secondary">
                 {servicesData.map((service) => {
                     return(
                         <div key={service.id} className="
@@ -53,7 +53,7 @@ const OurServices = () => {
 
                             {/* Layer */}
                             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center
-                                bg-secondary bg-opacity-80 p-[2rem] transition duration-300 group-hover:opacity-0
+                                bg-primary bg-opacity-80 p-[2rem] transition duration-300 group-hover:opacity-0
                                 group-hover:scale-105
                             ">
                                 <span className="
