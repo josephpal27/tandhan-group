@@ -1,4 +1,5 @@
 import HeroBanner from "@/components/HeroBanner";
+import GlobalPresence from "@/components/home/GlobalPresence";
 import HomeFeatures from "@/components/home/HomeFeatures";
 import OurServices from "@/components/home/OurServices";
 import Sectors from "@/components/home/Sectors";
@@ -12,6 +13,7 @@ export default function Home() {
       <WhoWeAre />
       <OurServices />
       <Sectors />
+      <GlobalPresence />
     </>
   );
 }
