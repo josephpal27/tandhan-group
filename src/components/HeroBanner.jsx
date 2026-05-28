@@ -23,12 +23,12 @@ export default function HeroBanner() {
                 <div
                     ref={bgRef}
                     className="absolute top-[-10%] left-0 w-full h-[110%] bg-cover bg-center will-change-transform"
-                    style={{ backgroundImage: "url('/images/banners/banner.avif')" }}
+                    style={{ backgroundImage: "url('/images/banners/home-banner.png')" }}
                 />
             </div>
 
             {/* Red overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#231f20] via-50% to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-primary via-50% to-transparent z-10" />
 
             {/* Content */}
             <div className="relative z-20 text-white flex flex-col justify-end h-full pb-[11rem]">

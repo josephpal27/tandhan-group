@@ -44,7 +44,7 @@ const HomeFeatures = () => {
                             gap-[0.5rem]
                         ">
                             Read More 
-                            <MdNavigateNext className="bg-secondary text-[1.4rem]" />
+                            <MdNavigateNext className="bg-black text-[1.4rem]" />
                         </Link>
                     </div>
                 )

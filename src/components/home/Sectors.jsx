@@ -44,7 +44,7 @@ const Sectors = () => {
                         `}>
                             <img src={sector.image} alt={sector.title} loading="lazy" className="w-full" />
                             <div className="
-                                w-full h-full absolute top-0 left-0 bg-secondary/85 p-[1.5rem]
+                                w-full h-full absolute top-0 left-0 bg-primary/70 p-[1.5rem]
                                 flex flex-col justify-center 
                                 opacity-0 group-hover:opacity-100 transition duration-500
                                 scale-110 group-hover:scale-100
