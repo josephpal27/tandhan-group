@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { SlLocationPin } from "react-icons/sl";
+import { LuPhone } from "react-icons/lu";
+import { LuMessageSquareText } from "react-icons/lu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -35,16 +38,37 @@ const Navbar = () => {
         { name: "Contact Us", href: "/contact/" },
     ];
 
+    const contactLinks = [
+        {
+            icon: <SlLocationPin />,
+            label: "Visit Us",
+            value: "Demo Address, Demo City",
+            url: "/",
+        },
+        {
+            icon: <LuPhone />,
+            label: "Call Us",
+            value: "+91 00000 00000",
+            url: "/",
+        },
+        {
+            icon: <LuMessageSquareText />,
+            label: "Email Us",
+            value: "example@gmail.com",
+            url: "/",
+        },
+    ]
+
     return (
         <>
             <nav className={`
                 absolute top-0 left-0 w-full z-50
-                h-[80px] sm:h-[100px] lg:h-[80px] xl:h-[90px] 2xl:h-[180px]
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                pt-[1rem]
+                py-[1.5rem]
+                border-b border-white/20
             `}>
 
-                <header>
+                <header className="flex justify-between items-center">
                     <div>
                         <img
                             src="/images/logo/logo.png"
@@ -53,23 +77,40 @@ const Navbar = () => {
                             className="w-[250px] brightness-0 invert"
                         />
                     </div>
+                    <div className="flex gap-[2rem]">
+                        {contactLinks.map((item, index) => {
+                            return(
+                                <div key={index} className="flex items-center gap-[0.5rem] text-white">
+                                    <div className="text-[2rem]">
+                                        {item.icon}
+                                    </div>
+                                    <div>
+                                        <span className="block text-[0.8rem] leading-[1]">
+                                            {item.label}
+                                        </span>
+                                        <Link href={item.url} className="block text-[0.95rem]">
+                                            {item.value}   
+                                        </Link>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </header>
 
-                <div className="flex items-center justify-between relative h-[80px]">
+                <div className="flex items-center justify-between mt-[2rem]">
 
-                    {/* Center Links */}
+                    {/* Left Links */}
                     <ul className="hidden md:flex items-center gap-[2rem] sm:gap-[1.5rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[3rem]">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
                             return (
-                                <li key={link.name} className="relative group">
+                                <li key={link.name}>
                                     <Link
                                         href={link.href}
                                         className={`
-                                            relative
-                                            py-[0.5rem] sm:py-[0.5rem] lg:py-[0.4rem] xl:py-[0.45rem] 2xl:py-[0.5rem]
-                                            rounded-full transition-colors duration-200 text-white
-                                            ${isActive ? "font-bold underline" : ""}
+                                            transition-colors duration-200 text-white
+                                            ${isActive ? "font-bold underline underline-offset-8" : "hover:text-white/90"}
                                         `}
                                     >
                                         {link.name}
@@ -83,7 +124,7 @@ const Navbar = () => {
                     <div className="hidden md:block z-10">
                         <Link
                             href="/contact/"
-                            className="bg-primary hover:bg-[#4e4e4e] text-white px-5 py-[0.4rem] rounded-sm transition-colors duration-200"
+                            className="bg-primary hover:bg-[#4e4e4e] text-white px-[1.2rem] py-[0.2rem] rounded-sm transition-colors duration-200"
                         >
                             Get a Quote
                         </Link>
