@@ -26,7 +26,7 @@ const featuresData = [
 
 const HomeFeatures = () => {
     return (
-        <section className="px-[7%] flex justify-between flex-wrap mt-[-5rem] relative">
+        <section className="flex justify-between flex-wrap mt-[-5rem] relative">
             {featuresData.map((feature) => {
                 return (
                     <div key={feature.id} className="w-[25%] bg-primary p-[2rem]">

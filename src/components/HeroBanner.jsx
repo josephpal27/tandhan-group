@@ -31,8 +31,8 @@ export default function HeroBanner() {
             <div className="absolute inset-0 bg-gradient-to-b from-[#231f20] via-50% to-transparent z-10" />
 
             {/* Content */}
-            <div className="relative z-20 px-[7%] text-white flex flex-col justify-end h-full pb-[11rem]">
-                <h1 className="text-[5rem] leading-[1.1] font-bold">
+            <div className="relative z-20 text-white flex flex-col justify-end h-full pb-[11rem]">
+                <h1>
                     Delivering Beyond <br /> Possible Solutions
                 </h1>
                 <p className="mt-[1.5rem] w-[50%]">

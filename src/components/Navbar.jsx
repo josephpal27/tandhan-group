@@ -124,7 +124,7 @@ const Navbar = () => {
                     <div className="hidden md:block z-10">
                         <Link
                             href="/contact/"
-                            className="bg-primary hover:bg-[#4e4e4e] text-white px-[1.2rem] py-[0.2rem] rounded-sm transition-colors duration-200"
+                            className="bg-primary hover:bg-[#4e4e4e] text-white px-[1.2rem] py-[0.2rem] rounded-md transition-colors duration-200"
                         >
                             Get a Quote
                         </Link>
