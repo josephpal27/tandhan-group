@@ -1,7 +1,7 @@
 
 const WhoWeAre = () => {
     return (
-        <section className="px-[7%] py-[4rem] flex justify-between items-center flex-wrap">
+        <section className="pr-[7%] py-[4rem] mt-[1rem] flex justify-between items-center flex-wrap">
             <div className="w-[47%]">
                 <img src="/images/demo.avif" alt="Demo" loading="lazy" className="w-full" />
             </div>

@@ -28,7 +28,7 @@ export default function HeroBanner() {
             </div>
 
             {/* Red overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-red-900/80 via-red-900/60 via-50% to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#231f20] via-50% to-transparent z-10" />
 
             {/* Content */}
             <div className="relative z-20 px-[7%] text-white flex flex-col justify-end h-full pb-[11rem]">
