@@ -23,7 +23,7 @@ export default function HeroBanner() {
                 <div
                     ref={bgRef}
                     className="absolute top-[-10%] left-0 w-full h-[110%] bg-cover bg-center will-change-transform"
-                    style={{ backgroundImage: "url('/images/banners/home-banner.png')" }}
+                    style={{ backgroundImage: "url('/images/banners/home-banner.avif')" }}
                 />
             </div>
 
@@ -35,8 +35,8 @@ export default function HeroBanner() {
                 <h1>
                     Delivering Beyond <br /> Possible Solutions
                 </h1>
-                <p className="mt-[1.5rem] w-[50%]">
-                    Amwerk supports customers through every step of the manufacturing process. From prototyping to delivery, each customer is assigned a dedicated support team to seamlessly move programs through production.
+                <p className="mt-[1.5rem] w-[40%]">
+                    Amwerk supports customers through every step of the manufacturing process. From prototyping to delivery, each customer is assigned a dedicated support team to seamlessly move programs.
                 </p>
             </div>
 
