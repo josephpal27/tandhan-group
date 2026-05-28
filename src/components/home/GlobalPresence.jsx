@@ -7,14 +7,14 @@ const locations = [
     {
         id: 1,
         country: "India",
-        image: "/images/our-presence/india.png",
+        image: "/images/our-presence/india-1.png",
         brand: "Tandhan Denim",
         address: "Demo Address 1",
     },
     {
         id: 2,
         country: "Afghanistan",
-        image: "/images/our-presence/afghanistan.png",
+        image: "/images/our-presence/afghanistan-1.png",
         brand: "Paktika Ahmadi Trading Co. Ltd.",
         address: "Demo Address 2",
     },
