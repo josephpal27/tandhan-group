@@ -1,7 +1,7 @@
 import HeroBanner from "@/components/HeroBanner";
-import HomeFeatures from "@/components/HomeFeatures";
-import OurServices from "@/components/OurServices";
-import WhoWeAre from "@/components/WhoWeAre";
+import HomeFeatures from "@/components/home/HomeFeatures";
+import OurServices from "@/components/home/OurServices";
+import WhoWeAre from "@/components/home/WhoWeAre";
 
 export default function Home() {
   return (

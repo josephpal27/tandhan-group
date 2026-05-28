@@ -16,6 +16,22 @@ body {
   font-family: var(--font-anek-bangla), sans-serif;
 }
 
-p{
+h1, h2, h3, h4, h5, h6 {
+    @apply text-[4rem] font-bold
+}
+
+p, a, li, button{
     @apply text-[1.1rem];
+}
+
+section {
+    @apply px-[1rem] sm:px-[5%] lg:px-[7%]
+}
+
+/* Swiper Customization */
+.swiper-wrapper {
+  align-items: stretch !important;
+}
+.swiper-slide {
+  height: auto !important;
 }
