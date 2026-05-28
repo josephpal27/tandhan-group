@@ -50,7 +50,7 @@ const Navbar = () => {
                             src="/images/logo/logo.png"
                             alt="Tandhan Group"
                             loading="lazy"
-                            className="w-[300px]"
+                            className="w-[250px] brightness-0 invert"
                         />
                     </div>
                 </header>
@@ -83,7 +83,7 @@ const Navbar = () => {
                     <div className="hidden md:block z-10">
                         <Link
                             href="/contact/"
-                            className="bg-primary hover:bg-[#a90b2d] text-white px-5 py-[0.7rem] sm:py-[0.6rem] lg:py-[0.6rem] xl:py-[0.65rem] 2xl:py-[0.7rem] rounded-md transition-colors duration-200"
+                            className="bg-primary hover:bg-[#4e4e4e] text-white px-5 py-[0.4rem] rounded-sm transition-colors duration-200"
                         >
                             Get a Quote
                         </Link>
