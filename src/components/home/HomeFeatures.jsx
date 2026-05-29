@@ -29,7 +29,7 @@ const HomeFeatures = () => {
         <section className="flex justify-between flex-wrap mt-[-5rem] relative">
             {featuresData.map((feature) => {
                 return (
-                    <div key={feature.id} className="w-[25%] bg-primary p-[2rem]">
+                    <div key={feature.id} className="w-[25%] bg-primary p-[2rem] border-b-[10px] border-secondary group">
                         <span className="text-[1.1rem] text-gray-300 block">
                             0{feature.id}
                         </span>
@@ -44,7 +44,10 @@ const HomeFeatures = () => {
                             gap-[0.5rem]
                         ">
                             Read More 
-                            <MdNavigateNext className="bg-black text-[1.4rem]" />
+                            <MdNavigateNext className="
+                                bg-black text-[1.4rem] group-hover:text-black
+                                group-hover:ml-[0.5rem] group-hover:bg-secondary transition-all duration-300
+                            " />
                         </Link>
                     </div>
                 )
