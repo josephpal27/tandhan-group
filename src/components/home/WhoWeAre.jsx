@@ -67,9 +67,9 @@ const WhoWeAre = () => {
                         <button 
                             ref={prevRef}
                             className="
-                            w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-secondary transition 
-                            text-[2.2rem]
-                        "
+                                w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-secondary transition 
+                                text-[2.2rem]
+                            "
                             aria-label="Previous"
                         >
                             ‹
@@ -77,9 +77,9 @@ const WhoWeAre = () => {
                         <button
                             ref={nextRef}
                             className="
-                            w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-secondary transition 
-                            text-[2.2rem]
-                        "
+                                w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-secondary transition 
+                                text-[2.2rem]
+                            "
                             aria-label="Next"
                         >
                             ›
