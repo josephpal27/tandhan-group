@@ -55,7 +55,7 @@ const GlobalPresence = () => {
     }, []);
 
     return (
-        <section className="mt-[4rem] px-0 relative">
+        <section className="mt-[4rem] mb-[1rem] px-0 relative">
 
             {/* Map Image */}
             <div>

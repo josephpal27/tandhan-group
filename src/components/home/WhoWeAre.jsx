@@ -62,27 +62,29 @@ const WhoWeAre = () => {
                 </Swiper>
 
                 {/* Arrows */}
-                <div className="absolute bottom-0 right-0 z-10 flex">
-                    <button
-                        ref={prevRef}
-                        className="
+                <div className='bg-primary/70 w-full absolute bottom-0 z-10'>
+                    <div className="flex justify-end z-20">
+                        <button 
+                            ref={prevRef}
+                            className="
                             w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-secondary transition 
                             text-[2.2rem]
                         "
-                        aria-label="Previous"
-                    >
-                        ‹
-                    </button>
-                    <button
-                        ref={nextRef}
-                        className="
+                            aria-label="Previous"
+                        >
+                            ‹
+                        </button>
+                        <button
+                            ref={nextRef}
+                            className="
                             w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-secondary transition 
                             text-[2.2rem]
                         "
-                        aria-label="Next"
-                    >
-                        ›
-                    </button>
+                            aria-label="Next"
+                        >
+                            ›
+                        </button>
+                    </div>
                 </div>
             </div>
 
