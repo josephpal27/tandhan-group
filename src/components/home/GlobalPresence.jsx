@@ -1,37 +1,8 @@
 "use client";
 
+import { globalPresenceData } from "@/data/globalPresenceData";
 import { useState, useRef, useEffect } from "react";
 import { SlLocationPin } from "react-icons/sl";
-
-const locations = [
-    {
-        id: 1,
-        country: "India",
-        image: "/images/presence/india.png",
-        brands: [
-            {
-                brand: "Tandhan Denim",
-                address: "Demo Address 1"
-            },
-            {
-                brand: "Tandhan Polyplast",
-                address: "Demo Address 2"
-            },
-        ],
-    },
-    {
-        id: 2,
-        country: "Afghanistan",
-        image: "/images/presence/afghanistan.png",
-        brand: "Paktika Ahmadi Trading Co. Ltd.",
-        brands: [
-            {
-                brand: "Paktika Ahmadi Trading Co. Ltd.",
-                address: "Demo Address 3"
-            },
-        ],
-    },
-]
 
 const GlobalPresence = () => {
 
@@ -39,13 +10,13 @@ const GlobalPresence = () => {
     const [fading, setFading] = useState(false);
     const timerRef = useRef(null);
 
-    const activeLocation = locations[activeIndex];
+    const activeLocation = globalPresenceData[activeIndex];
 
     const handleNext = () => {
         if (timerRef.current) clearTimeout(timerRef.current);
         setFading(true);
         timerRef.current = setTimeout(() => {
-            setActiveIndex((prev) => (prev + 1) % locations.length);
+            setActiveIndex((prev) => (prev + 1) % globalPresenceData.length);
             setFading(false);
         }, 200);
     };
