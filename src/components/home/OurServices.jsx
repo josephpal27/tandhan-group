@@ -34,7 +34,7 @@ const OurServices = () => {
                     Our Services
                 </h3>
                 <p className="w-[50%] mt-[1rem]">
-                    Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam corporis soluta minus, dolores molestias Lorem, ipsum.
                 </p>
             </div>
 
