@@ -35,7 +35,7 @@ const LatestNews = () => {
             </div>
 
             {/* Row */}
-            <div className="mt-[3rem] flex justify-between flex-wrap">
+            <div className="mt-[2.5rem] flex justify-between flex-wrap">
                 {latestNewsData.map((item) => {
                     return(
                         <div key={item.id} className="
