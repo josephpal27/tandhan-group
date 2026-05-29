@@ -42,7 +42,7 @@ const GlobalPresence = () => {
             </div>
 
             {/* Content Box */}
-            <div className="absolute w-full h-full left-0 top-0 px-[1rem] sm:px-[5%] lg:px-[7%] py-[5rem]">
+            <div className="absolute w-full h-full left-0 top-0 px-[1rem] sm:px-[5%] lg:px-[7%] py-[4.5rem]">
                 <div className="w-[30%] h-full bg-white shadow-[rgba(0,0,0,0.30)_0px_3px_8px]">
                     {/* Top */}
                     <div className="relative">
@@ -77,9 +77,16 @@ const GlobalPresence = () => {
                                     {item.brand}
                                 </span>
 
-                                <a href="/" className="flex items-center gap-[0.5rem] mt-[0.5rem]">
-                                    <SlLocationPin /> {item.address}
-                                </a>
+                                <div className="flex justify-between mt-[0.5rem]">
+                                    <div className="w-[5%]">
+                                        <SlLocationPin className="mt-[0.3rem]" />
+                                    </div>
+                                    <div className="w-[93%]">
+                                        <p className="text-[1rem]">
+                                            {item.address}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>
