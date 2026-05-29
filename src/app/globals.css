@@ -17,11 +17,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply text-[4rem] font-bold leading-[1.1]
+    @apply text-[2rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] font-bold leading-[1.1]
 }
 
 p, a, li, button{
-    @apply text-[1.1rem];
+    @apply text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem];
 }
 
 section {
