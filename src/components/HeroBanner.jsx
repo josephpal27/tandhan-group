@@ -31,12 +31,13 @@ export default function HeroBanner() {
             <div className="absolute inset-0 bg-gradient-to-b from-primary via-50% to-transparent z-10" />
 
             {/* Content */}
-            <div className="relative z-20 text-white flex flex-col justify-end h-full pb-[11rem]">
+            <div className="relative z-20 text-white flex flex-col justify-end h-full 
+            pb-[8rem] sm:pb-[8rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]">
                 <h1>
                     Delivering Beyond <br /> Possible Solutions
                 </h1>
                 <p className="mt-[1.5rem] w-[40%]">
-                    Amwerk supports customers through every step of the manufacturing process. From prototyping to delivery, each customer is assigned a dedicated support team to seamlessly move programs.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem.
                 </p>
             </div>
 
