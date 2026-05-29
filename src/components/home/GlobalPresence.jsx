@@ -7,16 +7,29 @@ const locations = [
     {
         id: 1,
         country: "India",
-        image: "/images/our-presence/india-1.png",
-        brand: "Tandhan Denim",
-        address: "Demo Address 1",
+        image: "/images/presence/india.png",
+        brands: [
+            {
+                brand: "Tandhan Denim",
+                address: "Demo Address 1"
+            },
+            {
+                brand: "Tandhan Polyplast",
+                address: "Demo Address 2"
+            },
+        ],
     },
     {
         id: 2,
         country: "Afghanistan",
-        image: "/images/our-presence/afghanistan-1.png",
+        image: "/images/presence/afghanistan.png",
         brand: "Paktika Ahmadi Trading Co. Ltd.",
-        address: "Demo Address 2",
+        brands: [
+            {
+                brand: "Paktika Ahmadi Trading Co. Ltd.",
+                address: "Demo Address 3"
+            },
+        ],
     },
 ]
 
@@ -64,7 +77,7 @@ const GlobalPresence = () => {
                     <div className="relative">
                         <img src="/images/demo-1.jpg" alt="Map" loading="lazy" className="w-full" />
                         {/* Layer */}
-                        <div className="absolute top-0 left-0 w-full h-full bg-primary/50 flex items-end">
+                        <div className="absolute top-0 left-0 w-full h-full bg-primary/30 flex items-end">
                             <div className="w-[90%] flex justify-between">
                                 <div className="bg-white w-[80%] py-[2rem] px-[1rem]">
                                     <span className="text-[1.4rem] font-semibold block">
@@ -83,13 +96,21 @@ const GlobalPresence = () => {
                     </div>
 
                     {/* Bottom */}
-                    <div className="p-[1rem]">
-                        <span className="block text-[1.5rem] font-semibold">
-                            {activeLocation.brand}
-                        </span>
-                        <a href="/" className="flex items-center gap-[0.5rem] mt-[0.5rem]">
-                            <SlLocationPin /> {activeLocation.address}
-                        </a>
+                    <div className="px-[1rem] pt-[0.5rem]">
+                        {activeLocation.brands.map((item, index) => (
+                            <div
+                                key={index}
+                                className={`py-[0.8rem] ${index !== 0 ? "border-t border-gray-200" : ""}`}
+                            >
+                                <span className="block text-[1.3rem] font-semibold">
+                                    {item.brand}
+                                </span>
+
+                                <a href="/" className="flex items-center gap-[0.5rem] mt-[0.5rem]">
+                                    <SlLocationPin /> {item.address}
+                                </a>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
