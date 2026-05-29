@@ -74,7 +74,7 @@ const Navbar = () => {
                             src="/images/logo/logo.png"
                             alt="Tandhan Group"
                             loading="lazy"
-                            className="w-[250px] brightness-0 invert"
+                            className="w-[240px] brightness-0 invert"
                         />
                     </div>
                     <div className="flex gap-[2rem]">
@@ -88,9 +88,9 @@ const Navbar = () => {
                                         <span className="block text-[0.8rem] leading-[1]">
                                             {item.label}
                                         </span>
-                                        <Link href={item.url} className="block text-[0.95rem]">
+                                        <a href={item.url} className="block text-[0.95rem]">
                                             {item.value}   
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             )
