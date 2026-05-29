@@ -28,7 +28,7 @@ const WhoWeAre = () => {
     const activeItem = aboutUsData[activeIndex];
 
     return (
-        <section className="pl-0 pt-[5rem] flex justify-between items-center flex-wrap">
+        <section className="pl-0 pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between items-center flex-wrap">
 
             {/* Left Image */}
             <div className="w-[48%] relative">
@@ -67,8 +67,10 @@ const WhoWeAre = () => {
                         <button 
                             ref={prevRef}
                             className="
-                                w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-secondary transition 
-                                text-[2.2rem]
+                                w-[70px] sm:w-[60px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
+                                h-[70px] sm:h-[60px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
+                                flex items-center justify-center bg-white hover:bg-secondary transition 
+                                text-[2.2rem] sm:text-[2rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                             "
                             aria-label="Previous"
                         >
@@ -77,8 +79,10 @@ const WhoWeAre = () => {
                         <button
                             ref={nextRef}
                             className="
-                                w-[70px] h-[70px] flex items-center justify-center bg-white hover:bg-secondary transition 
-                                text-[2.2rem]
+                                w-[70px] sm:w-[60px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
+                                h-[70px] sm:h-[60px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
+                                flex items-center justify-center bg-white hover:bg-secondary transition 
+                                text-[2.2rem] sm:text-[2rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                             "
                             aria-label="Next"
                         >
