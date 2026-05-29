@@ -3,25 +3,25 @@ const servicesData = [
         id: 1,
         title: "Intrinsically incubate intuitive opportunities",
         desc: "Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.",
-        image: "/images/demo-1.jpg",
+        image: "/images/services/1.avif",
     },
     {
         id: 2,
         title: "Intrinsically incubate intuitive opportunities",
         desc: "Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.",
-        image: "/images/demo-1.jpg",
+        image: "/images/services/2.avif",
     },
     {
         id: 3,
         title: "Intrinsically incubate intuitive opportunities",
         desc: "Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.",
-        image: "/images/demo-1.jpg",
+        image: "/images/services/3.avif",
     },
     {
         id: 4,
         title: "Intrinsically incubate intuitive opportunities",
         desc: "Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.",
-        image: "/images/demo-1.jpg",
+        image: "/images/services/4.avif",
     },
 ]
 
