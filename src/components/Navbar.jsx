@@ -64,7 +64,7 @@ const Navbar = () => {
             <nav className={`
                 absolute top-0 left-0 w-full z-50
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[1.5rem]
+                py-[1.5rem] sm:py-[1.2rem] lg:py-[1.3rem] xl:py-[1.4rem] 2xl:py-[1.5rem]
                 border-b border-white/20
             `}>
 
@@ -74,21 +74,21 @@ const Navbar = () => {
                             src="/images/logo/logo.png"
                             alt="Tandhan Group"
                             loading="lazy"
-                            className="w-[240px] brightness-0 invert"
+                            className="w-[100px] sm:w-[200px] lg:w-[190px] xl:w-[215px] 2xl:w-[240px] brightness-0 invert"
                         />
                     </div>
-                    <div className="flex gap-[2rem]">
+                    <div className="flex gap-[2rem] sm:gap-[1.7rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem]">
                         {contactLinks.map((item, index) => {
                             return(
                                 <div key={index} className="flex items-center gap-[0.5rem] text-white">
-                                    <div className="text-[2rem]">
+                                    <div className="text-[2rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]">
                                         {item.icon}
                                     </div>
                                     <div>
-                                        <span className="block text-[0.8rem] leading-[1]">
+                                        <span className="block text-[0.8rem] sm:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem] leading-[1]">
                                             {item.label}
                                         </span>
-                                        <a href={item.url} className="block text-[0.95rem]">
+                                        <a href={item.url} className="block text-[0.9rem] sm:text-[0.8rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]">
                                             {item.value}   
                                         </a>
                                     </div>
@@ -98,10 +98,10 @@ const Navbar = () => {
                     </div>
                 </header>
 
-                <div className="flex items-center justify-between mt-[2rem]">
+                <div className="flex items-center justify-between mt-[2rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]">
 
                     {/* Left Links */}
-                    <ul className="hidden md:flex items-center gap-[2rem] sm:gap-[1.5rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[3rem]">
+                    <ul className="hidden md:flex items-center gap-[2rem] sm:gap-[2rem] lg:gap-[2.3rem] xl:gap-[2.7rem] 2xl:gap-[3rem]">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
                             return (
@@ -124,7 +124,10 @@ const Navbar = () => {
                     <div className="hidden md:block z-10">
                         <Link
                             href="/contact/"
-                            className="bg-secondary hover:bg-white text-white hover:text-black px-[1.2rem] py-[0.2rem] rounded-md transition-colors duration-200"
+                            className="bg-secondary hover:bg-white text-white hover:text-black 
+                            px-[1.2rem] sm:px-[1.1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
+                            py-[0.2rem] 
+                            rounded-md transition-colors duration-200"
                         >
                             Get a Quote
                         </Link>
