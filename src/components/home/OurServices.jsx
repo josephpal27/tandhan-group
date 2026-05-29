@@ -27,7 +27,7 @@ const servicesData = [
 
 const OurServices = () => {
     return (
-        <section className="pt-[4.5rem]">
+        <section className="pt-[4.5rem] sm:pt-[3rem] lg:pt-[3.5rem] xl:pt-[4rem] 2xl:pt-[4.5rem]">
 
             <div className="flex flex-col items-center text-center">
                 <h3>
@@ -39,7 +39,10 @@ const OurServices = () => {
             </div>
 
             {/* Row */}
-            <div className="flex justify-between flex-wrap mt-[2rem] border-b-[10px] border-secondary">
+            <div className="flex justify-between flex-wrap 
+                mt-[2.5rem] sm:mt-[2rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem]
+                border-b-[10px] border-secondary
+            ">
                 {servicesData.map((service) => {
                     return(
                         <div key={service.id} className="
@@ -57,7 +60,7 @@ const OurServices = () => {
                                 group-hover:scale-105
                             ">
                                 <span className="
-                                    text-white text-center text-[1.5rem] font-semibold
+                                    text-white text-center text-[1.5rem] sm:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold
                                 ">
                                     {service.title}
                                 </span>
@@ -69,11 +72,11 @@ const OurServices = () => {
                                 -translate-x-[105%] group-hover:translate-x-0 transition-transform duration-500
                             ">
                                 <span className="
-                                    text-black text-[1.5rem] font-semibold leading-[1.1]
+                                    text-black text-[1.5rem] sm:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold leading-[1.1]
                                 ">
                                     {service.title}
                                 </span>
-                                <p className="mt-[0.8rem] text-[0.85rem] text-gray-800">
+                                <p className="mt-[0.8rem] text-[0.85rem] sm:text-[0.8rem] lg:text-[0.65rem] xl:text-[0.75rem] 2xl:text-[0.85rem] text-gray-800">
                                     {service.desc}
                                 </p>
                             </div>
