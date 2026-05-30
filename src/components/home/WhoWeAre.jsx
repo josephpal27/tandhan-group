@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+// import { Navigation } from 'swiper/modules';
 import { useRef, useState } from 'react';
 import 'swiper/css';
 
@@ -21,8 +21,7 @@ const aboutUsData = [
 ];
 
 const WhoWeAre = () => {
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
+    const swiperRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
     const activeItem = aboutUsData[activeIndex];
@@ -33,18 +32,7 @@ const WhoWeAre = () => {
             {/* Left Image */}
             <div className="w-[48%] relative">
                 <Swiper
-                    modules={[Navigation]}
-                    navigation={{
-                        prevEl: prevRef.current,
-                        nextEl: nextRef.current,
-                    }}
-                    onSwiper={(swiper) => {
-                        swiper.params.navigation.prevEl = prevRef.current;
-                        swiper.params.navigation.nextEl = nextRef.current;
-                        swiper.navigation.destroy();
-                        swiper.navigation.init();
-                        swiper.navigation.update();
-                    }}
+                    onSwiper={(swiper) => (swiperRef.current = swiper)}
                     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                     loop={true}
                     className="w-full"
@@ -65,7 +53,7 @@ const WhoWeAre = () => {
                 <div className='bg-primary/70 w-full absolute bottom-0 z-10'>
                     <div className="flex justify-end z-20">
                         <button 
-                            ref={prevRef}
+                            onClick={() => swiperRef.current?.slidePrev()}
                             className="
                                 w-[70px] sm:w-[60px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
                                 h-[70px] sm:h-[60px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
@@ -77,7 +65,7 @@ const WhoWeAre = () => {
                             ‹
                         </button>
                         <button
-                            ref={nextRef}
+                            onClick={() => swiperRef.current?.slideNext()}
                             className="
                                 w-[70px] sm:w-[60px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
                                 h-[70px] sm:h-[60px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
