@@ -67,13 +67,13 @@ const Footer = () => {
                     <img src="/images/demo-2.jpeg" alt="Footer" loading="lazy" className="w-full" />
                     <div className="
                         absolute top-0 right-0 w-[78%] h-full bg-secondary/90 text-black
-                        p-[2rem]
+                        p-[1rem] sm:p-[1.5rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]
                     ">
                         <img
                             src="/images/logo/logo.png"
                             alt="Tandhan Group"
                             loading="lazy"
-                            className="w-[190px]"
+                            className="w-[190px] sm:w-[150px] lg:w-[150px] xl:w-[170px] 2xl:w-[190px]"
                         />
                         <p className="font-[500] mt-[1.5rem]">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit error enim assumenda pariatur, delectus consequatur eos! Id, sed corrupti.
@@ -85,7 +85,7 @@ const Footer = () => {
                 </div>
 
                 {/* Right */}
-                <div className="w-[60%] pt-[4rem] flex justify-between flex-wrap">
+                <div className="w-[60%] pt-[4rem] sm:pt-[3rem] lg:pt-[3rem] xl:pt-[3.5rem] 2xl:pt-[4rem] flex justify-between flex-wrap">
 
                     {/* Quick Links & Sectors */}
                     {footerData.map((item, index) => {
@@ -93,10 +93,10 @@ const Footer = () => {
                             <div key={index} className="
                                 w-[32%] text-white
                             ">
-                                <span className="text-[1.5rem] font-semibold">
+                                <span className="text-[1.5rem] sm:text-[1.5rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold">
                                     {item.title}
                                 </span>
-                                <ul className="mt-[1.2rem]">
+                                <ul className="mt-[1.2rem] sm:mt-[1.3rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]">
                                     {item.links.map((link, index) => {
                                         return (
                                             <li key={index} className="mt-[0.5rem]">
@@ -116,10 +116,10 @@ const Footer = () => {
 
                     {/* Get In Touch */}
                     <div className="w-[32%] text-white">
-                        <span className="text-[1.5rem] font-semibold">
+                        <span className="text-[1.5rem] sm:text-[1.5rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold">
                             Get In Touch
                         </span>
-                        <ul className="mt-[1.2rem]">
+                        <ul className="mt-[1.2rem] sm:mt-[1.3rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]">
                             {contactLinks.map((item, index) => (
                                 <li key={index} className="mt-[0.5rem]">
                                     <a href={item.url} target={item.target}
@@ -136,8 +136,8 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="py-[1rem] px-[1rem] bg-[#05115f]">
-                <p className="text-center text-[1rem] text-white">
+            <div className="py-[1rem] sm:py-[1rem] lg:py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem] px-[1rem] bg-[#05115f]">
+                <p className="text-center text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-white">
                     Copyright © 2026 | Tandhan Group | All Rights Reserved
                 </p>
             </div>

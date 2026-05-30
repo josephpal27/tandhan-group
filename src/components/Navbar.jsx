@@ -110,7 +110,7 @@ const Navbar = () => {
                                         href={link.href}
                                         className={`
                                             transition-colors duration-200 text-white
-                                            ${isActive ? "font-bold underline underline-offset-8" : "hover:text-white/90"}
+                                            ${isActive ? "font-bold underline underline-offset-8" : "hover:text-secondary"}
                                         `}
                                     >
                                         {link.name}
