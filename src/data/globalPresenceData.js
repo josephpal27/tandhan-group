@@ -3,6 +3,7 @@ export const globalPresenceData = [
         id: 1,
         country: "India",
         image: "/images/presence/india.avif",
+        industryImage: "/images/presence//industry/india.avif",
         brands: [
             {
                 brand: "Tandhan Polyplast Ltd.",
@@ -18,6 +19,7 @@ export const globalPresenceData = [
         id: 2,
         country: "Bangladesh",
         image: "/images/presence/bangladesh.avif",
+        industryImage: "/images/presence/industry/bangladesh.avif",
         brands: [
             {
                 brand: "Dhaka Power Traders",
@@ -29,6 +31,7 @@ export const globalPresenceData = [
         id: 3,
         country: "Myanmar",
         image: "/images/presence/myanmar.avif",
+        industryImage: "/images/presence/industry/myanmar.avif",
         brands: [
             {
                 brand: "San Taing Kyaw Company Ltd.",
@@ -40,6 +43,7 @@ export const globalPresenceData = [
         id: 4,
         country: "Dubai",
         image: "/images/presence/dubai.avif",
+        industryImage: "/images/presence/industry/dubai.avif",
         brands: [
             {
                 brand: "Power Global General Trading L.L.C",
@@ -51,6 +55,7 @@ export const globalPresenceData = [
         id: 5,
         country: "South Africa",
         image: "/images/presence/south-africa.avif",
+        industryImage: "/images/presence/industry/south-africa.avif",
         brands: [
             {
                 brand: "Rainbow Power Solutions",
@@ -62,6 +67,7 @@ export const globalPresenceData = [
         id: 6,
         country: "Kenya",
         image: "/images/presence/kenya.avif",
+        industryImage: "/images/presence/industry/kenya.avif",
         brands: [
             {
                 brand: "Simplified Solar Solutions Ltd.",
@@ -73,6 +79,7 @@ export const globalPresenceData = [
         id: 7,
         country: "Sudan",
         image: "/images/presence/sudan.avif",
+        industryImage: "/images/presence/industry/sudan.avif",
         brands: [
             {
                 brand: "Global Power Traders",
@@ -84,6 +91,7 @@ export const globalPresenceData = [
         id: 8,
         country: "Nigeria",
         image: "/images/presence/nigeria.avif",
+        industryImage: "/images/presence/industry/nigeria.avif",
         brands: [
             {
                 brand: "Sustainable Global Power Tech Ltd.",
@@ -95,6 +103,7 @@ export const globalPresenceData = [
         id: 9,
         country: "Afghanistan",
         image: "/images/presence/afghanistan.avif",
+        industryImage: "/images/presence/industry/afghanistan.avif",
         brands: [
             {
                 brand: "Ρaktika Ahmadi Trading Co. Ltd.",
@@ -106,6 +115,7 @@ export const globalPresenceData = [
         id: 10,
         country: "Zambia",
         image: "/images/presence/zambia.avif",
+        industryImage: "/images/presence/industry/zambia.avif",
         brands: [
             {
                 brand: "Rainbow Power Solutions",
@@ -117,6 +127,7 @@ export const globalPresenceData = [
         id: 11,
         country: "Tanzania",
         image: "/images/presence/tanzania.avif",
+        industryImage: "/images/presence/industry/tanzania.avif",
         brands: [
             {
                 brand: "Rainbow Power Solutions",
@@ -128,6 +139,7 @@ export const globalPresenceData = [
         id: 12,
         country: "DRC",
         image: "/images/presence/drc.avif",
+        industryImage: "/images/presence/industry/drc.avif",
         brands: [
             {
                 brand: "Power Global General Trading L.L.C",
@@ -139,6 +151,7 @@ export const globalPresenceData = [
         id: 13,
         country: "Azerbaijan",
         image: "/images/presence/azerbaijan.avif",
+        industryImage: "/images/presence/industry/azerbaijan.avif",
         brands: [
             {
                 brand: "Power Global General Trading L.L.C",
@@ -150,6 +163,7 @@ export const globalPresenceData = [
         id: 14,
         country: "Ivory Coast",
         image: "/images/presence/ivory-coast.avif",
+        industryImage: "/images/presence/industry/ivory-coast.avif",
         brands: [
             {
                 brand: "Tandhan Sustainable Agro",
@@ -161,6 +175,7 @@ export const globalPresenceData = [
         id: 15,
         country: "Germany",
         image: "/images/presence/germany.avif",
+        industryImage: "/images/presence/industry/germany.avif",
         brands: [
             
         ],
@@ -169,6 +184,7 @@ export const globalPresenceData = [
         id: 16,
         country: "Canada",
         image: "/images/presence/canada.avif",
+        industryImage: "/images/presence/industry/canada.avif",
         brands: [
             
         ],
@@ -177,6 +193,7 @@ export const globalPresenceData = [
         id: 17,
         country: "Brazil",
         image: "/images/presence/brazil.avif",
+        industryImage: "/images/presence/industry/brazil.avif",
         brands: [
             
         ],
@@ -185,6 +202,7 @@ export const globalPresenceData = [
         id: 18,
         country: "Australia",
         image: "/images/presence/australia.avif",
+        industryImage: "/images/presence/industry/australia.avif",
         brands: [
             
         ],
