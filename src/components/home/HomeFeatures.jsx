@@ -4,22 +4,22 @@ import { MdNavigateNext } from "react-icons/md";
 const featuresData = [
     {
         id: 1,
-        title: "Integrity",
+        title: "Lorem Ipsum",
         desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
     },
     {
         id: 2,
-        title: "Automation",
+        title: "Lorem Ipsum",
         desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
     },
     {
         id: 3,
-        title: "Tradition",
+        title: "Lorem Ipsum",
         desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
     },
     {
         id: 4,
-        title: "Safety",
+        title: "Lorem Ipsum",
         desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
     },
 ]

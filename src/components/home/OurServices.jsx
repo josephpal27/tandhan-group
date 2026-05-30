@@ -6,26 +6,26 @@ import { headingVariant } from "@/utils/animations";
 const servicesData = [
     {
         id: 1,
-        title: "Intrinsically incubate intuitive opportunities",
-        desc: "Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.",
+        title: "Lorem ipsum dolor sit amet consectetur",
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/1.avif",
     },
     {
         id: 2,
-        title: "Intrinsically incubate intuitive opportunities",
-        desc: "Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.",
+        title: "Lorem ipsum dolor sit amet consectetur",
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/2.avif",
     },
     {
         id: 3,
-        title: "Intrinsically incubate intuitive opportunities",
-        desc: "Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.",
+        title: "Lorem ipsum dolor sit amet consectetur",
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/3.avif",
     },
     {
         id: 4,
-        title: "Intrinsically incubate intuitive opportunities",
-        desc: "Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.",
+        title: "Lorem ipsum dolor sit amet consectetur",
+        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/4.avif",
     },
 ]
@@ -41,7 +41,7 @@ const OurServices = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Our Services
+                    Lorem Ipsum
                 </motion.h3>
                 <p className="w-[50%] mt-[1rem]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam corporis soluta minus, dolores molestias Lorem, ipsum.
