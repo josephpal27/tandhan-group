@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const Sustainable = () => {
     return (
@@ -12,9 +16,14 @@ const Sustainable = () => {
                 py-[4rem]
                 flex flex-col justify-center text-white
             ">
-                <h5>
+                <motion.h5
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Sustainability
-                </h5>
+                </motion.h5>
                 <p className="mt-[1.5rem] w-[50%]">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam fuga magnam odit atque. Dolores, labore? Cum at non tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas consequatur impedit dolorem eaque deleniti ex nobis voluptatem quisquam recusandae.
                 </p>

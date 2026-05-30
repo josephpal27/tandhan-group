@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 export default function HeroBanner() {
     const bgRef = useRef(null);
@@ -33,9 +35,14 @@ export default function HeroBanner() {
             {/* Content */}
             <div className="relative z-20 text-white flex flex-col justify-end h-full 
             pb-[8rem] sm:pb-[8rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]">
-                <h1>
+                <motion.h1
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Delivering Beyond <br /> Possible Solutions
-                </h1>
+                </motion.h1>
                 <p className="mt-[1.5rem] w-[40%]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem.
                 </p>

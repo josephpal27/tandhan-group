@@ -1,9 +1,10 @@
 "use client";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Navigation } from 'swiper/modules';
 import { useRef, useState } from 'react';
 import 'swiper/css';
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const aboutUsData = [
     {
@@ -52,7 +53,7 @@ const WhoWeAre = () => {
                 {/* Arrows */}
                 <div className='bg-primary/70 w-full absolute bottom-0 z-10'>
                     <div className="flex justify-end z-20">
-                        <button 
+                        <button
                             onClick={() => swiperRef.current?.slidePrev()}
                             className="
                                 w-[70px] sm:w-[60px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
@@ -82,7 +83,14 @@ const WhoWeAre = () => {
 
             {/* Right Content */}
             <div className="w-[47%]">
-                <h2>{activeItem.title}</h2>
+                <motion.h2
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                    {activeItem.title}
+                </motion.h2>
                 <p className="mt-[1.5rem]">{activeItem.desc}</p>
             </div>
 

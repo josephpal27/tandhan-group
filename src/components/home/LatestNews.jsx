@@ -1,3 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
+
 const latestNewsData = [
     {
         id: 1,
@@ -26,9 +31,14 @@ const LatestNews = () => {
     return (
         <section className="pt-[4.5rem] sm:pt-[3rem] lg:pt-[3.5rem] xl:pt-[4rem] 2xl:pt-[4.5rem]">
             <div className="flex flex-col items-center text-center">
-                <h6>
+                <motion.h6
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Latest News
-                </h6>
+                </motion.h6>
                 <p className="w-[50%] mt-[1rem]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam corporis soluta minus, dolores molestias Lorem, ipsum.
                 </p>
@@ -37,7 +47,7 @@ const LatestNews = () => {
             {/* Row */}
             <div className="mt-[2.5rem] sm:mt-[2rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem] flex justify-between flex-wrap">
                 {latestNewsData.map((item) => {
-                    return(
+                    return (
                         <div key={item.id} className="
                             w-[31%] bg-primary relative
                         ">
