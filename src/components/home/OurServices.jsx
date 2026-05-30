@@ -61,7 +61,7 @@ const OurServices = () => {
                             <img 
                                 src={service.image} 
                                 alt={service.title} 
-                                className="w-full" 
+                                className="w-full aspect-[5/4] object-cover" 
                             />
 
                             {/* Layer */}

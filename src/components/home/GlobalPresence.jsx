@@ -54,7 +54,7 @@ const GlobalPresence = () => {
                     <img
                         src={activeLocation.image}
                         alt={activeLocation.country}
-                        loading="lazy"
+                        loading="lazy aspect-[5/4] object-cover"
                         className={`
                         w-full h-screen object-cover transition-opacity duration-[400ms] 
                         ${fading ? "opacity-0" : "opacity-100"}
