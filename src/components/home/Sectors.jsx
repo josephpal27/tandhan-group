@@ -1,3 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
+
 const sectorsData = [
     {
         id: 1,
@@ -63,9 +68,14 @@ const Sectors = () => {
                 })}
             </div>
             <div className="w-[48%]">
-                <h4>
+                <motion.h4
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Our Sectors
-                </h4>
+                </motion.h4>
                 <p className="mt-[1.5rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error ex voluptates sed harum repellat fugiat illum incidunt animi iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus.
                 </p>

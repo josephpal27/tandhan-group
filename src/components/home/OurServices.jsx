@@ -1,3 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
+
 const servicesData = [
     {
         id: 1,
@@ -30,9 +35,14 @@ const OurServices = () => {
         <section className="pt-[4.5rem] sm:pt-[3rem] lg:pt-[3.5rem] xl:pt-[4rem] 2xl:pt-[4.5rem]">
 
             <div className="flex flex-col items-center text-center">
-                <h3>
+                <motion.h3
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Our Services
-                </h3>
+                </motion.h3>
                 <p className="w-[50%] mt-[1rem]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam corporis soluta minus, dolores molestias Lorem, ipsum.
                 </p>
