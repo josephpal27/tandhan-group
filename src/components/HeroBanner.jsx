@@ -41,7 +41,7 @@ export default function HeroBanner() {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Delivering Beyond <br /> Possible Solutions
+                    Lorem Ipsum <br /> Dolor Sit Amet
                 </motion.h1>
                 <p className="mt-[1.5rem] w-[40%]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem.
