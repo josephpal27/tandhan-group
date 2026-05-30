@@ -48,7 +48,12 @@ const GlobalPresence = () => {
                 <div className="w-[30%] h-full bg-white shadow-[rgba(0,0,0,0.30)_0px_3px_8px]">
                     {/* Top */}
                     <div className="relative">
-                        <img src="/images/demo-1.jpg" alt="Map" loading="lazy" className="w-full" />
+                        <img 
+                            src={activeLocation.industryImage}
+                            alt={activeLocation.country}
+                            loading="lazy" 
+                            className="w-full" 
+                        />
                         {/* Layer */}
                         <div className="absolute top-0 left-0 w-full h-full bg-primary/30 flex items-end">
                             <div className="w-[90%] flex justify-between">
