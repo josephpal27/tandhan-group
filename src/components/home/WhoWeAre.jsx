@@ -44,7 +44,7 @@ const WhoWeAre = () => {
                                 src={item.image}
                                 alt={item.title}
                                 loading="lazy"
-                                className="w-full object-cover"
+                                className="w-full aspect-[3/2] object-cover"
                             />
                         </SwiperSlide>
                     ))}

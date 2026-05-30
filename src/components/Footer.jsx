@@ -64,7 +64,7 @@ const Footer = () => {
             ">
                 {/* Left */}
                 <div className="w-[35%] relative">
-                    <img src="/images/footer-bg.avif" alt="Footer Background" loading="lazy" className="w-full" />
+                    <img src="/images/footer-bg.avif" alt="Footer Background" loading="lazy" className="w-full aspect-[1/1] object-cover" />
                     <div className="
                         absolute top-0 right-0 w-[78%] h-full bg-secondary/90 text-black
                         p-[1rem] sm:p-[1.5rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]

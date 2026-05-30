@@ -9,28 +9,28 @@ const sectorsData = [
         title: "Sector 1",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
         icon: "",
-        image: "/images/sectors/1.jpeg",
+        image: "/images/sectors/1.avif",
     },
     {
         id: 2,
         title: "Sector 2",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
         icon: "",
-        image: "/images/sectors/2.jpeg",
+        image: "/images/sectors/2.avif",
     },
     {
         id: 3,
         title: "Sector 3",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
         icon: "",
-        image: "/images/sectors/3.jpeg",
+        image: "/images/sectors/3.avif",
     },
     {
         id: 4,
         title: "Sector 4",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
         icon: "",
-        image: "/images/sectors/4.png",
+        image: "/images/sectors/4.avif",
     },
 ]
 
@@ -47,7 +47,7 @@ const Sectors = () => {
                             ${sector.id === 2 ? "mt-[3rem] sm:mt-[2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]" : ""}
                             ${sector.id === 3 ? "mt-[-3rem] sm:mt-[-2rem] lg:mt-[-2.6rem] xl:mt-[-2.8rem] 2xl:mt-[-3rem]" : ""}
                         `}>
-                            <img src={sector.image} alt={sector.title} loading="lazy" className="w-full" />
+                            <img src={sector.image} alt={sector.title} loading="lazy" className="w-full aspect-[5/4] object-cover" />
                             <div className="
                                 w-full h-full absolute top-0 left-0 bg-primary/70 
                                 p-[1.5rem] sm:p-[1.7rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]

@@ -52,7 +52,7 @@ const LatestNews = () => {
                             w-[31%] bg-primary relative
                         ">
                             <div className="relative">
-                                <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
+                                <img src={item.image} alt={item.title} loading="lazy" className="w-full aspect-[4/3] object-cover" />
                                 <div className="
                                     absolute top-0 left-0 bg-secondary p-[1rem]
                                     text-[1.3rem] sm:text-[1.3rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold
