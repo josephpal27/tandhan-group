@@ -68,14 +68,14 @@ const Sectors = () => {
                 })}
             </div>
             <div className="w-[48%]">
-                <motion.h4
+                <motion.h3
                     variants={headingVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
                     Our Sectors
-                </motion.h4>
+                </motion.h3>
                 <p className="mt-[1.5rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error ex voluptates sed harum repellat fugiat illum incidunt animi iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus.
                 </p>

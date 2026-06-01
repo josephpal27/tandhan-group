@@ -22,8 +22,8 @@ export default function Home() {
       />
       <HomeFeatures />
       <WhoWeAre />
-      <OurServices />
       <Sectors />
+      <OurServices />
       <Sustainable />
       <LatestNews />
       <GlobalPresence />
