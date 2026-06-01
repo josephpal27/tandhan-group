@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { headingVariant } from "@/utils/animations";
+// import { motion } from "framer-motion";
+// import { headingVariant } from "@/utils/animations";
 
 const servicesData = [
     {
@@ -9,24 +9,28 @@ const servicesData = [
         title: "Hospitality",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/1.avif",
+        logos: ["/images/logo/nx-hotel.png"],
     },
     {
         id: 2,
         title: "Protective Solutions",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/2.avif",
+        logos: ["/images/logo/tandhan-polyplast.png"],
     },
     {
         id: 3,
         title: "Energy Solutions",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/3.avif",
+        logos: ["/images/logo/tandhan-power.png"],
     },
     {
         id: 4,
         title: "Textiles",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/4.avif",
+        logos: ["/images/logo/tandhan-denim.png", "/images/logo/tandhan-saree.png", "/images/logo/tandhan-fashion.png"],
     },
 ]
 
@@ -79,16 +83,27 @@ const OurServices = () => {
                             {/* Box */}
                             <div className="
                                 absolute bottom-0 left-0 w-[85%] h-[80%] p-[1rem] bg-white 
+                                flex flex-col justify-center items-center overflow-hidden
+                                gap-[0.3rem] divide-y divide-gray-200
                                 -translate-x-[105%] group-hover:translate-x-0 transition-transform duration-500
                             ">
-                                <span className="
+                                {/* <span className="
                                     text-black text-[1.5rem] sm:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold leading-[1.1]
                                 ">
                                     {service.title}
                                 </span>
                                 <p className="mt-[0.8rem] text-[0.85rem] sm:text-[0.8rem] lg:text-[0.65rem] xl:text-[0.75rem] 2xl:text-[0.85rem] text-gray-800">
                                     {service.desc}
-                                </p>
+                                </p> */}
+                                {service.logos.map((logo, index) => {
+                                    return(
+                                        <img src={logo} alt="Logo" key={index} className="
+                                            w-[60%] 
+                                            pt-[0.5rem]
+                                        " />
+                                    )
+                                })}
+                                
                             </div>
                         </div>
                     )
