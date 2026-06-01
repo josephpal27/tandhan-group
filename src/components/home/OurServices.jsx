@@ -32,9 +32,9 @@ const servicesData = [
 
 const OurServices = () => {
     return (
-        <section className="pt-[4.5rem] sm:pt-[3rem] lg:pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[3.5rem]">
+        <section className="pt-[2rem] sm:pt-[1rem] lg:pt-[0] xl:pt-[0.5rem] 2xl:pt-[1rem]">
 
-            <div className="flex flex-col items-center text-center">
+            {/* <div className="flex flex-col items-center text-center">
                 <motion.h4
                     variants={headingVariant}
                     initial="hidden"
@@ -46,7 +46,7 @@ const OurServices = () => {
                 <p className="w-[50%] mt-[1rem]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam corporis soluta minus, dolores molestias Lorem, ipsum.
                 </p>
-            </div>
+            </div> */}
 
             {/* Row */}
             <div className="flex justify-between flex-wrap 
