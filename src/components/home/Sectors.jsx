@@ -8,28 +8,28 @@ const sectorsData = [
         id: 1,
         title: "Hospitality",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
-        icon: "",
+        icon: "/images/icons/hospitality.png",
         image: "/images/sectors/1.avif",
     },
     {
         id: 2,
         title: "Protective Solutions",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
-        icon: "",
+        icon: "/images/icons/protective.png",
         image: "/images/sectors/2.avif",
     },
     {
         id: 3,
         title: "Energy Solutions",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
-        icon: "",
+        icon: "/images/icons/energy.png",
         image: "/images/sectors/3.avif",
     },
     {
         id: 4,
         title: "Textiles",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
-        icon: "",
+        icon: "/images/icons/textiles.png",
         image: "/images/sectors/4.avif",
     },
 ]
@@ -51,17 +51,22 @@ const Sectors = () => {
                             <div className="
                                 w-full h-full absolute top-0 left-0 bg-primary/70 
                                 p-[1.5rem] sm:p-[1.7rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
-                                flex flex-col justify-center 
+                                flex items-center justify-center 
                                 opacity-0 group-hover:opacity-100 transition duration-500
                                 scale-110 group-hover:scale-100
                             ">
-                                <img src="/images/icons/sector.png" alt="Sector" loading="lazy" className="w-[20%]" />
-                                <span className="block text-white text-[1.5rem] sm:text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold mt-[1rem]">
+                                <img 
+                                    src={sector.icon} 
+                                    alt={sector.title} 
+                                    loading="lazy" 
+                                    className="w-[50%]" 
+                                />
+                                {/* <span className="block text-white text-[1.5rem] sm:text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold mt-[1rem]">
                                     {sector.title}
                                 </span>
                                 <p className="text-[0.9rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem] text-white/90 mt-[0.2rem]">
                                     {sector.desc}
-                                </p>
+                                </p> */}
                             </div>
                         </div>
                     )
@@ -74,7 +79,7 @@ const Sectors = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Our Sectors
+                    Our Sectors <br /> & Businesses 
                 </motion.h3>
                 <p className="mt-[1.5rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error ex voluptates sed harum repellat fugiat illum incidunt animi iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus.
