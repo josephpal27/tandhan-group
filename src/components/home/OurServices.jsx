@@ -6,25 +6,25 @@ import { headingVariant } from "@/utils/animations";
 const servicesData = [
     {
         id: 1,
-        title: "Lorem ipsum dolor sit amet consectetur",
+        title: "Hospitality",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/1.avif",
     },
     {
         id: 2,
-        title: "Lorem ipsum dolor sit amet consectetur",
+        title: "Protective Solutions",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/2.avif",
     },
     {
         id: 3,
-        title: "Lorem ipsum dolor sit amet consectetur",
+        title: "Energy Solutions",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/3.avif",
     },
     {
         id: 4,
-        title: "Lorem ipsum dolor sit amet consectetur",
+        title: "Textiles",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/4.avif",
     },
@@ -41,7 +41,7 @@ const OurServices = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Lorem Ipsum
+                    Our Businesses
                 </motion.h4>
                 <p className="w-[50%] mt-[1rem]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam corporis soluta minus, dolores molestias Lorem, ipsum.
