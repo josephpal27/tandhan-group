@@ -7,10 +7,19 @@ import Sectors from "@/components/home/Sectors";
 import Sustainable from "@/components/home/Sustainable";
 import WhoWeAre from "@/components/home/WhoWeAre";
 
+export const metadata = {
+  title: "Tandhan Group",
+  description: "",
+};
+
 export default function Home() {
   return (
     <>
-      <HeroBanner />
+      <HeroBanner 
+        image="/images/banners/home-banner.avif" 
+        title={<>Lorem Ipsum <br /> Dolor Sit Amet</>}
+        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
+      />
       <HomeFeatures />
       <WhoWeAre />
       <OurServices />

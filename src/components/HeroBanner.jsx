@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 
-export default function HeroBanner() {
+export default function HeroBanner({image, title, desc}) {
     const bgRef = useRef(null);
 
     useEffect(() => {
@@ -25,7 +25,7 @@ export default function HeroBanner() {
                 <div
                     ref={bgRef}
                     className="absolute top-[-10%] left-0 w-full h-[110%] bg-cover bg-center will-change-transform"
-                    style={{ backgroundImage: "url('/images/banners/home-banner.avif')" }}
+                    style={{ backgroundImage: `url('${image}')` }}
                 />
             </div>
 
@@ -41,10 +41,10 @@ export default function HeroBanner() {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Lorem Ipsum <br /> Dolor Sit Amet
+                    {title}
                 </motion.h1>
                 <p className="mt-[1.5rem] w-[40%]">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem.
+                    {desc}
                 </p>
             </div>
 
