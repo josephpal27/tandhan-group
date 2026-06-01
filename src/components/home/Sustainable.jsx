@@ -7,7 +7,7 @@ const Sustainable = () => {
     return (
         <section className="
             px-0
-            mt-[4rem] sm:mt-[3rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
+            mt-[4rem] sm:mt-[3rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]
             relative
         ">
             <img src="/images/sustainable-bg.avif" alt="Sustainable" loading="lazy" className="w-full" />

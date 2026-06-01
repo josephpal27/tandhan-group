@@ -32,17 +32,17 @@ const servicesData = [
 
 const OurServices = () => {
     return (
-        <section className="pt-[4.5rem] sm:pt-[3rem] lg:pt-[3.5rem] xl:pt-[4rem] 2xl:pt-[4.5rem]">
+        <section className="pt-[4.5rem] sm:pt-[3rem] lg:pt-[2.5rem] xl:pt-[3rem] 2xl:pt-[3.5rem]">
 
             <div className="flex flex-col items-center text-center">
-                <motion.h3
+                <motion.h4
                     variants={headingVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
                     Lorem Ipsum
-                </motion.h3>
+                </motion.h4>
                 <p className="w-[50%] mt-[1rem]">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam corporis soluta minus, dolores molestias Lorem, ipsum.
                 </p>
