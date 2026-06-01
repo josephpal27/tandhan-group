@@ -6,28 +6,28 @@ import { headingVariant } from "@/utils/animations";
 const sectorsData = [
     {
         id: 1,
-        title: "Sector 1",
+        title: "Hospitality",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
         icon: "",
         image: "/images/sectors/1.avif",
     },
     {
         id: 2,
-        title: "Sector 2",
+        title: "Protective Solutions",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
         icon: "",
         image: "/images/sectors/2.avif",
     },
     {
         id: 3,
-        title: "Sector 3",
+        title: "Energy Solutions",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
         icon: "",
         image: "/images/sectors/3.avif",
     },
     {
         id: 4,
-        title: "Sector 4",
+        title: "Textiles",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
         icon: "",
         image: "/images/sectors/4.avif",
