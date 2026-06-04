@@ -1,5 +1,6 @@
 import HeroBanner from "@/components/HeroBanner";
 import GlobalPresence from "@/components/home/GlobalPresence";
+import Highlights from "@/components/home/Highlights";
 import HomeFeatures from "@/components/home/HomeFeatures";
 import LatestNews from "@/components/home/LatestNews";
 import OurServices from "@/components/home/OurServices";
@@ -15,13 +16,14 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <HeroBanner 
-        image="/images/banners/home-banner.avif" 
+      <HeroBanner
+        image="/images/banners/home-banner.avif"
         title={<>Lorem Ipsum <br /> Dolor Sit Amet</>}
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
       />
       <HomeFeatures />
       <WhoWeAre />
+      <Highlights />
       <Sectors />
       <OurServices />
       <Sustainable />
