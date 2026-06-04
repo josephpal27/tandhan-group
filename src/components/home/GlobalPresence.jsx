@@ -56,9 +56,9 @@ const GlobalPresence = () => {
                         alt={activeLocation.country}
                         loading="lazy"
                         className={`
-                        w-full h-[105vh] object-cover transition-opacity duration-[400ms] 
-                        ${fading ? "opacity-0" : "opacity-100"}
-                    `}
+                            w-full h-[105vh] object-cover transition-opacity duration-[400ms] 
+                            ${fading ? "opacity-0" : "opacity-100"}
+                        `}
                     />
                 </div>
 
@@ -80,19 +80,19 @@ const GlobalPresence = () => {
                             <div className="absolute top-0 left-0 w-full h-full bg-primary/30 flex items-end">
                                 <div className="w-[90%] flex justify-between">
                                     <div className="
-                                    bg-white w-[80%] 
-                                    py-[2rem] sm:py-[1.5rem] lg:py-[1.6rem] xl:py-[1.8rem] 2xl:py-[2rem]
-                                    px-[1rem]
-                                ">
+                                        bg-white w-[80%] 
+                                        py-[2rem] sm:py-[1.5rem] lg:py-[1.6rem] xl:py-[1.8rem] 2xl:py-[2rem]
+                                        px-[1rem]
+                                    ">
                                         <span className="text-[1.4rem] sm:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem] font-semibold block">
                                             {activeLocation.country}
                                         </span>
                                     </div>
                                     <div onClick={handleNext} className="
-                                    bg-secondary hover:bg-primary text-white w-[20%] flex justify-center items-center 
-                                    text-[3rem] sm:text-[2rem] lg:text-[2.8rem] xl:text-[2.9rem] 2xl:text-[3rem]
-                                    cursor-pointer transition select-none
-                                ">
+                                        bg-secondary hover:bg-primary text-white w-[20%] flex justify-center items-center 
+                                        text-[3rem] sm:text-[2rem] lg:text-[2.8rem] xl:text-[2.9rem] 2xl:text-[3rem]
+                                        cursor-pointer transition select-none
+                                    ">
                                         ›
                                     </div>
                                 </div>
