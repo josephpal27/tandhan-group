@@ -56,7 +56,7 @@ const Highlights = () => {
                         w-[23.5%] bg-white flex flex-col items-center text-center shadow-[rgba(0,0,0,0.24)_0px_3px_20px]
                         p-[1.1rem] sm:p-[1.2rem] lg:p-[1.3rem] xl:p-[1.4rem] 2xl:p-[1.5rem]
                     ">
-                        <img src={highlight.icon} alt={highlight.title} className="w-[45%]" />
+                        <img src={highlight.icon} alt={highlight.title} loading="lazy" className="w-[45%]" />
                         <CountUp target={highlight.title} suffix={highlight.suffix} />
                         <p className="
                             font-semibold 
