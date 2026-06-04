@@ -2,7 +2,7 @@ export const globalPresenceData = [
     {
         id: 1,
         country: "India",
-        image: "/images/presence/india.png",
+        image: "/images/presence/india.avif",
         industryImage: "/images/presence//industry/india.avif",
         brands: [
             {
