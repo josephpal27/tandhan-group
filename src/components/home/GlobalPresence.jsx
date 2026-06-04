@@ -54,17 +54,19 @@ const GlobalPresence = () => {
                     <img
                         src={activeLocation.image}
                         alt={activeLocation.country}
-                        loading="lazy aspect-[5/4] object-cover"
+                        loading="lazy"
                         className={`
-                        w-full h-screen object-cover transition-opacity duration-[400ms] 
+                        w-full h-[105vh] object-cover transition-opacity duration-[400ms] 
                         ${fading ? "opacity-0" : "opacity-100"}
                     `}
                     />
                 </div>
 
                 {/* Content Box */}
-                <div className="absolute w-full h-full left-0 top-0 px-[1rem] sm:px-[5%] lg:px-[7%] 
-            py-[4.5rem] sm:py-[3rem] lg:py-[3.5rem] xl:py-[4rem] 2xl:py-[4.5rem]">
+                <div className="
+                    absolute w-full h-full left-0 top-0 px-[1rem] sm:px-[5%] lg:px-[7%] 
+                    py-[4.5rem] sm:py-[3rem] lg:py-[3.5rem] xl:py-[4rem] 2xl:py-[4.5rem]
+                ">
                     <div className="w-[30%] h-full bg-white shadow-[rgba(0,0,0,0.30)_0px_3px_8px]">
                         {/* Top */}
                         <div className="relative">
