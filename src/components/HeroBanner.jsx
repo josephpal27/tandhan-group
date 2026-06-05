@@ -18,13 +18,13 @@ export default function HeroBanner({image, title, desc}) {
     }, []);
 
     return (
-        <section className="relative h-[112dvh] overflow-hidden">
+        <section className="relative h-[100dvh] lg:h-[112dvh] overflow-hidden">
 
             {/* Parallax Background */}
             <div className="absolute inset-0 overflow-hidden">
                 <div
                     ref={bgRef}
-                    className="absolute top-[-10%] left-0 w-full h-[110%] bg-cover bg-center will-change-transform"
+                    className="absolute top-[0] lg:top-[-10%] left-0 w-full h-[100%] lg:h-[110%] bg-cover bg-center will-change-transform"
                     style={{ backgroundImage: `url('${image}')` }}
                 />
             </div>
@@ -34,7 +34,7 @@ export default function HeroBanner({image, title, desc}) {
 
             {/* Content */}
             <div className="relative z-20 text-white flex flex-col justify-end h-full 
-            pb-[8rem] sm:pb-[8rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]">
+            pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]">
                 <motion.h1
                     variants={headingVariant}
                     initial="hidden"
@@ -43,7 +43,7 @@ export default function HeroBanner({image, title, desc}) {
                 >
                     {title}
                 </motion.h1>
-                <p className="mt-[1.5rem] w-[40%]">
+                <p className="mt-[1rem] lg:mt-[1.5rem] w-full lg:w-[40%]">
                     {desc}
                 </p>
             </div>
