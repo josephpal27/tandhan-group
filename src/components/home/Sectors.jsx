@@ -36,21 +36,21 @@ const sectorsData = [
 
 const Sectors = () => {
     return (
-        <section className="pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center">
-            <div className="w-[48%] flex justify-between items-start flex-wrap">
+        <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center">
+            <div className="w-full lg:w-[48%] flex justify-between items-start flex-wrap">
                 {sectorsData.map((sector) => {
                     return(
                         <div key={sector.id} className={`
                             relative overflow-hidden group
                             w-[48.5%] 
-                            mb-[1.2rem] sm:mb-[1.1rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
-                            ${sector.id === 2 ? "mt-[3rem] sm:mt-[2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]" : ""}
-                            ${sector.id === 3 ? "mt-[-3rem] sm:mt-[-2rem] lg:mt-[-2.6rem] xl:mt-[-2.8rem] 2xl:mt-[-3rem]" : ""}
+                            mb-[0.7rem] sm:mb-[0.8rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
+                            ${sector.id === 2 ? "mt-[2.5rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]" : ""}
+                            ${sector.id === 3 ? "mt-[-2.5rem] sm:mt-[-4rem] lg:mt-[-2.6rem] xl:mt-[-2.8rem] 2xl:mt-[-3rem]" : ""}
                         `}>
                             <img src={sector.image} alt={sector.title} loading="lazy" className="w-full aspect-[5/4] object-cover" />
                             <div className="
                                 w-full h-full absolute top-0 left-0 bg-primary/70 
-                                p-[1.5rem] sm:p-[1.7rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
+                                p-[1.2rem] sm:p-[1.4rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
                                 flex items-center justify-center 
                                 opacity-0 group-hover:opacity-100 transition duration-500
                                 scale-110 group-hover:scale-100
@@ -61,18 +61,12 @@ const Sectors = () => {
                                     loading="lazy" 
                                     className="w-[50%]" 
                                 />
-                                {/* <span className="block text-white text-[1.5rem] sm:text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold mt-[1rem]">
-                                    {sector.title}
-                                </span>
-                                <p className="text-[0.9rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem] text-white/90 mt-[0.2rem]">
-                                    {sector.desc}
-                                </p> */}
                             </div>
                         </div>
                     )
                 })}
             </div>
-            <div className="w-[48%]">
+            <div className="w-full lg:w-[48%] mt-[1.5rem] lg:mt-0">
                 <motion.h3
                     variants={headingVariant}
                     initial="hidden"
@@ -81,7 +75,7 @@ const Sectors = () => {
                 >
                     Our Sectors <br /> & Businesses 
                 </motion.h3>
-                <p className="mt-[1.5rem]">
+                <p className="mt-[0.7rem] lg:mt-[1.5rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error ex voluptates sed harum repellat fugiat illum incidunt animi iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus.
                 </p>
             </div>
