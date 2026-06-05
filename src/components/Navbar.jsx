@@ -64,11 +64,11 @@ const Navbar = () => {
             <nav className={`
                 absolute top-0 left-0 w-full z-50
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[1.5rem] sm:py-[1.2rem] lg:py-[1.3rem] xl:py-[1.4rem] 2xl:py-[1.5rem]
+                py-[1.2rem] sm:py-[1.2rem] lg:py-[1.3rem] xl:py-[1.4rem] 2xl:py-[1.5rem]
                 border-b border-white/20
             `}>
 
-                <header className="flex justify-between items-center">
+                <header className="hidden lg:flex justify-between items-center">
                     <div>
                         <img
                             src="/images/logo/logo.png"
@@ -79,7 +79,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex gap-[2rem] sm:gap-[1.7rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem]">
                         {contactLinks.map((item, index) => {
-                            return(
+                            return (
                                 <div key={index} className="flex items-center gap-[0.5rem] text-white">
                                     <div className="text-[2rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]">
                                         {item.icon}
@@ -88,8 +88,8 @@ const Navbar = () => {
                                         <span className="block text-[0.8rem] sm:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem] leading-[1]">
                                             {item.label}
                                         </span>
-                                        <a href={item.url} className="block text-[0.9rem] sm:text-[0.8rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]">
-                                            {item.value}   
+                                        <a href={item.url} className="block text-[0.9rem] sm:text-[0.8rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem] hover:text-secondary">
+                                            {item.value}
                                         </a>
                                     </div>
                                 </div>
@@ -98,7 +98,17 @@ const Navbar = () => {
                     </div>
                 </header>
 
-                <div className="flex items-center justify-between mt-[2rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]">
+                <div className="flex items-center justify-between mt-[0.2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]">
+
+                    {/* Left Logo (Mobile View Only) */}
+                    <div className="block lg:hidden">
+                        <img
+                            src="/images/logo/logo.png"
+                            alt="Tandhan Group Logo"
+                            loading="lazy"
+                            className="w-[130px] brightness-0 invert"
+                        />
+                    </div>
 
                     {/* Left Links */}
                     <ul className="hidden md:flex items-center gap-[2rem] sm:gap-[2rem] lg:gap-[2.3rem] xl:gap-[2.7rem] 2xl:gap-[3rem]">
@@ -134,7 +144,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile */}
-                    <div className="md:hidden z-10">
+                    <div className="md:hidden z-10 text-white mt-[0.2rem]">
                         <button onClick={() => setOpen(true)}>
                             <FiMenu size={26} />
                         </button>
@@ -168,7 +178,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className="p-[1rem] mt-[0.5rem]" onClick={() => setOpen(false)}>
-                    <Link href="/contact/" className="bg-primary text-white px-5 py-2.5 rounded-full">
+                    <Link href="/contact/" className="bg-primary text-white px-4 py-1.5 rounded-md">
                         Get In Touch
                     </Link>
                 </div>
