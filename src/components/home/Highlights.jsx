@@ -32,9 +32,9 @@ const CountUp = ({ target, suffix, duration = 2000 }) => {
 
     return (
         <span ref={ref} className="
-            text-[2rem] sm:text-[1.6rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem]
+            text-[1.6rem] sm:text-[1.7rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem]
             font-semibold block
-            mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+            mt-[0.5rem] sm:mt-[0.7rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
         ">
             {target >= 1000 ? count.toLocaleString() : count}{suffix}
         </span>
@@ -45,22 +45,23 @@ const Highlights = () => {
     return (
         <section className="
             px-[1rem] sm:px-[10%] lg:px-[14%]
-            pb-[3rem] sm:pb-[2rem] lg:pb-[3rem] xl:pb-[3.5rem] 2xl:pb-[4rem]
-            mt-[5rem] sm:mt-[3rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]
+            pb-[1.5rem] sm:pb-[1.7rem] lg:pb-[3rem] xl:pb-[3.5rem] 2xl:pb-[4rem]
+            mt-[3.5rem] sm:mt-[3.8rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]
             flex justify-between flex-wrap
-            bg-[linear-gradient(to_bottom,white_40%,#1a2ba8_40%)]
+            bg-[linear-gradient(to_bottom,white_70%,#1a2ba8_60%)] lg:bg-[linear-gradient(to_bottom,white_40%,#1a2ba8_40%)]
         ">
             {highlightsData.map((highlight) => {
                 return (
                     <div key={highlight.id} className="
-                        w-[23.5%] bg-white flex flex-col items-center text-center shadow-[rgba(0,0,0,0.24)_0px_3px_20px]
-                        p-[1.1rem] sm:p-[1.2rem] lg:p-[1.3rem] xl:p-[1.4rem] 2xl:p-[1.5rem]
+                        w-[48%] lg:w-[23.5%] bg-white flex flex-col items-center text-center shadow-[rgba(0,0,0,0.24)_0px_3px_20px]
+                        p-[0.5rem] sm:p-[0.7rem] lg:p-[1.3rem] xl:p-[1.4rem] 2xl:p-[1.5rem] mb-[1rem] lg:mb-0
                     ">
-                        <img src={highlight.icon} alt={highlight.title} loading="lazy" className="w-[45%]" />
+                        <img src={highlight.icon} alt={highlight.title} loading="lazy" className="w-[35%] lg:w-[45%] mt-[0.5rem] lg:mt-0" />
                         <CountUp target={highlight.title} suffix={highlight.suffix} />
                         <p className="
                             font-semibold 
-                            text-[1.1rem] sm:text-[1rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
+                            text-[1rem] sm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
+                            mb-[0.5rem] lg:mb-0
                         ">
                             {highlight.desc}
                         </p>
