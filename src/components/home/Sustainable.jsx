@@ -31,32 +31,35 @@ const sustainableData = [
 ]
 
 const Sustainable = () => {
+
     const swiperRef = useRef(null);
 
     return (
         <section className="
             px-0
-            mt-[4rem] sm:mt-[3rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]
+            mt-[3rem] sm:mt-[3rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]
             relative
         ">
             {/* Prev Button */}
             <button
                 onClick={() => swiperRef.current?.slidePrev()}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-10
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden lg:block
                     bg-white/20 hover:bg-white/40 backdrop-blur-sm
-                    text-white rounded-full p-2 transition-all duration-300"
-            >
-                <MdChevronLeft size={33} />
+                    text-white rounded-full transition-all duration-300
+                    p-[0.5rem] lg:p-[0.3rem] xl:p-[0.4rem] 2xl:p-[0.5rem]
+                ">
+                <MdChevronLeft className="text-[2rem] sm:text-[2rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem]" />
             </button>
 
             {/* Next Button */}
             <button
                 onClick={() => swiperRef.current?.slideNext()}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-10
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden lg:block
                     bg-white/20 hover:bg-white/40 backdrop-blur-sm
-                    text-white rounded-full p-2 transition-all duration-300"
-            >
-                <MdChevronRight size={33} />
+                    text-white rounded-full transition-all duration-300
+                    p-[0.5rem] lg:p-[0.3rem] xl:p-[0.4rem] 2xl:p-[0.5rem]
+                ">
+                <MdChevronRight className="text-[2rem] sm:text-[2rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem]" />
             </button>
 
             <Swiper
@@ -77,7 +80,7 @@ const Sustainable = () => {
             >
                 {sustainableData.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
+                        <img src={item.image} alt={item.title} loading="lazy" className="w-full h-[45vh] lg:h-auto object-cover" />
                         <div className="
                             absolute w-full h-full left-0 top-0 px-[1rem] sm:px-[5%] lg:px-[7%]
                             py-[4rem]
@@ -91,7 +94,7 @@ const Sustainable = () => {
                             >
                                 {item.title}
                             </motion.h5>
-                            <p className="mt-[1.5rem] w-[50%]">
+                            <p className="mt-[0.7rem] lg:mt-[1.5rem] w-full lg:w-[50%]">
                                 {item.desc}
                             </p>
                         </div>
@@ -110,7 +113,7 @@ const Sustainable = () => {
                     background: white;
                     opacity: 1;
                     width: 28px;
-                    border-radius: 4px;
+                    border-radius: 7px;
                     transition: width 0.3s ease;
                 }
             `}</style>
