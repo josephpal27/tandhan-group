@@ -247,19 +247,19 @@ const Navbar = () => {
                 ">
                     {/* Our Brands */}
                     <div className="w-[50%] flex justify-between">
-                        <div className="w-[50%] bg-[#e2e3de] p-[2rem]">
+                        <div className="w-[50%] bg-[#e2e3de] p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]">
                             <span className="
-                                text-[1.7rem] font-bold
+                                text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem] font-bold
                             ">
                                 Our Brands
                             </span>
                             <ul className="
-                                mt-[2rem]
+                                mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                             ">
                                 {brandLogos.map((brand, index) => {
                                     return (
                                         <li key={index} className="
-                                            mb-[2rem] last:mb-0
+                                            mb-[1.6rem] xl:mb-[1.8rem] 2xl:mb-[2rem] last:mb-0
                                         ">
                                             <img
                                                 src={brand.image}
@@ -274,26 +274,26 @@ const Navbar = () => {
                         </div>
 
                         {/* Our Sectors */}
-                        <div className="w-[50%] bg-[#eeefea] p-[2rem]">
+                        <div className="w-[50%] bg-[#eeefea] p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]">
                             <span className="
-                                text-[1.7rem] font-bold
+                                text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem] font-bold
                             ">
                                 Our Sectors
                             </span>
                             <ul className="
-                                mt-[2rem]
+                                mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                             ">
                                 {sectorsData.map((sector, index) => {
                                     return (
                                         <li 
                                             key={index} 
                                             onMouseEnter={() => setActiveSector(index)}
-                                            className="flex justify-between items-center py-[1rem] px-[1rem] border-b-[1px] border-gray-300 cursor-pointer hover:bg-[#e8e8e4]"
+                                            className="flex justify-between items-center py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem] px-[0.6rem] xl:px-[0.8rem] 2xl:px-[1rem] border-b-[1px] border-gray-300 cursor-pointer hover:bg-[#e8e8e4]"
                                         >
-                                            <span className="text-[1.3rem] font-semibold">
+                                            <span className="text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold">
                                                 {sector.sectorName}
                                             </span>
-                                            <MdChevronRight className="text-[1.5rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]" />
+                                            <MdChevronRight className="text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]" />
                                         </li>
                                     )
                                 })}
@@ -302,7 +302,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Sector Preview */}
-                    <div className="w-[50%] p-[2rem]">
+                    <div className="w-[50%] p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]">
                         <div className="relative overflow-hidden">
                             <img 
                                 key={activeSector}
@@ -311,16 +311,16 @@ const Navbar = () => {
                                 loading="lazy" 
                                 className="w-full aspect-[7/5]" 
                             />
-                            <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-[1.5rem] text-white bg-gradient-to-b from-transparent to-primary">
-                                <span className="text-[1.7rem] font-bold">
+                            <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem] text-white bg-gradient-to-b from-transparent to-primary">
+                                <span className="text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem] font-bold">
                                     {sectorsData[activeSector].title}
                                 </span>
-                                <p className="text-[0.85rem] mt-[0.3rem]">
+                                <p className="text-[0.65rem] xl:text-[0.75rem] 2xl:text-[0.85rem] mt-[0.3rem]">
                                     {sectorsData[activeSector].desc}
                                 </p>
                                 <div className="flex justify-end">
-                                    <Link href="/" className="flex items-center text-[1rem] gap-[3px] mt-[0.7rem] hover:underline group w-max">
-                                    Visit Site  <HiArrowSmRight className="text-[1.4rem] rotate-[-45deg] group-hover:rotate-0 transition" />
+                                    <Link href="/" className="flex items-center text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] gap-[3px] mt-[0.7rem] hover:underline group w-max">
+                                    Visit Site  <HiArrowSmRight className="text-[1.1rem] xl:text-[1.3rem] 2xl:text-[1.4rem] rotate-[-45deg] group-hover:rotate-0 transition" />
                                 </Link>
                                 </div>
                             </div>
