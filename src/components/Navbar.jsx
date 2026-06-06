@@ -230,7 +230,7 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
                 style={{ paddingTop: navRef.current?.offsetHeight ?? 160 }}
                 className={`
-                    fixed top-0 left-0 w-full z-[49]
+                    absolute top-0 left-[7%] w-[86%] z-[49]
                     hidden lg:block
                     transition-all duration-300 ease-in-out
                     ${megaMenuOpen
@@ -240,7 +240,7 @@ const Navbar = () => {
                 `}
             >
                 <div className="
-                    bg-white shadow-2xl rounded-lg flex justify-between mx-[7%] overflow-hidden
+                    bg-white shadow-2xl rounded-lg flex justify-between overflow-hidden
                 ">
                     {/* Our Brands */}
                     <div className="w-[50%] flex justify-between">
@@ -256,13 +256,13 @@ const Navbar = () => {
                                 {brandLogos.map((brand, index) => {
                                     return (
                                         <li key={index} className="
-                                            mb-[1.5rem]
+                                            mb-[2rem] last:mb-0
                                         ">
                                             <img
                                                 src={brand.image}
                                                 alt={brand.name}
                                                 loading="lazy"
-                                                className="w-[65%]"
+                                                className="w-[55%]"
                                             />
                                         </li>
                                     )
