@@ -5,7 +5,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
 import { LuPhone } from "react-icons/lu";
 import { LuMessageSquareText } from "react-icons/lu";
-import { MdChevronRight } from "react-icons/md";
+import { MdChevronRight, MdArrowDropDown } from "react-icons/md";
 import { HiArrowSmRight } from "react-icons/hi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -88,7 +88,7 @@ const Navbar = () => {
     const sectorsData = [
         {
             sectorName: "Protective Solutions",
-            image: "/images/sectors/sector-demo.png",
+            image: "/images/sectors/2.avif",
             title: "Protective Solutions",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             url: "/",
@@ -180,11 +180,14 @@ const Navbar = () => {
                                     {link.hasMega ? (
                                         <button
                                             className={`
-                                                transition-colors duration-200 text-white
+                                                transition-colors duration-200 text-white flex items-center
                                                 ${isActive ? "font-bold underline underline-offset-8" : "hover:text-secondary"}
                                             `}
                                         >
-                                            {link.name}
+                                            {link.name} <MdArrowDropDown className={`
+                                                text-[1.6rem] lg:text-[1.4rem] xl:text-[1.5rem] 2xl:text-[1.6rem] transition duration-300
+                                                ${megaMenuOpen ? "rotate-180" : ""}
+                                            `}/>
                                         </button>
                                     ) : (
                                         <Link
