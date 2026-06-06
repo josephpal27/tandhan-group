@@ -6,6 +6,7 @@ import { SlLocationPin } from "react-icons/sl";
 import { LuPhone } from "react-icons/lu";
 import { LuMessageSquareText } from "react-icons/lu";
 import { MdChevronRight } from "react-icons/md";
+import { HiArrowSmRight } from "react-icons/hi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -40,7 +41,7 @@ const Navbar = () => {
 
     const handleMouseLeave = () => {
         hideTimeoutRef.current = setTimeout(() => {
-            setMegaMenuOpen(true);
+            setMegaMenuOpen(false);
         }, 150);
     };
 
@@ -88,28 +89,28 @@ const Navbar = () => {
         {
             sectorName: "Protective Solutions",
             image: "/images/sectors/sector-demo.png",
-            title: "Lorem Ipsum Dolar Sit",
+            title: "Protective Solutions",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             url: "/",
         },
         {
             sectorName: "Energy Solutions",
             image: "/images/sectors/3.avif",
-            title: "Lorem Ipsum Dolar Sit",
+            title: "Energy Solutions",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             url: "/",
         },
         {
             sectorName: "Textiles",
             image: "/images/sectors/4.avif",
-            title: "Lorem Ipsum Dolar Sit",
+            title: "Textiles",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             url: "/",
         },
         {
             sectorName: "Hospitality",
             image: "/images/sectors/1.avif",
-            title: "Lorem Ipsum Dolar Sit",
+            title: "Hospitality",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             url: "/",
         },
@@ -299,7 +300,7 @@ const Navbar = () => {
 
                     {/* Sector Preview */}
                     <div className="w-[50%] p-[2rem]">
-                        <div>
+                        <div className="relative overflow-hidden">
                             <img 
                                 key={activeSector}
                                 src={sectorsData[activeSector].image}
@@ -307,6 +308,19 @@ const Navbar = () => {
                                 loading="lazy" 
                                 className="w-full aspect-[7/5]" 
                             />
+                            <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-[1.5rem] text-white bg-gradient-to-b from-transparent to-primary">
+                                <span className="text-[1.7rem] font-bold">
+                                    {sectorsData[activeSector].title}
+                                </span>
+                                <p className="text-[0.85rem] mt-[0.3rem]">
+                                    {sectorsData[activeSector].desc}
+                                </p>
+                                <div className="flex justify-end">
+                                    <Link href="/" className="flex items-center text-[1rem] gap-[3px] mt-[0.7rem] hover:underline group w-max">
+                                    Visit Site  <HiArrowSmRight className="text-[1.4rem] rotate-[-45deg] group-hover:rotate-0 transition" />
+                                </Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
