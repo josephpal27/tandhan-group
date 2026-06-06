@@ -72,7 +72,7 @@ const OurServices = () => {
                                     return(
                                         <img src={logo} alt="Logo" key={index} className="
                                             w-[70%] lg:w-[60%] 
-                                            pt-[0.3rem] lg:pt-[0.5rem]
+                                            pt-[0.6rem] lg:py-[0.8rem]
                                         " />
                                     )
                                 })}
