@@ -1,15 +1,20 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
 import { LuPhone } from "react-icons/lu";
 import { LuMessageSquareText } from "react-icons/lu";
+import { MdChevronRight } from "react-icons/md";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+    const [activeSector, setActiveSector] = useState(0);
+    const navRef = useRef(null);
+    const hideTimeoutRef = useRef(null);
     const pathname = usePathname();
 
     // Body scroll lock
@@ -28,10 +33,21 @@ const Navbar = () => {
         };
     }, [open]);
 
+    const handleMouseEnter = () => {
+        if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
+        setMegaMenuOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        hideTimeoutRef.current = setTimeout(() => {
+            setMegaMenuOpen(true);
+        }, 150);
+    };
+
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "About us", href: "/about/" },
-        { name: "Our Businesses", href: "/businesses/" },
+        { name: "Our Businesses", href: "", hasMega: true },
         { name: "Sustainability & Impact", href: "/sustainability/" },
         { name: "Media", href: "/media/" },
         { name: "Careers", href: "/careers/" },
@@ -55,6 +71,46 @@ const Navbar = () => {
             icon: <LuMessageSquareText />,
             label: "Email Us",
             value: "example@gmail.com",
+            url: "/",
+        },
+    ]
+
+    const brandLogos = [
+        { name: "Tandhan Polyplast", image: "/images/logo/tandhan-polyplast.png" },
+        { name: "Tandhan Power", image: "/images/logo/tandhan-power.png" },
+        { name: "Tandhan Denim", image: "/images/logo/tandhan-denim.png" },
+        { name: "Tandhan Fashion", image: "/images/logo/tandhan-fashion.png" },
+        { name: "Tandhan Exim", image: "/images/logo/tandhan-exim.png" },
+        { name: "NX Hotel", image: "/images/logo/nx-hotel-2.png" },
+    ];
+
+    const sectorsData = [
+        {
+            sectorName: "Protective Solutions",
+            image: "/images/sectors/sector-demo.png",
+            title: "Lorem Ipsum Dolar Sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            url: "/",
+        },
+        {
+            sectorName: "Energy Solutions",
+            image: "/images/sectors/3.avif",
+            title: "Lorem Ipsum Dolar Sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            url: "/",
+        },
+        {
+            sectorName: "Textiles",
+            image: "/images/sectors/4.avif",
+            title: "Lorem Ipsum Dolar Sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            url: "/",
+        },
+        {
+            sectorName: "Hospitality",
+            image: "/images/sectors/1.avif",
+            title: "Lorem Ipsum Dolar Sit",
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             url: "/",
         },
     ]
@@ -115,16 +171,31 @@ const Navbar = () => {
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
                             return (
-                                <li key={link.name}>
-                                    <Link
-                                        href={link.href}
-                                        className={`
-                                            transition-colors duration-200 text-white
-                                            ${isActive ? "font-bold underline underline-offset-8" : "hover:text-secondary"}
-                                        `}
-                                    >
-                                        {link.name}
-                                    </Link>
+                                <li
+                                    key={link.name}
+                                    onMouseEnter={link.hasMega ? handleMouseEnter : undefined}
+                                    onMouseLeave={link.hasMega ? handleMouseLeave : undefined}
+                                >
+                                    {link.hasMega ? (
+                                        <button
+                                            className={`
+                                                transition-colors duration-200 text-white
+                                                ${isActive ? "font-bold underline underline-offset-8" : "hover:text-secondary"}
+                                            `}
+                                        >
+                                            {link.name}
+                                        </button>
+                                    ) : (
+                                        <Link
+                                            href={link.href}
+                                            className={`
+                                                transition-colors duration-200 text-white
+                                                ${isActive ? "font-bold underline underline-offset-8" : "hover:text-secondary"}
+                                            `}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    )}
                                 </li>
                             );
                         })}
@@ -143,7 +214,7 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    {/* Mobile */}
+                    {/* Mobile Hamburger */}
                     <div className="md:hidden z-10 text-white mt-[0.2rem]">
                         <button onClick={() => setOpen(true)}>
                             <FiMenu size={26} />
@@ -152,13 +223,102 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            {/* Overlay */}
+            {/* Mega Menu - Desktop Only */}
+            <div
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={{ paddingTop: navRef.current?.offsetHeight ?? 160 }}
+                className={`
+                    fixed top-0 left-0 w-full z-[49]
+                    hidden lg:block
+                    transition-all duration-300 ease-in-out
+                    ${megaMenuOpen
+                        ? "opacity-100 visible translate-y-0 pointer-events-auto"
+                        : "opacity-0 invisible -translate-y-2 pointer-events-none"
+                    }
+                `}
+            >
+                <div className="
+                    bg-white shadow-2xl rounded-lg flex justify-between mx-[7%] overflow-hidden
+                ">
+                    {/* Our Brands */}
+                    <div className="w-[50%] flex justify-between">
+                        <div className="w-[50%] bg-[#e2e3de] p-[2rem]">
+                            <span className="
+                                text-[1.7rem] font-bold
+                            ">
+                                Our Brands
+                            </span>
+                            <ul className="
+                                mt-[2rem]
+                            ">
+                                {brandLogos.map((brand, index) => {
+                                    return (
+                                        <li key={index} className="
+                                            mb-[1.5rem]
+                                        ">
+                                            <img
+                                                src={brand.image}
+                                                alt={brand.name}
+                                                loading="lazy"
+                                                className="w-[65%]"
+                                            />
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
+
+                        {/* Our Sectors */}
+                        <div className="w-[50%] bg-[#eeefea] p-[2rem]">
+                            <span className="
+                                text-[1.7rem] font-bold
+                            ">
+                                Our Sectors
+                            </span>
+                            <ul className="
+                                mt-[2rem]
+                            ">
+                                {sectorsData.map((sector, index) => {
+                                    return (
+                                        <li 
+                                            key={index} 
+                                            onMouseEnter={() => setActiveSector(index)}
+                                            className="flex justify-between items-center py-[1rem] px-[1rem] border-b-[1px] border-gray-300 cursor-pointer hover:bg-[#e8e8e4]"
+                                        >
+                                            <span className="text-[1.3rem] font-semibold">
+                                                {sector.sectorName}
+                                            </span>
+                                            <MdChevronRight className="text-[1.5rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]" />
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Sector Preview */}
+                    <div className="w-[50%] p-[2rem]">
+                        <div>
+                            <img 
+                                key={activeSector}
+                                src={sectorsData[activeSector].image}
+                                alt={sectorsData[activeSector].sectorName}
+                                loading="lazy" 
+                                className="w-full aspect-[7/5]" 
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Mobile Overlay */}
             <div
                 className={`fixed inset-0 bg-black/40 z-50 transition-opacity duration-300 ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}
                 onClick={() => setOpen(false)}
             />
 
-            {/* Drawer */}
+            {/* Mobile Drawer */}
             <div className={`fixed top-0 left-0 h-full w-[70%] max-w-sm bg-[#f7f7f7] z-50 shadow-lg transform transition-transform duration-500 ${open ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex justify-between items-center px-[1rem] py-[1.5rem] border-b">
                     <img src="/images/logo/logo.png" alt="Tandhan Group" className="w-[110px]" />
