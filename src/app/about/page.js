@@ -1,3 +1,4 @@
+import OurStory from "@/components/about/OurStory";
 import HeroBanner from "@/components/HeroBanner";
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function About() {
         title={<>Lorem Ipsum <br /> Dolor Sit Amet</>}
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
       />
+      <OurStory />
     </>
   );
 }
