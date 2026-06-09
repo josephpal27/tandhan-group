@@ -1,3 +1,4 @@
+import MissionVision from "@/components/about/MissionVision";
 import OurStory from "@/components/about/OurStory";
 import HeroBanner from "@/components/HeroBanner";
 
@@ -15,6 +16,7 @@ export default function About() {
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
       />
       <OurStory />
+      <MissionVision />
     </>
   );
 }
