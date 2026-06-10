@@ -26,11 +26,12 @@ const MissionVision = () => {
                             <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
                             <div className={`
                                 absolute w-full h-full top-0 left-0 flex justify-between
+                                p-[5rem]
                             `}>
-                                <div className="w-[48%]">
+                                <div className="w-[45%]">
 
                                 </div>
-                                <div className="w-[48%]">
+                                <div className="w-[52%]">
                                     <span>
                                         {item.title}
                                     </span>
