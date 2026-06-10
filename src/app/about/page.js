@@ -2,6 +2,7 @@ import Founder from "@/components/about/Founder";
 import MissionVision from "@/components/about/MissionVision";
 import OurJourney from "@/components/about/OurJourney";
 import OurStory from "@/components/about/OurStory";
+import OurTeam from "@/components/about/OurTeam";
 import HeroBanner from "@/components/HeroBanner";
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function About() {
       <OurJourney />
       <MissionVision />
       <Founder />
+      <OurTeam />
     </>
   );
 }
