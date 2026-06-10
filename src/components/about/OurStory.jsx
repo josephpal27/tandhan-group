@@ -1,11 +1,79 @@
+"use client";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+
+const slides = [
+    {
+        image: '/images/our-story/1.png',
+        title: 'Lorem Ipsum',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet, dolor amet recusandae.',
+    },
+    {
+        image: '/images/our-story/1.png',
+        title: 'Lorem Ipsum',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet, dolor amet recusandae.',
+    },
+];
 
 const OurStory = () => {
     return (
         <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center">
 
             {/* Slider */}
-            <div className="w-[48%]">
-                
+            <div className="w-[48%] flex justify-between">
+                <div className="w-[80%]">
+                    <Swiper
+                        modules={[Navigation]}
+                        navigation={{
+                            prevEl: '#story-prev',
+                            nextEl: '#story-next',
+                        }}
+                        loop={true}
+                        spaceBetween={15}
+                        className="w-full"
+                    >
+                        {slides.map((slide, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="relative w-full overflow-hidden">
+                                    <img
+                                        src={slide.image}
+                                        alt={slide.title}
+                                        className="w-full h-full object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary" />
+                                    <div className="absolute bottom-0 left-0 right-0 p-[1rem]">
+                                        <span className="text-white font-semibold text-[2rem]">
+                                            {slide.title}
+                                        </span>
+                                        <p className="text-white mt-[0.7rem]">
+                                            {slide.description}
+                                        </p>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+                <div className="w-[20%] flex items-end">
+                    <button className="
+                        w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
+                        h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
+                        flex items-center justify-center bg-secondary hover:bg-primary hover:text-white transition 
+                        text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                    " id="story-prev">
+                        ‹
+                    </button>
+                    <button className="
+                        w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
+                        h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
+                        flex items-center justify-center bg-secondary hover:bg-primary hover:text-white transition 
+                        text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                    " id="story-next">
+                        ›
+                    </button>
+                </div>
             </div>
 
             {/* Content */}
