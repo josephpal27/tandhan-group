@@ -8,12 +8,12 @@ const slides = [
     {
         image: '/images/our-story/1.png',
         title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet, dolor amet recusandae.',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
     },
     {
         image: '/images/our-story/1.png',
         title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet, dolor amet recusandae.',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
     },
 ];
 
@@ -43,8 +43,8 @@ const OurStory = () => {
                                         className="w-full h-full object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary" />
-                                    <div className="absolute bottom-0 left-0 right-0 p-[1rem]">
-                                        <span className="text-white font-semibold text-[2rem]">
+                                    <div className="absolute bottom-0 left-0 right-0 p-[2rem]">
+                                        <span className="text-white font-semibold text-[2.5rem]">
                                             {slide.title}
                                         </span>
                                         <p className="text-white mt-[0.7rem]">
