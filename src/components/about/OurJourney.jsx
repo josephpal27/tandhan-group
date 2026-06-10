@@ -64,7 +64,7 @@ const OurJourney = () => {
                 <h3>
                     Our <br /> Journey
                 </h3>
-                <p className="mt-[1.2rem]">
+                <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                     Lorem ipsum dolor sit amet, adipisic elit. Id ut vitae dolorum suscipit facilis, sint nisi nulla consequatur laudantium quaerat.
                 </p>
 

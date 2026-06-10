@@ -1,3 +1,4 @@
+import Founder from "@/components/about/Founder";
 import MissionVision from "@/components/about/MissionVision";
 import OurJourney from "@/components/about/OurJourney";
 import OurStory from "@/components/about/OurStory";
@@ -19,6 +20,7 @@ export default function About() {
       <OurStory />
       <OurJourney />
       <MissionVision />
+      <Founder />
     </>
   );
 }
