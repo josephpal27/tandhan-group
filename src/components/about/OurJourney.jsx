@@ -1,8 +1,10 @@
 "use client";
 
+import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const journeyData = [
     {
@@ -33,26 +35,51 @@ const journeyData = [
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
         image: "/images/journey/1.png",
     },
+    {
+        id: 5,
+        year: 2005,
+        title: "Lorem Ipsum",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
+        image: "/images/journey/1.png",
+    },
 ]
 
 const OurJourney = () => {
+
+    const swiperRef = useRef(null);
+    const [activeIndex, setActiveIndex] = useState(0);
+
     return (
         <section className="
-            pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[3rem] xl:pt-[3.5rem] 2xl:pt-[4rem] flex justify-between flex-wrap
+            pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap
             pr-0
         ">
 
             {/* Left Content */}
             <div className="
                 w-[27%]
+                pt-[4rem]
                 pr-[2rem]
             ">
                 <h3>
                     Our <br /> Journey
                 </h3>
-                <p>
+                <p className="mt-[1.2rem]">
                     Lorem ipsum dolor sit amet, adipisic elit. Id ut vitae dolorum suscipit facilis, sint nisi nulla consequatur laudantium quaerat.
                 </p>
+
+                {/* Controller */}
+                <div className="flex justify-between mt-[2.5rem]">
+                    <div>
+                        <FaArrowAltCircleRight
+                            className="text-[2.5rem] cursor-pointer text-primary"
+                            onClick={() => swiperRef.current?.slideNext()}
+                        />
+                    </div>
+                    <div>
+                        {/* Years Will be here */}
+                    </div>
+                </div>
             </div>
 
             {/* Right Slider */}
@@ -60,24 +87,33 @@ const OurJourney = () => {
                 w-[73%] overflow-hidden
             ">
                 <Swiper
-                    // onSwiper={(swiper) => (swiperRef.current = swiper)}
-                    // onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                     modules={[Navigation]}
                     slidesPerView={3}
                     spaceBetween={5}
-                    loop={false}
+                    loop={true}
+                    onSwiper={(swiper) => {
+                        swiperRef.current = swiper;
+                    }}
+                    onSlideChange={(swiper) => {
+                        setActiveIndex(swiper.realIndex);
+                    }}
                     className=""
                 >
                     {journeyData.map((item, index) => (
-                        <SwiperSlide key={item.id}>
+                        <SwiperSlide key={index}>
                             <div className={`
                                 h-full bg-[#e0e1ee] flex flex-col justify-end p-[1.3rem]
                                 transition-all duration-300
+                                ${activeIndex === index
+                                    ? "bg-primary text-white"
+                                    : ""
+                                }
                                 
                             `}>
                                 <span className={`
                                     text-[3.4rem] 
-                                    font-bold 
+                                    font-bold block
+                                    mt-[2rem]
                                 `}>
                                     {item.year}
                                 </span>
@@ -85,7 +121,7 @@ const OurJourney = () => {
                                 <span className={`
                                     block
                                     text-[1.5rem] font-semibold
-                                    mt-[1rem]
+                                    mt-[0.8rem]
                                 `}>
                                     {item.title}
                                 </span>
