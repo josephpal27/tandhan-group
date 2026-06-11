@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -18,20 +19,22 @@ const slides = [
 ];
 
 const OurStory = () => {
+
+    const swiperRef = useRef(null);
+
     return (
-        <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center">
+        <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center pl-0">
 
             {/* Slider */}
-            <div className="w-[48%] flex justify-between">
-                <div className="w-[80%]">
+            <div className="w-[55%] flex justify-between">
+                <div className="w-[80%] overflow-hidden">
                     <Swiper
                         modules={[Navigation]}
-                        navigation={{
-                            prevEl: '#story-prev',
-                            nextEl: '#story-next',
-                        }}
+                        onSwiper={(swiper) => (swiperRef.current = swiper)}
                         loop={true}
                         spaceBetween={15}
+                        slidesPerView={1.15}
+                        initialSlide={1}
                         className="w-full"
                     >
                         {slides.map((slide, index) => (
@@ -58,27 +61,31 @@ const OurStory = () => {
                     </Swiper>
                 </div>
                 <div className="w-[20%] flex items-end">
-                    <button className="
-                        w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
-                        h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
-                        flex items-center justify-center bg-secondary hover:bg-primary hover:text-white transition 
-                        text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
-                    " id="story-prev">
+                    <button 
+                        onClick={() => swiperRef.current?.slidePrev()} 
+                        className="
+                            w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
+                            h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
+                            flex items-center justify-center bg-secondary hover:bg-primary hover:text-white transition 
+                            text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                        ">
                         ‹
                     </button>
-                    <button className="
-                        w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
-                        h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
-                        flex items-center justify-center bg-secondary hover:bg-primary hover:text-white transition 
-                        text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
-                    " id="story-next">
+                    <button 
+                        onClick={() => swiperRef.current?.slideNext()} 
+                        className="
+                            w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
+                            h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
+                            flex items-center justify-center bg-secondary hover:bg-primary hover:text-white transition 
+                            text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                        ">
                         ›
                     </button>
                 </div>
             </div>
 
             {/* Content */}
-            <div className="w-[48%]">
+            <div className="w-[44%]">
                 <h2>
                     Our Story
                 </h2>
