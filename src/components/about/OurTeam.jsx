@@ -1,5 +1,13 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
+import { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
 const teamData = [
     {
         id: 1,
@@ -38,13 +46,6 @@ const teamData = [
     },
 ]
 
-
-import { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-
 const OurTeam = () => {
 
     const swiperRef = useRef(null);
@@ -64,9 +65,14 @@ const OurTeam = () => {
 
             {/* Left Content */}
             <div className="w-full lg:w-[35%]">
-                <h5>
+                <motion.h5
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Our <br /> Team
-                </h5>
+                </motion.h5>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1.2rem]
                     ${descVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"} transition-all duration-300
