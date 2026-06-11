@@ -47,7 +47,7 @@ const Navbar = () => {
 
     const navLinks = [
         { name: "Home", href: "/" },
-        { name: "About us", href: "/about/" },
+        { name: "About Us", href: "/about/" },
         { name: "Our Businesses", href: "", hasMega: true },
         { name: "Sustainability & Impact", href: "/sustainability/" },
         { name: "Media", href: "/media/" },
