@@ -11,7 +11,7 @@ const Founder = () => {
                     alt="Qoute Left"
                     loading="lazy"
                     className="
-                        w-[230px]
+                        w-[230px] sm:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px]
                         mt-[1rem]
                     "
                 />
@@ -29,7 +29,7 @@ const Founder = () => {
 
                 {/* Bottom */}
                 <div className="
-                    mt-[3.2rem]
+                    mt-[3.2rem] sm:mt-[1.8rem] lg:mt-[2.4rem] xl:mt-[2.6rem] 2xl:mt-[3.2rem]
                     flex justify-between
                 ">
                     <div className="w-[30%]">
@@ -38,7 +38,7 @@ const Founder = () => {
                             alt="Qoute Left"
                             loading="lazy"
                             className="
-                                w-[230px]
+                                w-[230px] sm:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px]
                                 rotate-[180deg]
                             "
                         />
@@ -48,10 +48,10 @@ const Founder = () => {
                             src="/images/founder-demo.png"
                             alt="Founder"
                             loading="lazy"
-                            className="w-full"
+                            className="w-full h-full"
                         />
-                        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-[1.5rem] text-white">
-                            <span className="text-[1.8rem] font-semibold">
+                        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-[2rem] text-white">
+                            <span className="text-[1.8rem] sm:text-[1.5rem] lg:text-[1.4rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-semibold">
                                 John Doe
                             </span>
                             <p>
