@@ -34,10 +34,11 @@ const OurStory = () => {
                     <Swiper
                         modules={[Navigation]}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
+                        dir="rtl"
                         loop={true}
                         spaceBetween={15}
                         slidesPerView={1.15}
-                        initialSlide={1}
+                        initialSlide={0}
                         className="w-full"
                     >
                         {slides.map((slide, index) => (
@@ -50,7 +51,7 @@ const OurStory = () => {
                                         className="w-full h-full object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary" />
-                                    <div className="absolute bottom-0 left-0 right-0 p-[2rem]">
+                                    <div className="absolute bottom-0 left-0 right-0 p-[2rem]" dir="ltr">
                                         <span className="text-white font-semibold text-[2.5rem] sm:text-[1.2rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem]">
                                             {slide.title}
                                         </span>
@@ -65,7 +66,7 @@ const OurStory = () => {
                 </div>
                 <div className="w-[20%] flex items-end">
                     <button
-                        onClick={() => swiperRef.current?.slidePrev()}
+                        onClick={() => swiperRef.current?.slideNext()}
                         className="
                             w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
                             h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
@@ -75,7 +76,7 @@ const OurStory = () => {
                         ‹
                     </button>
                     <button
-                        onClick={() => swiperRef.current?.slideNext()}
+                        onClick={() => swiperRef.current?.slidePrev()}
                         className="
                             w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
                             h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
