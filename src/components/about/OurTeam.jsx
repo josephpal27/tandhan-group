@@ -60,7 +60,7 @@ const OurTeam = () => {
     };
 
     return (
-        <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[5rem] xl:pt-[5.5rem] 2xl:pt-[6rem] flex justify-between flex-wrap mb-[6rem]">
+        <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[5.5rem] xl:pt-[6rem] 2xl:pt-[6.5rem] flex justify-between flex-wrap mb-[6rem]">
 
             {/* Left Content */}
             <div className="w-full lg:w-[35%]">
@@ -102,7 +102,7 @@ const OurTeam = () => {
                     {teamData.map((item, index) => {
 
                         const isActive = index === activeIndex;
-                        
+
                         return (
                             <SwiperSlide key={index}>
                                 <div className="relative w-full overflow-hidden pb-[1.3rem]">

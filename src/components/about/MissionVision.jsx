@@ -20,20 +20,20 @@ const MissionVision = () => {
                 return (
                     <div key={item.id} className={`
                         flex justify-between flex-wrap
-                        ${item.id % 2 === 0 ? "flex-row-reverse mt-[2rem]" : ""}
+                        ${item.id % 2 === 0 ? "flex-row-reverse mt-[2rem] sm:mt-[1.8rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]" : ""}
                     `}>
                         <div className="w-[60%] overflow-hidden relative">
                             <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
                             <div className={`
-                                absolute w-full h-full top-0 left-0 flex justify-between text-black
-                                p-[5rem]
-                                ${item.id % 2 === 0 ? "flex-row-reverse items-end text-white" : ""}
+                                absolute w-full h-full top-0 left-0 flex justify-between text-white
+                                p-[5rem] sm:p-[3rem] lg:p-[4rem] xl:p-[4.5rem] 2xl:p-[5rem]
+                                ${item.id % 2 === 0 ? "flex-row-reverse items-end" : ""}
                             `}>
                                 <div className="w-[45%]">
 
                                 </div>
                                 <div className="w-[52%]">
-                                    <span className="text-[2.5rem] font-semibold">
+                                    <span className="text-[2.5rem] sm:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem] font-semibold">
                                         {item.title}
                                     </span>
                                     <p className="mt-[1rem]">
@@ -52,7 +52,7 @@ const MissionVision = () => {
                                 loading="lazy" 
                                 className={`
                                     w-[85%] filter invert absolute
-                                    top-[-4rem]
+                                    top-[-4rem] sm:top-[-2rem] lg:top-[-3rem] xl:top-[-3.5rem] 2xl:top-[-4rem]
                                 `} 
                             />
                         </div>

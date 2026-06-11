@@ -48,7 +48,7 @@ const OurStory = () => {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary" />
                                     <div className="absolute bottom-0 left-0 right-0 p-[2rem]">
-                                        <span className="text-white font-semibold text-[2.5rem]">
+                                        <span className="text-white font-semibold text-[2.5rem] sm:text-[1.2rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem]">
                                             {slide.title}
                                         </span>
                                         <p className="text-white mt-[0.7rem]">
