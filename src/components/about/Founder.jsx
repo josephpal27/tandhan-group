@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const Founder = () => {
     return (
@@ -19,9 +23,14 @@ const Founder = () => {
             <div className="w-[79%]">
                 {/* Top */}
                 <div>
-                    <h4>
+                    <motion.h4
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
                         Founder's Message
-                    </h4>
+                    </motion.h4>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum quas delectus, nemo accusamus quam, ipsam id totam in adipisci inventore et a, velit reprehenderit? Deserunt, necessitatibus possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum quas delectus, nemo accusamus quam, ipsam id totam in adipisci inventore et a, velit reprehenderit? Deserunt, necessitatibus possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>

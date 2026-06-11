@@ -5,6 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
+
 const slides = [
     {
         image: '/images/our-story/1.png',
@@ -61,8 +64,8 @@ const OurStory = () => {
                     </Swiper>
                 </div>
                 <div className="w-[20%] flex items-end">
-                    <button 
-                        onClick={() => swiperRef.current?.slidePrev()} 
+                    <button
+                        onClick={() => swiperRef.current?.slidePrev()}
                         className="
                             w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
                             h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
@@ -71,8 +74,8 @@ const OurStory = () => {
                         ">
                         ‹
                     </button>
-                    <button 
-                        onClick={() => swiperRef.current?.slideNext()} 
+                    <button
+                        onClick={() => swiperRef.current?.slideNext()}
                         className="
                             w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
                             h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
@@ -86,9 +89,14 @@ const OurStory = () => {
 
             {/* Content */}
             <div className="w-[44%]">
-                <h2>
+                <motion.h2
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Our Story
-                </h2>
+                </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.5rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet, dolor amet recusandae aut numquam voluptatem ab tempore quae sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quaerat quae eveniet vitae modi aspernatur adipisci necessitatibus recusandae harum assumenda.
                 </p>

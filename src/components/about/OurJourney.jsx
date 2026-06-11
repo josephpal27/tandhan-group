@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const journeyData = [
     {
@@ -83,9 +85,14 @@ const OurJourney = () => {
                 pt-[4rem]
                 pr-[2rem]
             ">
-                <h3>
+                <motion.h3
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Our <br /> Journey
-                </h3>
+                </motion.h3>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                     Lorem ipsum dolor sit amet, adipisic elit. Id ut vitae dolorum suscipit facilis, sint nisi nulla consequatur laudantium quaerat.
                 </p>

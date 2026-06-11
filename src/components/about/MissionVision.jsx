@@ -1,3 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
+
 const missionVisionData = [
     {
         id: 1,
@@ -33,9 +38,15 @@ const MissionVision = () => {
 
                                 </div>
                                 <div className="w-[52%]">
-                                    <span className="text-[2.5rem] sm:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem] font-semibold">
+                                    <motion.span
+                                        variants={headingVariant}
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: true }}
+                                        className="text-[2.5rem] sm:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem] font-semibold"
+                                    >
                                         {item.title}
-                                    </span>
+                                    </motion.span>
                                     <p className="mt-[1rem]">
                                         {item.desc}
                                     </p>
@@ -46,14 +57,14 @@ const MissionVision = () => {
                             w-[35%] flex justify-start relative
                             ${item.id % 2 === 0 ? "justify-end" : ""}
                         `}>
-                            <img 
-                                src="/images/artboard.png" 
-                                alt="Artboard" 
-                                loading="lazy" 
+                            <img
+                                src="/images/artboard.png"
+                                alt="Artboard"
+                                loading="lazy"
                                 className={`
                                     w-[85%] filter invert absolute
                                     top-[-4rem] sm:top-[-2rem] lg:top-[-3rem] xl:top-[-3.5rem] 2xl:top-[-4rem]
-                                `} 
+                                `}
                             />
                         </div>
                     </div>
