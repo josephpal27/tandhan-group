@@ -69,15 +69,42 @@ const OurJourney = () => {
                 </p>
 
                 {/* Controller */}
-                <div className="flex justify-between mt-[2.5rem]">
+                <div className="flex gap-[2rem] mt-[2.5rem]">
                     <div>
                         <FaArrowAltCircleRight
-                            className="text-[2.5rem] cursor-pointer text-primary"
+                            className="text-[2.5rem] cursor-pointer text-primary hover:text-[#000073] transition duration-150 hover:scale-105 active:scale-90 mt-[0.3rem]"
                             onClick={() => swiperRef.current?.slideNext()}
                         />
                     </div>
                     <div>
-                        {/* Years Will be here */}
+                        {/* Years Slider */}
+                        <Swiper
+                            direction="vertical"
+                            slidesPerView={3}
+                            spaceBetween={5}
+                            onSwiper={(swiper) => {
+                                swiperRef.current = swiper;
+                            }}
+                        >
+                            {journeyData.map((item, index) => (
+                                <SwiperSlide key={item.id}>
+                                    <div
+                                        onClick={() => {
+                                            swiperRef.current?.slideToLoop(index);
+                                        }}
+                                        className={`
+                                            cursor-pointer text-center transition-all duration-300
+                                            ${activeIndex === index
+                                                ? "text-primary font-bold text-[2.2rem]"
+                                                : "text-gray-400 text-[1.6rem]"
+                                            }
+                                        `}
+                                    >
+                                        {item.year}
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                     </div>
                 </div>
             </div>
@@ -97,7 +124,6 @@ const OurJourney = () => {
                     onSlideChange={(swiper) => {
                         setActiveIndex(swiper.realIndex);
                     }}
-                    className=""
                 >
                     {journeyData.map((item, index) => (
                         <SwiperSlide key={index}>
