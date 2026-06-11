@@ -70,14 +70,24 @@ const OurJourney = () => {
 
                 {/* Controller */}
                 <div className="flex gap-[2rem] mt-[2.5rem]">
+
+                    {/* Arrow */}
                     <div>
                         <FaArrowAltCircleRight
-                            className="text-[2.5rem] cursor-pointer text-primary hover:text-[#000073] transition duration-150 hover:scale-105 active:scale-90 mt-[0.3rem]"
+                            className="
+                                text-[2.5rem] 
+                                cursor-pointer text-primary hover:text-[#000073] transition duration-300
+                                mt-[5px]
+                            "
+                            style={{
+                                transform: `translateY(${activeIndex * 44}px)`
+                            }}
                             onClick={() => swiperRef.current?.slideNext()}
                         />
                     </div>
+
+                    {/* Years Slider */}
                     <div>
-                        {/* Years Slider */}
                         <Swiper
                             direction="vertical"
                             slidesPerView={3}
@@ -106,6 +116,7 @@ const OurJourney = () => {
                             ))}
                         </Swiper>
                     </div>
+
                 </div>
             </div>
 
