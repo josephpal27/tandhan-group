@@ -32,7 +32,7 @@ const Founder = () => {
                     mt-[3.2rem]
                     flex justify-between
                 ">
-                    <div className="w-[35%]">
+                    <div className="w-[30%]">
                         <img
                             src="/images/qoute.png"
                             alt="Qoute Left"
@@ -43,12 +43,12 @@ const Founder = () => {
                             "
                         />
                     </div>
-                    <div className="w-[55%] relative">
+                    <div className="w-[70%] relative group">
                         <img
-                            src="/images/founder.png"
+                            src="/images/founder-demo.png"
                             alt="Founder"
                             loading="lazy"
-                            className="w-full border-b-[10px] border-primary"
+                            className="w-full"
                         />
                         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-[1.5rem] text-white">
                             <span className="text-[1.8rem] font-semibold">
@@ -57,6 +57,9 @@ const Founder = () => {
                             <p>
                                 - Founder
                             </p>
+                        </div>
+                        <div className="absolute w-[40%] h-[14px] left-[30%] bottom-[-7px] bg-primary group-hover:w-[70%] group-hover:left-[15%] transition-all duration-300">
+
                         </div>
                     </div>
                 </div>
