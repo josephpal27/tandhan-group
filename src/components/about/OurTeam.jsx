@@ -60,7 +60,7 @@ const OurTeam = () => {
     };
 
     return (
-        <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[5.5rem] xl:pt-[6rem] 2xl:pt-[6.5rem] flex justify-between flex-wrap mb-[6rem]">
+        <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[5.5rem] xl:pt-[6rem] 2xl:pt-[6.5rem] flex justify-between flex-wrap mb-[6rem] sm:mb-[3rem] lg:mb-[5rem] xl:mb-[5.5rem] 2xl:mb-[6rem]">
 
             {/* Left Content */}
             <div className="w-full lg:w-[35%]">
@@ -113,7 +113,7 @@ const OurTeam = () => {
                                         className="w-full"
                                     />
                                     <span className={`
-                                        block mt-[1.2rem] text-[1.5rem] font-semibold
+                                        block mt-[1.2rem] text-[1.5rem] sm:text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold
                                         ${isActive ? "text-black" : "text-transparent"}
                                     `}>
                                         {item.name}
