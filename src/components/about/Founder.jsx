@@ -10,15 +10,22 @@ const Founder = () => {
             flex justify-between flex-wrap
         ">
             <div className="w-[20%]">
-                <img
-                    src="/images/qoute.png"
-                    alt="Qoute Left"
-                    loading="lazy"
-                    className="
+                <motion.div
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                    <img
+                        src="/images/qoute.png"
+                        alt="Qoute Left"
+                        loading="lazy"
+                        className="
                         w-[230px] sm:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px]
                         mt-[1rem]
                     "
-                />
+                    />
+                </motion.div>
             </div>
             <div className="w-[79%]">
                 {/* Top */}
@@ -42,15 +49,22 @@ const Founder = () => {
                     flex justify-between
                 ">
                     <div className="w-[30%]">
-                        <img
-                            src="/images/qoute.png"
-                            alt="Qoute Left"
-                            loading="lazy"
-                            className="
-                                w-[230px] sm:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px]
-                                rotate-[180deg]
-                            "
-                        />
+                        <motion.div
+                            initial={{ opacity: 0, y: -60 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                        >
+                            <img
+                                src="/images/qoute.png"
+                                alt="Qoute Left"
+                                loading="lazy"
+                                className="
+                                    w-[230px] sm:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px]
+                                    rotate-[180deg]
+                                "
+                            />
+                        </motion.div>
                     </div>
                     <div className="w-[70%] relative group">
                         <img
