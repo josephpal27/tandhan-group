@@ -20,47 +20,47 @@ const missionVisionData = [
 
 const MissionVision = () => {
     return (
-        <section className="px-0 pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] overflow-hidden pb-[1rem]">
+        <section className="px-0 pt-[3rem] sm:pt-[3.2rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] overflow-hidden pb-[1rem]">
             {missionVisionData.map((item) => {
                 return (
                     <div key={item.id} className={`
                         flex justify-between flex-wrap
-                        ${item.id % 2 === 0 ? "flex-row-reverse mt-[2rem] sm:mt-[1.8rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]" : ""}
+                        ${item.id % 2 === 0 ? "flex-row-reverse mt-[1rem] sm:mt-[1.2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]" : ""}
                     `}>
                         <motion.div 
                             initial={{ opacity: 0, x: -80 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className="w-[60%] overflow-hidden relative"
+                            className="w-[90%] lg:w-[60%] overflow-hidden relative"
                         >
                             <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
                             <div className={`
-                                absolute w-full h-full top-0 left-0 flex justify-between text-white
-                                p-[5rem] sm:p-[3rem] lg:p-[4rem] xl:p-[4.5rem] 2xl:p-[5rem]
-                                ${item.id % 2 === 0 ? "flex-row-reverse items-end" : ""}
+                                absolute w-full h-full top-0 left-0 flex justify-between text-white items-end lg:items-start
+                                p-[1rem] sm:p-[1.2rem] lg:p-[4rem] xl:p-[4.5rem] 2xl:p-[5rem]
+                                ${item.id % 2 === 0 ? "flex-row-reverse !items-end" : ""}
                             `}>
-                                <div className="w-[45%]">
+                                <div className="w-0 lg:w-[45%]">
 
                                 </div>
-                                <div className="w-[52%]">
+                                <div className="w-full lg:w-[52%]">
                                     <motion.span
                                         variants={headingVariant}
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        className="text-[2.5rem] sm:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem] font-semibold block"
+                                        className="text-[1.5rem] sm:text-[1.7rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem] font-semibold block"
                                     >
                                         {item.title}
                                     </motion.span>
-                                    <p className="mt-[1rem]">
+                                    <p className="mt-[0.4rem] lg:mt-[1rem] text-[0.85rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
                                         {item.desc}
                                     </p>
                                 </div>
                             </div>
                         </motion.div>
                         <div className={`
-                            w-[35%] flex justify-start relative
+                            w-[35%] hidden lg:flex justify-start relative
                             ${item.id % 2 === 0 ? "justify-end" : ""}
                         `}>
                             <img
