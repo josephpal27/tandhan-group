@@ -43,7 +43,7 @@ const MissionVision = () => {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        className="text-[2.5rem] sm:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem] font-semibold"
+                                        className="text-[2.5rem] sm:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem] font-semibold block"
                                     >
                                         {item.title}
                                     </motion.span>
