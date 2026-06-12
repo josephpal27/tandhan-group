@@ -153,9 +153,13 @@ const OurJourney = () => {
             </div>
 
             {/* Right Slider */}
-            <div className="
-                w-[73%] overflow-hidden
-            ">
+            <motion.div 
+                initial={{ opacity: 0, y: -80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                className="w-[73%] overflow-hidden"
+            >
                 <Swiper
                     modules={[Navigation]}
                     slidesPerView={3}
@@ -211,7 +215,7 @@ const OurJourney = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </div>
+            </motion.div>
         </section>
     )
 }
