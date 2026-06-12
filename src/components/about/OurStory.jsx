@@ -26,19 +26,24 @@ const OurStory = () => {
     const swiperRef = useRef(null);
 
     return (
-        <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center pl-0">
+        <section className="pt-[2rem] sm:pt-[2.5rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center pl-0 flex-col-reverse lg:flex-row">
 
             {/* Slider */}
-            <div className="w-[55%] flex justify-between">
+            <div className="w-full lg:w-[55%] flex justify-between mt-[1.8rem] lg:mt-0">
                 <div className="w-[80%] overflow-hidden">
                     <Swiper
                         modules={[Navigation]}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
                         dir="rtl"
                         loop={true}
-                        spaceBetween={15}
+                        spaceBetween={12}
                         slidesPerView={1.15}
                         initialSlide={0}
+                        breakpoints={{
+                            991: {
+                                spaceBetween: 15,
+                            },
+                        }}
                         className="w-full"
                     >
                         {slides.map((slide, index) => (
@@ -51,11 +56,11 @@ const OurStory = () => {
                                         className="w-full h-full object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary" />
-                                    <div className="absolute bottom-0 left-0 right-0 p-[2rem]" dir="ltr">
-                                        <span className="text-white font-semibold text-[2.5rem] sm:text-[1.2rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem]">
+                                    <div className="absolute bottom-0 left-0 right-0 p-[0.8rem] lg:p-[2rem]" dir="ltr">
+                                        <span className="text-white font-semibold text-[1.5rem] sm:text-[1.7rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem]">
                                             {slide.title}
                                         </span>
-                                        <p className="text-white mt-[0.7rem]">
+                                        <p className="text-white mt-[0.3rem] lg:mt-[0.7rem] text-[0.8rem] sm:text-[0.9rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
                                             {slide.description}
                                         </p>
                                     </div>
@@ -89,7 +94,7 @@ const OurStory = () => {
             </div>
 
             {/* Content */}
-            <div className="w-[44%]">
+            <div className="w-full lg:w-[44%] pl-[1rem] lg:pl-0">
                 <motion.h2
                     variants={headingVariant}
                     initial="hidden"
