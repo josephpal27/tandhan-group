@@ -6,10 +6,10 @@ import { headingVariant } from "@/utils/animations";
 const Founder = () => {
     return (
         <section className="
-            pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
+            pt-[2rem] sm:pt-[2.2rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
             flex justify-between flex-wrap
         ">
-            <div className="w-[20%]">
+            <div className="w-[20%] hidden lg:block">
                 <motion.div
                     initial={{ opacity: 0, y: 60 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ const Founder = () => {
                     />
                 </motion.div>
             </div>
-            <div className="w-[79%]">
+            <div className="w-full lg:w-[79%]">
                 {/* Top */}
                 <div>
                     <motion.h4
@@ -45,10 +45,10 @@ const Founder = () => {
 
                 {/* Bottom */}
                 <div className="
-                    mt-[3.2rem] sm:mt-[1.8rem] lg:mt-[2.4rem] xl:mt-[2.6rem] 2xl:mt-[3.2rem]
+                    mt-[1.5rem] sm:mt-[1.7rem] lg:mt-[2.4rem] xl:mt-[2.6rem] 2xl:mt-[3.2rem]
                     flex justify-between
                 ">
-                    <div className="w-[30%]">
+                    <div className="w-[30%] hidden lg:block">
                         <motion.div
                             initial={{ opacity: 0, y: -60 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -66,22 +66,22 @@ const Founder = () => {
                             />
                         </motion.div>
                     </div>
-                    <div className="w-[70%] relative group">
+                    <div className="w-full lg:w-[70%] relative group">
                         <img
                             src="/images/founder-demo.png"
                             alt="Founder"
                             loading="lazy"
                             className="w-full h-full"
                         />
-                        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-[2rem] text-white">
-                            <span className="text-[1.8rem] sm:text-[1.5rem] lg:text-[1.4rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-semibold">
+                        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-[1rem] lg:p-[2rem] text-white">
+                            <span className="text-[1.4rem] sm:text-[1.5rem] lg:text-[1.4rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-semibold">
                                 John Doe
                             </span>
                             <p>
                                 - Founder
                             </p>
                         </div>
-                        <div className="absolute w-[40%] h-[14px] left-[30%] bottom-[-7px] bg-primary group-hover:w-[70%] group-hover:left-[15%] transition-all duration-300">
+                        <div className="absolute w-[55%] lg:w-[40%] h-[10px] lg:h-[14px] left-[22.5%] lg:left-[30%] bottom-[-5px] lg:bottom-[-7px] bg-primary group-hover:w-[70%] group-hover:left-[15%] transition-all duration-300">
 
                         </div>
                     </div>
