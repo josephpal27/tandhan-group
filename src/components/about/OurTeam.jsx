@@ -77,7 +77,7 @@ const OurTeam = () => {
                     mt-[0.7rem] lg:mt-[1.2rem]
                     ${descVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"} transition-all duration-300
                 `}>
-                    {teamData[activeIndex].desc}
+                    {teamData[activeIndex]?.desc}
                 </p>
             </div>
 
