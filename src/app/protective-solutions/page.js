@@ -1,4 +1,4 @@
-import HeroBanner from "@/components/HeroBanner";
+import SectorsBanner from "@/components/SectorsBanner";
 
 export const metadata = {
   title: "Protective Solutions - Tandhan Group",
@@ -8,8 +8,8 @@ export const metadata = {
 export default function ProtectiveSolutions() {
   return (
     <>
-      <HeroBanner
-        image="/images/banners/about-banner.avif"
+      <SectorsBanner
+        image="/images/banners/protective-solutions-banner.avif"
         title={<>Lorem Ipsum <br /> Dolor Sit Amet</>}
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
       />
