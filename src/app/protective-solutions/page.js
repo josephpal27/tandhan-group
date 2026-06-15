@@ -1,4 +1,5 @@
 import BrandOverview from "@/components/protective-solutions/BrandOverview";
+import PolyplastProducts from "@/components/protective-solutions/PolyplastProducts";
 import SectorsBanner from "@/components/SectorsBanner";
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function ProtectiveSolutions() {
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
       />
       <BrandOverview />
+      <PolyplastProducts />
     </>
   );
 }
