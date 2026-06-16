@@ -1,3 +1,4 @@
+import InTheNews from "@/components/InTheNews";
 import BrandOverview from "@/components/protective-solutions/BrandOverview";
 import PolyplastGallery from "@/components/protective-solutions/PolyplastGallery";
 import PolyplastProducts from "@/components/protective-solutions/PolyplastProducts";
@@ -22,6 +23,7 @@ export default function ProtectiveSolutions() {
       <PolyplastProducts />
       <PolyplastGallery />
       <SectorsFAQ />
+      <InTheNews />
       <SectorsCTA />
     </>
   );
