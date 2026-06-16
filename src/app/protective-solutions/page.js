@@ -2,6 +2,7 @@ import BrandOverview from "@/components/protective-solutions/BrandOverview";
 import PolyplastGallery from "@/components/protective-solutions/PolyplastGallery";
 import PolyplastProducts from "@/components/protective-solutions/PolyplastProducts";
 import SectorsBanner from "@/components/SectorsBanner";
+import SectorsFAQ from "@/components/SectorsFaq";
 
 export const metadata = {
   title: "Protective Solutions - Tandhan Group",
@@ -19,6 +20,7 @@ export default function ProtectiveSolutions() {
       <BrandOverview />
       <PolyplastProducts />
       <PolyplastGallery />
+      <SectorsFAQ />
     </>
   );
 }
