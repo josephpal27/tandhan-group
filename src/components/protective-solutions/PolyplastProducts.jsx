@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -52,7 +52,7 @@ const PolyplastProducts = () => {
             {/* Bottom */}
             <div className="px-[1rem] sm:px-[5%] lg:px-[7%] mt-[-9rem]">
                 <Swiper
-                    modules={[Autoplay, Navigation, Pagination]}
+                    modules={[Navigation, Pagination]}
                     slidesPerView={2}
                     spaceBetween={60}
                     loop={true}
