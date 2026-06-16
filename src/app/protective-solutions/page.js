@@ -1,4 +1,5 @@
 import BrandOverview from "@/components/protective-solutions/BrandOverview";
+import PolyplastGallery from "@/components/protective-solutions/PolyplastGallery";
 import PolyplastProducts from "@/components/protective-solutions/PolyplastProducts";
 import SectorsBanner from "@/components/SectorsBanner";
 
@@ -17,6 +18,7 @@ export default function ProtectiveSolutions() {
       />
       <BrandOverview />
       <PolyplastProducts />
+      <PolyplastGallery />
     </>
   );
 }
