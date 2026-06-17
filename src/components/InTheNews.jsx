@@ -92,7 +92,7 @@ const InTheNews = () => {
                                             alt={item.title}
                                             className={`
                                             w-full object-cover transition-all duration-500 ease-in-out 
-                                            ${isActive ? "aspect-[9/16]" : "aspect-[1/0.9]"}
+                                            ${isActive ? "aspect-[9/17]" : "aspect-[1/0.9]"}
                                         `}
                                         />
                                     </div>
