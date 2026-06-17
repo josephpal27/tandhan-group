@@ -4,7 +4,7 @@ const SectorsCTA = () => {
     return (
         <section className="
             relative px-0 mt-[2rem] sm:mt-[2.2rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem] 
-            mb-[2rem] sm:mb-[2.2rem] lg:mb-[4rem] xl:mb-[4.5rem] 2xl:mb-[5rem]
+            mb-[1rem]
         ">
             <img src="/images/sectors/protective-solutions/cta-bg.png" alt="CTA Image" loading="lazy" className="w-full" />
             <div className="
