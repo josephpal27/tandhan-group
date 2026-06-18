@@ -49,12 +49,12 @@ const LatestNews = () => {
                 {latestNewsData.map((item) => {
                     return (
                         <div key={item.id} className="
-                            w-full lg:w-[31%] bg-primary relative mb-[1rem] lg:mb-0
+                            w-full lg:w-[31%] bg-secondary relative mb-[1rem] lg:mb-0
                         ">
                             <div className="relative">
                                 <img src={item.image} alt={item.title} loading="lazy" className="w-full aspect-[4/3] object-cover" />
                                 <div className="
-                                    absolute top-0 left-0 bg-secondary p-[0.7rem] lg:p-[1rem]
+                                    absolute top-0 left-0 bg-primary p-[0.7rem] lg:p-[1rem] text-white
                                     text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold
                                 ">
                                     0{item.id}
@@ -75,11 +75,11 @@ const LatestNews = () => {
                                 <a href="/" className="
                                     absolute bottom-0 right-0 
                                     w-[50px] sm:w-[55px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px] 
-                                    aspect-square bg-secondary
+                                    aspect-square bg-primary
                                     flex justify-center items-center 
                                     text-[2.2rem] sm:text-[2.4rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem]
-                                    text-black
-                                    transition duration-300 hover:bg-[#ced430]
+                                    text-white
+                                    transition duration-300 hover:bg-white hover:text-black
                                 ">
                                     ›
                                 </a>

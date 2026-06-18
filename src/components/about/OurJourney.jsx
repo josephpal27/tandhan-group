@@ -109,7 +109,7 @@ const OurJourney = () => {
                         <FaArrowAltCircleRight
                             className="
                                 text-[2.5rem] sm:text-[1.8rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem]
-                                cursor-pointer text-primary hover:text-[#000073] transition duration-300
+                                cursor-pointer text-primary hover:text-secondary transition duration-300
                                 mt-[5px]
                             "
                             style={{

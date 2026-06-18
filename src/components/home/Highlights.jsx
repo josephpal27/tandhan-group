@@ -48,7 +48,7 @@ const Highlights = () => {
             pb-[1.5rem] sm:pb-[1.7rem] lg:pb-[3rem] xl:pb-[3.5rem] 2xl:pb-[4rem]
             mt-[3.5rem] sm:mt-[3.8rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]
             flex justify-between flex-wrap
-            bg-[linear-gradient(to_bottom,white_70%,#1a2ba8_60%)] lg:bg-[linear-gradient(to_bottom,white_40%,#1a2ba8_40%)]
+            bg-[linear-gradient(to_bottom,white_70%,black_60%)] lg:bg-[linear-gradient(to_bottom,white_40%,black_40%)]
         ">
             {highlightsData.map((highlight) => {
                 return (

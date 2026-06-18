@@ -22,7 +22,7 @@ const Founder = () => {
                         loading="lazy"
                         className="
                         w-[230px] sm:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px]
-                        mt-[1rem]
+                        mt-[1rem] brightness-0 invert-0
                     "
                     />
                 </motion.div>
@@ -61,7 +61,7 @@ const Founder = () => {
                                 loading="lazy"
                                 className="
                                     w-[230px] sm:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px]
-                                    rotate-[180deg]
+                                    rotate-[180deg] brightness-0 invert-0
                                 "
                             />
                         </motion.div>
@@ -81,7 +81,7 @@ const Founder = () => {
                                 - Founder
                             </p>
                         </div>
-                        <div className="absolute w-[55%] lg:w-[40%] h-[10px] lg:h-[14px] left-[22.5%] lg:left-[30%] bottom-[-5px] lg:bottom-[-7px] bg-primary group-hover:w-[70%] group-hover:left-[15%] transition-all duration-300">
+                        <div className="absolute w-[55%] lg:w-[40%] h-[10px] lg:h-[14px] left-[22.5%] lg:left-[30%] bottom-[-5px] lg:bottom-[-7px] bg-secondary group-hover:w-[70%] group-hover:left-[15%] transition-all duration-300">
 
                         </div>
                     </div>
