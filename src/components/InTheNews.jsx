@@ -57,7 +57,7 @@ const InTheNews = () => {
             <div className="w-[60%]">
                 <div className="
                     bg-secondary text-[2.5rem] font-semibold w-[70px] flex justify-center items-center aspect-square
-                    mb-[2.5rem]
+                    mb-[2.5rem] text-white
                 ">
                     0{activeData.id}
                 </div>
@@ -119,7 +119,7 @@ const InTheNews = () => {
                     mt-[4rem]
                     w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
                     h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
-                    flex items-center justify-center bg-secondary hover:bg-primary hover:text-white transition 
+                    flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
                     text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                     active:scale-[0.85]
                 " id="news-next" onClick={handleNext}>

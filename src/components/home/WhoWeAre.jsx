@@ -58,7 +58,7 @@ const WhoWeAre = () => {
                             className="
                                 w-[40px] sm:w-[45px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
                                 h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
-                                flex items-center justify-center bg-white hover:bg-secondary transition 
+                                flex items-center justify-center bg-white hover:bg-primary hover:text-white transition 
                                 text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                             "
                             aria-label="Previous"
@@ -70,7 +70,7 @@ const WhoWeAre = () => {
                             className="
                                 w-[40px] sm:w-[45px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
                                 h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
-                                flex items-center justify-center bg-white hover:bg-secondary transition 
+                                flex items-center justify-center bg-white hover:bg-primary hover:text-white transition 
                                 text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                             "
                             aria-label="Next"

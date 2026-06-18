@@ -43,14 +43,13 @@ section {
 }
 
 #team-pagination .swiper-pagination-bullet {
-    background: #1a2ba8;
+    background: #000;
     opacity: 0.5;
     width: 10px;
     height: 10px;
 }
 
 #team-pagination .swiper-pagination-bullet-active {
-    background: #1a2ba8;
     opacity: 1;
     width: 25px;
     border-radius: 7px;

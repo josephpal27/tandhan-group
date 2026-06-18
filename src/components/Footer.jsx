@@ -65,7 +65,7 @@ const Footer = () => {
                 <div className="w-full lg:w-[35%] relative">
                     <img src="/images/footer-bg.avif" alt="Footer Background" loading="lazy" className="w-full aspect-[1/1] object-cover" />
                     <div className="
-                        absolute bottom-0 right-[15%] lg:right-0 w-[85%] lg:w-[78%] h-[86%] lg:h-full bg-secondary/90 text-black
+                        absolute bottom-0 right-[15%] lg:right-0 w-[85%] lg:w-[78%] h-[86%] lg:h-full bg-secondary/70 text-white
                         p-[1rem] sm:p-[1.5rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]
                     ">
                         <img
@@ -102,7 +102,7 @@ const Footer = () => {
                                             <li key={index} className="mt-[0.5rem]">
                                                 <Link href={link.url} className="
                                                     flex items-center gap-[0.1rem]
-                                                    hover:text-secondary transition
+                                                    hover:text-[#e9e9e9] transition
                                                 ">
                                                     <BsDot /> {link.label}
                                                 </Link>
@@ -123,7 +123,7 @@ const Footer = () => {
                             {contactLinks.map((item, index) => (
                                 <li key={index} className="mt-[0.5rem]">
                                     <a href={item.url} target={item.target}
-                                        className="flex items-center gap-[0.5rem] hover:text-secondary transition"
+                                        className="flex items-center gap-[0.5rem] hover:text-[#e9e9e9] transition"
                                     >
                                         {item.icon} {item.label}
                                     </a>
@@ -136,7 +136,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="py-[1rem] sm:py-[1rem] lg:py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem] px-[1rem] bg-[#05115f] mt-[1.5rem] lg:mt-0">
+            <div className="py-[1rem] sm:py-[1rem] lg:py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem] px-[1rem] bg-secondary mt-[1.5rem] lg:mt-0">
                 <p className="text-center text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-white">
                     Copyright © 2026 | Tandhan Group | All Rights Reserved
                 </p>

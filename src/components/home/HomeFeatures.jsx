@@ -32,7 +32,7 @@ const HomeFeatures = () => {
         mt-[1.5rem] lg:mt-[-3rem] xl:mt-[-4rem] 2xl:mt-[-5rem] relative">
             {featuresData.map((feature) => {
                 return (
-                    <div key={feature.id} className="w-full lg:w-[25%] bg-primary p-[1.2rem] lg:p-[2rem] border-b-[10px] border-secondary mb-[1rem] lg:mb-0 group">
+                    <div key={feature.id} className="w-full lg:w-[25%] bg-secondary p-[1.2rem] lg:p-[2rem] border-b-[10px] border-primary mb-[1rem] lg:mb-0 group">
                         <img 
                             src={feature.icon} 
                             alt={feature.title} 

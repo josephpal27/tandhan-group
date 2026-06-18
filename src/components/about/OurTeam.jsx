@@ -155,11 +155,11 @@ const OurTeam = () => {
                     <div className="hidden lg:block">
                         <div id="team-pagination" className="flex items-center gap-[0.4rem]" />
                     </div>
-                    <div className="flex items-center gap-[1rem]">
+                    <div className="flex items-center">
                         <button className="
                             w-[35px] sm:w-[40px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]
                             h-[35px] sm:h-[40px] lg:h-[40px] xl:h-[45px] 2xl:h-[50px]
-                            flex items-center justify-center bg-secondary hover:bg-primary hover:text-white transition 
+                            flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                         " id="team-prev">
                             ‹
@@ -167,7 +167,7 @@ const OurTeam = () => {
                         <button className="
                             w-[35px] sm:w-[40px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]
                             h-[35px] sm:h-[40px] lg:h-[40px] xl:h-[45px] 2xl:h-[50px]
-                            flex items-center justify-center bg-secondary hover:bg-primary hover:text-white transition 
+                            flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                         " id="team-next">
                             ›
@@ -176,7 +176,7 @@ const OurTeam = () => {
                 </div>
 
                 {/* Blue Card */}
-                <div className="absolute top-0 left-0 w-[52%] lg:w-[34.7%] h-full border-primary border-[2px] shadow-[0px_4px_12px_rgba(26,43,168,0.5)] rounded-[5px] z-50"></div>
+                <div className="absolute top-0 left-0 w-[52%] lg:w-[34.7%] h-full border-primary border-[2px] shadow-[0px_4px_12px_rgba(0,0,0,0.5)] rounded-[5px] z-50"></div>
 
             </div>
 

@@ -12,7 +12,7 @@ const BrandOverview = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima adipisicing tenetur asperiores nihil repellat pariatur explicabo tenetur exercitationem molestiae ducimus fugiat.
                     </p>
                     <Link href="/" className="
-                        mt-[2.5rem] bg-secondary w-max text-black font-semibold transition hover:bg-white hover:text-primary
+                        mt-[2.5rem] bg-white w-max text-black font-semibold transition
                         py-[0.5rem] px-[1.5rem]
                     ">
                         Read More

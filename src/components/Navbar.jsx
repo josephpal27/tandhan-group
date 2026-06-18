@@ -145,7 +145,7 @@ const Navbar = () => {
                                         <span className="block text-[0.8rem] sm:text-[0.7rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem] leading-[1]">
                                             {item.label}
                                         </span>
-                                        <a href={item.url} className="block text-[0.9rem] sm:text-[0.8rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem] hover:text-secondary">
+                                        <a href={item.url} className="block text-[0.9rem] sm:text-[0.8rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]">
                                             {item.value}
                                         </a>
                                     </div>
@@ -181,7 +181,7 @@ const Navbar = () => {
                                         <button
                                             className={`
                                                 transition-colors duration-200 text-white flex items-center
-                                                ${isActive ? "font-bold underline underline-offset-8" : "hover:text-secondary"}
+                                                ${isActive ? "font-bold underline underline-offset-8" : ""}
                                             `}
                                         >
                                             {link.name} <MdArrowDropDown className={`
@@ -194,7 +194,7 @@ const Navbar = () => {
                                             href={link.href}
                                             className={`
                                                 transition-colors duration-200 text-white
-                                                ${isActive ? "font-bold underline underline-offset-8" : "hover:text-secondary"}
+                                                ${isActive ? "font-bold underline underline-offset-8" : ""}
                                             `}
                                         >
                                             {link.name}
