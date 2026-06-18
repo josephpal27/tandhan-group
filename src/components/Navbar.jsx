@@ -91,7 +91,7 @@ const Navbar = () => {
             image: "/images/sectors/2.avif",
             title: "Protective Solutions",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            url: "/",
+            url: "/protective-solutions",
         },
         {
             sectorName: "Energy Solutions",
@@ -319,7 +319,7 @@ const Navbar = () => {
                                     {sectorsData[activeSector].desc}
                                 </p>
                                 <div className="flex justify-end">
-                                    <Link href="/" className="flex items-center text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] gap-[3px] mt-[0.7rem] hover:underline group w-max">
+                                    <Link href={sectorsData[activeSector].url} className="flex items-center text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] gap-[3px] mt-[0.7rem] hover:underline group w-max">
                                     Visit Site  <HiArrowSmRight className="text-[1.1rem] xl:text-[1.3rem] 2xl:text-[1.4rem] rotate-[-45deg] group-hover:rotate-0 transition" />
                                 </Link>
                                 </div>
