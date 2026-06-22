@@ -18,7 +18,7 @@ const PolyplastGallery = () => {
     const [featuredIndex, setFeaturedIndex] = useState(1);
 
     return (
-        <section className="px-0 pt-[3rem] sm:pt-[1.5rem] lg:pt-[1rem] xl:pt-[1.5rem] 2xl:pt-[2rem] overflow-hidden">
+        <section className="px-0 pt-[3rem] sm:pt-[1.5rem] lg:pt-[0.2rem] xl:pt-[0.5rem] 2xl:pt-[1rem] overflow-hidden">
 
             {/* Top */}
             <div className="px-[1rem] sm:px-[5%] lg:px-[7%]">
@@ -31,7 +31,7 @@ const PolyplastGallery = () => {
             </div>
 
             {/* Bottom */}
-            <div className="mt-[6rem]">
+            <div className="mt-[6rem] sm:mt-[3rem] lg:mt-[4.7rem] xl:mt-[5.5rem] 2xl:mt-[6rem]">
                 <Swiper
                     modules={[Autoplay, Navigation]}
                     slidesPerView={4}
