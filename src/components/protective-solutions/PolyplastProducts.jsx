@@ -39,7 +39,7 @@ const PolyplastProducts = () => {
             {/* Top */}
             <div className="relative">
                 <img src="/images/product-bg.png" alt="Products Background" loading="lazy" className="w-full" />
-                <div className="px-[1rem] sm:px-[5%] lg:px-[7%] absolute top-0 left-0 w-full h-full text-white pt-[5rem]">
+                <div className="px-[1rem] sm:px-[5%] lg:px-[7%] absolute top-0 left-0 w-full h-full text-white pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]">
                     <h4>
                         Our Products
                     </h4>
@@ -50,7 +50,7 @@ const PolyplastProducts = () => {
             </div>
 
             {/* Bottom */}
-            <div className="px-[1rem] sm:px-[5%] lg:px-[7%] mt-[-9rem]">
+            <div className="px-[1rem] sm:px-[5%] lg:px-[7%] mt-[-9rem] sm:mt-[-4rem] lg:mt-[-7rem] xl:mt-[-8rem] 2xl:mt-[-9rem]">
                 <Swiper
                     modules={[Navigation, Pagination]}
                     slidesPerView={2}
@@ -84,9 +84,9 @@ const PolyplastProducts = () => {
                             <SwiperSlide key={index} className="relative">
                                 <img src={product.image} alt={product.title} loading="lazy" className="w-[70%]" />
                                 <div className="absolute top-0 left-0 w-full h-full flex justify-end items-center pl-[35%]">
-                                    <div className="bg-primary p-[2rem] text-white min-h-[55%]">
+                                    <div className="bg-secondary p-[2rem] sm:p-[1.5rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] text-white min-h-[55%]">
                                         <span className="
-                                            text-[1.8rem] font-semibold
+                                            text-[1.8rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem] font-semibold
                                         ">
                                             {product.title}
                                         </span>
@@ -101,7 +101,7 @@ const PolyplastProducts = () => {
                 </Swiper>
 
                 {/* Pagination & Navigation */}
-                <div className="flex justify-center items-center py-[4rem] relative">
+                <div className="flex justify-center items-center py-[4rem] sm:py-[2rem] lg:py-[3.6rem] xl:py-[3.8rem] 2xl:py-[4rem] relative">
                     <div className="hidden lg:block">
                         <div id="team-pagination" className="flex items-center gap-[0.4rem]" />
                     </div>
