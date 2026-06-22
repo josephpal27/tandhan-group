@@ -46,14 +46,16 @@ const SectorsFAQ = () => {
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.
                 </p>
 
-                <div className="mt-[3rem]">
+                <div className="mt-[3rem] sm:mt-[2.2rem] lg:mt-[2.3rem] xl:mt-[2.7rem] 2xl:mt-[3rem]">
                     {faqData.map((faq, index) => {
 
                         const isOpen = openFaq === index;
 
                         return (
                             <div key={index} className="
-                                border-b-[3px] border-[#9f9f9f] mb-[1.5rem] pb-[1.5rem] 
+                                border-b-[3px] border-[#9f9f9f] 
+                                mb-[1.5rem] sm:mb-[1rem] lg:mb-[1.3rem] xl:mb-[1.4rem] 2xl:mb-[1.5rem]
+                                pb-[1.5rem] sm:pb-[1rem] lg:pb-[1.3rem] xl:pb-[1.4rem] 2xl:pb-[1.5rem]
                             ">
                                 {/* Question */}
                                 <div className="
@@ -62,13 +64,13 @@ const SectorsFAQ = () => {
                                     onClick={() => handleToggle(index)}
                                 >
                                     <div className="w-[92%]">
-                                        <span className="text-[1.3rem] font-bold">
+                                        <span className="text-[1.3rem] sm:text-[1.2rem] lg:text-[1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-bold">
                                             {faq.question}
                                         </span>
                                     </div>
                                     <div className="w-[7%] flex justify-end">
                                         <FaPlus className={`
-                                            text-[0.8rem] transition ${isOpen ? "rotate-45 scale-[1.06]" : ""}
+                                            text-[0.8rem] sm:text-[0.5rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem] transition ${isOpen ? "rotate-45 scale-[1.06]" : ""}
                                         `} />
                                     </div>
                                 </div>  
@@ -76,9 +78,9 @@ const SectorsFAQ = () => {
                                 {/* Answer */}
                                 <div className={`
                                     overflow-hidden transition-all duration-300 ease px-[1rem]
-                                    ${isOpen ? "max-h-[300px] mt-[1rem]" : "max-h-0"}
+                                    ${isOpen ? "max-h-[300px] mt-[1rem] sm:mt-[0.9rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]" : "max-h-0"}
                                 `}>
-                                    <p className="text-[1rem]">
+                                    <p className="text-[1rem] sm:text-[1.1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
                                         {faq.answer}
                                     </p>
                                 </div>
