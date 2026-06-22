@@ -61,12 +61,14 @@ const InTheNews = () => {
                 ">
                     0{activeData.id}
                 </div>
-                <h6>
+                <h6 className="relative z-50">
                     In The <br /> News
                 </h6>
-                <p className="mt-[0.7rem] lg:mt-[1rem] w-[50%]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem.
-                </p>
+                <div className="relative z-50">
+                    <p className="mt-[0.7rem] lg:mt-[1rem] w-[50%]">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem.
+                    </p>
+                </div>
 
                 {/* Slider */}
                 <div className="mt-[-20rem] sm:mt-[-14rem] lg:mt-[-15.8rem] xl:mt-[-18rem] 2xl:mt-[-20rem]">
@@ -77,6 +79,7 @@ const InTheNews = () => {
                         loop={true}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
                         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+                        className="!z-0"
                     >
                         {newsData.map((item, index) => {
                             const isActive = index === activeIndex;
@@ -85,11 +88,11 @@ const InTheNews = () => {
                                     <div
                                         dir="ltr"
                                         className="overflow-hidden h-[85vh] flex items-end cursor-pointer"
-                                        onClick={() => swiperRef.current?.slideToLoop(index)}
                                     >
                                         <img
                                             src={item.img}
                                             alt={item.title}
+                                            onClick={() => swiperRef.current?.slideToLoop(index)}
                                             className={`
                                             w-full object-cover transition-all duration-500 ease-in-out 
                                             ${isActive ? "aspect-[9/17]" : "aspect-[1/0.9]"}
