@@ -28,21 +28,23 @@ const featuresData = [
 
 const HomeFeatures = () => {
     return (
-        <section className="flex justify-between flex-wrap 
-        mt-[1.5rem] lg:mt-[-3rem] xl:mt-[-4rem] 2xl:mt-[-5rem] relative">
+        <section className="
+            flex justify-between flex-wrap z-50
+            mt-[1.5rem] lg:mt-[-3rem] xl:mt-[-4rem] 2xl:mt-[-5rem] relative
+        ">
             {featuresData.map((feature) => {
                 return (
-                    <div key={feature.id} className="w-full lg:w-[25%] bg-secondary p-[1.2rem] lg:p-[2rem] border-b-[10px] border-primary mb-[1rem] lg:mb-0 group">
+                    <div key={feature.id} className="w-full lg:w-[25%] bg-white p-[1.2rem] lg:p-[2rem] border-b-[10px] border-primary mb-[1rem] lg:mb-0 group shadow-lg">
                         <img 
                             src={feature.icon} 
                             alt={feature.title} 
                             loading="lazy" 
-                            className="w-[20%]" 
+                            className="w-[20%] invert" 
                         />
-                        <span className="text-[1.4rem] sm:text-[1.6rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem] text-white font-semibold block mt-[0.8rem]">
+                        <span className="text-[1.4rem] sm:text-[1.6rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem] text-black font-semibold block mt-[0.8rem]">
                             {feature.title}
                         </span>
-                        <p className="text-gray-300 mt-[0.5rem] text-[1rem] sm:text-[1.1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
+                        <p className="text-gray-900 mt-[0.5rem] text-[1rem] sm:text-[1.1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
                             {feature.desc}
                         </p>
                     </div>
