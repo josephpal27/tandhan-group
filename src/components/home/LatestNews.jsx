@@ -49,7 +49,7 @@ const LatestNews = () => {
                 {latestNewsData.map((item) => {
                     return (
                         <div key={item.id} className="
-                            w-full lg:w-[31%] bg-secondary relative mb-[1rem] lg:mb-0
+                            w-full lg:w-[31%] bg-white relative mb-[1rem] lg:mb-0 shadow-[rgba(0,0,0,0.20)_0px_3px_8px]
                         ">
                             <div className="relative">
                                 <img src={item.image} alt={item.title} loading="lazy" className="w-full aspect-[4/3] object-cover" />
@@ -61,7 +61,7 @@ const LatestNews = () => {
                                 </div>
                             </div>
                             <div className="
-                                text-white
+                                text-black
                                 px-[1rem] sm:px-[1.1rem] lg:px-[1.2rem] xl:px-[1.4rem] 2xl:px-[1.5rem]
                                 pt-[1rem] sm:pt-[1.1rem] lg:pt-[1.2rem] xl:pt-[1.4rem] 2xl:pt-[1.5rem]
                                 pb-[4.2rem] sm:pb-[5rem] lg:pb-[5.6rem] xl:pb-[5.8rem] 2xl:pb-[6rem]
@@ -79,7 +79,7 @@ const LatestNews = () => {
                                     flex justify-center items-center 
                                     text-[2.2rem] sm:text-[2.4rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem]
                                     text-white
-                                    transition duration-300 hover:bg-white hover:text-black
+                                    transition duration-300 hover:bg-secondary 
                                 ">
                                     ›
                                 </a>
