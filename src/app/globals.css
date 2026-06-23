@@ -71,3 +71,16 @@ section {
 #gallery-swiper .swiper-slide.featured-slide {
   z-index: 999;
 }
+
+
+
+
+
+.sector-card {
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+.sector-card.flip {
+  transform: rotateY(180deg);
+}
