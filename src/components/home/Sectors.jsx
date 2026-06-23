@@ -2,69 +2,98 @@
 
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
+import { useState } from 'react';
 
-const sectorsData = [
-    {
-        id: 1,
-        title: "Hospitality",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
-        icon: "/images/icons/hospitality.avif",
-        image: "/images/sectors/1.avif",
-    },
-    {
-        id: 2,
-        title: "Protective Solutions",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
-        icon: "/images/icons/protective.avif",
-        image: "/images/sectors/2.avif",
-    },
-    {
-        id: 3,
-        title: "Energy Solutions",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
-        icon: "/images/icons/energy.avif",
-        image: "/images/sectors/3.avif",
-    },
-    {
-        id: 4,
-        title: "Textiles",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error voluptates.",
-        icon: "/images/icons/textiles.avif",
-        image: "/images/sectors/4.avif",
-    },
-]
+const sectorGroups = [
+    [
+        { id: 1, image: "/images/sectors/1.avif" },
+        { id: 2, image: "/images/sectors/2.avif" },
+        { id: 3, image: "/images/sectors/3.avif" },
+        { id: 4, image: "/images/sectors/4.avif" },
+    ],
+    [
+        { id: 5, image: "/images/sectors/4.avif" },
+        { id: 6, image: "/images/sectors/3.avif" },
+        { id: 7, image: "/images/sectors/2.avif" },
+        { id: 8, image: "/images/sectors/1.avif" },
+    ],
+];
 
 const Sectors = () => {
+
+    const [activeGroup, setActiveGroup] = useState(0);
+
+    const handleNext = () => {
+        setActiveGroup(prev =>
+            prev === sectorGroups.length - 1 ? 0 : prev + 1
+        );
+    };
+
+    const handlePrev = () => {
+        setActiveGroup(prev =>
+            prev === 0 ? sectorGroups.length - 1 : prev - 1
+        );
+    };
+
     return (
         <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center">
-            <div className="w-full lg:w-[48%] flex justify-between items-start flex-wrap">
-                {sectorsData.map((sector) => {
-                    return(
-                        <div key={sector.id} className={`
-                            relative overflow-hidden group
-                            w-[48.5%] 
+            <div className="w-full lg:w-[48%] flex justify-between items-start flex-wrap relative">
+                {sectorGroups[activeGroup].map((sector, index) => (
+                    <motion.div
+                        key={`${activeGroup}-${sector.id}`}
+                        initial={{
+                            rotateY: 90,
+                            opacity: 0,
+                            scale: 0.95,
+                        }}
+                        animate={{
+                            rotateY: 0,
+                            opacity: 1,
+                            scale: 1,
+                        }}
+                        transition={{
+                            duration: 0.6,
+                            delay: index * 0.10, // stagger
+                            ease: [0.22, 1, 0.36, 1],
+                        }}
+                        className={`
+                            w-[48.5%]
+                            relative overflow-hidden
                             mb-[0.7rem] sm:mb-[0.8rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
-                            ${sector.id === 2 ? "mt-[2.5rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]" : ""}
-                            ${sector.id === 3 ? "mt-[-2.5rem] sm:mt-[-4rem] lg:mt-[-2.6rem] xl:mt-[-2.8rem] 2xl:mt-[-3rem]" : ""}
-                        `}>
-                            <img src={sector.image} alt={sector.title} loading="lazy" className="w-full aspect-[5/4] object-cover" />
-                            <div className="
-                                w-full h-full absolute top-0 left-0 bg-primary/70 
-                                p-[1.2rem] sm:p-[1.4rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
-                                flex items-center justify-center 
-                                opacity-0 group-hover:opacity-100 transition duration-500
-                                scale-110 group-hover:scale-100
-                            ">
-                                <img 
-                                    src={sector.icon} 
-                                    alt={sector.title} 
-                                    loading="lazy" 
-                                    className="w-[50%]" 
-                                />
-                            </div>
-                        </div>
-                    )
-                })}
+                            ${index === 1 ? "mt-[2.5rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]" : ""}
+                            ${index === 2 ? "mt-[-2.5rem] sm:mt-[-4rem] lg:mt-[-2.6rem] xl:mt-[-2.8rem] 2xl:mt-[-3rem]" : ""}
+                        `}
+                    >
+                        <img
+                            src={sector.image}
+                            alt=""
+                            className="w-full aspect-[5/4] object-cover"
+                        />
+                    </motion.div>
+                ))}
+
+                {/* Navigation */}
+                <div className="
+                    flex relative lg:absolute lg:right-[-19%] 
+                    bottom-[0.5rem] lg:bottom-[1rem] xl:bottom-[1.1rem] 2xl:bottom-[1.2rem]
+                ">
+                    <button className="
+                        w-[45px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                        h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                        flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                        text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                    " id="sector-prev" onClick={handlePrev}>
+                        ‹
+                    </button>
+                    <button className="
+                        w-[45px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                        h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                        flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                        text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                    " id="sector-next" onClick={handleNext}>
+                        ›
+                    </button>
+                </div>
             </div>
             <div className="w-full lg:w-[48%] mt-[1.5rem] lg:mt-0">
                 <motion.h3
@@ -73,7 +102,7 @@ const Sectors = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Our Sectors <br /> & Businesses 
+                    Our Sectors <br /> & Businesses
                 </motion.h3>
                 <p className="mt-[0.7rem] lg:mt-[1.5rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error ex voluptates sed harum repellat fugiat illum incidunt animi iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus.
