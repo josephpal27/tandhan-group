@@ -209,7 +209,7 @@ const Navbar = () => {
                     <div className="hidden md:block z-10">
                         <Link
                             href="/contact/"
-                            className="bg-secondary hover:bg-white text-white hover:text-black 
+                            className="bg-white hover:bg-secondary text-black hover:text-white 
                             px-[1.2rem] sm:px-[1.1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
                             py-[0.2rem] 
                             rounded-md transition-colors duration-200"
