@@ -1,20 +1,26 @@
 "use client";
 
 import { useState } from "react";
-
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const SectorOverview = () => {
 
     const [active, setActive] = useState(false);
 
     return (
-        <section className="flex justify-between flex-wrap relative">
+        <section className="flex justify-between flex-wrap relative overflow-hidden">
 
             {/* Left */}
             <div className="w-[30%] pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] relative z-50">
-                <h2>
+                <motion.h2
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Sector Overview
-                </h2>
+                </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tenetur asperiores nihil repellat.
                 </p>
@@ -25,22 +31,33 @@ const SectorOverview = () => {
                     Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing.
                 </p>
                 <button className="
-                    mt-[1.5rem] bg-secondary hover:bg-primary text-white font-semibold transition
-                    py-[0.5rem] px-[1.5rem]
+                    mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
+                    border-primary border-[3px]
+                    py-[0.45rem] px-[1.4rem]
                 " onClick={() => setActive(!active)}>
                     {active ? "Read Less" : "Read More"}
                 </button>
             </div>
 
             {/* Center */}
-            <div className="w-[32%]">
-                <img 
-                    src="/images/sectors/protective-solutions/overview-bg.png" 
-                    alt="Sector Overview" 
-                    loading="lazy" 
-                    className="w-full" 
+            <motion.div
+                className="w-[32%]"
+                initial={{ opacity: 0, y: -450 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{
+                    duration: 1.5,
+                    delay: 0.5,
+                    ease: "easeOut",
+                }}
+            >
+                <img
+                    src="/images/sectors/protective-solutions/overview-bg.png"
+                    alt="Sector Overview"
+                    loading="lazy"
+                    className="w-full"
                 />
-            </div>
+            </motion.div>
 
             {/* Right */}
             <div className="w-[30%] flex items-end pb-[3rem] sm:pb-[1.5rem] lg:pb-[2rem] xl:pb-[2.5rem] 2xl:pb-[3rem] relative z-50">
@@ -51,11 +68,11 @@ const SectorOverview = () => {
 
             {/* Truck Image */}
             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-end pb-[5rem] sm:pb-[3rem] lg:pb-[3.7rem] xl:pb-[4.5rem] 2xl:pb-[5rem]">
-                <img 
-                    src="/images/sectors/protective-solutions/truck.png" 
-                    alt="Truck" 
-                    loading="lazy" 
-                    className="w-[50%]" 
+                <img
+                    src="/images/sectors/protective-solutions/truck.png"
+                    alt="Truck"
+                    loading="lazy"
+                    className="w-[50%]"
                 />
             </div>
 

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const faqData = [
     {
@@ -39,9 +41,14 @@ const SectorsFAQ = () => {
 
             {/* FAQ */}
             <div className="w-[47%]">
-                <h6>
+                <motion.h6
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     FAQs
-                </h6>
+                </motion.h6>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.
                 </p>
@@ -60,7 +67,7 @@ const SectorsFAQ = () => {
                                 {/* Question */}
                                 <div className="
                                     flex items-center justify-between cursor-pointer select-none px-[1rem]
-                                " 
+                                "
                                     onClick={() => handleToggle(index)}
                                 >
                                     <div className="w-[92%]">
@@ -73,7 +80,7 @@ const SectorsFAQ = () => {
                                             text-[0.8rem] sm:text-[0.5rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem] transition ${isOpen ? "rotate-45 scale-[1.06]" : ""}
                                         `} />
                                     </div>
-                                </div>  
+                                </div>
 
                                 {/* Answer */}
                                 <div className={`
