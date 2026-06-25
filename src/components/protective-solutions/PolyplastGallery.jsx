@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 import "swiper/css";
 
 const GalleryData = [
@@ -22,9 +24,14 @@ const PolyplastGallery = () => {
 
             {/* Top */}
             <div className="px-[1rem] sm:px-[5%] lg:px-[7%]">
-                <h5>
+                <motion.h5
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Gallery
-                </h5>
+                </motion.h5>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem] w-[50%]">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident magni.
                 </p>
@@ -80,20 +87,22 @@ const PolyplastGallery = () => {
                 </Swiper>
 
                 {/* Pagination & Navigation */}
-                <div className="flex justify-end items-center mt-[1rem] pr-[1rem] sm:pr-[5%] lg:pr-[7%]">
+                <div className="flex justify-end items-center mt-[1.2rem] pr-[1rem] sm:pr-[5%] lg:pr-[7%]">
                     <button className="
                             w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
                             h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
-                            flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                            flex items-center justify-center bg-primary hover:bg-white text-white hover:text-primary transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                            border-primary border-[3px]
                         " id="gallery-prev">
                         ‹
                     </button>
                     <button className="
                             w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
                             h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
-                            flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                            flex items-center justify-center bg-primary hover:bg-white text-white hover:text-primary transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                            border-primary border-[3px]
                         " id="gallery-next">
                         ›
                     </button>

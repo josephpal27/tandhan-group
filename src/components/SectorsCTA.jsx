@@ -1,4 +1,8 @@
-import Link from "next/link"
+"use client";
+
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const SectorsCTA = () => {
     return (
@@ -11,9 +15,14 @@ const SectorsCTA = () => {
                 absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white text-center
                 px-[1rem] sm:px-[5%] lg:px-[7%]
             ">
-                <h6>
+                <motion.h6
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Lorem ipsum dolor
-                </h6>
+                </motion.h6>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem] w-[70%]">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quas.
                 </p>
