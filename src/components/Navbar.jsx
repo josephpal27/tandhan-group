@@ -122,22 +122,24 @@ const Navbar = () => {
                 absolute top-0 left-0 w-full z-50
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 py-[1.2rem] sm:py-[1.2rem] lg:py-[1.3rem] xl:py-[1.4rem] 2xl:py-[1.5rem]
-                border-b border-white/20
+                border-b border-white/20 bg-white
             `}>
 
                 <header className="hidden lg:flex justify-between items-center">
                     <div>
-                        <img
-                            src="/images/logo/logo.png"
-                            alt="Tandhan Group"
-                            loading="lazy"
-                            className="w-[100px] sm:w-[200px] lg:w-[190px] xl:w-[215px] 2xl:w-[240px] brightness-0 invert"
-                        />
+                        <Link href="/">
+                            <img
+                                src="/images/logo/logo.png"
+                                alt="Tandhan Group"
+                                loading="lazy"
+                                className="w-[100px] sm:w-[200px] lg:w-[190px] xl:w-[215px] 2xl:w-[240px]"
+                            />
+                        </Link>
                     </div>
                     <div className="flex gap-[2rem] sm:gap-[1.7rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem]">
                         {contactLinks.map((item, index) => {
                             return (
-                                <div key={index} className="flex items-center gap-[0.5rem] text-white">
+                                <div key={index} className="flex items-center gap-[0.5rem] text-primary">
                                     <div className="text-[2rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]">
                                         {item.icon}
                                     </div>
@@ -180,7 +182,7 @@ const Navbar = () => {
                                     {link.hasMega ? (
                                         <button
                                             className={`
-                                                transition-colors duration-200 text-white flex items-center
+                                                transition-colors duration-200 text-primary flex items-center
                                                 ${isActive ? "font-bold underline underline-offset-8" : ""}
                                             `}
                                         >
@@ -193,7 +195,7 @@ const Navbar = () => {
                                         <Link
                                             href={link.href}
                                             className={`
-                                                transition-colors duration-200 text-white
+                                                transition-colors duration-200 text-primary
                                                 ${isActive ? "font-bold underline underline-offset-8" : ""}
                                             `}
                                         >
@@ -209,10 +211,10 @@ const Navbar = () => {
                     <div className="hidden md:block z-10">
                         <Link
                             href="/contact/"
-                            className="bg-white hover:bg-secondary text-black hover:text-white 
+                            className="bg-white hover:bg-primary text-primary hover:text-white 
                             px-[1.2rem] sm:px-[1.1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                            py-[0.2rem] 
-                            rounded-md transition-colors duration-200"
+                            py-[0.15rem] border-primary border-[3px] font-[500]
+                            transition-colors duration-200"
                         >
                             Get a Quote
                         </Link>
@@ -233,7 +235,7 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
                 style={{ paddingTop: navRef.current?.offsetHeight ?? 160 }}
                 className={`
-                    absolute top-0 left-[7%] w-[86%] z-[49]
+                    absolute top-[0.7rem] left-[7%] w-[86%] z-[49]
                     hidden lg:block
                     transition-all duration-300 ease-in-out
                     ${megaMenuOpen
@@ -243,7 +245,7 @@ const Navbar = () => {
                 `}
             >
                 <div className="
-                    bg-white shadow-2xl rounded-lg flex justify-between overflow-hidden
+                    bg-white shadow-2xl flex justify-between overflow-hidden
                 ">
                     {/* Our Brands */}
                     <div className="w-[50%] flex justify-between">
