@@ -89,7 +89,7 @@ const GlobalPresence = () => {
                                         </span>
                                     </div>
                                     <div onClick={handleNext} className="
-                                        bg-secondary hover:bg-primary text-white w-[20%] flex justify-center items-center 
+                                        bg-primary hover:bg-secondary text-white w-[20%] flex justify-center items-center 
                                         text-[2rem] sm:text-[2.2rem] lg:text-[2.8rem] xl:text-[2.9rem] 2xl:text-[3rem]
                                         cursor-pointer transition select-none
                                     ">
