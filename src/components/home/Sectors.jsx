@@ -80,16 +80,18 @@ const Sectors = () => {
                     <button className="
                         w-[45px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
                         h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
-                        flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                        flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                         text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                        border-primary border-[3px] border-r-[2px]
                     " id="sector-prev" onClick={handlePrev}>
                         ‹
                     </button>
                     <button className="
                         w-[45px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
                         h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
-                        flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                        flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                         text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                        border-primary border-[3px] border-l-[2px]
                     " id="sector-next" onClick={handleNext}>
                         ›
                     </button>

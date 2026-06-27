@@ -65,7 +65,7 @@ const Footer = () => {
                 <div className="w-full lg:w-[35%] relative">
                     <img src="/images/footer-bg.avif" alt="Footer Background" loading="lazy" className="w-full aspect-[1/1] object-cover" />
                     <div className="
-                        absolute bottom-0 right-[15%] lg:right-0 w-[85%] lg:w-[78%] h-[86%] lg:h-full bg-secondary/70 text-white
+                        absolute bottom-0 right-[15%] lg:right-0 w-[85%] lg:w-[78%] h-[86%] lg:h-full bg-white/80 text-primary
                         p-[1rem] sm:p-[1.5rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]
                     ">
                         <img
@@ -136,7 +136,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="py-[1rem] sm:py-[1rem] lg:py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem] px-[1rem] bg-secondary mt-[1.5rem] lg:mt-0">
+            <div className="py-[1rem] sm:py-[1rem] lg:py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem] px-[1rem] bg-primary mt-[1.5rem] lg:mt-0 border-t border-[#2e2e2e]">
                 <p className="text-center text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-white">
                     Copyright © 2026 | Tandhan Group | All Rights Reserved
                 </p>
