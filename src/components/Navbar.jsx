@@ -122,7 +122,7 @@ const Navbar = () => {
                 absolute top-0 left-0 w-full z-50
                 px-[1rem] sm:px-[5%] lg:px-[7%]
                 py-[1.2rem] sm:py-[1.2rem] lg:py-[1.3rem] xl:py-[1.4rem] 2xl:py-[1.5rem]
-                border-b border-white/20 bg-white
+                border-b border-white/20 
             `}>
 
                 <header className="hidden lg:flex justify-between items-center">
@@ -132,14 +132,14 @@ const Navbar = () => {
                                 src="/images/logo/logo.png"
                                 alt="Tandhan Group"
                                 loading="lazy"
-                                className="w-[100px] sm:w-[200px] lg:w-[190px] xl:w-[215px] 2xl:w-[240px]"
+                                className="w-[100px] sm:w-[200px] lg:w-[190px] xl:w-[215px] 2xl:w-[240px] brightness-0 invert"
                             />
                         </Link>
                     </div>
                     <div className="flex gap-[2rem] sm:gap-[1.7rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem]">
                         {contactLinks.map((item, index) => {
                             return (
-                                <div key={index} className="flex items-center gap-[0.5rem] text-primary">
+                                <div key={index} className="flex items-center gap-[0.5rem] text-white">
                                     <div className="text-[2rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]">
                                         {item.icon}
                                     </div>
@@ -182,7 +182,7 @@ const Navbar = () => {
                                     {link.hasMega ? (
                                         <button
                                             className={`
-                                                transition-colors duration-200 text-primary flex items-center
+                                                transition-colors duration-200 text-white flex items-center
                                                 ${isActive ? "font-bold underline underline-offset-8" : ""}
                                             `}
                                         >
@@ -195,7 +195,7 @@ const Navbar = () => {
                                         <Link
                                             href={link.href}
                                             className={`
-                                                transition-colors duration-200 text-primary
+                                                transition-colors duration-200 text-white
                                                 ${isActive ? "font-bold underline underline-offset-8" : ""}
                                             `}
                                         >
@@ -211,9 +211,9 @@ const Navbar = () => {
                     <div className="hidden md:block z-10">
                         <Link
                             href="/contact/"
-                            className="bg-white hover:bg-primary text-primary hover:text-white 
+                            className="bg-primary hover:bg-white text-white hover:text-primary 
                             px-[1.2rem] sm:px-[1.1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                            py-[0.15rem] border-primary border-[3px] font-[500]
+                            py-[0.15rem] border-white border-[2px] font-[500]
                             transition-colors duration-200"
                         >
                             Contact Us
