@@ -1,6 +1,6 @@
 import HeroBanner from "@/components/HeroBanner";
 import GlobalPresence from "@/components/home/GlobalPresence";
-import Highlights from "@/components/home/Highlights";
+// import Highlights from "@/components/home/Highlights";
 import HomeFeatures from "@/components/home/HomeFeatures";
 import LatestNews from "@/components/home/LatestNews";
 import OurServices from "@/components/home/OurServices";
@@ -23,7 +23,7 @@ export default function Home() {
       />
       <HomeFeatures />
       <WhoWeAre />
-      <Highlights />
+      {/* <Highlights /> */}
       <Sectors />
       <OurServices />
       <Sustainable />
