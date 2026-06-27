@@ -51,8 +51,8 @@ const Navbar = () => {
         { name: "Our Businesses", href: "", hasMega: true },
         { name: "Sustainability & Impact", href: "/sustainability/" },
         { name: "Media", href: "/media/" },
+        { name: "Global Presence", href: "/grobal-presence/" },
         { name: "Careers", href: "/careers/" },
-        { name: "Contact Us", href: "/contact/" },
     ];
 
     const contactLinks = [
@@ -216,7 +216,7 @@ const Navbar = () => {
                             py-[0.15rem] border-primary border-[3px] font-[500]
                             transition-colors duration-200"
                         >
-                            Get a Quote
+                            Contact Us
                         </Link>
                     </div>
 
@@ -358,7 +358,7 @@ const Navbar = () => {
 
                 <div className="p-[1rem] mt-[0.5rem]" onClick={() => setOpen(false)}>
                     <Link href="/contact/" className="bg-primary text-white px-4 py-1.5 rounded-md">
-                        Get In Touch
+                        Contact Us
                     </Link>
                 </div>
             </div>
