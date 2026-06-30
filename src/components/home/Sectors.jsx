@@ -97,7 +97,7 @@ const Sectors = () => {
                     </button>
                 </div>
             </div>
-            <div className="w-full lg:w-[48%] mt-[1.5rem] lg:mt-0">
+            <div className="w-full lg:w-[48%] mt-[1.8rem] lg:mt-0">
                 <motion.h3
                     variants={headingVariant}
                     initial="hidden"
