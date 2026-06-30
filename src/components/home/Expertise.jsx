@@ -108,7 +108,7 @@ const Expertise = () => {
         <section className="
             px-0
             pt-[2rem] sm:pt-[3.5rem] lg:pt-[5rem] xl:pt-[5.5rem] 2xl:pt-[6rem]
-            flex justify-between flex-wrap
+            flex justify-between flex-wrap overflow-hidden
         ">
             {/* Left */}
             <div className="w-[35%]">
