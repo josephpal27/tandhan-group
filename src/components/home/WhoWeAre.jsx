@@ -51,7 +51,7 @@ const WhoWeAre = () => {
                 </Swiper>
 
                 {/* Arrows */}
-                <div className='bg-primary/70 w-full absolute bottom-0 z-10'>
+                <div className='bg-primary/60 w-full absolute bottom-0 z-10'>
                     <div className="flex justify-end z-20">
                         <button
                             onClick={() => swiperRef.current?.slidePrev()}
