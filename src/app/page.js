@@ -8,6 +8,7 @@ import OurServices from "@/components/home/OurServices";
 import Sectors from "@/components/home/Sectors";
 import Sustainable from "@/components/home/Sustainable";
 import Values from "@/components/home/Values";
+import ValuesRow from "@/components/home/ValuesRow";
 import WhoWeAre from "@/components/home/WhoWeAre";
 
 export const metadata = {
@@ -26,6 +27,7 @@ export default function Home() {
       <HomeFeatures />
       <WhoWeAre />
       <Values />
+      <ValuesRow />
       {/* <Highlights /> */}
       {/* <Expertise /> */}
       <Sectors />

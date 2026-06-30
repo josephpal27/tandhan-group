@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const Values = () => {
     return (
@@ -12,9 +16,14 @@ const Values = () => {
                 <div className="w-full h-full absolute top-0 left-0 bg-primary/50"></div>
                 {/* Content Box */}
                 <div className="bg-white h-full px-[3.5rem] py-[3rem] relative z-10">
-                    <h3>
+                    <motion.h3
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
                         Lorem Ipsum
-                    </h3>
+                    </motion.h3>
                     <p className="mt-[0.7rem] lg:mt-[1.8rem]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, et neque. Deserunt quod modi ipsam optio natus itaque quisquam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, soluta aut ut similique, culpa nisi aliquam, perferendis explicabo dolore possimus incidunt corporis! Earum voluptatibus sequi consequatur.
                     </p>
