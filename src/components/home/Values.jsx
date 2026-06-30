@@ -6,19 +6,19 @@ import { headingVariant } from "@/utils/animations";
 const Values = () => {
     return (
         <section className="
-            pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
+            pt-[3rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
             px-0 flex justify-between flex-wrap
         ">
 
             {/* Left */}
-            <div className="w-[50%] bg-[url('/images/services/3.avif')] bg-center bg-cover bg-no-repeat pl-[12%] relative">
+            <div className="w-full lg:w-[50%] bg-[url('/images/services/3.avif')] bg-center bg-cover bg-no-repeat pl-[1rem] lg:pl-[12%] relative">
                 {/* Layer */}
                 <div className="w-full h-full absolute top-0 left-0 bg-primary/50"></div>
                 {/* Content Box */}
                 <div className="
                     bg-primary/60 text-white h-full relative z-10
-                    px-[3.5rem] sm:px-[3rem] lg:px-[2.5rem] xl:px-[3rem] 2xl:px-[3.5rem] 
-                    py-[3rem] sm:py-[3rem] lg:py-[2rem] xl:py-[2.5rem] 2xl:py-[3rem] 
+                    px-[1.5rem] sm:px-[3rem] lg:px-[2.5rem] xl:px-[3rem] 2xl:px-[3.5rem] 
+                    py-[2rem] sm:py-[3rem] lg:py-[2rem] xl:py-[2.5rem] 2xl:py-[3rem] 
                 ">
                     <motion.h3
                         variants={headingVariant}
@@ -38,7 +38,7 @@ const Values = () => {
             </div>
 
             {/* Right */}
-            <div className="w-[50%] pr-[4%] bg-primary">
+            <div className="w-full lg:w-[50%] pr-[1rem] lg:pr-[4%] bg-primary">
                 <img src="/images/footer-bg.avif" alt="Values Image" loading="lazy" className="w-full" />
             </div>
 
