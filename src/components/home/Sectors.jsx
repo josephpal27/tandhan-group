@@ -2,19 +2,19 @@
 
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 const sectorGroups = [
     [
-        { id: 1, image: "/images/sectors/1.avif" },
-        { id: 2, image: "/images/sectors/2.avif" },
-        { id: 3, image: "/images/sectors/3.avif" },
-        { id: 4, image: "/images/sectors/4.avif" },
+        { id: 1, image: "/images/sectors/2.avif" },
+        { id: 2, image: "/images/sectors/3.avif" },
+        { id: 3, image: "/images/sectors/4.avif" },
+        { id: 4, image: "/images/sectors/1.avif" },
     ],
     [
-        { id: 5, image: "/images/sectors/4.avif" },
+        { id: 5, image: "/images/sectors/2.avif" },
         { id: 6, image: "/images/sectors/3.avif" },
-        { id: 7, image: "/images/sectors/2.avif" },
+        { id: 7, image: "/images/sectors/4.avif" },
         { id: 8, image: "/images/sectors/1.avif" },
     ],
 ];
@@ -23,17 +23,25 @@ const Sectors = () => {
 
     const [activeGroup, setActiveGroup] = useState(0);
 
-    const handleNext = () => {
+    const handleNext = useCallback(() => {
         setActiveGroup(prev =>
             prev === sectorGroups.length - 1 ? 0 : prev + 1
         );
-    };
+    }, []);
 
-    const handlePrev = () => {
-        setActiveGroup(prev =>
-            prev === 0 ? sectorGroups.length - 1 : prev - 1
-        );
-    };
+    // const handlePrev = () => {
+    //     setActiveGroup(prev =>
+    //         prev === 0 ? sectorGroups.length - 1 : prev - 1
+    //     );
+    // };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNext();
+        }, 3500); // auto-advance every 3.5s
+
+        return () => clearInterval(interval);
+    }, [handleNext]);
 
     return (
         <section className="pt-[3.5rem] sm:pt-[3.7rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center">
@@ -73,7 +81,7 @@ const Sectors = () => {
                 ))}
 
                 {/* Navigation */}
-                <div className="
+                {/* <div className="
                     flex relative lg:absolute lg:right-[-19%] 
                     bottom-[0.5rem] lg:bottom-[1rem] xl:bottom-[1.1rem] 2xl:bottom-[1.2rem]
                 ">
@@ -95,7 +103,7 @@ const Sectors = () => {
                     " id="sector-next" onClick={handleNext}>
                         ›
                     </button>
-                </div>
+                </div> */}
             </div>
             <div className="w-full lg:w-[48%] mt-[1.8rem] lg:mt-0">
                 <motion.h3
