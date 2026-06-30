@@ -1,5 +1,5 @@
 import HeroBanner from "@/components/HeroBanner";
-import Expertise from "@/components/home/Expertise";
+// import Expertise from "@/components/home/Expertise";
 import GlobalPresence from "@/components/home/GlobalPresence";
 // import Highlights from "@/components/home/Highlights";
 import HomeFeatures from "@/components/home/HomeFeatures";
@@ -25,7 +25,7 @@ export default function Home() {
       <HomeFeatures />
       <WhoWeAre />
       {/* <Highlights /> */}
-      <Expertise />
+      {/* <Expertise /> */}
       <Sectors />
       <OurServices />
       <Sustainable />
