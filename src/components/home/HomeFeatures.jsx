@@ -10,19 +10,19 @@ const featuresData = [
         id: 2,
         title: "Lorem Ipsum",
         desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
-        icon: "/images/icons/industry.png",
+        icon: "/images/icons/market.png",
     },
     {
         id: 3,
         title: "Lorem Ipsum",
         desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
-        icon: "/images/icons/industry.png",
+        icon: "/images/icons/sustainable.png",
     },
     {
         id: 4,
         title: "Lorem Ipsum",
         desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
-        icon: "/images/icons/industry.png",
+        icon: "/images/icons/stack.png",
     },
 ]
 
@@ -39,7 +39,7 @@ const HomeFeatures = () => {
                             src={feature.icon} 
                             alt={feature.title} 
                             loading="lazy" 
-                            className="w-[20%] invert" 
+                            className="w-[20%]" 
                         />
                         <span className="text-[1.4rem] sm:text-[1.6rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem] text-black font-semibold block mt-[0.8rem]">
                             {feature.title}

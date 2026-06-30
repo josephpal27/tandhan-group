@@ -75,8 +75,9 @@ const OurStory = () => {
                         className="
                             w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
                             h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
-                            flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                            flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                            border-primary border-[3px] border-r-[2px]
                         ">
                         ‹
                     </button>
@@ -85,8 +86,9 @@ const OurStory = () => {
                         className="
                             w-[40px] sm:w-[45px] lg:w-[45px] xl:w-[55px] 2xl:w-[60px]
                             h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
-                            flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                            flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                            border-primary border-[3px] border-l-[2px]
                         ">
                         ›
                     </button>
