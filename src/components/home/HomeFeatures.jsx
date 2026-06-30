@@ -34,7 +34,7 @@ const HomeFeatures = () => {
         ">
             {featuresData.map((feature) => {
                 return (
-                    <div key={feature.id} className="w-full lg:w-[25%] bg-white p-[1.2rem] lg:p-[2rem] border-b-[10px] border-primary mb-[1rem] lg:mb-0 group shadow-[rgba(0,0,0,0.15)_0px_3px_8px]">
+                    <div key={feature.id} className="w-full lg:w-[25%] bg-white p-[1.2rem] lg:p-[2rem] border-b-[6px] border-primary mb-[1rem] lg:mb-0 group shadow-[rgba(0,0,0,0.15)_0px_3px_8px]">
                         <img 
                             src={feature.icon} 
                             alt={feature.title} 
