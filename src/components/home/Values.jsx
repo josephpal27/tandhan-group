@@ -15,7 +15,11 @@ const Values = () => {
                 {/* Layer */}
                 <div className="w-full h-full absolute top-0 left-0 bg-primary/50"></div>
                 {/* Content Box */}
-                <div className="bg-white h-full px-[3.5rem] py-[3rem] relative z-10">
+                <div className="
+                    bg-primary/60 text-white h-full relative z-10
+                    px-[3.5rem] sm:px-[3rem] lg:px-[2.5rem] xl:px-[3rem] 2xl:px-[3.5rem] 
+                    py-[3rem] sm:py-[3rem] lg:py-[2rem] xl:py-[2.5rem] 2xl:py-[3rem] 
+                ">
                     <motion.h3
                         variants={headingVariant}
                         initial="hidden"
@@ -34,7 +38,7 @@ const Values = () => {
             </div>
 
             {/* Right */}
-            <div className="w-[50%] pr-[4%] bg-primary/50">
+            <div className="w-[50%] pr-[4%] bg-primary">
                 <img src="/images/footer-bg.avif" alt="Values Image" loading="lazy" className="w-full" />
             </div>
 
