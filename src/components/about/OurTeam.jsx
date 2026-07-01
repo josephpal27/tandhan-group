@@ -159,16 +159,18 @@ const OurTeam = () => {
                         <button className="
                             w-[35px] sm:w-[40px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]
                             h-[35px] sm:h-[40px] lg:h-[40px] xl:h-[45px] 2xl:h-[50px]
-                            flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                            flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                            border-primary border-[2px] lg:border-[3px] border-r-[2px]
                         " id="team-prev">
                             ‹
                         </button>
                         <button className="
                             w-[35px] sm:w-[40px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]
                             h-[35px] sm:h-[40px] lg:h-[40px] xl:h-[45px] 2xl:h-[50px]
-                            flex items-center justify-center bg-secondary hover:bg-primary text-white transition 
+                            flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                            border-primary border-[2px] lg:border-[3px] border-l-[2px]
                         " id="team-next">
                             ›
                         </button>
