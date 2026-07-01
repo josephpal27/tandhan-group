@@ -190,7 +190,7 @@ const OurJourney = () => {
                     {journeyData.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className={`
-                                h-full bg-[#e0e1ee] flex flex-col justify-end p-[0.85rem] sm:p-[1rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem]
+                                h-full bg-[#f2f3f9] flex flex-col justify-end p-[0.85rem] sm:p-[1rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem]
                                 transition-all duration-300
                                 ${activeIndex === index
                                     ? "bg-primary text-white"
