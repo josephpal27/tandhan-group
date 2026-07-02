@@ -6,25 +6,25 @@ const ourValuesData = [
     {
         id: 1,
         title: "lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet.",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat under.",
         image: "/images/values/1.avif",
     },
     {
         id: 2,
         title: "lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet.",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat under.",
         image: "/images/values/1.avif",
     },
     {
         id: 3,
         title: "lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet.",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat under.",
         image: "/images/values/1.avif",
     },
     {
         id: 4,
         title: "lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet.",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat under.",
         image: "/images/values/1.avif",
     },
 ]
@@ -73,15 +73,15 @@ const OurValues = () => {
                                 absolute top-0 left-0 w-full h-full
                                 flex flex-col justify-end transition-colors duration-300
                                 p-[2rem]
-                                ${isActive ? "bg-primary/80 text-white shadow-xl" : "bg-white text-primary"}
+                                ${isActive ? "bg-primary/80 text-white shadow-2xl" : "bg-white text-primary"}
                             `}>
-                                <span className="block text-[4rem]">
+                                <span className="block text-[4rem] mb-[1rem]">
                                     0{value.id}.
                                 </span>
                                 <span className="text-[2rem] font-semibold">
                                     {value.title}
                                 </span>
-                                <p className="mt-[0.7rem] lg:mt-[1.2rem] text-[1rem]">
+                                <p className="mt-[0.7rem] lg:mt-[0.8rem] text-[1rem]">
                                     {value.desc}
                                 </p>
                             </div>
