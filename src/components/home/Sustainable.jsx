@@ -37,7 +37,7 @@ const Sustainable = () => {
     return (
         <section className="
             px-0
-            mt-[3rem] sm:mt-[3rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]
+            mt-[2rem] sm:mt-[2.5rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]
             relative
         ">
             {/* Prev Button */}
