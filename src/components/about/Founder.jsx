@@ -54,7 +54,7 @@ const Founder = () => {
 
                 {/* Artboard */}
                 <img
-                    src="/images/artboard.png"
+                    src="/images/artboard.avif"
                     alt="Artboard"
                     loading="lazy"
                     className="w-[40%] lg:w-[60%] filter invert absolute top-[-15%] lg:top-[-39%] right-[-10%] lg:right-[-15%]"

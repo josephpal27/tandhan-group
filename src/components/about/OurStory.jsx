@@ -10,12 +10,12 @@ import { headingVariant } from "@/utils/animations";
 
 const slides = [
     {
-        image: '/images/our-story/1.png',
+        image: '/images/our-story/1.avif',
         title: 'Lorem Ipsum',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
     },
     {
-        image: '/images/our-story/1.png',
+        image: '/images/our-story/1.avif',
         title: 'Lorem Ipsum',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
     },
