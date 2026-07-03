@@ -49,7 +49,7 @@ const OurValues = () => {
 
             {/* Row */}
             <div className="
-                flex justify-between flex-wrap mt-[2.5rem]
+                flex justify-between flex-wrap mt-[3rem]
             ">
                 {ourValuesData.map((value, index) => {
 
@@ -58,6 +58,7 @@ const OurValues = () => {
                     return(
                         <div key={index} onClick={() => setActiveIndex(index)} className="
                             w-[23%] relative cursor-pointer transition-all duration-300
+                            hover:scale-[1.05]
                         ">
                             {/* Image only renders for active card */}
                             <img
@@ -65,15 +66,15 @@ const OurValues = () => {
                                 alt={value.title}
                                 loading="lazy"
                                 className={`
-                                    w-full transition-opacity duration-300
-                                    ${isActive ? "opacity-100" : "opacity-0"}
+                                    w-full transition-all duration-300
+                                    ${isActive ? "opacity-100 scale-[1.05]" : "opacity-10"}
                                 `}
                             />
                             <div className={`
                                 absolute top-0 left-0 w-full h-full
-                                flex flex-col justify-end transition-colors duration-300
+                                flex flex-col justify-end transition-all duration-300
                                 p-[2rem]
-                                ${isActive ? "bg-primary/80 text-white shadow-2xl" : "bg-white text-primary"}
+                                ${isActive ? "bg-primary/80 text-white shadow-2xl scale-[1.05]" : "bg-transparent text-primary"}
                             `}>
                                 <span className="block text-[4rem] mb-[1rem]">
                                     0{value.id}.

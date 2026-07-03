@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Link from "next/link";
 
 const teamData = [
     {
@@ -64,7 +65,7 @@ const OurTeam = () => {
         <section className="pt-[3rem] sm:pt-[3.2rem] lg:pt-[5.5rem] xl:pt-[6rem] 2xl:pt-[6.5rem] flex justify-between flex-wrap mb-[4rem] sm:mb-[4.5rem] lg:mb-[5rem] xl:mb-[5.5rem] 2xl:mb-[6rem]">
 
             {/* Left Content */}
-            <div className="w-full lg:w-[35%]">
+            <div className="w-full lg:w-[30%]">
                 <motion.h5
                     variants={headingVariant}
                     initial="hidden"
@@ -79,10 +80,18 @@ const OurTeam = () => {
                 `}>
                     {teamData[activeIndex]?.desc}
                 </p>
+                <Link href="/" className="
+                    mt-[2rem] block w-max bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
+                    border-primary border-[3px]
+                    py-[0.4rem] px-[1.4rem]
+                ">
+                    View More
+                </Link>
+
             </div>
 
             {/* Slider */}
-            <div className="w-full lg:w-[60%] relative pl-[0.6rem] lg:pl-[1rem] pt-[0.6rem] lg:pt-[1rem] mt-[1.5rem] lg:mt-0">
+            <div className="w-full lg:w-[65%] relative pl-[0.6rem] lg:pl-[1rem] pt-[0.6rem] lg:pt-[1rem] mt-[1.5rem] lg:mt-0">
                 <Swiper
                     modules={[Autoplay, Navigation, Pagination]}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -95,7 +104,7 @@ const OurTeam = () => {
                         el: '#team-pagination',
                         clickable: true,
                     }}
-                    slidesPerView={3}
+                    slidesPerView={2}
                     spaceBetween={25}
                     loop={true}
                     autoplay={{
@@ -113,7 +122,7 @@ const OurTeam = () => {
                             spaceBetween: 20,
                         },
                         991: {
-                            slidesPerView: 3, // tablet and up
+                            slidesPerView: 2, // tablet and up
                             spaceBetween: 25,
                         },
                     }}
@@ -151,14 +160,14 @@ const OurTeam = () => {
                 </Swiper>
 
                 {/* Pagination & Navigation */}
-                <div className="absolute bottom-0 right-0 flex justify-end lg:justify-between items-center z-[999] w-[45%]">
+                <div className="absolute bottom-0 right-0 flex justify-end lg:justify-between items-center z-[999] w-[35%]">
                     <div className="hidden lg:block">
                         <div id="team-pagination" className="flex items-center gap-[0.4rem]" />
                     </div>
                     <div className="flex items-center">
                         <button className="
-                            w-[35px] sm:w-[40px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]
-                            h-[35px] sm:h-[40px] lg:h-[40px] xl:h-[45px] 2xl:h-[50px]
+                            w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                            h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                             flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                             border-primary border-[2px] lg:border-[3px] border-r-[2px]
@@ -166,8 +175,8 @@ const OurTeam = () => {
                             ‹
                         </button>
                         <button className="
-                            w-[35px] sm:w-[40px] lg:w-[30px] xl:w-[35px] 2xl:w-[40px]
-                            h-[35px] sm:h-[40px] lg:h-[40px] xl:h-[45px] 2xl:h-[50px]
+                            w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                            h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                             flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                             border-primary border-[2px] lg:border-[3px] border-l-[2px]
@@ -178,7 +187,7 @@ const OurTeam = () => {
                 </div>
 
                 {/* Blue Card */}
-                <div className="absolute top-0 left-0 w-[52%] lg:w-[34.7%] h-full border-primary border-[2px] shadow-[0px_4px_12px_rgba(0,0,0,0.5)] rounded-[5px] z-50"></div>
+                <div className="absolute top-0 left-0 w-[52%] lg:w-[51.35%] h-full border-primary border-[2px] shadow-[0px_4px_12px_rgba(0,0,0,0.5)] rounded-[5px] z-50"></div>
 
             </div>
 
