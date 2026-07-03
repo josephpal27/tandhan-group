@@ -56,6 +56,24 @@ section {
     transition: width 0.3s ease;
 }
 
+/* Home Page Swiper */
+#home-features-swiper .swiper-pagination-bullet,
+#values-swiper .swiper-pagination-bullet {
+    background: #000;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+}
+
+#home-features-swiper .swiper-pagination-bullet-active,
+#values-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 25px;
+    border-radius: 7px;
+    transition: width 0.3s ease;
+}
+
+/* Sectors Page Gallery */
 #gallery-swiper {
   overflow: visible !important;
 }

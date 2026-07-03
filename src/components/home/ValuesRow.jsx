@@ -2,6 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import { useInView, animate } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const valuesData = [
     {
@@ -53,32 +57,59 @@ const Counter = ({ value, inView }) => {
     return <span ref={ref}>0</span>;
 };
 
+const ValueCard = ({ item, isInView }) => (
+    <div className="w-full group">
+        <span className="text-[2rem] sm:text-[1.7rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem] font-semibold">
+            <Counter value={item.value} inView={isInView} />+
+        </span>
+        <div className="w-[20%] lg:w-[30%] group-hover:w-[70%] transition-all duration-300 h-[1px] bg-primary mt-[0.15rem] lg:mt-[0.3rem]"></div>
+        <span
+            dangerouslySetInnerHTML={{ __html: item.title }}
+            className="block mt-[1.2rem] lg:mt-[1.5rem] text-[1.3rem] sm:text-[1.1rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold leading-[1]"
+        />
+        <p className="mt-[0.7rem] lg:mt-[1rem] text-[0.9rem] sm:text-[0.8rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]">
+            {item.desc}
+        </p>
+    </div>
+);
+
 const ValuesRow = () => {
 
     const sectionRef = useRef(null);
     const isInView = useInView(sectionRef, { once: true, amount: 0.4 });
 
     return (
-        <section ref={sectionRef} className="mt-[2rem] sm:mt-[3rem] lg:mt-[-6rem] xl:mt-[-7rem] 2xl:mt-[-8rem] relative z-50">
-            <div className="bg-white text-primary flex flex-wrap justify-between p-[1.2rem] sm:p-[1.5rem] lg:p-[2.3rem] xl:p-[2.7rem] 2xl:p-[3rem] shadow-[0px_5px_15px_rgba(0,0,0,0.5)]">
-                {valuesData.map((item, index) => {
-                    return (
-                        <div key={index} className="w-full lg:w-[23%] mb-[1.5rem] lg:mb-0 last:mb-[0.5rem] group">
-                            <span className="text-[2rem] sm:text-[1.7rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem] font-semibold">
-                                <Counter value={item.value} inView={isInView} />+
-                            </span>
-                            <div className="w-[20%] lg:w-[30%] group-hover:w-[70%] transition-all duration-300 h-[1px] bg-primary mt-[0.15rem] lg:mt-[0.3rem]"></div>
-                            <span dangerouslySetInnerHTML={{ __html: item.title }} className="
-                                block mt-[1.2rem] lg:mt-[1.5rem] text-[1.3rem] sm:text-[1.1rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold leading-[1]
-                            ">
+        <section
+            ref={sectionRef}
+            className="mt-[2rem] sm:mt-[3rem] lg:mt-[-6rem] xl:mt-[-7rem] 2xl:mt-[-8rem] relative z-50"
+        >
+            <div className="bg-white text-primary shadow-[0px_5px_15px_rgba(0,0,0,0.5)]">
+                {/* Mobile / Tablet: Swiper */}
+                <div className="lg:hidden p-[1.2rem] sm:p-[1.5rem] pb-[0.7rem]">
+                    <Swiper
+                        modules={[Pagination]}
+                        slidesPerView={1}
+                        spaceBetween={16}
+                        pagination={{ clickable: true }}
+                        id="values-swiper"
+                        className="!pb-[3rem]"
+                    >
+                        {valuesData.map((item) => (
+                            <SwiperSlide key={item.id}>
+                                <ValueCard item={item} isInView={isInView} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
 
-                            </span>
-                            <p className="mt-[0.7rem] lg:mt-[1rem] text-[0.9rem] sm:text-[0.8rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]">
-                                {item.desc}
-                            </p>
+                {/* Desktop: original flex grid */}
+                <div className="hidden lg:flex flex-wrap justify-between p-[2.3rem] xl:p-[2.7rem] 2xl:p-[3rem]">
+                    {valuesData.map((item) => (
+                        <div key={item.id} className="lg:w-[23%]">
+                            <ValueCard item={item} isInView={isInView} />
                         </div>
-                    )
-                })}
+                    ))}
+                </div>
             </div>
         </section>
     )
