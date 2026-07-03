@@ -17,7 +17,7 @@ export default function ProtectiveSolutions() {
     <>
       <SectorsBanner
         image="/images/banners/protective-solutions-banner.avif"
-        title={<>Lorem Ipsum <br /> Dolor Sit Amet</>}
+        title="Protective Solutions"
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
       />
       <SectorOverview />

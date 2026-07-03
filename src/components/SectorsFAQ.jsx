@@ -99,7 +99,7 @@ const SectorsFAQ = () => {
 
             {/* Image */}
             <div className="w-[46%]">
-                <img src="/images/sectors/protective-solutions/faq.png" alt="FAQ" loading="lazy" className="w-full" />
+                <img src="/images/sectors/protective-solutions/faq.avif" alt="FAQ" loading="lazy" className="w-full" />
             </div>
 
         </section>

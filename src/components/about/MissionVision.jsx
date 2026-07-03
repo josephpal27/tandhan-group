@@ -8,13 +8,13 @@ const missionVisionData = [
         id: 1,
         title: "Mission",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet.",
-        image: "/images/mission.png",
+        image: "/images/mission.avif",
     },
     {
         id: 2,
         title: "Vision",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet.",
-        image: "/images/vision.png",
+        image: "/images/vision.avif",
     },
 ]
 
@@ -64,7 +64,7 @@ const MissionVision = () => {
                             ${item.id % 2 === 0 ? "justify-end" : ""}
                         `}>
                             <img
-                                src="/images/artboard.png"
+                                src="/images/artboard.avif"
                                 alt="Artboard"
                                 loading="lazy"
                                 className={`

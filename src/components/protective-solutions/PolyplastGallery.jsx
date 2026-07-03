@@ -8,11 +8,11 @@ import { headingVariant } from "@/utils/animations";
 import "swiper/css";
 
 const GalleryData = [
-    { id: 1, image: "/images/sectors/protective-solutions/gallery/1.png", },
-    { id: 2, image: "/images/sectors/protective-solutions/gallery/1.png", },
-    { id: 3, image: "/images/sectors/protective-solutions/gallery/1.png", },
-    { id: 4, image: "/images/sectors/protective-solutions/gallery/1.png", },
-    { id: 5, image: "/images/sectors/protective-solutions/gallery/1.png", },
+    { id: 1, image: "/images/sectors/protective-solutions/gallery/1.avif", },
+    { id: 2, image: "/images/sectors/protective-solutions/gallery/1.avif", },
+    { id: 3, image: "/images/sectors/protective-solutions/gallery/1.avif", },
+    { id: 4, image: "/images/sectors/protective-solutions/gallery/1.avif", },
+    { id: 5, image: "/images/sectors/protective-solutions/gallery/1.avif", },
 ]
 
 const PolyplastGallery = () => {

@@ -12,25 +12,25 @@ const productsData = [
         id: 1,
         title: "Truck Cover",
         desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
-        image: "/images/sectors/protective-solutions/products/1.png",
+        image: "/images/sectors/protective-solutions/products/1.avif",
     },
     {
         id: 2,
         title: "Goods Cover",
         desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
-        image: "/images/sectors/protective-solutions/products/2.png",
+        image: "/images/sectors/protective-solutions/products/2.avif",
     },
     {
         id: 3,
         title: "Truck Cover",
         desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
-        image: "/images/sectors/protective-solutions/products/1.png",
+        image: "/images/sectors/protective-solutions/products/1.avif",
     },
     {
         id: 4,
         title: "Goods Cover",
         desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
-        image: "/images/sectors/protective-solutions/products/2.png",
+        image: "/images/sectors/protective-solutions/products/2.avif",
     },
 ]
 

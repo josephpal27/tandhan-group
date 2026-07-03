@@ -52,7 +52,7 @@ const SectorOverview = () => {
                 }}
             >
                 <img
-                    src="/images/sectors/protective-solutions/overview-bg.png"
+                    src="/images/sectors/protective-solutions/truck-bg.avif"
                     alt="Sector Overview"
                     loading="lazy"
                     className="w-full"
@@ -69,7 +69,7 @@ const SectorOverview = () => {
             {/* Truck Image */}
             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-end pb-[5rem] sm:pb-[3rem] lg:pb-[3.7rem] xl:pb-[4.5rem] 2xl:pb-[5rem]">
                 <img
-                    src="/images/sectors/protective-solutions/truck.png"
+                    src="/images/sectors/protective-solutions/truck.avif"
                     alt="Truck"
                     loading="lazy"
                     className="w-[50%]"
