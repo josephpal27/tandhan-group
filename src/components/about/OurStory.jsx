@@ -77,7 +77,9 @@ const OurStory = () => {
                             h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
                             flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
-                            border-primary border-[2px] lg:border-[3px] border-r-[2px]
+                            border-primary
+                            border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
+                            border-r-[1.5px] sm:border-r-[1.5px] lg:border-r-[1.5px] xl:border-r-[1.5px] 2xl:border-r-[2px]
                         ">
                         ‹
                     </button>
@@ -88,7 +90,9 @@ const OurStory = () => {
                             h-[40px] sm:h-[45px] lg:h-[60px] xl:h-[65px] 2xl:h-[70px]
                             flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.7rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
-                            border-primary border-[2px] lg:border-[3px] border-l-[2px]
+                            border-primary
+                            border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
+                            border-l-[1.5px] sm:border-l-[1.5px] lg:border-l-[1.5px] xl:border-l-[1.5px] 2xl:border-l-[2px]
                         ">
                         ›
                     </button>
