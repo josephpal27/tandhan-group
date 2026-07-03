@@ -23,7 +23,7 @@ export default function About() {
       <OurJourney />
       <MissionVision />
       <OurValues />
-      {/* <Founder /> */}
+      <Founder />
       <OurTeam />
     </>
   );
