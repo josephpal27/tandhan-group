@@ -66,14 +66,14 @@ const OurTeam = () => {
 
             {/* Left Content */}
             <div className="w-full lg:w-[30%]">
-                <motion.h5
+                <motion.h6
                     variants={headingVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
                     Our <br /> Team
-                </motion.h5>
+                </motion.h6>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1.2rem]
                     ${descVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"} transition-all duration-300
