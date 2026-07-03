@@ -21,8 +21,11 @@ const Founder = () => {
             </div>
 
             {/* Content */}
-            <div className="w-[60%] bg-secondary/10 flex flex-col justify-center p-[4rem] relative overflow-hidden">
-                <img src="/images/quote.avif" alt="Quote" loading="lazy" className="w-[25%] mb-[3rem]" />
+            <div className="
+                w-[60%] bg-secondary/10 flex flex-col justify-center relative overflow-hidden
+                p-[4rem] sm:p-[3rem] lg:p-[3.4rem] xl:p-[3.7rem] 2xl:p-[4rem] 
+            ">
+                <img src="/images/quote.avif" alt="Quote" loading="lazy" className="w-[25%] mb-[3rem] sm:mb-[2rem] lg:mb-[2.4rem] xl:mb-[2.7rem] 2xl:mb-[3rem]" />
                 <motion.h5
                     variants={headingVariant}
                     initial="hidden"
@@ -36,13 +39,13 @@ const Founder = () => {
                 </p>
                 <div className="flex gap-[0.8rem] items-center mt-[1rem]">
                     <div className="w-[45px] h-[2px] bg-primary"></div>
-                    <span className="text-[1.7rem] font-semibold">
+                    <span className="text-[1.7rem] sm:text-[1.6rem] lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem] font-semibold">
                         John Doe
                     </span>
                 </div>
                 <Link href="/" className="
-                    mt-[2rem] block w-max bg-transparent hover:bg-primary text-primary hover:text-white font-semibold transition
-                    border-primary border-[3px]
+                    mt-[2rem] sm:mt-[2.2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem] block w-max bg-transparent hover:bg-primary text-primary hover:text-white font-semibold transition
+                    border-primary border-[3px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
                     py-[0.4rem] px-[1.4rem]
                 ">
                     Read More
