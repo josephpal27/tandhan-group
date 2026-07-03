@@ -213,7 +213,8 @@ const Navbar = () => {
                             href="/contact/"
                             className="bg-primary hover:bg-white text-white hover:text-primary 
                             px-[1.2rem] sm:px-[1.1rem] lg:px-[1rem] xl:px-[1.1rem] 2xl:px-[1.2rem]
-                            py-[0.15rem] border-white border-[2px] font-[500]
+                            py-[0.15rem] border-white font-[500]
+                            border-[2px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                             transition-colors duration-200"
                         >
                             Contact Us

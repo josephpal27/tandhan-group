@@ -62,7 +62,7 @@ const OurTeam = () => {
     };
 
     return (
-        <section className="pt-[3rem] sm:pt-[3.2rem] lg:pt-[5.5rem] xl:pt-[6rem] 2xl:pt-[6.5rem] flex justify-between flex-wrap mb-[4rem] sm:mb-[4.5rem] lg:mb-[5rem] xl:mb-[5.5rem] 2xl:mb-[6rem]">
+        <section className="pt-[3rem] sm:pt-[3.2rem] lg:pt-[5.5rem] xl:pt-[6rem] 2xl:pt-[6.5rem] flex justify-between flex-wrap mb-[3.5rem] sm:mb-[4.5rem] lg:mb-[5rem] xl:mb-[5.5rem] 2xl:mb-[6rem]">
 
             {/* Left Content */}
             <div className="w-full lg:w-[30%]">
@@ -81,8 +81,8 @@ const OurTeam = () => {
                     {teamData[activeIndex]?.desc}
                 </p>
                 <Link href="/" className="
-                    mt-[2rem] block w-max bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
-                    border-primary border-[3px]
+                    mt-[1.3rem] lg:mt-[2rem] block w-max bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
+                    border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
                     py-[0.4rem] px-[1.4rem]
                 ">
                     View More
@@ -91,7 +91,7 @@ const OurTeam = () => {
             </div>
 
             {/* Slider */}
-            <div className="w-full lg:w-[65%] relative pl-[0.6rem] lg:pl-[1rem] pt-[0.6rem] lg:pt-[1rem] mt-[1.5rem] lg:mt-0">
+            <div className="w-full lg:w-[65%] relative pl-[0.6rem] lg:pl-[1rem] pt-[0.6rem] lg:pt-[1rem] mt-[1.8rem] lg:mt-0">
                 <Swiper
                     modules={[Autoplay, Navigation, Pagination]}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -160,26 +160,30 @@ const OurTeam = () => {
                 </Swiper>
 
                 {/* Pagination & Navigation */}
-                <div className="absolute bottom-0 right-0 flex justify-end lg:justify-between items-center z-[999] w-[35%]">
+                <div className="absolute bottom-0 right-0 flex justify-end lg:justify-between items-center z-[999] w-[40%]">
                     <div className="hidden lg:block">
                         <div id="team-pagination" className="flex items-center gap-[0.4rem]" />
                     </div>
                     <div className="flex items-center">
                         <button className="
                             w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
-                            h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                            h-[40px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                             flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
-                            border-primary border-[2px] lg:border-[3px] border-r-[2px]
+                            border-primary 
+                            border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
+                            border-r-[1.5px] sm:border-r-[1.5px] lg:border-r-[1.5px] xl:border-r-[1.5px] 2xl:border-r-[2px]
                         " id="team-prev">
                             ‹
-                        </button>
+                        </button> 
                         <button className="
                             w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
-                            h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                            h-[40px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                             flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
-                            border-primary border-[2px] lg:border-[3px] border-l-[2px]
+                            border-primary 
+                            border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
+                            border-l-[1.5px] sm:border-l-[1.5px] lg:border-l-[1.5px] xl:border-l-[1.5px] 2xl:border-l-[2px]
                         " id="team-next">
                             ›
                         </button>

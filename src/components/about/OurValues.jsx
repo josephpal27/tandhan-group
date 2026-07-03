@@ -37,7 +37,7 @@ const OurValues = () => {
 
     return (
         <section className="
-            pt-[2rem] sm:pt-[2.2rem] lg:pt-[3rem] xl:pt-[3.5rem] 2xl:pt-[4rem]
+            pt-[1.8rem] sm:pt-[2.2rem] lg:pt-[3rem] xl:pt-[3.5rem] 2xl:pt-[4rem]
         ">
             {/* Top Content */}
             <div className="flex flex-col items-center text-center">
@@ -49,7 +49,7 @@ const OurValues = () => {
                 >
                     Our Values
                 </motion.h4>
-                <p className="mt-[0.7rem] lg:mt-[1.2rem] w-[55%]">
+                <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[55%]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing Illo perferendis adipisicing quibusdam ipsam alias harum ut pariatur nesciunt quod tenetur modi.
                 </p>
             </div>
@@ -57,7 +57,7 @@ const OurValues = () => {
             {/* Row */}
             <div className="
                 flex justify-between flex-wrap 
-                mt-[3rem] sm:mt-[2rem] lg:mt-[2.5rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                mt-[1.8rem] sm:mt-[2.2rem] lg:mt-[2.5rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
             ">
                 {ourValuesData.map((value, index) => {
 
@@ -65,8 +65,9 @@ const OurValues = () => {
                     
                     return(
                         <div key={index} onClick={() => setActiveIndex(index)} className="
-                            w-[23%] relative cursor-pointer transition-all duration-300
+                            w-[47%] lg:w-[23%] relative cursor-pointer transition-all duration-300
                             hover:scale-[1.05]
+                            mb-[1.5rem] lg:mb-0
                         ">
                             {/* Image only renders for active card */}
                             <img
@@ -75,22 +76,22 @@ const OurValues = () => {
                                 loading="lazy"
                                 className={`
                                     w-full transition-all duration-300
-                                    ${isActive ? "opacity-100 scale-[1.05]" : "opacity-10"}
+                                    ${isActive ? "opacity-100 lg:scale-[1.05]" : "opacity-10"}
                                 `}
                             />
                             <div className={`
                                 absolute top-0 left-0 w-full h-full
                                 flex flex-col justify-end transition-all duration-300
-                                p-[2rem] sm:p-[1.7rem] lg:p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]
-                                ${isActive ? "bg-primary/80 text-white shadow-2xl scale-[1.05]" : "bg-transparent text-primary"}
+                                p-[0.8rem] sm:p-[1.2rem] lg:p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]
+                                ${isActive ? "bg-primary/80 text-white shadow-2xl lg:scale-[1.05]" : "bg-transparent text-primary"}
                             `}>
-                                <span className="block text-[4rem] sm:text-[3rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] mb-[1rem]">
+                                <span className="block text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] mb-[1rem]">
                                     0{value.id}.
                                 </span>
-                                <span className="text-[2rem] sm:text-[2.2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold">
+                                <span className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold">
                                     {value.title}
                                 </span>
-                                <p className="mt-[0.7rem] lg:mt-[0.8rem] text-[1rem] sm:text-[1.1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
+                                <p className="mt-[0.7rem] lg:mt-[0.8rem] text-[0.65rem] sm:text-[0.7rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
                                     {value.desc}
                                 </p>
                             </div>
