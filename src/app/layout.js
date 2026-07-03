@@ -2,6 +2,7 @@ import { Anek_Bangla } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SmoothScroll from './../components/SmoothScroll';
 
 const anekBangla = Anek_Bangla({
   subsets: ["latin"],
@@ -19,9 +20,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${anekBangla.variable}`}>
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <SmoothScroll>
+          <Navbar />
+          {children}
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );
