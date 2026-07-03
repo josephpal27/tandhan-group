@@ -34,6 +34,12 @@ const Navbar = () => {
         };
     }, [open]);
 
+    useEffect(() => {
+        setMegaMenuOpen(false);
+        setOpen(false);
+        if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
+    }, [pathname]);
+
     const handleMouseEnter = () => {
         if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
         setMegaMenuOpen(true);
@@ -98,21 +104,21 @@ const Navbar = () => {
             image: "/images/sectors/3.avif",
             title: "Energy Solutions",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            url: "/",
+            url: "/energy-solutions",
         },
         {
             sectorName: "Textiles",
             image: "/images/sectors/4.avif",
             title: "Textiles",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            url: "/",
+            url: "/textiles",
         },
         {
             sectorName: "Hospitality",
             image: "/images/sectors/1.avif",
             title: "Hospitality",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            url: "/",
+            url: "/hospitality",
         },
     ]
 
@@ -161,12 +167,14 @@ const Navbar = () => {
 
                     {/* Left Logo (Mobile View Only) */}
                     <div className="block lg:hidden">
-                        <img
-                            src="/images/logo/logo.png"
-                            alt="Tandhan Group Logo"
-                            loading="lazy"
-                            className="w-[130px] brightness-0 invert"
-                        />
+                        <Link href="/">
+                            <img
+                                src="/images/logo/logo.png"
+                                alt="Tandhan Group Logo"
+                                loading="lazy"
+                                className="w-[130px] brightness-0 invert"
+                            />
+                        </Link>
                     </div>
 
                     {/* Left Links */}
@@ -189,7 +197,7 @@ const Navbar = () => {
                                             {link.name} <MdArrowDropDown className={`
                                                 text-[1.6rem] lg:text-[1.4rem] xl:text-[1.5rem] 2xl:text-[1.6rem] transition duration-300
                                                 ${megaMenuOpen ? "rotate-180" : ""}
-                                            `}/>
+                                            `} />
                                         </button>
                                     ) : (
                                         <Link
@@ -288,16 +296,18 @@ const Navbar = () => {
                             ">
                                 {sectorsData.map((sector, index) => {
                                     return (
-                                        <li 
-                                            key={index} 
-                                            onMouseEnter={() => setActiveSector(index)}
-                                            className="flex justify-between items-center py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem] px-[0.6rem] xl:px-[0.8rem] 2xl:px-[1rem] border-b-[1px] border-gray-300 cursor-pointer hover:bg-[#e8e8e4]"
-                                        >
-                                            <span className="text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold">
-                                                {sector.sectorName}
-                                            </span>
-                                            <MdChevronRight className="text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]" />
-                                        </li>
+                                        <Link href={sectorsData[activeSector].url} key={index} >
+                                            <li
+                                                onMouseEnter={() => setActiveSector(index)}
+                                                className="flex justify-between items-center py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem] px-[0.6rem] xl:px-[0.8rem] 2xl:px-[1rem] border-b-[1px] border-gray-300 cursor-pointer hover:bg-[#e8e8e4]"
+                                            >
+                                                <span className="text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold">
+                                                    {sector.sectorName}
+                                                </span>
+                                                <MdChevronRight className="text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]" />
+                                            </li>
+                                        </Link>
+
                                     )
                                 })}
                             </ul>
@@ -307,12 +317,12 @@ const Navbar = () => {
                     {/* Sector Preview */}
                     <div className="w-[50%] p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]">
                         <div className="relative overflow-hidden">
-                            <img 
+                            <img
                                 key={activeSector}
                                 src={sectorsData[activeSector].image}
                                 alt={sectorsData[activeSector].sectorName}
-                                loading="lazy" 
-                                className="w-full aspect-[7/5]" 
+                                loading="lazy"
+                                className="w-full aspect-[7/5]"
                             />
                             <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem] text-white bg-gradient-to-b from-transparent to-primary">
                                 <span className="text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem] font-bold">
@@ -321,11 +331,6 @@ const Navbar = () => {
                                 <p className="text-[0.65rem] xl:text-[0.75rem] 2xl:text-[0.85rem] mt-[0.3rem]">
                                     {sectorsData[activeSector].desc}
                                 </p>
-                                <div className="flex justify-end">
-                                    <Link href={sectorsData[activeSector].url} className="flex items-center text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] gap-[3px] mt-[0.7rem] hover:underline group w-max">
-                                    Visit Site  <HiArrowSmRight className="text-[1.1rem] xl:text-[1.3rem] 2xl:text-[1.4rem] rotate-[-45deg] group-hover:rotate-0 transition" />
-                                </Link>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -341,7 +346,9 @@ const Navbar = () => {
             {/* Mobile Drawer */}
             <div className={`fixed top-0 left-0 h-full w-[70%] max-w-sm bg-[#f7f7f7] z-50 shadow-lg transform transition-transform duration-500 ${open ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex justify-between items-center px-[1rem] py-[1.5rem] border-b">
-                    <img src="/images/logo/logo.png" alt="Tandhan Group" className="w-[110px]" />
+                    <Link href="/">
+                        <img src="/images/logo/logo.png" alt="Tandhan Group" className="w-[110px]" />
+                    </Link>
                     <button onClick={() => setOpen(false)}>
                         <FiX size={24} />
                     </button>
