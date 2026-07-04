@@ -5,6 +5,7 @@ import SectorsBanner from "@/components/sectors/SectorsBanner";
 import SectorsCTA from "@/components/sectors/SectorsCTA";
 import SectorsFAQ from "@/components/sectors/SectorsFAQ";
 import EnergySectorOverview from "@/components/energy-solutions/EnergySectorOverview";
+// import EnergyBrandOverview from "@/components/energy-solutions/EnergyBrandOverview";
 
 import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
@@ -24,15 +25,16 @@ export default function EnergySolutions() {
         business="Tandhan Power"
       />
       <EnergySectorOverview />
+      {/* <EnergyBrandOverview /> */}
       <SectorsProducts />
       <SectorsGallery />
-      <SectorsFAQ 
+      <SectorsFAQ
         description={sectorsFaqData.energy.description}
         faqs={sectorsFaqData.energy.faqs}
         image={sectorsFaqData.energy.image}
       />
-      <InTheNews 
-        news={inTheNewsData.energy.news} 
+      <InTheNews
+        news={inTheNewsData.energy.news}
       />
       <SectorsCTA />
     </>
