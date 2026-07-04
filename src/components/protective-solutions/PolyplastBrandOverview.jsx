@@ -4,7 +4,7 @@ import Link from "next/link"
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 
-const BrandOverview = () => {
+const PolyplastBrandOverview = () => {
     return (
         <section className="
             mt-[5rem] sm:mt-[3rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem]
@@ -43,4 +43,4 @@ const BrandOverview = () => {
     )
 }
 
-export default BrandOverview
+export default PolyplastBrandOverview

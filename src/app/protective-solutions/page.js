@@ -1,11 +1,11 @@
-import InTheNews from "@/components/InTheNews";
-import BrandOverview from "@/components/protective-solutions/BrandOverview";
-import SectorsGallery from "@/components/protective-solutions/SectorsGallery";
-import SectorsProducts from "@/components/protective-solutions/SectorsProducts";
-import SectorOverview from "@/components/protective-solutions/SectorOverview";
-import SectorsBanner from "@/components/SectorsBanner";
-import SectorsCTA from "@/components/SectorsCTA";
-import SectorsFAQ from "@/components/SectorsFAQ";
+import InTheNews from "@/components/sectors/InTheNews";
+import PolyplastBrandOverview from "@/components/protective-solutions/PolyplastBrandOverview";
+import PolyplastSectorOverview from "@/components/protective-solutions/PolyplastSectorOverview";
+import SectorsGallery from "@/components/sectors/SectorsGallery";
+import SectorsProducts from "@/components/sectors/SectorsProducts";
+import SectorsBanner from "@/components/sectors/SectorsBanner";
+import SectorsCTA from "@/components/sectors/SectorsCTA";
+import SectorsFAQ from "@/components/sectors/SectorsFAQ";
 
 export const metadata = {
   title: "Protective Solutions - Tandhan Group",
@@ -21,8 +21,8 @@ export default function ProtectiveSolutions() {
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
         business="Polyplast"
       />
-      <SectorOverview />
-      <BrandOverview />
+      <PolyplastSectorOverview />
+      <PolyplastBrandOverview />
       <SectorsProducts />
       <SectorsGallery />
       <SectorsFAQ />

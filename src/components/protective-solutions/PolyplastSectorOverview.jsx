@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 
-const SectorOverview = () => {
+const PolyplastSectorOverview = () => {
 
     const [active, setActive] = useState(false);
 
@@ -80,4 +80,4 @@ const SectorOverview = () => {
     )
 }
 
-export default SectorOverview
+export default PolyplastSectorOverview
