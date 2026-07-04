@@ -1,4 +1,4 @@
-export const sectorsFaq = {
+export const sectorsFaqData = {
     protective: {
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
         image: "/images/sectors/protective-solutions/faq.avif",

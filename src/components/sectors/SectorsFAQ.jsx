@@ -5,29 +5,6 @@ import { FaPlus } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 
-const faqData = [
-    {
-        id: 1,
-        question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae."
-    },
-    {
-        id: 2,
-        question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae."
-    },
-    {
-        id: 3,
-        question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae."
-    },
-    {
-        id: 4,
-        question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae."
-    },
-]
-
 const SectorsFAQ = ({ description, image, faqs }) => {
 
     const [openFaq, setOpenFaq] = useState(0); // first item open by default

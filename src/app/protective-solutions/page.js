@@ -6,7 +6,9 @@ import SectorsProducts from "@/components/sectors/SectorsProducts";
 import SectorsBanner from "@/components/sectors/SectorsBanner";
 import SectorsCTA from "@/components/sectors/SectorsCTA";
 import SectorsFAQ from "@/components/sectors/SectorsFAQ";
-import { sectorsFaq } from "@/data/sectorsFaq";
+
+import { sectorsFaqData } from "@/data/sectorsFaqData";
+import { inTheNewsData } from "@/data/inTheNewsData";
 
 export const metadata = {
   title: "Protective Solutions - Tandhan Group",
@@ -27,11 +29,13 @@ export default function ProtectiveSolutions() {
       <SectorsProducts />
       <SectorsGallery />
       <SectorsFAQ 
-        description={sectorsFaq.protective.description}
-        faqs={sectorsFaq.protective.faqs}
-        image={sectorsFaq.protective.image}
+        description={sectorsFaqData.protective.description}
+        faqs={sectorsFaqData.protective.faqs}
+        image={sectorsFaqData.protective.image}
       />
-      <InTheNews />
+      <InTheNews 
+        news={inTheNewsData.protective.news} 
+      />
       <SectorsCTA />
     </>
   );
