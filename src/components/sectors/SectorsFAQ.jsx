@@ -28,7 +28,7 @@ const faqData = [
     },
 ]
 
-const SectorsFAQ = () => {
+const SectorsFAQ = ({ description, image, faqs }) => {
 
     const [openFaq, setOpenFaq] = useState(0); // first item open by default
 
@@ -50,11 +50,11 @@ const SectorsFAQ = () => {
                     FAQs
                 </motion.h6>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.
+                    {description}
                 </p>
 
                 <div className="mt-[3rem] sm:mt-[2.2rem] lg:mt-[2.3rem] xl:mt-[2.7rem] 2xl:mt-[3rem]">
-                    {faqData.map((faq, index) => {
+                    {faqs.map((faq, index) => {
 
                         const isOpen = openFaq === index;
 
@@ -99,7 +99,7 @@ const SectorsFAQ = () => {
 
             {/* Image */}
             <div className="w-[46%]">
-                <img src="/images/sectors/protective-solutions/faq.avif" alt="FAQ" loading="lazy" className="w-full" />
+                <img src={image} alt="FAQ" loading="lazy" className="w-full" />
             </div>
 
         </section>
