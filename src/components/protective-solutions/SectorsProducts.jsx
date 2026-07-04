@@ -34,7 +34,7 @@ const productsData = [
     },
 ]
 
-const PolyplastProducts = () => {
+const SectorsProducts = () => {
     return (
         <section className="px-0">
 
@@ -143,4 +143,4 @@ const PolyplastProducts = () => {
     )
 }
 
-export default PolyplastProducts
+export default SectorsProducts

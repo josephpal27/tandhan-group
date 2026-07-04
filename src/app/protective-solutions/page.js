@@ -1,7 +1,7 @@
 import InTheNews from "@/components/InTheNews";
 import BrandOverview from "@/components/protective-solutions/BrandOverview";
-import PolyplastGallery from "@/components/protective-solutions/PolyplastGallery";
-import PolyplastProducts from "@/components/protective-solutions/PolyplastProducts";
+import SectorsGallery from "@/components/protective-solutions/SectorsGallery";
+import SectorsProducts from "@/components/protective-solutions/SectorsProducts";
 import SectorOverview from "@/components/protective-solutions/SectorOverview";
 import SectorsBanner from "@/components/SectorsBanner";
 import SectorsCTA from "@/components/SectorsCTA";
@@ -19,11 +19,12 @@ export default function ProtectiveSolutions() {
         image="/images/banners/protective-solutions-banner.avif"
         title="Protective Solutions"
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
+        business="Polyplast"
       />
       <SectorOverview />
       <BrandOverview />
-      <PolyplastProducts />
-      <PolyplastGallery />
+      <SectorsProducts />
+      <SectorsGallery />
       <SectorsFAQ />
       <InTheNews />
       <SectorsCTA />

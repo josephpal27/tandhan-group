@@ -15,7 +15,7 @@ const GalleryData = [
     { id: 5, image: "/images/sectors/protective-solutions/gallery/1.avif", },
 ]
 
-const PolyplastGallery = () => {
+const SectorsGallery = () => {
 
     const [featuredIndex, setFeaturedIndex] = useState(1);
 
@@ -114,4 +114,4 @@ const PolyplastGallery = () => {
     )
 }
 
-export default PolyplastGallery
+export default SectorsGallery
