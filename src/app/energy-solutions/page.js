@@ -7,11 +7,12 @@ export const metadata = {
 
 export default function EnergySolutions() {
   return (
-    <>
+    <> 
       <SectorsBanner
-        image="/images/banners/protective-solutions-banner.avif"
+        image="/images/banners/energy-solutions-banner.png"
         title="Energy Solutions"
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
+        business="Tandhan Power"
       />
     </>
   );

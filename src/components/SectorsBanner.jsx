@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 import { IoHomeOutline } from "react-icons/io5";
 
-export default function SectorsBanner({image, title, desc}) {
+export default function SectorsBanner({image, title, desc, business}) {
     const bgRef = useRef(null);
 
     useEffect(() => {
@@ -48,7 +48,7 @@ export default function SectorsBanner({image, title, desc}) {
                     {desc}
                 </p>
                 <p className="flex gap-[0.7rem] mt-[1.3rem] lg:mt-[1.7rem] font-semibold">
-                   <IoHomeOutline className="text-[1.4rem] sm:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]" /> Business - Polyplast
+                   <IoHomeOutline className="text-[1.4rem] sm:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]" /> Business - {business}
                 </p>
             </div>
 
