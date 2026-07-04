@@ -6,45 +6,45 @@ import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 import "swiper/css";
 
-const newsData = [
-    {
-        id: 1,
-        img: "/images/sectors/protective-solutions/news/1.avif",
-        title: "Lorem Ipsum 1",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
-    },
-    {
-        id: 2,
-        img: "/images/sectors/protective-solutions/news/1.avif",
-        title: "Lorem Ipsum 2",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
-    },
-    {
-        id: 3,
-        img: "/images/sectors/protective-solutions/news/1.avif",
-        title: "Lorem Ipsum 3",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
-    },
-    {
-        id: 4,
-        img: "/images/sectors/protective-solutions/news/1.avif",
-        title: "Lorem Ipsum 4",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
-    },
-    {
-        id: 5,
-        img: "/images/sectors/protective-solutions/news/1.avif",
-        title: "Lorem Ipsum 5",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
-    },
-];
+// const newsData = [
+//     {
+//         id: 1,
+//         img: "/images/sectors/protective-solutions/news/1.avif",
+//         title: "Lorem Ipsum 1",
+//         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+//     },
+//     {
+//         id: 2,
+//         img: "/images/sectors/protective-solutions/news/1.avif",
+//         title: "Lorem Ipsum 2",
+//         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+//     },
+//     {
+//         id: 3,
+//         img: "/images/sectors/protective-solutions/news/1.avif",
+//         title: "Lorem Ipsum 3",
+//         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+//     },
+//     {
+//         id: 4,
+//         img: "/images/sectors/protective-solutions/news/1.avif",
+//         title: "Lorem Ipsum 4",
+//         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+//     },
+//     {
+//         id: 5,
+//         img: "/images/sectors/protective-solutions/news/1.avif",
+//         title: "Lorem Ipsum 5",
+//         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+//     },
+// ];
 
-const InTheNews = () => {
+const InTheNews = ({ news }) => {
 
     const swiperRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const activeData = newsData[activeIndex];
+    const activeData = news[activeIndex];
 
     const handleNext = () => {
         if (swiperRef.current) {
@@ -89,7 +89,7 @@ const InTheNews = () => {
                         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                         className="!z-0"
                     >
-                        {newsData.map((item, index) => {
+                        {news.map((item, index) => {
                             const isActive = index === activeIndex;
                             return (
                                 <SwiperSlide key={item.id}>
@@ -122,7 +122,7 @@ const InTheNews = () => {
                     {activeData.title}
                 </span>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quas.
+                    {activeData.description}
                 </p>
 
                 {/* Next Btn */}
