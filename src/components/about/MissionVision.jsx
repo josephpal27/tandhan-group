@@ -67,10 +67,10 @@ const MissionVision = () => {
                                 src="/images/artboard.avif"
                                 alt="Artboard"
                                 loading="lazy"
-                                className={`
+                                className="
                                     w-[85%] filter invert absolute
                                     top-[-4rem] sm:top-[-2rem] lg:top-[-3rem] xl:top-[-3.5rem] 2xl:top-[-4rem]
-                                `}
+                                "
                             />
                         </div>
                     </div>

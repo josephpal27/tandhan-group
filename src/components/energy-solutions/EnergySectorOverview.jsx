@@ -11,11 +11,12 @@ const EnergySectorOverview = () => {
     return (
         <section className="
             pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
-            flex justify-between flex-wrap
+            pb-[5rem] sm:pb-[3rem] lg:pb-[3.5rem] xl:pb-[4rem] 2xl:pb-[4.5rem]
+            flex justify-between flex-wrap relative overflow-hidden
         ">
 
             {/* Content */}
-            <div className="w-[40%]">
+            <div className="w-[35%]">
                 <h2>
                     Sector <br /> Overview
                 </h2>
@@ -23,10 +24,10 @@ const EnergySectorOverview = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tenetur asperiores nihil repellat.
                 </p>
                 <p className={`
-                    mt-[0.7rem] lg:mt-[1rem] w-[80%] overflow-hidden transition-all duration-300
+                    mt-[0.7rem] lg:mt-[1rem] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
-                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing.
+                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing. Lorem ipsum dolor sit amet asperiores nihil repellat.
                 </p>
                 <button className="
                     mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
@@ -38,14 +39,26 @@ const EnergySectorOverview = () => {
             </div>
 
             {/* Image */}
-            <div className="w-[55%]">
-                <img 
-                    src="/images/sectors/energy-solutions/solar.png" 
-                    alt="Solar Panel" 
-                    loading="lazy" 
-                    className="w-full" 
+            <div className="w-[60%]">
+                <img
+                    src="/images/sectors/energy-solutions/solar.avif"
+                    alt="Solar Panel"
+                    loading="lazy"
+                    className="w-full mt-[1rem] relative z-50"
                 />
             </div>
+
+            {/* Artboard */}
+            <img
+                src="/images/artboard.avif"
+                alt="Artboard"
+                loading="lazy"
+                className="
+                    w-[30%] filter invert absolute opacity-50
+                    right-[-5rem] sm:right-[-3rem] lg:right-[-4rem] xl:right-[-4.5rem] 2xl:right-[-5rem]
+                    top-[-4rem] sm:top-[-5rem] lg:top-[-6.5rem] xl:top-[-7rem] 2xl:top-[-7.5rem]
+                "
+            />
 
         </section>
     )
