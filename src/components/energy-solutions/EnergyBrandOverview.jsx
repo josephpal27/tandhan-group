@@ -68,8 +68,8 @@ const EnergyBrandOverview = () => {
                             />
                             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-primary/20">
                                 <img 
-                                    src="/images/sectors/energy-solutions/brand-overview/logo.png" 
-                                    alt="Logo" 
+                                    src="/images/sectors/energy-solutions/brand-overview/logo.avif" 
+                                    alt="Tandhan Power Logo" 
                                     loading="lazy"
                                     className="w-[35%]"
                                 />
