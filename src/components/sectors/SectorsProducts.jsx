@@ -40,8 +40,8 @@ const SectorsProducts = () => {
 
             {/* Top */}
             <div className="relative">
-                <img src="/images/product-bg.png" alt="Products Background" loading="lazy" className="w-full" />
-                <div className="px-[1rem] sm:px-[5%] lg:px-[7%] absolute top-0 left-0 w-full h-full text-white pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]">
+                <img src="/images/sectors/protective-solutions/products-bg.avif" alt="Products Background" loading="lazy" className="w-full" />
+                <div className="px-[1rem] sm:px-[5%] lg:px-[7%] absolute top-0 left-0 w-full h-full text-white pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] bg-gradient-to-b from-primary/80 to-primary/40">
                     <motion.h4
                         variants={headingVariant}
                         initial="hidden"
@@ -93,7 +93,7 @@ const SectorsProducts = () => {
                                 <div className="absolute top-0 left-0 w-full h-full flex justify-end items-center pl-[35%] pr-[5px]">
                                     <div className="
                                         bg-white p-[2rem] sm:p-[1.5rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] text-black 
-                                        min-h-[55%] border-primary border-[2px] shadow-[1.95px_1.95px_2.6px_rgba(0,0,0,1)]
+                                        min-h-[55%] shadow-[2px_2px_2.6px_rgba(0,0,0,1)]
                                     ">
                                         <span className="
                                             text-[1.8rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem] font-semibold
