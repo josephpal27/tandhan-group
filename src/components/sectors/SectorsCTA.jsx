@@ -10,10 +10,10 @@ const SectorsCTA = () => {
             relative px-0 mt-[2rem] sm:mt-[2.2rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem] 
             mb-[1rem]
         ">
-            <img src="/images/sectors/protective-solutions/cta-bg.png" alt="CTA Image" loading="lazy" className="w-full" />
+            <img src="/images/sectors/protective-solutions/cta.png" alt="CTA Image" loading="lazy" className="w-full" />
             <div className="
                 absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white text-center
-                px-[1rem] sm:px-[5%] lg:px-[7%]
+                px-[1rem] sm:px-[5%] lg:px-[7%] bg-gradient-to-b from-primary/40 to-primary/100
             ">
                 <motion.h6
                     variants={headingVariant}
