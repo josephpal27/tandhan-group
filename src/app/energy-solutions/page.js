@@ -10,6 +10,7 @@ import EnergyBrandOverview from "@/components/energy-solutions/EnergyBrandOvervi
 import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
 import { sectorsProductsData } from "@/data/sectorsProductsData";
+import { sectorsCtaData } from "@/data/sectorsCtaData";
 
 export const metadata = {
   title: "Energy Solutions - Tandhan Group",
@@ -39,7 +40,9 @@ export default function EnergySolutions() {
       <InTheNews
         news={inTheNewsData.energy.news}
       />
-      <SectorsCTA />
+      <SectorsCTA 
+        cta={sectorsCtaData.energy.cta}
+      />
     </>
   );
 }

@@ -10,6 +10,7 @@ import SectorsFAQ from "@/components/sectors/SectorsFAQ";
 import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
 import { sectorsProductsData } from "@/data/sectorsProductsData";
+import { sectorsCtaData } from "@/data/sectorsCtaData";
 
 export const metadata = {
   title: "Protective Solutions - Tandhan Group",
@@ -39,7 +40,9 @@ export default function ProtectiveSolutions() {
       <InTheNews 
         news={inTheNewsData.protective.news} 
       />
-      <SectorsCTA />
+      <SectorsCTA 
+        cta={sectorsCtaData.protective.cta}
+      />
     </>
   );
 }
