@@ -89,11 +89,13 @@ const SectorsProducts = ({ products }) => {
                     {products.products.map((product, index) => {
                         return (
                             <SwiperSlide key={index} className="relative">
-                                <img src={product.image} alt={product.title} loading="lazy" className="w-[70%]" />
-                                <div className="absolute top-0 left-0 w-full h-full flex justify-end items-center pl-[35%] pr-[5px]">
+                                <img src={product.image} alt={product.title} loading="lazy" className="
+                                    w-[70%] hover:z-[100] relative group transition-all duration-300
+                                " />
+                                <div className="absolute top-[50%] -translate-y-1/2 left-0 w-[65%] flex justify-end items-center ml-[35%] pr-[5px] transition-all duration-300">
                                     <div className="
                                         bg-white p-[2rem] sm:p-[1.5rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] text-black 
-                                        min-h-[55%] shadow-[2px_2px_2.6px_rgba(0,0,0,1)]
+                                        min-h-[55%] shadow-[1px_1px_10px_rgba(0,0,0,0.3)]
                                     ">
                                         <span className="
                                             text-[1.8rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem] font-semibold
