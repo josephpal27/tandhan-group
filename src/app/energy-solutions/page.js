@@ -9,6 +9,7 @@ import EnergyBrandOverview from "@/components/energy-solutions/EnergyBrandOvervi
 
 import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
+import { sectorsProductsData } from "@/data/sectorsProductsData";
 
 export const metadata = {
   title: "Energy Solutions - Tandhan Group",
@@ -26,7 +27,9 @@ export default function EnergySolutions() {
       />
       <EnergySectorOverview />
       <EnergyBrandOverview />
-      <SectorsProducts />
+      <SectorsProducts 
+        products={sectorsProductsData.energy}
+      />
       <SectorsGallery />
       <SectorsFAQ
         description={sectorsFaqData.energy.description}

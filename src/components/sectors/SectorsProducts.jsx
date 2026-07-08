@@ -34,7 +34,7 @@ const productsData = [
     },
 ]
 
-const SectorsProducts = () => {
+const SectorsProducts = ({ products }) => {
     return (
         <section className="px-0">
 
@@ -51,7 +51,7 @@ const SectorsProducts = () => {
                         Our Products
                     </motion.h4>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem] w-[50%]">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident magni.
+                        {products.desc}
                     </p>
                 </div>
             </div>
@@ -86,7 +86,7 @@ const SectorsProducts = () => {
                         },
                     }}
                 >
-                    {productsData.map((product, index) => {
+                    {products.products.map((product, index) => {
                         return (
                             <SwiperSlide key={index} className="relative">
                                 <img src={product.image} alt={product.title} loading="lazy" className="w-[70%]" />
