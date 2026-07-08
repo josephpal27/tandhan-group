@@ -10,13 +10,28 @@ const EnergySectorOverview = () => {
 
     return (
         <section className="
-            pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
             pb-[5rem] sm:pb-[3rem] lg:pb-[3.5rem] xl:pb-[4rem] 2xl:pb-[4.5rem]
-            flex justify-between flex-wrap relative overflow-hidden
+            flex justify-between flex-wrap
         ">
 
+            {/* Image */}
+            <div className="w-[58%] relative">
+                <img
+                    src="/images/sectors/energy-solutions/solar-bg.avif"
+                    alt="Solar Background"
+                    loading="lazy"
+                    className="w-full relative z-50"
+                />
+                <img
+                    src="/images/sectors/energy-solutions/solar.avif"
+                    alt="Solar Panel"
+                    loading="lazy"
+                    className="w-full scale-[1.2] absolute bottom-[-4rem] z-50"
+                />
+            </div>
+
             {/* Content */}
-            <div className="w-[35%]">
+            <div className="w-[35%] pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] relative">
                 <h2>
                     Sector <br /> Overview
                 </h2>
@@ -36,29 +51,20 @@ const EnergySectorOverview = () => {
                 " onClick={() => setActive(!active)}>
                     {active ? "Read Less" : "Read More"}
                 </button>
-            </div>
 
-            {/* Image */}
-            <div className="w-[60%]">
+                {/* Artboard */}
                 <img
-                    src="/images/sectors/energy-solutions/solar.avif"
-                    alt="Solar Panel"
+                    src="/images/artboard.avif"
+                    alt="Artboard"
                     loading="lazy"
-                    className="w-full mt-[1rem] relative z-50"
+                    className="
+                        w-[80%] filter invert absolute opacity-50
+                        right-[-5rem] sm:right-[-3rem] lg:right-[-4rem] xl:right-[-4.5rem] 2xl:right-[-5rem]
+                        top-[-4rem] sm:top-[-5rem] lg:top-[-6.5rem] xl:top-[-7rem] 2xl:top-[-7.5rem]
+                    "
                 />
-            </div>
 
-            {/* Artboard */}
-            <img
-                src="/images/artboard.avif"
-                alt="Artboard"
-                loading="lazy"
-                className="
-                    w-[30%] filter invert absolute opacity-50
-                    right-[-5rem] sm:right-[-3rem] lg:right-[-4rem] xl:right-[-4.5rem] 2xl:right-[-5rem]
-                    top-[-4rem] sm:top-[-5rem] lg:top-[-6.5rem] xl:top-[-7rem] 2xl:top-[-7.5rem]
-                "
-            />
+            </div>
 
         </section>
     )
