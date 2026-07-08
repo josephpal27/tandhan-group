@@ -10,11 +10,11 @@ import 'swiper/css';
 const energyOverviewData = [
     {
         id: 1,
-        image: "/images/sectors/energy-solutions/brand-overview/1.png",
+        image: "/images/sectors/energy-solutions/brand-overview/1.avif",
     },
     {
         id: 2,
-        image: "/images/sectors/energy-solutions/brand-overview/1.png",
+        image: "/images/sectors/energy-solutions/brand-overview/1.avif",
     },
 ]
 
@@ -24,17 +24,20 @@ const EnergyBrandOverview = () => {
 
     return (
         <section className="
-            pt-[5rem] sm:pt-[2rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
+            pt-[5rem] sm:pt-[3rem] lg:pt-[5rem] xl:pt-[5.5rem] 2xl:pt-[6rem]
             flex justify-between flex-wrap relative
+            mb-[5rem]
         ">
 
-            <span>
+            <span className="
+                    absolute bottom-0 left-0 text-[7rem] text-[#e7e7e7] font-bold leading-[0.85]
+            ">
                 Tandhan <br /> Power
             </span>
 
             {/* Content */}
             <div className="
-                w-[48%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)] relative z-[50] bg-white
+                w-[48%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)] relative z-[50] bg-white h-max
                 top-[-8rem] 
                 right-[-4.5rem] 
                 p-[4rem]
@@ -42,7 +45,7 @@ const EnergyBrandOverview = () => {
                 <h3>
                     Brand <br /> Overview
                 </h3>
-                <p className="mt-[0.7rem] lg:mt-[1.2rem]">
+                <p className="mt-[0.7rem] lg:mt-[1.2rem] mb-[1rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi id rerum eius qui laborum, nostrum dolore cumque quas dolor rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </p>
             </div>
