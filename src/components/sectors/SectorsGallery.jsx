@@ -7,15 +7,7 @@ import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 import "swiper/css";
 
-const GalleryData = [
-    { id: 1, image: "/images/sectors/protective-solutions/gallery/1.avif", },
-    { id: 2, image: "/images/sectors/protective-solutions/gallery/1.avif", },
-    { id: 3, image: "/images/sectors/protective-solutions/gallery/1.avif", },
-    { id: 4, image: "/images/sectors/protective-solutions/gallery/1.avif", },
-    { id: 5, image: "/images/sectors/protective-solutions/gallery/1.avif", },
-]
-
-const SectorsGallery = () => {
+const SectorsGallery = ({gallery}) => {
 
     const [featuredIndex, setFeaturedIndex] = useState(1);
 
@@ -33,7 +25,7 @@ const SectorsGallery = () => {
                     Gallery
                 </motion.h5>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem] w-[50%]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident magni.
+                    {gallery.desc}
                 </p>
             </div>
 
@@ -70,12 +62,12 @@ const SectorsGallery = () => {
                     }}
                     onSlideChange={(swiper) => {
                         setFeaturedIndex(
-                            (swiper.realIndex + 1) % GalleryData.length
+                            (swiper.realIndex + 1) % gallery.images.length
                         );
                     }}
                     id="gallery-swiper"
                 >
-                    {GalleryData.map((item, index) => {
+                    {gallery.images.map((item, index) => {
                         return (
                             <SwiperSlide key={index} className={featuredIndex === index ? "featured-slide" : ""}>
                                 <div className={`gallery-card ${featuredIndex === index ? "featured" : ""}`}>

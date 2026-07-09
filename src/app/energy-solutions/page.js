@@ -11,6 +11,7 @@ import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
 import { sectorsProductsData } from "@/data/sectorsProductsData";
 import { sectorsCtaData } from "@/data/sectorsCtaData";
+import { sectorsGalleryData } from "@/data/sectorsGalleryData";
 
 export const metadata = {
   title: "Energy Solutions - Tandhan Group",
@@ -31,7 +32,9 @@ export default function EnergySolutions() {
       <SectorsProducts 
         products={sectorsProductsData.energy}
       />
-      <SectorsGallery />
+      <SectorsGallery 
+        gallery={sectorsGalleryData.energy}
+      />
       <SectorsFAQ
         description={sectorsFaqData.energy.description}
         faqs={sectorsFaqData.energy.faqs}
