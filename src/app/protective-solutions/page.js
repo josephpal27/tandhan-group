@@ -11,6 +11,7 @@ import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
 import { sectorsProductsData } from "@/data/sectorsProductsData";
 import { sectorsCtaData } from "@/data/sectorsCtaData";
+import { sectorsGalleryData } from "@/data/sectorsGalleryData";
 
 export const metadata = {
   title: "Protective Solutions - Tandhan Group",
@@ -28,19 +29,21 @@ export default function ProtectiveSolutions() {
       />
       <PolyplastSectorOverview />
       <PolyplastBrandOverview />
-      <SectorsProducts 
+      <SectorsProducts
         products={sectorsProductsData.protective}
       />
-      <SectorsGallery />
-      <SectorsFAQ 
+      <SectorsGallery
+        gallery={sectorsGalleryData.protective}
+      />
+      <SectorsFAQ
         description={sectorsFaqData.protective.description}
         faqs={sectorsFaqData.protective.faqs}
         image={sectorsFaqData.protective.image}
       />
-      <InTheNews 
-        news={inTheNewsData.protective.news} 
+      <InTheNews
+        news={inTheNewsData.protective.news}
       />
-      <SectorsCTA 
+      <SectorsCTA
         cta={sectorsCtaData.protective.cta}
       />
     </>
