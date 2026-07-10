@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -42,9 +42,15 @@ const EnergyBrandOverview = () => {
                 right-[-4.5rem] 
                 p-[4rem]
             ">
-                <h3>
+                <motion.h3
+                    className="relative z-50"
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Brand <br /> Overview
-                </h3>
+                </motion.h3>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem] mb-[1rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi id rerum eius qui laborum, nostrum dolore cumque quas dolor rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </p>
@@ -67,9 +73,9 @@ const EnergyBrandOverview = () => {
                                 className="w-full aspect-[3/2] object-cover"
                             />
                             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-primary/20">
-                                <img 
-                                    src="/images/sectors/energy-solutions/brand-overview/logo.avif" 
-                                    alt="Tandhan Power Logo" 
+                                <img
+                                    src="/images/sectors/energy-solutions/brand-overview/logo.avif"
+                                    alt="Tandhan Power Logo"
                                     loading="lazy"
                                     className="w-[35%]"
                                 />
