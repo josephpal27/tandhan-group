@@ -26,17 +26,17 @@ const Founder = () => {
                 p-[1rem] sm:p-[1.5rem] lg:p-[3.4rem] xl:p-[3.7rem] 2xl:p-[4rem] 
                 mt-[1rem] lg:mt-0
             ">
-                <img src="/images/quote.avif" alt="Quote" loading="lazy" className="w-[25%] mb-[1.8rem] sm:mb-[2rem] lg:mb-[2.4rem] xl:mb-[2.7rem] 2xl:mb-[3rem]" />
+                <img src="/images/quote.avif" alt="Quote" loading="lazy" className="w-[17%] mb-[1.8rem] sm:mb-[2rem] lg:mb-[2.4rem] xl:mb-[2.7rem] 2xl:mb-[3rem]" />
                 <motion.h5
                     variants={headingVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Founder's Message
+                    Chairman’s Message
                 </motion.h5>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat adipisicing elit tenetur dolorum commodi voluptatem debitis itaque facere adipisicing elit accusamus numquam nam. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    The story of Tandhan is, at its heart, a story of believing in possibilities before they become apparent. Over the years, that belief has taken us across industries, markets, and continents. What has remained unchanged is our instinct to anticipate change, embrace challenges, and create enduring value. As we enter the next chapter of growth, our commitment remains the same: to build responsibly, think long term, and leave a meaningful impact wherever we operate.
                 </p>
                 <div className="flex gap-[0.8rem] items-center mt-[0.7rem] lg:mt-[1rem]">
                     <div className="w-[30px] lg:w-[45px] h-[2px] bg-primary"></div>
