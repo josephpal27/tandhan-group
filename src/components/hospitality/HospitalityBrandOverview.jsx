@@ -29,12 +29,14 @@ const HospitalityBrandOverview = () => {
     };
 
     return (
-        <section>
+        <section className="
+            pt-[2rem] sm:pt-[9rem] lg:pt-[12rem] xl:pt-[13.5rem] 2xl:pt-[14rem]
+            pb-[2rem] sm:pb-[1.5rem] lg:pb-[2rem] xl:pb-[2.5rem] 2xl:pb-[3rem]
+        ">
 
             {/* Top */}
             <div className="
-                flex justify-between flex-wrap
-                pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
+                flex justify-between flex-wrap items-center
             ">
                 {/* Main Display Image */}
                 <div className="w-[49%]">
@@ -65,10 +67,10 @@ const HospitalityBrandOverview = () => {
                 {/* Content */}
                 <div className="w-[48%]">
                     <h3>
-                        Brand Overview
+                        Brand <br /> Overview
                     </h3>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita officia rem voluptatum mollitia consequatur, quaerat dolores voluptas dolor maiores sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, quidem? Saepe autem cumque libero quasi eligendi error magni dolores deleniti assumenda voluptates voluptatum quia nulla itaque, adipisci accusamus! Enim, corporis.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita officia rem voluptatum mollitia consequatur, quaerat dolores voluptas dolor maiores sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
             </div>

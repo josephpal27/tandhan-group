@@ -30,7 +30,7 @@ const EnergyBrandOverview = () => {
         ">
 
             <span className="
-                    absolute bottom-0 left-0 text-[7rem] text-[#e7e7e7] font-bold leading-[0.85]
+                absolute bottom-0 left-0 text-[7rem] text-[#e7e7e7] font-bold leading-[0.85]
             ">
                 Tandhan <br /> Power
             </span>
