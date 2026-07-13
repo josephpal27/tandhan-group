@@ -6,14 +6,14 @@ import { headingVariant } from "@/utils/animations";
 const missionVisionData = [
     {
         id: 1,
-        title: "Mission",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet.",
+        title: "Our Purpose",
+        desc: "To create enduring value by building businesses that anticipate change, strengthen communities, and unlock opportunities. Guided by instinct and driven by responsibility, we strive to deliver solutions that empower progress, foster resilience, and contribute to a more sustainable future.",
         image: "/images/mission.avif",
     },
     {
         id: 2,
-        title: "Vision",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet.",
+        title: "Our Belief",
+        desc: "We believe that growth comes to those willing to see potential before it becomes obvious. Our vision is to build enduring enterprises that create value, empower communities, and inspire progress - guided by instinct, strengthened by experience, and driven by a commitment to the future.",
         image: "/images/vision.avif",
     },
 ]
