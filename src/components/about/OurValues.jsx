@@ -7,26 +7,26 @@ import { useState } from "react";
 const ourValuesData = [
     {
         id: 1,
-        title: "lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat under.",
+        title: "Integrity",
+        desc: "We uphold the highest standards of honesty, accountability, and transparency. Every decision we make is guided by ethics, earning the trust of our customers, partners, employees, and communities.",
         image: "/images/values/1.avif",
     },
     {
         id: 2,
-        title: "lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat under.",
+        title: "Foresight",
+        desc: "We look beyond the immediate, anticipating change and identifying opportunities before they become obvious. Guided by experience and sound judgment, we make decisions that create enduring value.",
         image: "/images/values/2.avif",
     },
     {
         id: 3,
-        title: "lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat under.",
+        title: "Sustainability",
+        desc: "We believe growth should create a positive impact. Through responsible manufacturing, resource stewardship, and conscious business practices, we are building a more resilient future for generations to come.",
         image: "/images/values/3.avif",
     },
     {
         id: 4,
-        title: "lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat under.",
+        title: "Inclusivity",
+        desc: "We believe meaningful progress is achieved together. By fostering a culture of respect, collaboration, and equal opportunity, we empower people, strengthen communities, and create shared success.",
         image: "/images/values/4.avif",
     },
 ]
@@ -91,7 +91,7 @@ const OurValues = () => {
                                 <span className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold">
                                     {value.title}
                                 </span>
-                                <p className="mt-[0.7rem] lg:mt-[0.8rem] text-[0.65rem] sm:text-[0.7rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
+                                <p className="mt-[0.7rem] lg:mt-[0.8rem] text-[0.65rem] sm:text-[0.75rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]">
                                     {value.desc}
                                 </p>
                             </div>
