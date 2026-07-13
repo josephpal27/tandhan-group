@@ -29,7 +29,7 @@ const OurStory = () => {
         <section className="pt-[2rem] sm:pt-[2.5rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap items-center pl-0 flex-col-reverse lg:flex-row">
 
             {/* Slider */}
-            <div className="w-full lg:w-[55%] flex justify-between mt-[1.8rem] lg:mt-0">
+            <div className="w-full lg:w-[54%] flex justify-between mt-[1.8rem] lg:mt-0">
                 <div className="w-[80%] overflow-hidden">
                     <Swiper
                         modules={[Navigation]}
@@ -100,20 +100,23 @@ const OurStory = () => {
             </div>
 
             {/* Content */}
-            <div className="w-full lg:w-[44%] pl-[1rem] lg:pl-0">
+            <div className="w-full lg:w-[46%] pl-[1rem] lg:pl-0">
                 <motion.h2
                     variants={headingVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Our Story
+                    The Tandhan Story
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.5rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet, dolor amet recusandae aut numquam voluptatem ab tempore quae sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quaerat quae eveniet vitae modi aspernatur adipisci necessitatibus recusandae harum assumenda.
+                    Founded in Kolkata in 1994, Tandhan Group has spent over three decades building businesses that solve real-world challenges. Today, with a presence across 25+ countries, we operate across protective solutions, textiles, energy, and hospitality.
                 </p>
                 <p className="mt-[0.3rem] lg:mt-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi quaerat unde, vero incidunt accusantium odit fugit maiores itaque eveniet, dolor amet recusandae aut numquam voluptatem ab tempore quae sit.
+                    Driven by innovation, integrity, and manufacturing excellence, our 2,000+ people create more than products - they build partnerships, livelihoods, and opportunities. Every venture we etiquette is guided by a shared belief: meaningful growth is achieved when business success creates value for people, communities, and markets alike.
+                </p>
+                <p className="mt-[0.3rem] lg:mt-[1rem]">
+                    For a corporate timeline, avoid simply describing the company. Each milestone should explain <b>what it represented in Tandhan's evolution</b> and connect to the larger story of growth, diversification, and global expansion.
                 </p>
             </div>
 
