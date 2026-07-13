@@ -4,8 +4,8 @@ import SectorsProducts from "@/components/sectors/SectorsProducts";
 import SectorsBanner from "@/components/sectors/SectorsBanner";
 import SectorsCTA from "@/components/sectors/SectorsCTA";
 import SectorsFAQ from "@/components/sectors/SectorsFAQ";
-import EnergySectorOverview from "@/components/energy-solutions/EnergySectorOverview";
-import EnergyBrandOverview from "@/components/energy-solutions/EnergyBrandOverview";
+import HospitalitySectorOverview from "@/components/hospitality/HospitalitySectorOverview";
+import HospitalityBrandOverview from "@/components/hospitality/HospitalityBrandOverview";
 
 import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
@@ -22,13 +22,13 @@ export default function EnergySolutions() {
   return (
     <>
       <SectorsBanner
-        image="/images/banners/energy-solutions-banner.avif"
+        image="/images/banners/hospitality-banner.avif"
         title="Hospitality"
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
         business="NX Hotel"
       />
-      <EnergySectorOverview />
-      <EnergyBrandOverview />
+      <HospitalitySectorOverview />
+      <HospitalityBrandOverview />
       {/* <SectorsProducts 
         products={sectorsProductsData.energy}
       />
