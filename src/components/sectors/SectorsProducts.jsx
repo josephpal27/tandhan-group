@@ -13,7 +13,7 @@ const SectorsProducts = ({ products }) => {
 
             {/* Top */}
             <div className="relative">
-                <img src="/images/sectors/protective-solutions/products-bg.avif" alt="Products Background" loading="lazy" className="w-full" />
+                <img src={products.background} alt="Products Background" loading="lazy" className="w-full" />
                 <div className="px-[1rem] sm:px-[5%] lg:px-[7%] absolute top-0 left-0 w-full h-full text-white pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] bg-gradient-to-b from-primary/80 to-primary/40">
                     <motion.h4
                         variants={headingVariant}
@@ -21,7 +21,7 @@ const SectorsProducts = ({ products }) => {
                         whileInView="visible"
                         viewport={{ once: true }}
                     >
-                        Our Products
+                        {products.title}
                     </motion.h4>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem] w-[50%]">
                         {products.desc}

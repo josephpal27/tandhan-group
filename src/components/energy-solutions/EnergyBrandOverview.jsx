@@ -40,7 +40,7 @@ const EnergyBrandOverview = () => {
                 w-[48%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)] relative z-[50] bg-white h-max
                 top-[-8rem] 
                 right-[-4.5rem] 
-                p-[4rem]
+                p-[3.8rem]
             ">
                 <motion.h3
                     className="relative z-50"
@@ -49,10 +49,10 @@ const EnergyBrandOverview = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Brand <br /> Overview
+                    Brand Overview
                 </motion.h3>
-                <p className="mt-[0.7rem] lg:mt-[1.2rem] mb-[1rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi id rerum eius qui laborum, nostrum dolore cumque quas dolor rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <p className="mt-[0.7rem] lg:mt-[1.2rem]">
+                    Tandhan Power is the energy solutions and EPC arm of Tandhan Group, delivering end-to-end power infrastructure across Asia, Africa, and the Middle East. Combining engineering expertise with advanced energy technologies, the company specializes in renewable energy, battery storage, hybrid power systems, and turnkey EPC solutions, enabling customers to build reliable, efficient, and future-ready energy ecosystems.
                 </p>
             </div>
 

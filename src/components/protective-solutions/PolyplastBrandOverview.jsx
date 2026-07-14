@@ -21,8 +21,8 @@ const PolyplastBrandOverview = () => {
                     >
                         Brand Overview
                     </motion.h3>
-                    <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima adipisicing tenetur asperiores nihil repellat pariatur explicabo tenetur exercitationem molestiae ducimus fugiat.
+                    <p className="mt-[0.7rem] lg:mt-[1.2rem] lg:w-[95%]">
+                        Tandhan Polyplast is one of Eastern India's leading manufacturers of high-performance polymer solutions, serving customers across India and international markets. Backed by advanced manufacturing facilities, stringent quality standards, and a growing export footprint, the company produces durable, application-specific solutions that meet the evolving needs of agriculture, infrastructure, and industry.
                     </p>
                     <Link href="/" className="
                         mt-[2.5rem] bg-primary hover:bg-white w-max text-white hover:text-primary font-semibold transition
