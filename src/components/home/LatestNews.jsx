@@ -39,8 +39,8 @@ const LatestNews = () => {
                 >
                     Latest News
                 </motion.h6>
-                <p className="w-full lg:w-[50%] mt-[0.7rem] lg:mt-[1rem]">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam corporis soluta minus, dolores molestias Lorem, ipsum.
+                <p className="w-full lg:w-[60%] mt-[0.7rem] lg:mt-[1rem]">
+                    Stay connected with the latest developments across Tandhan Group - from business milestones and industry recognitions to innovations, partnerships, and stories shaping our journey forward.
                 </p>
             </div>
 
