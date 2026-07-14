@@ -44,4 +44,27 @@ export const sectorsFaqData = {
             },
         ],
     },
+
+    hospitality: {
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+        image: "/images/sectors/hospitality/faq.avif",
+        faqs: [
+            {
+                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+            },
+            {
+                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+            },
+            {
+                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+            },
+            {
+                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+            },
+        ],
+    },
 };

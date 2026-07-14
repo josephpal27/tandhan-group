@@ -36,9 +36,9 @@ export default function EnergySolutions() {
         gallery={sectorsGalleryData.hospitality}
       />
       <SectorsFAQ
-        description={sectorsFaqData.energy.description}
-        faqs={sectorsFaqData.energy.faqs}
-        image={sectorsFaqData.energy.image}
+        description={sectorsFaqData.hospitality.description}
+        faqs={sectorsFaqData.hospitality.faqs}
+        image={sectorsFaqData.hospitality.image}
       />
       <InTheNews
         news={inTheNewsData.hospitality.news}
