@@ -66,9 +66,14 @@ const HospitalityBrandOverview = () => {
 
                 {/* Content */}
                 <div className="w-[48%]">
-                    <h3>
+                    <motion.h3
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
                         Brand <br /> Overview
-                    </h3>
+                    </motion.h3>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita officia rem voluptatum mollitia consequatur, quaerat dolores voluptas dolor maiores sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     </p>
