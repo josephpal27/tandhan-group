@@ -15,7 +15,7 @@ const EnergySectorOverview = () => {
         ">
 
             {/* Image */}
-            <div className="w-[58%] relative">
+            <div className="w-[58%] relative h-max">
                 <img
                     src="/images/sectors/energy-solutions/solar-bg.avif"
                     alt="Solar Background"
@@ -46,13 +46,13 @@ const EnergySectorOverview = () => {
                     Sector <br /> Overview
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tenetur asperiores nihil repellat.
+                    Reliable energy is the foundation of growth. Our Energy Solutions business delivers integrated power, renewable energy, and energy storage solutions that help industries, businesses, and communities operate with confidence.
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
-                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing. Lorem ipsum dolor sit amet asperiores nihil repellat.
+                    From conventional power backup to next-generation solar and battery technologies, we combine engineering expertise with dependable execution to build resilient energy infrastructure that powers progress across emerging markets.
                 </p>
                 <button className="
                     mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition

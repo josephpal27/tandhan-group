@@ -30,7 +30,7 @@ export default function EnergySolutions() {
       <HospitalitySectorOverview />
       <HospitalityBrandOverview />
       <SectorsProducts 
-        products={sectorsProductsData.energy}
+        products={sectorsProductsData.hospitality}
       />
       <SectorsGallery 
         gallery={sectorsGalleryData.hospitality}
@@ -44,7 +44,7 @@ export default function EnergySolutions() {
         news={inTheNewsData.hospitality.news}
       />
       <SectorsCTA 
-        cta={sectorsCtaData.energy.cta}
+        cta={sectorsCtaData.hospitality.cta}
       />
     </>
   );

@@ -16,4 +16,13 @@ export const sectorsCtaData = {
             url: "/",
         },
     },
+
+    hospitality: {
+        cta: {
+            title: "Lorem ipsum dolor",
+            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quas.",
+            image: "/images/sectors/hospitality/cta.avif",
+            url: "/",
+        },
+    },
 }

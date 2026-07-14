@@ -13,19 +13,13 @@ const sustainableData = [
     {
         id: 1,
         title: "Sustainability",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam fuga magnam odit atque. Dolores, labore? Cum at non tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas consequatur impedit dolorem eaque deleniti ex nobis voluptatem quisquam recusandae.",
-        image: "/images/sustainable-bg.avif",
-    },
-    {
-        id: 2,
-        title: "Lorem Ipsum",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam fuga magnam odit atque. Dolores, labore? Cum at non tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas consequatur impedit dolorem eaque deleniti ex nobis voluptatem quisquam recusandae.",
+        desc: "<b>Building for tomorrow begins with how we operate today</b>. Across our businesses, we are embedding responsible manufacturing, resource conservation, and operational efficiency into every stage of growth. From water recycling and renewable energy adoption to making products that sustain livelihoods, Tandhan is committed to creating long-term value while reducing its environmental footprint and strengthening the communities we serve.",
         image: "/images/sustainable-bg-2.avif",
     },
     {
-        id: 3,
-        title: "Lorem Ipsum",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laboriosam fuga magnam odit atque. Dolores, labore? Cum at non tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas consequatur impedit dolorem eaque deleniti ex nobis voluptatem quisquam recusandae.",
+        id: 2,
+        title: "CSR",
+        desc: "<b>Growth is meaningful only when it creates opportunities for others</b>. Through the Tandhan Foundation, we invest in education, skill development, healthcare, and community well-being. Our initiatives are designed to create lasting impact, empower future generations, and contribute to inclusive progress - ensuring that as our businesses grow, the communities around us grow stronger too.",
         image: "/images/sustainable-bg.avif",
     },
 ]
@@ -94,9 +88,7 @@ const Sustainable = () => {
                             >
                                 {item.title}
                             </motion.h5>
-                            <p className="mt-[0.7rem] lg:mt-[1.5rem] w-full lg:w-[50%]">
-                                {item.desc}
-                            </p>
+                            <p className="mt-[0.7rem] lg:mt-[1.5rem] w-full lg:w-[50%]" dangerouslySetInnerHTML={{ __html: item.desc }} />
                         </div>
                     </SwiperSlide>
                 ))}
