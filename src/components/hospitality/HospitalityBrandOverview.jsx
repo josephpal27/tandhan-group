@@ -30,7 +30,7 @@ const HospitalityBrandOverview = () => {
 
     return (
         <section className="
-            pt-[2rem] sm:pt-[9rem] lg:pt-[12rem] xl:pt-[13.5rem] 2xl:pt-[14rem]
+            pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
             pb-[2rem] sm:pb-[1.5rem] lg:pb-[2rem] xl:pb-[2.5rem] 2xl:pb-[3rem]
         ">
 

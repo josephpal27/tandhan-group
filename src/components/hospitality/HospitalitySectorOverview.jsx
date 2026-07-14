@@ -40,7 +40,7 @@ const HospitalitySectorOverview = () => {
             </div>
 
             {/* Image */}
-            <div className="w-[18%] relative">
+            {/* <div className="w-[18%] relative">
                 <img
                     src="/images/sectors/hospitality/bg.avif"
                     alt="Background"
@@ -48,22 +48,28 @@ const HospitalitySectorOverview = () => {
                     className="w-full"
                 />
                 <img
-                    src="/images/sectors/hospitality/umbrella-base.avif"
+                    src="/images/sectors/hospitality/umbrella-base.png"
                     alt="Umbrella Base"
                     loading="lazy"
                     className="w-full absolute bottom-0 left-0 scale-[2.2]"
                 />
-            </div>
+            </div> */}
 
             {/* Right */}
-            <div className="w-[27%] relative">
-                <span className="
+            <div className="w-[61%] relative">
+                {/* <span className="
                     block [writing-mode:vertical-rl] rotate-180 
                     text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6.5rem] 2xl:text-[7rem]
                     text-[#e7e7e7] font-bold leading-[0.85] tracking-[0.02em] absolute top-0 right-[-10%]
                 ">
                     HOSPITALITY
-                </span>
+                </span> */}
+                <img
+                    src="/images/sectors/hospitality/umbrella-base.avif"
+                    alt="Umbrella Base"
+                    loading="lazy"
+                    className="w-full"
+                />
             </div>
 
         </section>
