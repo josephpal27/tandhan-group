@@ -60,7 +60,7 @@ const HospitalitySectorOverview = () => {
                 <span className="
                     block [writing-mode:vertical-rl] rotate-180 
                     text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6.5rem] 2xl:text-[7rem]
-                    text-[#e7e7e7] font-bold leading-[0.85] tracking-[0.05em] absolute top-0 right-[-10%]
+                    text-[#e7e7e7] font-bold leading-[0.85] tracking-[0.02em] absolute top-0 right-[-10%]
                 ">
                     HOSPITALITY
                 </span>

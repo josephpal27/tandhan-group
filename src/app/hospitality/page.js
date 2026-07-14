@@ -33,7 +33,7 @@ export default function EnergySolutions() {
         products={sectorsProductsData.energy}
       />
       <SectorsGallery 
-        gallery={sectorsGalleryData.energy}
+        gallery={sectorsGalleryData.hospitality}
       />
       <SectorsFAQ
         description={sectorsFaqData.energy.description}
@@ -41,7 +41,7 @@ export default function EnergySolutions() {
         image={sectorsFaqData.energy.image}
       />
       <InTheNews
-        news={inTheNewsData.energy.news}
+        news={inTheNewsData.hospitality.news}
       />
       <SectorsCTA 
         cta={sectorsCtaData.energy.cta}
