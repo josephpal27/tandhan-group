@@ -19,7 +19,7 @@ const servicesData = [
         title: "Textiles",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/4.avif",
-        logos: ["/images/logo/tandhan-denim.png", "/images/logo/tandhan-saree.png", "/images/logo/tandhan-fashion.png"],
+        logos: ["/images/logo/tandhan-denim.png"],
     },
     {
         id: 4,

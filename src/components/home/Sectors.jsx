@@ -115,7 +115,7 @@ const Sectors = () => {
                     Our Sectors <br /> & Businesses
                 </motion.h4>
                 <p className="mt-[0.7rem] lg:mt-[1.5rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, error ex voluptates sed harum repellat fugiat illum incidunt animi iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus.
+                    Built on instinct and strengthened through diversification, Tandhan Group operates across four sectors. Each sector addresses a distinct need, yet all are united by the same commitment to quality, resilience, and long-term value creation. Together, they form a portfolio designed to serve evolving markets, create opportunities, and drive sustainable growth across India and the world.
                 </p>
             </div>
         </section>

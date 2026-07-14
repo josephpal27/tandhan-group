@@ -43,8 +43,8 @@ const GlobalPresence = () => {
                 >
                     Global Presence
                 </motion.h6>
-                <p className="w-full lg:w-[50%] mt-[0.7rem] lg:mt-[1rem]">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam corporis soluta minus, dolores molestias Lorem, ipsum.
+                <p className="w-full lg:w-[70%] mt-[0.7rem] lg:mt-[1rem]">
+                    Tandhan's presence across multiple countries is driven by a simple belief: growth follows opportunity. By combining international ambition with local understanding, we continue to expand our impact across global markets.
                 </p>
             </div>
 

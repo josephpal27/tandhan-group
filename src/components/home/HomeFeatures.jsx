@@ -9,26 +9,26 @@ import "swiper/css/pagination";
 const featuresData = [
     {
         id: 1,
-        title: "Lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
+        title: "Manufacturing <br/> at Scale",
+        desc: "Built in the East, trusted by the world. From tarpaulins and denim to power solutions, our manufacturing strength delivers quality, reliability, and scale across global markets.",
         icon: "/images/icons/industry.png",
     },
     {
         id: 2,
-        title: "Lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
+        title: "Global Ambition, <br/> Eastern Roots",
+        desc: "Rooted in Kolkata, built for the world. What began in Eastern India has grown into a global enterprise with a presence across continents and expanding horizons.",
         icon: "/images/icons/market.png",
     },
     {
         id: 3,
-        title: "Lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
+        title: "Responsible <br/> Growth",
+        desc: "Growth with purpose at its core. From resource conservation to responsible manufacturing, every step forward is designed to create lasting value for people and the planet.",
         icon: "/images/icons/sustainable.png",
     },
     {
         id: 4,
-        title: "Lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet, adipisicing elit. Distinctio numquam nihil lorem voluptatibus applications through revolutionary laboriosam.",
+        title: "Diversified <br/> Resilience",
+        desc: "Four industries. One group. A diversified portfolio built to adapt, evolve, and create enduring value through changing markets and business cycles.",
         icon: "/images/icons/stack.png",
     },
 ];
@@ -41,9 +41,8 @@ const FeatureCard = ({ feature }) => (
             loading="lazy"
             className="w-[20%]"
         />
-        <span className="text-[1.4rem] sm:text-[1.6rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem] text-black font-semibold block mt-[0.8rem]">
-            {feature.title}
-        </span>
+        <span className="text-[1.4rem] sm:text-[1.6rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem] text-black font-semibold block mt-[1rem] leading-[1.2]" dangerouslySetInnerHTML={{ __html: feature.title }} />
+
         <p className="text-gray-900 mt-[0.5rem] text-[1rem] sm:text-[1.1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
             {feature.desc}
         </p>
