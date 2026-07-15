@@ -41,7 +41,7 @@ const PolyplastSectorOverview = () => {
 
             {/* Center */}
             <motion.div
-                className="w-full lg:w-[32%] mt-[2rem] lg:mt-0"
+                className="w-full lg:w-[32%] mt-[2rem] lg:mt-0 hidden lg:block"
                 initial={{ opacity: 0, y: -450 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -58,6 +58,16 @@ const PolyplastSectorOverview = () => {
                     className="w-[55%] lg:w-full mx-auto"
                 />
             </motion.div>
+
+            {/* Mobile / Tablet - no animation */}
+            <div className="w-full lg:hidden mt-[2rem]">
+                <img
+                    src="/images/sectors/protective-solutions/truck-bg.avif"
+                    alt="Sector Overview"
+                    loading="lazy"
+                    className="w-[55%] mx-auto"
+                />
+            </div>
 
             {/* Right */}
             <div className="w-full lg:w-[30%] flex items-end pb-[3rem] sm:pb-[1.5rem] lg:pb-[2rem] xl:pb-[2.5rem] 2xl:pb-[3rem] relative z-50 mt-[2rem] lg:mt-0">
