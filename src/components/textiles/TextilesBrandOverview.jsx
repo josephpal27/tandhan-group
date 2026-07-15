@@ -30,7 +30,7 @@ const TextilesBrandOverview = () => {
         ">
 
             <span className="
-                absolute bottom-[2rem] left-0 text-[3rem] sm:text-[3rem] lg:text-[6rem] xl:text-[6.5rem] 2xl:text-[7rem] text-[#e7e7e7] font-bold leading-[0.85] hidden lg:block
+                absolute bottom-[2rem] sm:bottom-[3rem] lg:bottom-[4rem] xl:bottom-[4.5rem] 2xl:bottom-[5rem] left-0 text-[3rem] sm:text-[3rem] lg:text-[6rem] xl:text-[6.5rem] 2xl:text-[7rem] text-[#e7e7e7] font-bold leading-[0.85] hidden lg:block
             ">
                 Tandhan <br /> Denim
             </span>
@@ -38,7 +38,7 @@ const TextilesBrandOverview = () => {
             {/* Content */}
             <div className="
                 w-full lg:w-[48%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)] relative z-[50] bg-white h-max
-                top-0 lg:top-[7rem] xl:top-[7.5rem] 2xl:top-[8rem]
+                top-0 lg:top-[5rem] xl:top-[5.5rem] 2xl:top-[6rem]
                 right-0 lg:right-[-4rem] xl:right-[-4.5rem] 2xl:right-[-5rem]
                 p-[1rem] sm:p-[2rem] lg:p-[2.8rem] xl:p-[3.3rem] 2xl:p-[3.8rem]
                 mb-[1rem] lg:mb-0
