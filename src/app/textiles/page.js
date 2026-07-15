@@ -4,8 +4,8 @@ import SectorsProducts from "@/components/sectors/SectorsProducts";
 import SectorsBanner from "@/components/sectors/SectorsBanner";
 import SectorsCTA from "@/components/sectors/SectorsCTA";
 import SectorsFAQ from "@/components/sectors/SectorsFAQ";
-import HospitalitySectorOverview from "@/components/hospitality/HospitalitySectorOverview";
-import HospitalityBrandOverview from "@/components/hospitality/HospitalityBrandOverview";
+import TextilesSectorOverview from "@/components/textiles/TextilesSectorOverview";
+import TextilesBrandOverview from "@/components/textiles/TextilesBrandOverview";
 
 import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
@@ -27,12 +27,12 @@ export default function EnergySolutions() {
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
         business="Tandhan Denim"
       />
-      <HospitalitySectorOverview />
-      <HospitalityBrandOverview />
-      <SectorsProducts 
+      <TextilesSectorOverview />
+      <TextilesBrandOverview />
+      <SectorsProducts
         products={sectorsProductsData.hospitality}
       />
-      <SectorsGallery 
+      <SectorsGallery
         gallery={sectorsGalleryData.hospitality}
       />
       <SectorsFAQ
@@ -43,7 +43,7 @@ export default function EnergySolutions() {
       <InTheNews
         news={inTheNewsData.hospitality.news}
       />
-      <SectorsCTA 
+      <SectorsCTA
         cta={sectorsCtaData.hospitality.cta}
       />
     </>
