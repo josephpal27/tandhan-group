@@ -6,7 +6,6 @@ import { SlLocationPin } from "react-icons/sl";
 import { LuPhone } from "react-icons/lu";
 import { LuMessageSquareText } from "react-icons/lu";
 import { MdChevronRight, MdArrowDropDown } from "react-icons/md";
-import { HiArrowSmRight } from "react-icons/hi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -21,14 +20,18 @@ const Navbar = () => {
     // Body scroll lock
     useEffect(() => {
         if (open) {
+            window.lenis?.stop();
             const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
             document.body.style.overflow = "hidden";
             document.body.style.paddingRight = `${scrollBarWidth}px`;
         } else {
+            window.lenis?.start();
             document.body.style.overflow = "";
             document.body.style.paddingRight = "";
         }
+
         return () => {
+            window.lenis?.start();
             document.body.style.overflow = "";
             document.body.style.paddingRight = "";
         };

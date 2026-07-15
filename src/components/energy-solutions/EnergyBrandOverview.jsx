@@ -24,23 +24,24 @@ const EnergyBrandOverview = () => {
 
     return (
         <section className="
-            pt-[5rem] sm:pt-[3rem] lg:pt-[13rem] xl:pt-[13.5rem] 2xl:pt-[14rem]
+            pt-[1rem] sm:pt-[1.5rem] lg:pt-[13rem] xl:pt-[13.5rem] 2xl:pt-[14rem]
             flex justify-between flex-wrap relative
-            mb-[5rem]
+            mb-[2rem] sm:mb-[3rem] lg:mb-[4rem] xl:mb-[4.5rem] 2xl:mb-[5rem]
         ">
 
             <span className="
-                absolute bottom-0 left-0 text-[7rem] text-[#e7e7e7] font-bold leading-[0.85]
+                absolute bottom-0 left-0 text-[3rem] sm:text-[3rem] lg:text-[6rem] xl:text-[6.5rem] 2xl:text-[7rem] text-[#e7e7e7] font-bold leading-[0.85] hidden lg:block
             ">
                 Tandhan <br /> Power
             </span>
 
             {/* Content */}
             <div className="
-                w-[48%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)] relative z-[50] bg-white h-max
-                top-[-8rem] 
-                right-[-4.5rem] 
-                p-[3.8rem]
+                w-full lg:w-[48%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)] relative z-[50] bg-white h-max
+                top-0 lg:top-[-7rem] xl:top-[-7.5rem] 2xl:top-[-8rem]
+                right-0 lg:right-[-3.5rem] xl:right-[-4rem] 2xl:right-[-4.5rem]
+                p-[1rem] sm:p-[2rem] lg:p-[2.8rem] xl:p-[3.3rem] 2xl:p-[3.8rem]
+                mb-[1rem] lg:mb-0
             ">
                 <motion.h3
                     className="relative z-50"
@@ -57,7 +58,7 @@ const EnergyBrandOverview = () => {
             </div>
 
             {/* Slider */}
-            <div className="w-[52%] relative">
+            <div className="w-full lg:w-[52%] relative">
                 <Swiper
                     modules={[Navigation]}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
