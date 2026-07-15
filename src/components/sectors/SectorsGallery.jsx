@@ -12,7 +12,7 @@ const SectorsGallery = ({gallery}) => {
     const [featuredIndex, setFeaturedIndex] = useState(1);
 
     return (
-        <section className="px-0 pt-[3rem] sm:pt-[1.5rem] lg:pt-[0.2rem] xl:pt-[0.5rem] 2xl:pt-[1rem] overflow-hidden">
+        <section className="px-0 pt-[1.5rem] sm:pt-[2.5rem] lg:pt-[0.2rem] xl:pt-[0.5rem] 2xl:pt-[1rem] overflow-hidden">
 
             {/* Top */}
             <div className="px-[1rem] sm:px-[5%] lg:px-[7%]">
@@ -24,13 +24,13 @@ const SectorsGallery = ({gallery}) => {
                 >
                     Gallery
                 </motion.h5>
-                <p className="mt-[0.7rem] lg:mt-[1.2rem] w-[50%]">
+                <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[50%]">
                     {gallery.desc}
                 </p>
             </div>
 
             {/* Bottom */}
-            <div className="mt-[6rem] sm:mt-[3rem] lg:mt-[4.7rem] xl:mt-[5.5rem] 2xl:mt-[6rem]">
+            <div className="mt-[2.5rem] sm:mt-[3rem] lg:mt-[4.7rem] xl:mt-[5.5rem] 2xl:mt-[6rem]">
                 <Swiper
                     modules={[Autoplay, Navigation]}
                     slidesPerView={4}
@@ -50,7 +50,7 @@ const SectorsGallery = ({gallery}) => {
                     }}
                     breakpoints={{
                         0: {
-                            slidesPerView: 2, // for mobile
+                            slidesPerView: 3, // for mobile
                         },
                         640: {
                             slidesPerView: 3, // tablet
@@ -79,10 +79,10 @@ const SectorsGallery = ({gallery}) => {
                 </Swiper>
 
                 {/* Pagination & Navigation */}
-                <div className="flex justify-end items-center mt-[1.2rem] pr-[1rem] sm:pr-[5%] lg:pr-[7%]">
+                <div className="flex justify-end items-center mt-[2.5rem] lg:mt-[1.2rem] pr-[1rem] sm:pr-[5%] lg:pr-[7%]">
                     <button className="
-                            w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
-                            h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                            w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                            h-[40px] sm:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                             flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                             border-primary border-[2px] lg:border-[3px] border-r-[2px]
@@ -90,8 +90,8 @@ const SectorsGallery = ({gallery}) => {
                         ‹
                     </button>
                     <button className="
-                            w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
-                            h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                            w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                            h-[40px] sm:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                             flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                             text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                             border-primary border-[2px] lg:border-[3px] border-l-[2px]
