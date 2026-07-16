@@ -2,51 +2,54 @@
 
 import { useState } from "react";
 
-const valuesData = [
+const focusData = [
     {
         id: 1,
-        title: "Responsible Manufacturing",
-        desc: "We adopt efficient manufacturing processes that reduce waste, optimise resources, and deliver products built for long-term performance.",
-        image: "/images/sustainability/values/1.avif",
+        title: "Education",
+        desc: "Creating learning opportunities through digital education initiatives and programmes that empower the next generation.",
+        image: "/images/sustainability/focus/1.avif",
     },
     {
         id: 2,
-        title: "Resource Conservation",
-        desc: "We adopt efficient manufacturing processes that reduce waste, optimise resources, and deliver products built for long-term performance.",
-        image: "/images/sustainability/values/2.avif",
+        title: "Skill Development",
+        desc: "Equipping young people with practical skills that enhance employability and create pathways to sustainable livelihoods.",
+        image: "/images/sustainability/focus/2.avif",
     },
     {
         id: 3,
-        title: "Renewable Energy",
-        desc: "We continue to expand renewable energy adoption and advanced energy solutions that support a lower-carbon future.",
-        image: "/images/sustainability/values/3.avif",
+        title: "Healthcare",
+        desc: "Organising medical camps, preventive health initiatives, and community wellness programmes to improve access to quality healthcare.",
+        image: "/images/sustainability/focus/3.avif",
     },
     {
         id: 4,
-        title: "Innovation for Sustainability",
-        desc: "We develop products that improve efficiency, extend product life, and enable more sustainable agricultural, industrial, and infrastructure practices.",
-        image: "/images/sustainability/values/4.avif",
+        title: "Community Development",
+        desc: "Supporting initiatives that improve quality of life through environmental awareness, social welfare, and community engagement.",
+        image: "/images/sustainability/focus/4.avif",
     },
 ]
 
-const SustainabilityValues = () => {
+const FocusAreas = () => {
 
     const [activeIndex, setActiveIndex] = useState(1); // 2nd card active on load
 
     return (
-        <section className="
-            pt-[1.7rem] sm:pt-[2.2rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem]
-        ">
+        <section className="pt-[1.7rem] sm:pt-[2.2rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]">
+            <h5>
+                Our <br /> Focus Areas
+            </h5>
+
             {/* Row */}
             <div className="
                 flex justify-between flex-wrap 
+                mt-[1.8rem] sm:mt-[2.2rem] lg:mt-[2.5rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
             ">
-                {valuesData.map((value, index) => {
+                {focusData.map((value, index) => {
 
                     const isActive = index === activeIndex;
 
                     return (
-                        <div key={index} onClick={() => setActiveIndex(index)} className="
+                        <div key={index} onMouseOver={() => setActiveIndex(index)} className="
                             w-[47%] lg:w-[23%] relative cursor-pointer transition-all duration-300
                             hover:scale-[1.05]
                             mb-[1.5rem] lg:mb-0
@@ -64,12 +67,9 @@ const SustainabilityValues = () => {
                             <div className={`
                                 absolute top-0 left-0 w-full h-full
                                 flex flex-col justify-end transition-all duration-300
-                                p-[0.8rem] sm:p-[1.2rem] lg:p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]
+                                p-[0.8rem] sm:p-[1rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
                                 ${isActive ? "bg-primary/80 text-white shadow-2xl lg:scale-[1.05]" : "bg-transparent text-primary"}
                             `}>
-                                <span className="block text-[2rem] sm:text-[2.2rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] mb-[1rem]">
-                                    0{value.id}.
-                                </span>
                                 <span className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold leading-[1.2]">
                                     {value.title}
                                 </span>
@@ -81,8 +81,9 @@ const SustainabilityValues = () => {
                     )
                 })}
             </div>
+
         </section>
     )
 }
 
-export default SustainabilityValues
+export default FocusAreas
