@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-const energyOverviewData = [
+const textilesOverviewData = [
     {
         id: 1,
         image: "/images/sectors/textiles/brand-overview/1.avif",
@@ -65,7 +65,7 @@ const TextilesBrandOverview = () => {
                     loop={true}
                     className="w-full"
                 >
-                    {energyOverviewData.map((item) => (
+                    {textilesOverviewData.map((item) => (
                         <SwiperSlide key={item.id} className="relative">
                             <img
                                 src={item.image}
