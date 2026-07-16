@@ -12,7 +12,7 @@ const HospitalitySectorOverview = () => {
         <section className="flex justify-between flex-wrap">
 
             {/* Content */}
-            <div className="w-[27%] pt-[5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] relative z-50">
+            <div className="w-full lg:w-[27%] pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] relative z-50">
                 <motion.h2
                     variants={headingVariant}
                     initial="hidden"
@@ -31,7 +31,7 @@ const HospitalitySectorOverview = () => {
                     Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing.
                 </p>
                 <button className="
-                    mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
+                    mt-[1rem] lg:mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
                     border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
                     py-[0.45rem] px-[1.4rem]
                 " onClick={() => setActive(!active)}>
@@ -39,31 +39,8 @@ const HospitalitySectorOverview = () => {
                 </button>
             </div>
 
-            {/* Image */}
-            {/* <div className="w-[18%] relative">
-                <img
-                    src="/images/sectors/hospitality/bg.avif"
-                    alt="Background"
-                    loading="lazy"
-                    className="w-full"
-                />
-                <img
-                    src="/images/sectors/hospitality/umbrella-base.png"
-                    alt="Umbrella Base"
-                    loading="lazy"
-                    className="w-full absolute bottom-0 left-0 scale-[2.2]"
-                />
-            </div> */}
-
             {/* Right */}
-            <div className="w-[61%] relative">
-                {/* <span className="
-                    block [writing-mode:vertical-rl] rotate-180 
-                    text-[3.5rem] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6.5rem] 2xl:text-[7rem]
-                    text-[#e7e7e7] font-bold leading-[0.85] tracking-[0.02em] absolute top-0 right-[-10%]
-                ">
-                    HOSPITALITY
-                </span> */}
+            <div className="w-full lg:w-[61%] relative mt-[1.8rem] lg:mt-0">
                 <img
                     src="/images/sectors/hospitality/umbrella-base.avif"
                     alt="Umbrella Base"
