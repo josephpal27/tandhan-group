@@ -33,15 +33,15 @@ export default function EnergySolutions() {
         gallery={sectorsGalleryData.textiles}
       />
       <SectorsFAQ
-        description={sectorsFaqData.hospitality.description}
-        faqs={sectorsFaqData.hospitality.faqs}
-        image={sectorsFaqData.hospitality.image}
+        description={sectorsFaqData.textiles.description}
+        faqs={sectorsFaqData.textiles.faqs}
+        image={sectorsFaqData.textiles.image}
       />
       <InTheNews
-        news={inTheNewsData.hospitality.news}
+        news={inTheNewsData.textiles.news}
       />
       <SectorsCTA
-        cta={sectorsCtaData.hospitality.cta}
+        cta={sectorsCtaData.textiles.cta}
       />
     </>
   );

@@ -24,11 +24,11 @@ export const sectorsGalleryData = {
     textiles: {
         desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident magni.",
         images: [
-            { id: 1, image: "/images/sectors/textiles/gallery/1.png", },
-            { id: 2, image: "/images/sectors/textiles/gallery/1.png", },
-            { id: 3, image: "/images/sectors/textiles/gallery/1.png", },
-            { id: 4, image: "/images/sectors/textiles/gallery/1.png", },
-            { id: 5, image: "/images/sectors/textiles/gallery/1.png", },
+            { id: 1, image: "/images/sectors/textiles/gallery/1.avif", },
+            { id: 2, image: "/images/sectors/textiles/gallery/2.avif", },
+            { id: 3, image: "/images/sectors/textiles/gallery/3.avif", },
+            { id: 4, image: "/images/sectors/textiles/gallery/4.avif", },
+            { id: 5, image: "/images/sectors/textiles/gallery/2.avif", },
         ]
     },
 
