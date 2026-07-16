@@ -9,12 +9,14 @@ const missionVisionData = [
         title: "Our Purpose",
         desc: "To create enduring value by building businesses that anticipate change, strengthen communities, and unlock opportunities. Guided by instinct and driven by responsibility, we strive to deliver solutions that empower progress, foster resilience, and contribute to a more sustainable future.",
         image: "/images/mission.avif",
+        mobImage: "/images/mission-mob.avif",
     },
     {
         id: 2,
         title: "Our Belief",
         desc: "We believe that growth comes to those willing to see potential before it becomes obvious. Our vision is to build enduring enterprises that create value, empower communities, and inspire progress - guided by instinct, strengthened by experience, and driven by a commitment to the future.",
         image: "/images/vision.avif",
+        mobImage: "/images/vision-mob.avif",
     },
 ]
 
@@ -34,7 +36,9 @@ const MissionVision = () => {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             className="w-[90%] lg:w-[60%] overflow-hidden relative"
                         >
-                            <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
+                            <img src={item.image} alt={item.title} loading="lazy" className="w-full hidden lg:block" />
+                            <img src={item.mobImage} alt={item.title} loading="lazy" className="w-full block lg:hidden" />
+                            
                             <div className={`
                                 absolute w-full h-full top-0 left-0 flex justify-between text-white items-end lg:items-start
                                 p-[1rem] sm:p-[1.2rem] lg:p-[4rem] xl:p-[4.5rem] 2xl:p-[5rem]
