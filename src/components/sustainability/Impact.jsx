@@ -3,12 +3,12 @@ const Impact = () => {
     return (
         <section className="
             flex justify-between items-center flex-wrap 
-            pt-[1.7rem] sm:pt-[2.2rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem]
+            pt-[1.7rem] sm:pt-[2.2rem] lg:pt-[5rem] xl:pt-[5.5rem] 2xl:pt-[6rem]
         ">
 
             {/* Image */}
             <div className="w-[55%]">
-                <img src="/images/sustainability/tree.png" alt="Tree" loading="lazy" className="w-full" />
+                <img src="/images/sustainability/tree.avif" alt="Tree" loading="lazy" className="w-full" />
             </div>
 
             {/* Content */}

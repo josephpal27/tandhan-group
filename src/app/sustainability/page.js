@@ -1,4 +1,6 @@
 import HeroBanner from "@/components/HeroBanner";
+import CSR from "@/components/sustainability/CSR";
+import FocusAreas from "@/components/sustainability/FocusAreas";
 import Impact from "@/components/sustainability/Impact";
 import OurApproach from "@/components/sustainability/OurApproach";
 import SustainabilityValues from "@/components/sustainability/SustainabilityValues";
@@ -19,6 +21,8 @@ export default function Sustainability() {
             <OurApproach />
             <SustainabilityValues />
             <Impact />
+            <CSR />
+            <FocusAreas />
         </>
     );
 }
