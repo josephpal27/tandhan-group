@@ -30,16 +30,16 @@ const HospitalityBrandOverview = () => {
 
     return (
         <section className="
-            pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
-            pb-[2rem] sm:pb-[1.5rem] lg:pb-[2rem] xl:pb-[2.5rem] 2xl:pb-[3rem]
+            pt-[2.5rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
+            pb-[2.5rem] sm:pb-[3rem] lg:pb-[2rem] xl:pb-[2.5rem] 2xl:pb-[3rem]
         ">
 
             {/* Top */}
             <div className="
-                flex justify-between flex-wrap items-center
+                flex justify-between flex-wrap items-center flex-col-reverse lg:flex-row
             ">
                 {/* Main Display Image */}
-                <div className="w-[49%]">
+                <div className="w-full lg:w-[49%] mt-[1.5rem] lg:mt-0">
                     <Swiper
                         onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
                         slidesPerView={1}
@@ -65,7 +65,7 @@ const HospitalityBrandOverview = () => {
                 </div>
 
                 {/* Content */}
-                <div className="w-[48%]">
+                <div className="w-full lg:w-[48%]">
                     <motion.h3
                         variants={headingVariant}
                         initial="hidden"
@@ -81,7 +81,7 @@ const HospitalityBrandOverview = () => {
             </div>
 
             {/* Slider */}
-            <div className="mt-[1.5rem]">
+            <div className="mt-[0.7rem] lg:mt-[1.5rem]">
                 <Swiper
                     modules={[Navigation]}
                     onSwiper={(swiper) => (thumbSwiperRef.current = swiper)}
@@ -116,10 +116,10 @@ const HospitalityBrandOverview = () => {
             </div>
 
             {/* Navigation */}
-            <div className="flex justify-end mt-[1.5rem]">
+            <div className="flex justify-end mt-[0.7rem] lg:mt-[1.5rem]">
                 <button className="
-                    w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
-                    h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                    w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                    h-[40px] sm:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                     flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                     text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                     border-primary border-[2px] lg:border-[3px] border-r-[2px]
@@ -127,8 +127,8 @@ const HospitalityBrandOverview = () => {
                     ‹
                 </button>
                 <button className="
-                    w-[35px] sm:w-[40px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
-                    h-[35px] sm:h-[40px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                    w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                    h-[40px] sm:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                     flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                     text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
                     border-primary border-[2px] lg:border-[3px] border-l-[2px]
