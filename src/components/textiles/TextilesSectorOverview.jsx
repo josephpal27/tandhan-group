@@ -37,6 +37,15 @@ const TextilesSectorOverview = () => {
                 " onClick={() => setActive(!active)}>
                     {active ? "Read Less" : "Read More"}
                 </button>
+
+                {/* Artboard */}
+                <img src="/images/artboard.avif" alt="Artboard" loading="lazy" className="
+                    w-0 lg:w-[260px] xl:w-[300px] 2xl:w-[320px] 
+                    invert absolute z-[-1] opacity-60
+                    bottom-[-7rem] lg:bottom-[-6rem] xl:bottom-[-6.5rem] 2xl:bottom-[-7rem] 
+                    left-[-5rem] lg:left-[-4rem] xl:left-[-4.5rem] 2xl:left-[-5rem] 
+                " />
+
             </div>
 
             {/* Image */}

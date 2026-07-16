@@ -33,7 +33,7 @@ const PolyplastBrandOverview = () => {
                     </Link>
                 </div>
                 <div className="w-full lg:w-[54%] relative mt-[2.5rem] lg:mt-0 pb-[1rem] lg:pb-0">
-                    <img src="/images/paper-roll.png" alt="Brand Overview" loading="lazy" className="w-full" />
+                    <img src="/images/sectors/protective-solutions/paper-roll.avif" alt="Brand Overview" loading="lazy" className="w-full" />
                     <div className="w-full h-full absolute top-0 left-0 flex justify-center items-center bg-[#000000b8]">
                         <img src="/images/logo/tandhan-polyplast.png" alt="Tandhan Polyplast" loading="lazy" className="w-[40%] invert brightness-0" />
                     </div>
