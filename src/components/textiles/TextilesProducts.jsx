@@ -11,11 +11,11 @@ import 'swiper/css';
 const textilesProductsData = [
     {
         id: 1,
-        image: "/images/sectors/textiles/products/1.png",
+        image: "/images/sectors/textiles/products/1.avif",
     },
     {
         id: 2,
-        image: "/images/sectors/textiles/products/1.png",
+        image: "/images/sectors/textiles/products/1.avif",
     },
 ]
 
@@ -56,16 +56,25 @@ const TextilesProducts = () => {
                 pl-[35%]
             ">
                 {/* Top */}
-                <div className="pr-[3rem] py-[3.5rem]">
-                    <h4>
+                <div className="
+                    pr-[1.5rem] sm:pr-[2rem] lg:pr-[2.4rem] xl:pr-[2.7rem] 2xl:pr-[3rem]
+                    py-[2rem] sm:py-[2.5rem] lg:py-[2.9rem] xl:py-[3.2rem] 2xl:py-[3.5rem]
+                ">
+                    <motion.h4
+                        className="relative z-50"
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
                         Explore <br /> Our Products
-                    </h4>
+                    </motion.h4>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatum dolor, vitae amet soluta sit inventore totam rerum sed laborum.
                     </p>
                     <Link href="/" className="
-                        mt-[2.3rem] block w-max bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
-                        border-primary border-[3px]
+                        mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[1.7rem] xl:mt-[2rem] 2xl:mt-[2.3rem] block w-max bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
+                        border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
                         py-[0.45rem] px-[1.4rem]
                     ">
                         Read More
@@ -73,7 +82,7 @@ const TextilesProducts = () => {
                 </div>
 
                 {/* Bottom */}
-                <div className="flex justify-end">
+                <div className="flex justify-end mt-[-1rem]">
                     <button className="
                             w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
                             h-[40px] sm:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
