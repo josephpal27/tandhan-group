@@ -19,7 +19,7 @@ const TextilesSectorOverview = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Sector Overview
+                    Sector <br/> Overview
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                     Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat.
@@ -32,7 +32,7 @@ const TextilesSectorOverview = () => {
                 </p>
                 <button className="
                     mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
-                    border-primary border-[3px]
+                    border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
                     py-[0.45rem] px-[1.4rem]
                 " onClick={() => setActive(!active)}>
                     {active ? "Read Less" : "Read More"}

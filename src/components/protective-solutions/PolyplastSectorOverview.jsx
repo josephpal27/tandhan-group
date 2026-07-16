@@ -19,7 +19,7 @@ const PolyplastSectorOverview = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Sector Overview
+                    Sector <br/> Overview
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tenetur asperiores nihil repellat.
