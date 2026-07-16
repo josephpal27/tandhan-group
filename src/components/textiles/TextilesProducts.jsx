@@ -25,40 +25,20 @@ const TextilesProducts = () => {
 
     return (
         <section className="
-            pt-[2rem] sm:pt-[3rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem]
-            pb-[2rem] sm:pb-[3rem] lg:pb-[3rem] xl:pb-[3.5rem] 2xl:pb-[4rem]
-            flex justify-end relative
+            pt-[1.7rem] sm:pt-[2.2rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem]
+            pb-[2.2rem] sm:pb-[3rem] lg:pb-[3rem] xl:pb-[3.5rem] 2xl:pb-[4rem]
+            flex justify-start lg:justify-end flex-wrap relative
         ">
-            {/* Slider */}
-            <div className="w-[42%] absolute top-[1rem] left-[7%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)]">
-                <Swiper
-                    modules={[Navigation]}
-                    onSwiper={(swiper) => (swiperRef.current = swiper)}
-                    loop={true}
-                    className="w-full"
-                >
-                    {textilesProductsData.map((item) => (
-                        <SwiperSlide key={item.id} className="relative">
-                            <img
-                                src={item.image}
-                                alt={`Slide ${item.id}`}
-                                loading="lazy"
-                                className="w-full object-cover"
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
 
             {/* Content */}
             <div className="
-                w-[80%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)]
-                pl-[35%]
+                w-full lg:w-[80%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)]
+                pl-[1rem] lg:pl-[35%]
             ">
                 {/* Top */}
                 <div className="
-                    pr-[1.5rem] sm:pr-[2rem] lg:pr-[2.4rem] xl:pr-[2.7rem] 2xl:pr-[3rem]
-                    py-[2rem] sm:py-[2.5rem] lg:py-[2.9rem] xl:py-[3.2rem] 2xl:py-[3.5rem]
+                    pr-[1rem] sm:pr-[1.5rem] lg:pr-[2.4rem] xl:pr-[2.7rem] 2xl:pr-[3rem]
+                    py-[1.5rem] sm:py-[2rem] lg:py-[2.9rem] xl:py-[3.2rem] 2xl:py-[3.5rem]
                 ">
                     <motion.h4
                         className="relative z-50"
@@ -103,6 +83,28 @@ const TextilesProducts = () => {
                     </button>
                 </div>
             </div>
+
+            {/* Slider */}
+            <div className="w-[75%] lg:w-[42%] relative lg:absolute top-[1rem] left-0 lg:left-[7%] shadow-[0px_2px_20px_rgba(0,0,0,0.3)]">
+                <Swiper
+                    modules={[Navigation]}
+                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    loop={true}
+                    className="w-full"
+                >
+                    {textilesProductsData.map((item) => (
+                        <SwiperSlide key={item.id} className="relative">
+                            <img
+                                src={item.image}
+                                alt={`Slide ${item.id}`}
+                                loading="lazy"
+                                className="w-full object-cover"
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+
         </section>
     )
 }

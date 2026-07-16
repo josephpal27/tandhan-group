@@ -25,7 +25,7 @@ const TextilesBrandOverview = () => {
     return (
         <section className="
             flex justify-between flex-wrap relative
-            pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
+            pt-[3rem] sm:pt-[3.5rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
             pb-[2rem] sm:pb-[3rem] lg:pb-[4rem] xl:pb-[4.5rem] 2xl:pb-[5rem]
         ">
 
