@@ -9,8 +9,8 @@ export default function Sustainability() {
     return (
         <>
             <HeroBanner
-                image="/images/banners/sustainability-banner.avif"
-                title="Sustainability"
+                image="/images/banners/media-banner.avif"
+                title="Media"
                 desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
             />
         </>
