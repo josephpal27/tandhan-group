@@ -2,19 +2,24 @@ import Link from "next/link";
 
 const BlogCard = ({ blog }) => {
     return (
-        <div className="
-            w-full lg:w-[31%]
+        <Link href={`/media/blogs/${blog.slug}`} className="
+            w-full lg:w-[31%] group
             mb-[3rem]
         ">
             {/* Image */}
-            <div>
-                <img src={blog.image} alt={blog.title} loading="lazy" className="w-full" />
+            <div className="overflow-hidden">
+                <img 
+                    src={blog.image} 
+                    alt={blog.title} 
+                    loading="lazy" 
+                    className="w-full group-hover:scale-[1.05] transition duration-300" 
+                />
             </div>
 
             {/* Content */}
             <div className="
-                bg-primary text-white w-[85%] relative z-10
-                ml-auto mr-[-1rem] mt-[-2.5rem]
+                bg-white text-primary w-[87%] relative z-10 shadow-[1px_1px_10px_rgba(0,0,0,0.3)]
+                ml-auto mr-[-1.5rem] mt-[-2.5rem]
                 p-[1.5rem]
             ">
                 <span className="
@@ -23,22 +28,23 @@ const BlogCard = ({ blog }) => {
                     {blog.title}
                 </span>
                 <p className="
-                    text-[0.8rem]
-                    mt-[0.5rem] line-clamp-2
+                    text-[0.9rem]
+                    mt-[0.5rem] line-clamp-2 font-medium
                 ">
                     {blog.desc}
                 </p>
-                <Link href={`/media/blogs/${blog.slug}`} className="
+                <button className="
                     block mt-[1rem]
-                    border-white border-[1.5px] w-max
-                    px-[0.5rem]
-                    py-[0.2rem]
+                    border-primary border-[2px] w-max font-medium
+                    hover:bg-primary hover:text-white transition duration-300
+                    px-[0.7rem]
+                    py-[0.25rem]
                     text-[1rem]
                 ">
                     Read More
-                </Link>
+                </button>
             </div>
-        </div>
+        </Link>
     )
 }
 

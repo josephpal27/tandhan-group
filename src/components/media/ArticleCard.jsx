@@ -1,14 +1,21 @@
-import Link from "next/link";
 
 const ArticleCard = ({ article }) => {
     return (
-        <div className="
-            flex justify-between flex-wrap
-            mb-[3rem]
+        <a href={article.link} target="_blank" rel="noopener noreferrer" className="
+            flex justify-between flex-wrap group shadow-[1px_1px_10px_rgba(0,0,0,0.3)] 
+            hover:bg-[#fbfbfb] transition duration-300
+            mb-[2rem] last:mb-[3rem]
+            p-[1.5rem]
+            border-[#c0bebe] border-b-[1px] last:border-b-0
         ">
             {/* Image */}
-            <div className="w-[30%]">
-                <img src={article.image} alt={article.title} loading="lazy" className="w-full" />
+            <div className="w-[30%] overflow-hidden shadow-[3px_3px_10px_rgba(0,0,0,0.3)]">
+                <img 
+                    src={article.image} 
+                    alt={article.title} 
+                    loading="lazy" 
+                    className="w-full group-hover:scale-[1.05] transition duration-300" 
+                />
             </div>
 
             {/* Content */}
@@ -19,22 +26,22 @@ const ArticleCard = ({ article }) => {
                     {article.title}
                 </span>
                 <p className="
-                    text-[0.8rem]
-                    mt-[0.5rem] line-clamp-2
+                    mt-[0.5rem] line-clamp-2 font-medium
                 ">
                     {article.desc}
                 </p>
-                <a href={article.link} target="_blank" rel="noopener noreferrer" className="
-                    block mt-[1rem]
-                    border-white border-[1.5px] w-max
-                    px-[0.5rem]
-                    py-[0.2rem]
+                <button className="
+                    mt-[1.7rem]
+                    border-primary border-[2px] w-max font-medium
+                    hover:bg-primary hover:text-white transition duration-300
+                    px-[1rem]
+                    py-[0.25rem]
                     text-[1rem]
                 ">
                     Read More
-                </a>
+                </button>
             </div>
-        </div>
+        </a>
     )
 }
 
