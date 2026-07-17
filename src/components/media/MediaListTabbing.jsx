@@ -25,7 +25,7 @@ const MediaListTabbing = () => {
             <div className="
                 border-primary border-b-[3px] 
                 pb-[1rem] 
-                mb-[2rem]
+                mb-[3rem]
                 flex justify-end gap-[2rem]
             ">
                 {tabHeads.map((head) => {
@@ -41,7 +41,7 @@ const MediaListTabbing = () => {
                                 font-semibold
                                 transition-colors duration-300
                                 cursor-pointer
-                                ${isActive ? "text-primary" : "text-gray-400"}
+                                ${isActive ? "text-primary" : "text-[#c4c4c4]"}
                             `}
                         >
                             {head.name}

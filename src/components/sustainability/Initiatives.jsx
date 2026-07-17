@@ -82,7 +82,7 @@ const Initiatives = () => {
                                 <div className="mt-[1.5rem]">
                                     <span className="
                                         text-[1.2rem] sm:text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] 
-                                        leading-[1] font-[500]
+                                        leading-[1] font-semibold
                                     ">
                                         {post.title}
                                     </span>
