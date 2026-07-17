@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const BlogCard = () => {
+const BlogCard = ({ blog }) => {
     return (
         <div className="
             w-full lg:w-[31%]
@@ -8,7 +8,7 @@ const BlogCard = () => {
         ">
             {/* Image */}
             <div>
-                <img src="/images/media/demo.png" alt="Demo" loading="lazy" className="w-full" />
+                <img src={blog.image} alt={blog.title} loading="lazy" className="w-full" />
             </div>
 
             {/* Content */}
@@ -18,17 +18,17 @@ const BlogCard = () => {
                 p-[1.5rem]
             ">
                 <span className="
-                    text-[1.4rem] font-semibold
+                    text-[1.4rem] font-semibold line-clamp-1
                 ">
-                    Lorem ipsum dolor
+                    {blog.title}
                 </span>
                 <p className="
                     text-[0.8rem]
-                    mt-[0.5rem]
+                    mt-[0.5rem] line-clamp-2
                 ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam.
+                    {blog.desc}
                 </p>
-                <Link href="/" className="
+                <Link href={`/media/blogs/${blog.slug}`} className="
                     block mt-[1rem]
                     border-white border-[1.5px] w-max
                     px-[0.5rem]
