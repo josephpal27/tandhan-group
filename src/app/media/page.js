@@ -1,4 +1,5 @@
 import HeroBanner from "@/components/HeroBanner";
+import MediaListTabbing from "@/components/media/MediaListTabbing";
 import RelatedBlogs from "@/components/media/RelatedBlogs";
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function Sustainability() {
                 title="Media"
                 desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
             />
+            <MediaListTabbing />
             <RelatedBlogs />
         </>
     );
