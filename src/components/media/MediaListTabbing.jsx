@@ -1,4 +1,11 @@
-import BlogCard from "./BlogCard"
+"use client"
+
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import ArticleCard from "./ArticleCard";
+import BlogCard from "./BlogCard";
+import { blogsData } from "@/data/blogsData";
+import { articlesData } from "@/data/articlesData";
 
 const tabHeads = [
     { id: 1, name: "Blogs" },
@@ -6,9 +13,13 @@ const tabHeads = [
 ]
 
 const MediaListTabbing = () => {
+
+    const [activeTab, setActiveTab] = useState(1);
+
     return (
         <section className="
             pt-[2rem] sm:pt-[1.5rem] lg:pt-[2rem] xl:pt-[2.5rem] 2xl:pt-[3rem]
+            pb-[2rem] sm:pb-[3rem] lg:pb-[2.5rem] xl:pb-[3rem] 2xl:pb-[3.5rem]
         ">
             {/* Head */}
             <div className="
@@ -17,30 +28,60 @@ const MediaListTabbing = () => {
                 mb-[2rem]
                 flex justify-end gap-[2rem]
             ">
-                {tabHeads.map((head, index) => {
+                {tabHeads.map((head) => {
+
+                    const isActive = activeTab === head.id;
+
                     return (
-                        <span key={index} className="
-                            text-[2rem]
-                            font-semibold
-                        ">
+                        <button
+                            key={head.id}
+                            onClick={() => setActiveTab(head.id)}
+                            className={`
+                                text-[2rem]
+                                font-semibold
+                                transition-colors duration-300
+                                cursor-pointer
+                                ${isActive ? "text-primary" : "text-gray-400"}
+                            `}
+                        >
                             {head.name}
-                        </span>
+                        </button>
                     )
                 })}
             </div>
 
             {/* List */}
             <div>
-                {/* Blog Cards */}
-                <div className="
-                    flex flex-wrap gap-[3.5%]
-                ">
-                    <BlogCard />
-                    <BlogCard />
-                    <BlogCard />
-                    <BlogCard />
-                    <BlogCard />
-                </div>
+                <AnimatePresence mode="wait">
+                    {activeTab === 1 && (
+                        <motion.div
+                            key="blogs"
+                            initial={{ opacity: 0, y: 5 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 5 }}
+                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                            className="flex flex-wrap gap-[3.5%]"
+                        >
+                            {blogsData.map((blog) => (
+                                <BlogCard key={blog.id} blog={blog} />
+                            ))}
+                        </motion.div>
+                    )}
+
+                    {activeTab === 2 && (
+                        <motion.div
+                            key="articles"
+                            initial={{ opacity: 0, y: 5 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 5 }}
+                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                        >
+                            {articlesData.map((article) => (
+                                <ArticleCard key={article.id} article={article} />
+                            ))}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
 
         </section>
