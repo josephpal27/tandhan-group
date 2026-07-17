@@ -23,9 +23,9 @@ const MediaListTabbing = () => {
         ">
             {/* Head */}
             <div className="
-                border-primary border-b-[3px] 
-                pb-[1rem] 
-                mb-[3rem]
+                border-primary border-b-[3px] lg:border-b-[2px] xl:border-b-[2.5px] 2xl:border-b-[3px]
+                pb-[1rem] sm:pb-[1rem] lg:pb-[0.8rem] xl:pb-[0.9rem] 2xl:pb-[1rem]
+                mb-[2.5rem] sm:mb-[3rem] lg:mb-[2.6rem] xl:mb-[2.8rem] 2xl:mb-[3rem]
                 flex justify-end gap-[2rem]
             ">
                 {tabHeads.map((head) => {
@@ -37,7 +37,7 @@ const MediaListTabbing = () => {
                             key={head.id}
                             onClick={() => setActiveTab(head.id)}
                             className={`
-                                text-[2rem]
+                                text-[2rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
                                 font-semibold
                                 transition-colors duration-300
                                 cursor-pointer
