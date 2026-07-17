@@ -12,7 +12,7 @@ const BlogCard = ({ blog }) => {
                     src={blog.image} 
                     alt={blog.title} 
                     loading="lazy" 
-                    className="w-full group-hover:scale-[1.05] transition duration-300" 
+                    className="w-full aspect-[3/2] group-hover:scale-[1.05] transition duration-300" 
                 />
             </div>
 
