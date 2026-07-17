@@ -18,7 +18,7 @@ export const metadata = {
   description: "",
 };
 
-export default function EnergySolutions() {
+export default function Hospitality() {
   return (
     <>
       <SectorsBanner
