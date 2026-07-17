@@ -7,7 +7,7 @@ export const metadata = {
     description: "",
 };
 
-export default function Sustainability() {
+export default function Media() {
     return (
         <>
             <HeroBanner

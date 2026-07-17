@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const BlogCard = ({ blog }) => {
     return (
-        <Link href={`/media/blogs/${blog.slug}`} className="
+        <Link href={`/media/${blog.slug}`} className="
             w-full lg:w-[31%] group
             mb-[3rem] sm:mb-[2.5rem] lg:mb-[2.6rem] xl:mb-[2.8rem] 2xl:mb-[3rem]
         ">
