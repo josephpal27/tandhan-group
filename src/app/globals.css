@@ -89,3 +89,8 @@ section {
 #gallery-swiper .swiper-slide.featured-slide {
   z-index: 999;
 }
+
+/* Blogs Details Page */
+.blog-content p{
+    @apply text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] mt-[1rem];
+}
