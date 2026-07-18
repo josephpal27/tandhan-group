@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import HeroBanner from "@/components/HeroBanner";
+import BlogDetailsContent from "@/components/media/BlogDetailsContent";
 import { blogsData } from "@/data/blogsData";
 
 // Required for output: 'export' — tells Next which slugs to pre-render
@@ -36,18 +37,7 @@ export default async function BlogDetails({ params }) {
                 title={blog.title}
                 desc={blog.desc}
             />
-
-            {/* Blog body content */}
-            {/* <section className="py-[2rem] sm:py-[2.5rem] lg:py-[3rem]">
-                <div className="max-w-[900px] mx-auto px-[1rem]">
-                    <img
-                        src={blog.image}
-                        alt={blog.title}
-                        className="w-full mb-[2rem]"
-                    />
-                    <p>{blog.desc}</p>
-                </div>
-            </section> */}
+            <BlogDetailsContent blog={blog} />
         </>
     );
 }
