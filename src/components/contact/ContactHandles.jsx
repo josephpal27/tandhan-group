@@ -35,7 +35,7 @@ const ContactHandles = () => {
                             w-[40px] 
                             h-[40px] 
                             text-[1.2rem]
-                            rounded-full bg-[#2d2d2d] hover:bg-primary text-white flex justify-center items-center transition duration-300
+                            rounded-full bg-[#2d2d2d] hover:bg-primary text-white flex justify-center items-center transition duration-300 hover:scale-110
                         ">
                             <a href="#" target="_blank">
                                 {item.icon}
