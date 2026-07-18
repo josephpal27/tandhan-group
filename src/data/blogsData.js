@@ -4,12 +4,13 @@ export const blogsData = [
         slug: "sustainable-manufacturing-practices",
         title: "Sustainable Manufacturing Practices",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisi elit. Distinctio numquam.",
+        date: "17th Jul, 2026",
         image: "/images/media/demo.avif",
         content: `
             <em>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veritatis illo. Unde illo, reprehenderit labore nostrum odit autem. Sint qui consequatur vero rerum omnis iusto.
             </em>
-            
+
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veritatis illo. Unde illo, reprehenderit labore nostrum odit autem. Sint qui consequatur vero rerum omnis iusto, delectus et dolorum consectetur adipisicing elit aliquam consectetur. Lorem ipsum dolor sint qui consequatur sit amet consectetur adipisicing elit. Unde, veritatis illo. Unde illo, reprehenderit labore nostrum odit autem. Sint qui consequatur vero rerum omnis iusto, delectus et dolorum aliquam consectetur.
             </p>
@@ -27,9 +28,10 @@ export const blogsData = [
     },
     {
         id: 2,
-        slug: "innovation-in-cement-industry",
-        title: "Innovation in Cement Industry",
+        slug: "innovation-in-energy-industry",
+        title: "Innovation in Energy Industry",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisi elit. Distinctio numquam.",
+        date: "17th Jul, 2026",
         image: "/images/media/demo.avif",
         content: `
             <em>
@@ -56,6 +58,7 @@ export const blogsData = [
         slug: "future-of-green-energy",
         title: "Future of Green Energy",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisi elit. Distinctio numquam.",
+        date: "17th Jul, 2026",
         image: "/images/media/demo.avif",
         content: `
             <em>
@@ -82,6 +85,7 @@ export const blogsData = [
         slug: "community-driven-growth",
         title: "Community Driven Growth",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisi elit. Distinctio numquam.",
+        date: "17th Jul, 2026",
         image: "/images/media/demo.avif",
         content: `
             <em>
@@ -108,6 +112,7 @@ export const blogsData = [
         slug: "employee-safety-first-culture",
         title: "Employee Safety First Culture",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisi elit. Distinctio numquam.",
+        date: "17th Jul, 2026",
         image: "/images/media/demo.avif",
         content: `
             <em>

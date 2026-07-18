@@ -3,8 +3,8 @@ import LatestBlogs from "./LatestBlogs";
 const BlogDetailsContent = ({ blog }) => {
     return (
         <section className="
-            pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]
-            pb-[3rem] sm:pb-[3.5rem] lg:pb-[5rem] xl:pb-[5.5rem] 2xl:pb-[6rem]
+            pt-[2rem] sm:pt-[2.5rem] lg:pt-[3.5rem] xl:pt-[4rem] 2xl:pt-[4.5rem]
+            pb-[3rem] sm:pb-[3.5rem] lg:pb-[4.5rem] xl:pb-[5rem] 2xl:pb-[5.5rem]
         ">
 
             {/* Top */}
@@ -16,7 +16,7 @@ const BlogDetailsContent = ({ blog }) => {
                         src={blog.image}
                         alt={blog.title}
                         loading="lazy"
-                        className="w-full shadow-[3px_3px_10px_rgba(0,0,0,0.3)]"
+                        className="w-full aspect-[3/2] shadow-[3px_3px_10px_rgba(0,0,0,0.3)]"
                     />
                 </div>
 
@@ -29,7 +29,7 @@ const BlogDetailsContent = ({ blog }) => {
 
             {/* Bottom */}
             <div
-                className="mt-[3rem] blog-content"
+                className="mt-[3rem] sm:mt-[2rem] lg:mt-[2.3rem] xl:mt-[2.7rem] 2xl:mt-[3rem] blog-content"
                 dangerouslySetInnerHTML={{ __html: blog.content }}
             />
 
