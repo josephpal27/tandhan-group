@@ -91,6 +91,10 @@ section {
 }
 
 /* Blogs Details Page */
-.blog-content p{
+.blog-content p, 
+.blog-content em{
     @apply text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] mt-[1rem];
+}
+.blog-content em{
+    @apply text-[#868585];
 }
