@@ -35,7 +35,7 @@ export default async function BlogDetails({ params }) {
             <HeroBanner
                 image="/images/banners/media-banner.avif"
                 title={blog.title}
-                desc={blog.desc}
+                desc={blog.date}
             />
             <BlogDetailsContent blog={blog} />
         </>

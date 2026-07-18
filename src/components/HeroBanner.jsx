@@ -1,11 +1,14 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 
 export default function HeroBanner({image, title, desc}) {
     const bgRef = useRef(null);
+    const pathname = usePathname();
+    const isMedia = /^\/media\/.+/.test(pathname || '');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,7 +21,10 @@ export default function HeroBanner({image, title, desc}) {
     }, []);
 
     return (
-        <section className="relative h-[100dvh] lg:h-[112dvh] overflow-hidden">
+        <section className={`
+            relative overflow-hidden
+            ${isMedia ? 'h-[70vh]' : 'h-[100dvh] lg:h-[112dvh]'}
+        `}>
 
             {/* Parallax Background */}
             <div className="absolute inset-0 overflow-hidden">
@@ -33,17 +39,26 @@ export default function HeroBanner({image, title, desc}) {
             <div className="absolute inset-0 bg-gradient-to-b from-primary via-50% to-transparent z-10" />
 
             {/* Content */}
-            <div className="relative z-20 text-white flex flex-col justify-end h-full 
-            pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]">
+            <div className={`
+                relative z-20 text-white flex flex-col justify-end h-full 
+                pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]
+                ${isMedia ? 'pb-[3rem] sm:pb-[2rem] lg:pb-[1.4rem] xl:pb-[1.8rem] 2xl:pb-[2rem]' : 'pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]'}
+            `}>
                 <motion.h1
                     variants={headingVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
+                    className={`
+                        ${isMedia ? 'text-[1.8rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]' : ''}    
+                    `}
                 >
                     {title}
                 </motion.h1>
-                <p className="mt-[1rem] lg:mt-[1.5rem] w-full lg:w-[40%]">
+                <p className={`
+                    w-full lg:w-[40%]
+                     ${isMedia ? 'mt-[0.7rem] lg:mt-[1rem]' : 'mt-[1rem] lg:mt-[1.5rem]'}
+                `}>
                     {desc}
                 </p>
             </div>
