@@ -1,3 +1,4 @@
+import GetInTouch from "@/components/contact/GetInTouch";
 import HeroBanner from "@/components/HeroBanner";
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function Contact() {
                 title="Contact Us"
                 desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
             />
+            <GetInTouch />
         </>
     );
 }
