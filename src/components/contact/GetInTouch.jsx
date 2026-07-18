@@ -52,7 +52,7 @@ const GetInTouch = () => {
                     {contactDetails.map((item, index) => {
                         return (
                             <div key={index} className="
-                                mb-[1.1rem] flex gap-[1rem]
+                                mb-[1.3rem] flex gap-[1rem]
                             ">
                                 <div className="text-[2rem] pt-[0.3rem]">
                                     {item.icon}

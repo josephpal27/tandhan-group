@@ -21,7 +21,7 @@ const ContactForm = () => {
                         id="name"
                         required
                         className="
-                            border-b border-black/40 focus:border-black
+                            border-b-[2px] border-black/40 focus:border-black
                             outline-none py-[0.5rem] bg-transparent
                         "
                     />
@@ -39,7 +39,7 @@ const ContactForm = () => {
                             id="email"
                             required
                             className="
-                                border-b border-black/40 focus:border-black
+                                border-b-[2px] border-black/40 focus:border-black
                                 outline-none py-[0.5rem] bg-transparent
                             "
                         />
@@ -49,28 +49,28 @@ const ContactForm = () => {
                             Phone
                         </label>
                         <input
-                            type="tel"
+                            type="number"
                             name="phone"
                             id="phone"
                             className="
-                                border-b border-black/40 focus:border-black
+                                border-b-[2px] border-black/40 focus:border-black
                                 outline-none py-[0.5rem] bg-transparent
                             "
                         />
                     </div>
                 </div>
 
-                {/* Sectors */}
+                {/* Subject */}
                 <div className="flex flex-col">
-                    <label htmlFor="sectors" className="text-[1.2rem]">
-                        Sectors
+                    <label htmlFor="subject" className="text-[1.2rem]">
+                        Subject
                     </label>
                     <input
                         type="text"
-                        name="sectors"
-                        id="sectors"
+                        name="subject"
+                        id="subject"
                         className="
-                            border-b border-black/40 focus:border-black
+                            border-b-[2px] border-black/40 focus:border-black
                             outline-none py-[0.5rem] bg-transparent
                         "
                     />
@@ -86,23 +86,23 @@ const ContactForm = () => {
                         name="message"
                         id="message"
                         className="
-                            border-b border-black/40 focus:border-black
+                            border-b-[2px] border-black/40 focus:border-black
                             outline-none py-[0.5rem] bg-transparent
                         "
                     />
                 </div>
 
                 {/* Submit */}
-                <div className="flex justify-end mt-[1rem]">
+                <div className="mt-[1rem]">
                     <button
                         type="submit"
                         className="
-                            border border-black px-[2rem] py-[0.7rem]
-                            text-[1.1rem] hover:bg-black hover:text-white
-                            transition-colors duration-300
+                            border-black border-[2.5px] px-[2rem] py-[0.7rem]
+                            text-[1.1rem] hover:bg-black text-primary hover:text-white
+                            transition-colors duration-300 font-medium
                         "
                     >
-                        Submit
+                        SUBMIT
                     </button>
                 </div>
             </form>
