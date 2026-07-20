@@ -11,7 +11,7 @@ const contactDetails = [
         icon: <FaLocationDot />,
         label: "Head Office Address",
         content: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091",
-        url: "",
+        url: "https://maps.app.goo.gl/e85z4x5RdPxFXoWG6",
         target: "_blank",
     },
     {
@@ -19,7 +19,7 @@ const contactDetails = [
         icon: <BiSupport />,
         label: "Let's Talk",
         content: "+91 9051161666",
-        url: "",
+        url: "tel:919051161666",
         target: "_self",
     },
     {
@@ -27,7 +27,7 @@ const contactDetails = [
         icon: <IoMailOutline />,
         label: "Email Us",
         content: "marketing@tandhangroup.com",
-        url: "",
+        url: "mailto:marketing@tandhangroup.com",
         target: "_self",
     },
 ]
@@ -48,13 +48,13 @@ const GetInTouch = () => {
                     As we shape the blueprint for a brighter tomorrow, your insights and interactions drive us forward. Let’s journey together.
                 </p>
 
-                <div className="mt-[1.7rem] lg:mt-[2.5rem]">
+                <div className="mt-[1.5rem] lg:mt-[2.5rem]">
                     {contactDetails.map((item, index) => {
                         return (
                             <div key={index} className="
-                                mb-[1.2rem] lg:mb-[1.3rem] flex gap-[1rem]
+                                mb-[1.2rem] lg:mb-[1.3rem] flex gap-[0.7rem] lg:gap-[1rem]
                             ">
-                                <div className="text-[1.6rem] sm:text-[1.7rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem] pt-[0.3rem]">
+                                <div className="text-[1.5rem] sm:text-[1.6rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem] pt-[0.3rem]">
                                     {item.icon}
                                 </div>
                                 <div>
@@ -63,7 +63,7 @@ const GetInTouch = () => {
                                     ">
                                         {item.label}
                                     </span>
-                                    <a href="" target={item.target} className="
+                                    <a href={item.url} target={item.target} className="
                                         mt-[0.2rem] block
                                     ">
                                         {item.content}
@@ -76,7 +76,7 @@ const GetInTouch = () => {
             </div>
 
             {/* Form */}
-            <div className="w-full lg:w-[50%]">
+            <div className="w-full lg:w-[50%] mt-[1.5rem] lg:mt-0">
                 <ContactForm />
             </div>
 

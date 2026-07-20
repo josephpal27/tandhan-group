@@ -2,8 +2,8 @@
 const ContactCTA = () => {
     return (
         <section className="
-            mt-[2rem] sm:mt-[3rem] lg:mt-[4.5rem] xl:mt-[5rem] 2xl:mt-[5.5rem]
-            py-[2rem] sm:py-[3rem] lg:py-[4.5rem] xl:py-[5rem] 2xl:py-[5.5rem]
+            mt-[3.5rem] sm:mt-[4.5rem] lg:mt-[4.5rem] xl:mt-[5rem] 2xl:mt-[5.5rem]
+            py-[2.5rem] sm:py-[3.5rem] lg:py-[4.5rem] xl:py-[5rem] 2xl:py-[5.5rem]
             text-white flex flex-col items-center text-center
             relative overflow-hidden
         ">
