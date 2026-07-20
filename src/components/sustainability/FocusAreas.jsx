@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const focusData = [
     {
@@ -35,9 +37,15 @@ const FocusAreas = () => {
 
     return (
         <section className="pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]">
-            <h5>
+            <motion.h5
+                className="relative z-50"
+                variants={headingVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            >
                 Our <br /> Focus Areas
-            </h5>
+            </motion.h5>
 
             {/* Row */}
             <div className="

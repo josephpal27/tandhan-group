@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const Impact = () => {
     return (
@@ -13,9 +17,15 @@ const Impact = () => {
 
             {/* Content */}
             <div className="w-full lg:w-[40%] mt-[1.3rem] lg:mt-0">
-                <h3>
-                    Lorem Ipsum
-                </h3>
+                <motion.h3
+                    className="relative z-50"
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                        Lorem Ipsum
+                </motion.h3>
                 <p className="mt-[0.7rem] lg:mt-[1.3rem]">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur officia numquam repudiandae quo ipsum placeat dolorem harum fuga totam et. Lorem ipsum, dolor sit amet consectetur adipisicing.
                 </p>

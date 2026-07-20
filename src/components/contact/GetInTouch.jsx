@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiSupport } from "react-icons/bi";
 import { IoMailOutline } from "react-icons/io5";
@@ -41,9 +43,15 @@ const GetInTouch = () => {
 
             {/* Content */}
             <div className="w-full lg:w-[45%]">
-                <h2>
+                <motion.h2
+                    className="relative z-50"
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Get In Touch
-                </h2>
+                </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1rem]">
                     As we shape the blueprint for a brighter tomorrow, your insights and interactions drive us forward. Let’s journey together.
                 </p>

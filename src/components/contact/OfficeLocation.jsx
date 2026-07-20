@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const OfficeLocation = () => {
     return (
@@ -8,9 +12,15 @@ const OfficeLocation = () => {
 
             {/* Head */}
             <div className="px-[1rem] sm:px-[5%] lg:px-[7%]">
-                <h4>
+                <motion.h4
+                    className="relative z-50"
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     Head Office Address
-                </h4>
+                </motion.h4>
                 <p className="mt-[0.7rem] lg:mt-[1rem] w-full lg:w-[60%]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis adipisicing quam ad quas, consectetur enim doloremque adipisicing fugiat itaque cumque veritatis.
                 </p>
