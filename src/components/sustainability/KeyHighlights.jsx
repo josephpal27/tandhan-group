@@ -32,7 +32,7 @@ const KeyHighlights = () => {
         <section className="
             pt-[1.7rem] sm:pt-[2.2rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem] 
             pb-[1.7rem] sm:pb-[2rem] lg:pb-[1.5rem] xl:pb-[2rem] 2xl:pb-[2.5rem] 
-            flex justify-center
+            flex justify-center overflow-hidden lg:overflow-visible
         ">
             <div className="relative w-[55%]">
                 <img
