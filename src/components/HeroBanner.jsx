@@ -42,7 +42,7 @@ export default function HeroBanner({image, title, desc}) {
             <div className={`
                 relative z-20 text-white flex flex-col justify-end h-full 
                 pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]
-                ${isMedia ? 'pb-[3rem] sm:pb-[2rem] lg:pb-[1.4rem] xl:pb-[1.8rem] 2xl:pb-[2rem]' : 'pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]'}
+                ${isMedia ? 'pb-[3rem] sm:pb-[2rem] lg:pb-[1.35rem] xl:pb-[1.7rem] 2xl:pb-[2rem]' : 'pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]'}
             `}>
                 <motion.h1
                     variants={headingVariant}
