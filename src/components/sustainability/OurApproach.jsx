@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const OurApproach = () => {
     return (
@@ -13,9 +17,15 @@ const OurApproach = () => {
 
             {/* Content */}
             <div className="w-full lg:w-[50%]">
-                <h2>
-                    Our <br /> Approach
-                </h2>
+                <motion.h2
+                    className="relative z-50"
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                        Our <br /> Approach
+                </motion.h2>
                 <p className="mt-[1.3rem] lg:mt-[2.5rem]">
                     We believe sustainable growth begins with responsible decisions. Every investment we make is guided by a commitment to reduce environmental impact, improve operational efficiency, and create lasting value for future generations.
                 </p>

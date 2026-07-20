@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 
 const ContactCTA = () => {
     return (
@@ -7,9 +11,15 @@ const ContactCTA = () => {
             text-white flex flex-col items-center text-center
             relative overflow-hidden
         ">
-            <h3>
+            <motion.h3
+                className="relative z-50"
+                variants={headingVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            >
                 Connect with <br/> Tandhan Globally
-            </h3>
+            </motion.h3>
             <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[60%]">
                 For a closer look into the heart of Tandhan, and to journey with us through every innovation, project, and milestone, connect with us on our social platforms.
             </p>

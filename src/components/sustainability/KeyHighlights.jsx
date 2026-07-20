@@ -47,7 +47,7 @@ const KeyHighlights = () => {
                         key={i}
                         className={`
                             absolute leading-tight font-medium w-max
-                            text-primary
+                            text-primary hidden lg:block
                             ${item.align === "right" ? "text-right" : ""}
                             ${item.align === "left" ? "text-left" : ""}
                             ${item.align === "center" ? "text-center" : ""}
