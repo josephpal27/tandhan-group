@@ -1,112 +1,87 @@
-
 const ContactForm = () => {
     return (
-        <>
-            <form
-                action=""
-                className="
-                    p-[3rem]
-                    shadow-[3px_3px_10px_rgba(0,0,0,0.3)]
-                    flex flex-col gap-[1.5rem]
-                "
-            >
-                {/* Name */}
-                <div className="flex flex-col">
-                    <label htmlFor="name" className="text-[1.2rem]">
-                        Name
+        <form
+            action=""
+            className="
+                contact-form
+                p-[1rem] sm:p-[1.5rem] lg:p-[2.2rem] xl:p-[2.6rem] 2xl:p-[3rem]
+                shadow-[3px_3px_10px_rgba(0,0,0,0.3)]
+                flex flex-col gap-[1.3rem] sm:gap-[1.4rem] lg:gap-[1.1rem] xl:gap-[1.3rem] 2xl:gap-[1.5rem]
+            "
+        >
+            {/* Name */}
+            <div className="flex flex-col">
+                <label htmlFor="name" className="form-label">
+                    Name*
+                </label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                />
+            </div>
+
+            {/* Email + Phone */}
+            <div className="flex gap-[1.3rem] sm:gap-[1.4rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem]">
+                <div className="flex flex-col w-1/2">
+                    <label htmlFor="email" className="form-label">
+                        Email*
                     </label>
                     <input
-                        type="text"
-                        name="name"
-                        id="name"
+                        type="email"
+                        name="email"
+                        id="email"
                         required
-                        className="
-                            border-b-[2px] border-black/40 focus:border-black
-                            outline-none py-[0.5rem] bg-transparent
-                        "
                     />
                 </div>
-
-                {/* Email + Phone */}
-                <div className="flex gap-[2rem]">
-                    <div className="flex flex-col w-1/2">
-                        <label htmlFor="email" className="text-[1.2rem]">
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            required
-                            className="
-                                border-b-[2px] border-black/40 focus:border-black
-                                outline-none py-[0.5rem] bg-transparent
-                            "
-                        />
-                    </div>
-                    <div className="flex flex-col w-1/2">
-                        <label htmlFor="phone" className="text-[1.2rem]">
-                            Phone
-                        </label>
-                        <input
-                            type="number"
-                            name="phone"
-                            id="phone"
-                            className="
-                                border-b-[2px] border-black/40 focus:border-black
-                                outline-none py-[0.5rem] bg-transparent
-                            "
-                        />
-                    </div>
-                </div>
-
-                {/* Subject */}
-                <div className="flex flex-col">
-                    <label htmlFor="subject" className="text-[1.2rem]">
-                        Subject
+                <div className="flex flex-col w-1/2">
+                    <label htmlFor="phone" className="form-label">
+                        Phone*
                     </label>
                     <input
-                        type="text"
-                        name="subject"
-                        id="subject"
-                        className="
-                            border-b-[2px] border-black/40 focus:border-black
-                            outline-none py-[0.5rem] bg-transparent
-                        "
+                        type="number"
+                        name="phone"
+                        id="phone"
+                        required
                     />
                 </div>
+            </div>
 
-                {/* Message */}
-                <div className="flex flex-col">
-                    <label htmlFor="message" className="text-[1.2rem]">
-                        Messege
-                    </label>
-                    <input
-                        type="text"
-                        name="message"
-                        id="message"
-                        className="
-                            border-b-[2px] border-black/40 focus:border-black
-                            outline-none py-[0.5rem] bg-transparent
-                        "
-                    />
-                </div>
+            {/* Subject */}
+            <div className="flex flex-col">
+                <label htmlFor="subject" className="form-label">
+                    Subject
+                </label>
+                <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                />
+            </div>
 
-                {/* Submit */}
-                <div className="mt-[1rem]">
-                    <button
-                        type="submit"
-                        className="
-                            border-black border-[2.5px] px-[2rem] py-[0.7rem]
-                            text-[1.1rem] hover:bg-black text-primary hover:text-white
-                            transition-colors duration-300 font-medium
-                        "
-                    >
-                        SUBMIT
-                    </button>
-                </div>
-            </form>
-        </>
+            {/* Message */}
+            <div className="flex flex-col">
+                <label htmlFor="message" className="form-label">
+                    Message*
+                </label>
+                <textarea name="message" id="message" required className="resize-none"></textarea>
+            </div>
+
+            {/* Submit */}
+            <div className="mt-[1rem]">
+                <button
+                    type="submit"
+                    className="
+                        bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
+                        border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
+                        py-[0.5rem] px-[1.4rem] w-[35%]
+                    "
+                >
+                    SUBMIT
+                </button>
+            </div>
+        </form>
     )
 }
 
