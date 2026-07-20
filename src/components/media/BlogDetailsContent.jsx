@@ -11,7 +11,7 @@ const BlogDetailsContent = ({ blog }) => {
             <div className="flex justify-between">
 
                 {/* Main Image */}
-                <div className="w-[50%]">
+                <div className="w-full lg:w-[50%]">
                     <img
                         src={blog.image}
                         alt={blog.title}
@@ -21,7 +21,7 @@ const BlogDetailsContent = ({ blog }) => {
                 </div>
 
                 {/* Latest Blogs */}
-                <div className="w-[46%]">
+                <div className="w-[46%] hidden lg:block">
                     <LatestBlogs />
                 </div>
 
@@ -29,9 +29,14 @@ const BlogDetailsContent = ({ blog }) => {
 
             {/* Bottom */}
             <div
-                className="mt-[3rem] sm:mt-[2rem] lg:mt-[2.3rem] xl:mt-[2.7rem] 2xl:mt-[3rem] blog-content"
+                className="mt-[1.5rem] sm:mt-[2rem] lg:mt-[2.3rem] xl:mt-[2.7rem] 2xl:mt-[3rem] blog-content"
                 dangerouslySetInnerHTML={{ __html: blog.content }}
             />
+
+            {/* Latest Blogs - Mobile Only */}
+            <div className="block lg:hidden mt-[3rem]">
+                <LatestBlogs />
+            </div>
 
         </section>
     )

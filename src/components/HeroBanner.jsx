@@ -23,7 +23,7 @@ export default function HeroBanner({image, title, desc}) {
     return (
         <section className={`
             relative overflow-hidden
-            ${isMedia ? 'h-[70vh]' : 'h-[100dvh] lg:h-[112dvh]'}
+            ${isMedia ? 'h-[55vh] lg:h-[70vh]' : 'h-[100dvh] lg:h-[112dvh]'}
         `}>
 
             {/* Parallax Background */}
@@ -42,7 +42,7 @@ export default function HeroBanner({image, title, desc}) {
             <div className={`
                 relative z-20 text-white flex flex-col justify-end h-full 
                 pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]
-                ${isMedia ? 'pb-[3rem] sm:pb-[2rem] lg:pb-[1.35rem] xl:pb-[1.7rem] 2xl:pb-[2rem]' : 'pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]'}
+                ${isMedia ? 'pb-[1.2rem] sm:pb-[1.5rem] lg:pb-[1.35rem] xl:pb-[1.7rem] 2xl:pb-[2rem]' : 'pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]'}
             `}>
                 <motion.h1
                     variants={headingVariant}
@@ -50,7 +50,7 @@ export default function HeroBanner({image, title, desc}) {
                     whileInView="visible"
                     viewport={{ once: true }}
                     className={`
-                        ${isMedia ? 'text-[1.8rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]' : ''}    
+                        ${isMedia ? 'text-[1.3rem] sm:text-[1.5rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]' : ''}    
                     `}
                 >
                     {title}

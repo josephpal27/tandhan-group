@@ -7,20 +7,20 @@ const LatestBlogs = () => {
         <div>
             {/* Head */}
             <div>
-                <span className="text-[1.8rem] sm:text-[1.5rem] lg:text-[1.4rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-semibold">
+                <span className="text-[1.6rem] sm:text-[1.7rem] lg:text-[1.4rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-semibold">
                     Latest Blogs
                 </span>
             </div>
 
             {/* Cards */}
             <div className="
-                border-t border-[#d1d1d1] mt-[0.7rem] pt-[1.3rem] sm:pt-[1rem] lg:pt-[1.1rem] xl:pt-[1.2rem] 2xl:pt-[1.3rem]
+                border-t border-[#d1d1d1] mt-[0.7rem] pt-[1.1rem] sm:pt-[1.2rem] lg:pt-[1.1rem] xl:pt-[1.2rem] 2xl:pt-[1.3rem]
             ">
                 {blogsData.slice(-3).reverse().map((blog) => (
                     <Link
                         key={blog.id}
                         href={`/media/${blog.slug}`}
-                        className="flex flex-wrap justify-between pb-[1.1rem] sm:pb-[1rem] lg:pb-[0.9rem] xl:pb-[1rem] 2xl:pb-[1.1rem]"
+                        className="flex flex-wrap justify-between pb-[1.7rem] sm:pb-[2rem] lg:pb-[0.9rem] xl:pb-[1rem] 2xl:pb-[1.1rem]"
                     >
                         <div className="w-full md:w-[23%]">
                             <img
