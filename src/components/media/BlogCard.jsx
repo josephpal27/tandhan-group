@@ -19,10 +19,11 @@ const BlogCard = ({ blog }) => {
             {/* Content */}
             <div className="
                 bg-white text-primary w-[94%] lg:w-[87%] relative z-10 shadow-[1px_1px_10px_rgba(0,0,0,0.3)]
-                ml-auto 
+                ml-auto
                 mr-[-0.6rem] sm:mr-[-0.8rem] lg:mr-[-1.1rem] xl:mr-[-1.3rem] 2xl:mr-[-1.5rem]
                 mt-[-2.5rem] sm:mt-[-2rem] lg:mt-[-2.1rem] xl:mt-[-2.3rem] 2xl:mt-[-2.5rem]
                 p-[1rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
+                lg:group-hover:translate-y-[-1rem] transition duration-300
             ">
                 <span className="
                     text-[1.2rem] sm:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem] font-semibold line-clamp-1

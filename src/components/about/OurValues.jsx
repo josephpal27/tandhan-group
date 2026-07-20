@@ -65,9 +65,9 @@ const OurValues = () => {
                     
                     return(
                         <div key={index} onClick={() => setActiveIndex(index)} className="
-                            w-[47%] lg:w-[23%] relative cursor-pointer transition-all duration-300
-                            hover:scale-[1.05]
-                            mb-[1.5rem] lg:mb-0
+                            w-[48%] lg:w-[23%] relative cursor-pointer transition-all duration-300
+                            lg:hover:scale-[1.05]
+                            mb-[1.2rem] lg:mb-0
                         ">
                             {/* Image only renders for active card */}
                             <img
@@ -82,16 +82,16 @@ const OurValues = () => {
                             <div className={`
                                 absolute top-0 left-0 w-full h-full
                                 flex flex-col justify-end transition-all duration-300
-                                p-[0.8rem] sm:p-[1.2rem] lg:p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]
+                                p-[0.5rem] sm:p-[0.7rem] lg:p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]
                                 ${isActive ? "bg-primary/80 text-white shadow-2xl lg:scale-[1.05]" : "bg-transparent text-primary"}
                             `}>
-                                <span className="block text-[1.5rem] sm:text-[2.2rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] mb-[0.3rem] lg:mb-[1rem]">
+                                <span className="block text-[1.3rem] sm:text-[1.4rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] mb-[0.2rem] lg:mb-[1rem]">
                                     0{value.id}.
                                 </span>
-                                <span className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold">
+                                <span className="text-[1.1rem] sm:text-[1.2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold">
                                     {value.title}
                                 </span>
-                                <p className="mt-[0.7rem] lg:mt-[0.8rem] text-[0.65rem] sm:text-[0.75rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]">
+                                <p className="mt-[0.5rem] lg:mt-[0.6rem] text-[0.65rem] sm:text-[0.75rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]">
                                     {value.desc}
                                 </p>
                             </div>
