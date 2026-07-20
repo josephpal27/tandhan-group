@@ -34,7 +34,7 @@ const FocusAreas = () => {
     const [activeIndex, setActiveIndex] = useState(1); // 2nd card active on load
 
     return (
-        <section className="pt-[1.7rem] sm:pt-[2.2rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]">
+        <section className="pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem]">
             <h5>
                 Our <br /> Focus Areas
             </h5>
@@ -42,7 +42,7 @@ const FocusAreas = () => {
             {/* Row */}
             <div className="
                 flex justify-between flex-wrap 
-                mt-[1.8rem] sm:mt-[2.2rem] lg:mt-[2.5rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                mt-[1.5rem] sm:mt-[2rem] lg:mt-[2.5rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
             ">
                 {focusData.map((value, index) => {
 
@@ -50,7 +50,7 @@ const FocusAreas = () => {
 
                     return (
                         <div key={index} onMouseOver={() => setActiveIndex(index)} className="
-                            w-[47%] lg:w-[23%] relative cursor-pointer transition-all duration-300
+                            w-[48%] lg:w-[23%] relative cursor-pointer transition-all duration-300
                             hover:scale-[1.05]
                             mb-[1.5rem] lg:mb-0
                         ">
@@ -73,7 +73,7 @@ const FocusAreas = () => {
                                 <span className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold leading-[1.2]">
                                     {value.title}
                                 </span>
-                                <p className="mt-[0.8rem] lg:mt-[0.9rem] text-[0.65rem] sm:text-[0.75rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]">
+                                <p className="mt-[0.5rem] lg:mt-[0.9rem] text-[0.65rem] sm:text-[0.75rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]">
                                     {value.desc}
                                 </p>
                             </div>

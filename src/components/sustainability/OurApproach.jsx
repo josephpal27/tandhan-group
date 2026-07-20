@@ -2,21 +2,21 @@
 const OurApproach = () => {
     return (
         <section className="
-            pt-[1.7rem] sm:pt-[2.2rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem]
-            flex justify-between flex-wrap relative overflow-hidden
+            pt-[2rem] sm:pt-[3rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem]
+            flex justify-between flex-wrap relative overflow-hidden flex-col-reverse lg:flex-row
         ">
 
             {/* Image */}
-            <div className="w-[45%]">
+            <div className="w-full lg:w-[45%] mt-[1.5rem] lg:mt-0">
                 <img src="/images/sustainability/approach.avif" alt="Our Approach" loading="lazy" className="w-full" />
             </div>
 
             {/* Content */}
-            <div className="w-[50%]">
+            <div className="w-full lg:w-[50%]">
                 <h2>
                     Our <br /> Approach
                 </h2>
-                <p className="mt-[2rem] lg:mt-[2.5rem]">
+                <p className="mt-[1.3rem] lg:mt-[2.5rem]">
                     We believe sustainable growth begins with responsible decisions. Every investment we make is guided by a commitment to reduce environmental impact, improve operational efficiency, and create lasting value for future generations.
                 </p>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">

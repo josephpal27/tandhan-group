@@ -7,16 +7,16 @@ const Impact = () => {
         ">
 
             {/* Image */}
-            <div className="w-[55%]">
+            <div className="w-full lg:w-[55%]">
                 <img src="/images/sustainability/tree.avif" alt="Tree" loading="lazy" className="w-full" />
             </div>
 
             {/* Content */}
-            <div className="w-[40%]">
+            <div className="w-full lg:w-[40%] mt-[1.3rem] lg:mt-0">
                 <h3>
                     Lorem Ipsum
                 </h3>
-                <p className="mt-[1rem] lg:mt-[1.5rem]">
+                <p className="mt-[0.7rem] lg:mt-[1.3rem]">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur officia numquam repudiandae quo ipsum placeat dolorem harum fuga totam et. Lorem ipsum, dolor sit amet consectetur adipisicing.
                 </p>
             </div>
