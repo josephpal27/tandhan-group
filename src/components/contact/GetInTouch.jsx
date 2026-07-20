@@ -40,7 +40,7 @@ const GetInTouch = () => {
         ">
 
             {/* Content */}
-            <div className="w-[45%]">
+            <div className="w-full lg:w-[45%]">
                 <h2>
                     Get In Touch
                 </h2>
@@ -52,14 +52,14 @@ const GetInTouch = () => {
                     {contactDetails.map((item, index) => {
                         return (
                             <div key={index} className="
-                                mb-[1.3rem] flex gap-[1rem]
+                                mb-[1.2rem] lg:mb-[1.3rem] flex gap-[1rem]
                             ">
-                                <div className="text-[2rem] pt-[0.3rem]">
+                                <div className="text-[1.6rem] sm:text-[1.7rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem] pt-[0.3rem]">
                                     {item.icon}
                                 </div>
                                 <div>
                                     <span className="
-                                        text-[1.8rem] font-semibold block
+                                        text-[1.4rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem] font-semibold block
                                     ">
                                         {item.label}
                                     </span>
@@ -76,7 +76,7 @@ const GetInTouch = () => {
             </div>
 
             {/* Form */}
-            <div className="w-[50%]">
+            <div className="w-full lg:w-[50%]">
                 <ContactForm />
             </div>
 

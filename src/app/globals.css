@@ -98,3 +98,17 @@ section {
 .blog-content em{
     @apply text-[#868585];
 }
+
+/* Contact Page */
+.contact-form label{
+    @apply text-[1.2rem] sm:text-[1.3rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem] text-[#6a6a6a];
+}
+.contact-form input,
+.contact-form textarea{
+    @apply border-b-[2px] border-black/40 focus:border-black outline-none py-[0.5rem] bg-transparent text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem] text-primary;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
