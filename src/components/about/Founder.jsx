@@ -7,7 +7,7 @@ import Link from "next/link";
 const Founder = () => {
     return (
         <section className="
-            pt-[1.2rem] sm:pt-[2.2rem] lg:pt-[5.5rem] xl:pt-[6rem] 2xl:pt-[6.5rem]
+            pt-[2rem] sm:pt-[2.5rem] lg:pt-[5.5rem] xl:pt-[6rem] 2xl:pt-[6.5rem]
             flex justify-between flex-wrap
         ">
             {/* Image */}
