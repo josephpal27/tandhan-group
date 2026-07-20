@@ -23,8 +23,8 @@ const ContactForm = () => {
             </div>
 
             {/* Email + Phone */}
-            <div className="flex gap-[1.3rem] sm:gap-[1.4rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem]">
-                <div className="flex flex-col w-1/2">
+            <div className="flex gap-[1.3rem] sm:gap-[1.4rem] lg:gap-[1.6rem] xl:gap-[1.8rem] 2xl:gap-[2rem] flex-col lg:flex-row">
+                <div className="flex flex-col lg:w-1/2">
                     <label htmlFor="email" className="form-label">
                         Email*
                     </label>
@@ -35,7 +35,7 @@ const ContactForm = () => {
                         required
                     />
                 </div>
-                <div className="flex flex-col w-1/2">
+                <div className="flex flex-col lg:w-1/2">
                     <label htmlFor="phone" className="form-label">
                         Phone*
                     </label>
@@ -69,13 +69,13 @@ const ContactForm = () => {
             </div>
 
             {/* Submit */}
-            <div className="mt-[1rem]">
+            <div className="mt-[0.7rem] lg:mt-[1rem]">
                 <button
                     type="submit"
                     className="
                         bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
                         border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
-                        py-[0.5rem] px-[1.4rem] w-[35%]
+                        py-[0.5rem] px-[1.4rem] w-[50%] lg:w-[35%]
                     "
                 >
                     SUBMIT
