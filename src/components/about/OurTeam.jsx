@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 import { useRef, useState } from "react";
@@ -7,7 +8,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import Link from "next/link";
 
 const teamData = [
     {
@@ -114,8 +114,8 @@ const OurTeam = () => {
                     speed={700}
                     breakpoints={{
                         0: {
-                            slidesPerView: 2, // for mobile
-                            spaceBetween: 15,
+                            slidesPerView: 1.2, // for mobile
+                            spaceBetween: 20,
                         },
                         640: {
                             slidesPerView: 2, // tablet
@@ -191,7 +191,7 @@ const OurTeam = () => {
                 </div>
 
                 {/* Blue Card */}
-                <div className="absolute top-0 left-0 w-[52%] lg:w-[51.35%] h-full border-primary border-[2px] shadow-[0px_4px_12px_rgba(0,0,0,0.5)] rounded-[5px] z-50"></div>
+                <div className="absolute top-0 left-0 w-[85.7%] lg:w-[51.35%] h-full border-primary border-[2px] shadow-[0px_4px_12px_rgba(0,0,0,0.5)] rounded-[5px] z-50"></div>
 
             </div>
 

@@ -7,6 +7,7 @@ export const sectorsGalleryData = {
             { id: 3, image: "/images/sectors/protective-solutions/gallery/1.avif", },
             { id: 4, image: "/images/sectors/protective-solutions/gallery/1.avif", },
             { id: 5, image: "/images/sectors/protective-solutions/gallery/1.avif", },
+            { id: 6, image: "/images/sectors/protective-solutions/gallery/1.avif", },
         ]
     },
 
@@ -18,6 +19,7 @@ export const sectorsGalleryData = {
             { id: 3, image: "/images/sectors/energy-solutions/gallery/1.avif", },
             { id: 4, image: "/images/sectors/energy-solutions/gallery/1.avif", },
             { id: 5, image: "/images/sectors/energy-solutions/gallery/1.avif", },
+            { id: 6, image: "/images/sectors/energy-solutions/gallery/1.avif", },
         ]
     },
 
@@ -29,6 +31,7 @@ export const sectorsGalleryData = {
             { id: 3, image: "/images/sectors/textiles/gallery/3.avif", },
             { id: 4, image: "/images/sectors/textiles/gallery/4.avif", },
             { id: 5, image: "/images/sectors/textiles/gallery/2.avif", },
+            { id: 6, image: "/images/sectors/textiles/gallery/3.avif", },
         ]
     },
 
@@ -40,6 +43,7 @@ export const sectorsGalleryData = {
             { id: 3, image: "/images/sectors/hospitality/gallery/1.avif", },
             { id: 4, image: "/images/sectors/hospitality/gallery/1.avif", },
             { id: 5, image: "/images/sectors/hospitality/gallery/1.avif", },
+            { id: 6, image: "/images/sectors/hospitality/gallery/1.avif", },
         ]
     },
 }

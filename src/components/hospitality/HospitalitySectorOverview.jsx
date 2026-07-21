@@ -12,7 +12,7 @@ const HospitalitySectorOverview = () => {
         <section className="flex justify-between flex-wrap">
 
             {/* Content */}
-            <div className="w-full lg:w-[27%] pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] relative z-50">
+            <div className="w-full lg:w-[37%] pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] relative z-50">
                 <motion.h2
                     variants={headingVariant}
                     initial="hidden"
@@ -22,13 +22,13 @@ const HospitalitySectorOverview = () => {
                     Sector <br /> Overview
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat.
+                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat. Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat. Lorem ipsum dolor sit amet consectetur elit.
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] w-[90%] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
-                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing.
+                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing. Lorem ipsum dolor sit amet consectetur elit architecto.
                 </p>
                 <button className="
                     mt-[1rem] lg:mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition

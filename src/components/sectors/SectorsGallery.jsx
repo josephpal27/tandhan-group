@@ -33,7 +33,7 @@ const SectorsGallery = ({gallery}) => {
             <div className="mt-[2.5rem] sm:mt-[3rem] lg:mt-[4.7rem] xl:mt-[5.5rem] 2xl:mt-[6rem]">
                 <Swiper
                     modules={[Autoplay, Navigation]}
-                    slidesPerView={4}
+                    slidesPerView={5}
                     spaceBetween={0}
                     loop={true}
                     autoplay={{
@@ -53,10 +53,10 @@ const SectorsGallery = ({gallery}) => {
                             slidesPerView: 3, // for mobile
                         },
                         640: {
-                            slidesPerView: 3, // tablet
+                            slidesPerView: 4, // tablet
                         },
                         991: {
-                            slidesPerView: 4, // tablet and up
+                            slidesPerView: 5, // tablet and up
                             spaceBetween: 0,
                         },
                     }}

@@ -115,9 +115,6 @@ const OurStory = () => {
                 <p className="mt-[0.3rem] lg:mt-[1rem]">
                     Driven by innovation, integrity, and manufacturing excellence, our 2,000+ people create more than products - they build partnerships, livelihoods, and opportunities. Every venture we etiquette is guided by a shared belief: meaningful growth is achieved when business success creates value for people, communities, and markets alike.
                 </p>
-                <p className="mt-[0.3rem] lg:mt-[1rem]">
-                    For a corporate timeline, avoid simply describing the company. Each milestone should explain <b>what it represented in Tandhan's evolution</b> and connect to the larger story of growth, diversification, and global expansion.
-                </p>
             </div>
 
         </section>

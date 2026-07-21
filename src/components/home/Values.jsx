@@ -26,13 +26,13 @@ const Values = () => {
                         whileInView="visible"
                         viewport={{ once: true }}
                     >
-                        Lorem Ipsum
+                        Building From The East
                     </motion.h3>
                     <p className="mt-[0.7rem] lg:mt-[1.8rem]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, et neque. Deserunt quod modi ipsam optio natus itaque quisquam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam, soluta aut ut similique, culpa nisi aliquam, perferendis explicabo dolore possimus incidunt corporis! Earum voluptatibus sequi consequatur.
+                        Tandhan was built from the East because we saw potential where others saw limitations. Guided by instinct and strengthened by experience, we chose to invest in a region rich in talent, opportunity, and industrial promise.
                     </p>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, et neque. Deserunt quod modi ipsam optio natus itaque quisquam in. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Today, that conviction continues to shape our growth. With strategic access through Kolkata Port, a diversified manufacturing ecosystem, export-led operations, and a strong presence across emerging markets, Eastern India remains the foundation from which we build for the world.
                     </p>
                 </div>
             </div>
