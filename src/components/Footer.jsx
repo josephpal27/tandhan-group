@@ -22,10 +22,10 @@ const footerData = [
         id: 2,
         title: "Our Sectors",
         links: [
-            { label: "Sector 1", url: "/", },
-            { label: "Sector 2", url: "/", },
-            { label: "Sector 3", url: "/", },
-            { label: "Sector 4", url: "/", },
+            { label: "Protective Solutions", url: "/protective-solutions", },
+            { label: "Energy Solutions", url: "/energy-solutions", },
+            { label: "Textiles", url: "/textiles", },
+            { label: "Hospitality", url: "/hospitality", },
         ]
     },
 ]
