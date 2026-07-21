@@ -74,14 +74,14 @@ const Navbar = () => {
         {
             icon: <LuPhone />,
             label: "Call Us",
-            value: "+91 00000 00000",
-            url: "/",
+            value: "+91 90511 61666",
+            url: "tel:919051161666",
         },
         {
             icon: <LuMessageSquareText />,
             label: "Email Us",
-            value: "example@gmail.com",
-            url: "/",
+            value: "marketing@tandhangroup.com",
+            url: "mailto:marketing@tandhangroup.com",
         },
     ]
 
