@@ -15,7 +15,17 @@ const slides = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
     },
     {
-        image: '/images/our-story/1.avif',
+        image: '/images/our-story/4.avif',
+        title: 'Lorem Ipsum',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
+    },
+    {
+        image: '/images/our-story/3.avif',
+        title: 'Lorem Ipsum',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
+    },
+    {
+        image: '/images/our-story/2.avif',
         title: 'Lorem Ipsum',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
     },
