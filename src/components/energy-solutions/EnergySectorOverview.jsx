@@ -22,15 +22,11 @@ const EnergySectorOverview = () => {
                     loading="lazy"
                     className="w-full relative z-50"
                 />
-                <motion.img
+                <img
                     src="/images/sectors/energy-solutions/solar.avif"
                     alt="Solar Panel"
                     loading="lazy"
-                    className="w-[97%] lg:w-full absolute bottom-[-1.5rem] lg:bottom-[-4rem] z-50 ml-[1.5%] lg:ml-0"
-                    initial={{ scale: 1 }}
-                    whileInView={{ scale: 1.2 }}
-                    transition={{ duration: 2, ease: "easeOut" }}
-                    viewport={{ once: true }}
+                    className="w-[97%] scale-[1.2] lg:w-full absolute bottom-[-1.5rem] lg:bottom-[-4rem] z-50 ml-[1.5%] lg:ml-0"
                 />
             </div>
 

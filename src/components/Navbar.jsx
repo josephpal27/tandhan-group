@@ -60,7 +60,7 @@ const Navbar = () => {
         { name: "Our Businesses", href: "", hasMega: true },
         { name: "Sustainability & Impact", href: "/sustainability/" },
         { name: "Media", href: "/media/" },
-        { name: "Global Presence", href: "/grobal-presence/" },
+        { name: "Global Presence", href: "/global-presence/" },
         { name: "Careers", href: "/careers/" },
     ];
 
