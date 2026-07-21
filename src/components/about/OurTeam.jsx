@@ -12,38 +12,66 @@ import "swiper/css/pagination";
 const teamData = [
     {
         id: 1,
-        name: "John Doe",
-        position: "CEO",
-        image: "/images/founder.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum quas delectus, nemo accusamus quam, ipsam officiis.",
+        name: "Amit Jalan",
+        position: "Director",
+        image: "/images/team/amit-jalan.avif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
     },
     {
         id: 2,
-        name: "John Doe",
-        position: "Founder",
-        image: "/images/founder.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum quas delectus, nemo accusamus quam, ipsam id totam in adipisci inventore.",
+        name: "Ankit Jalan",
+        position: "Director",
+        image: "/images/team/ankit-jalan.avif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
     },
     {
         id: 3,
-        name: "John Doe",
-        position: "Partner",
-        image: "/images/founder.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum quas delectus.",
+        name: "Anuj Jalan",
+        position: "Director",
+        image: "/images/team/anuj-jalan.avif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
     },
     {
         id: 4,
-        name: "John Doe",
-        position: "Developer",
-        image: "/images/founder.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum quas delectus, nemo accusamus quam, ipsam id totam in adipisci inventore.",
+        name: "Ashok Jalan",
+        position: "Chairman",
+        image: "/images/team/ashok-jalan.avif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
     },
     {
         id: 5,
-        name: "John Doe",
-        position: "Designer",
-        image: "/images/founder.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum quas delectus.",
+        name: "Daivik Jalan",
+        position: "Director",
+        image: "/images/team/daivik-jalan.avif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
+    },
+    {
+        id: 6,
+        name: "Divyanshi Jalan",
+        position: "Director",
+        image: "/images/team/divyanshi-jalan.avif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
+    },
+    {
+        id: 7,
+        name: "Prachi Jalan",
+        position: "Director",
+        image: "/images/team/prachi-jalan.avif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
+    },
+    {
+        id: 8,
+        name: "Harpreet Singh Chadha",
+        position: "CEO",
+        image: "/images/team/harpreet-singh.avif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
+    },
+    {
+        id: 9,
+        name: "Sandeep Dahiya",
+        position: "CEO",
+        image: "/images/team/sandeep-dahiya.avif",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
     },
 ]
 
@@ -160,7 +188,7 @@ const OurTeam = () => {
                 </Swiper>
 
                 {/* Pagination & Navigation */}
-                <div className="absolute bottom-0 right-0 flex justify-end lg:justify-between items-center z-[999] w-[40%]">
+                <div className="absolute bottom-0 right-0 flex justify-end lg:justify-between items-center z-[999] w-[47%]">
                     <div className="hidden lg:block">
                         <div id="team-pagination" className="flex items-center gap-[0.4rem]" />
                     </div>
