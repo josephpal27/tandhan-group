@@ -11,7 +11,7 @@ const Values = () => {
         ">
 
             {/* Left */}
-            <div className="w-full lg:w-[50%] bg-[url('/images/services/3.avif')] bg-center bg-cover bg-no-repeat pl-[1rem] lg:pl-[12%] relative">
+            <div className="w-full lg:w-[50%] bg-[url('/images/building-from-the-east-1.avif')] bg-center bg-cover bg-no-repeat pl-[1rem] lg:pl-[12%] relative">
                 {/* Layer */}
                 <div className="w-full h-full absolute top-0 left-0 bg-primary/50"></div>
                 {/* Content Box */}
@@ -39,7 +39,7 @@ const Values = () => {
 
             {/* Right */}
             <div className="w-full lg:w-[50%] pr-[1rem] lg:pr-[4%] bg-primary">
-                <img src="/images/footer-bg.avif" alt="Values Image" loading="lazy" className="w-full" />
+                <img src="/images/building-from-the-east.avif" alt="Values Image" loading="lazy" className="w-full" />
             </div>
 
         </section>

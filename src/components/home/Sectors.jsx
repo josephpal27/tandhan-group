@@ -6,10 +6,10 @@ import { useState, useEffect, useCallback } from 'react';
 
 const sectorGroups = [
     [
-        { id: 1, image: "/images/sectors/2.avif" },
-        { id: 2, image: "/images/sectors/3.avif" },
-        { id: 3, image: "/images/sectors/4.avif" },
-        { id: 4, image: "/images/sectors/1.avif" },
+        { id: 1, image: "/images/sectors/2-2.avif" },
+        { id: 2, image: "/images/sectors/3-3.avif" },
+        { id: 3, image: "/images/sectors/4-4.avif" },
+        { id: 4, image: "/images/sectors/1-1.avif" },
     ],
     [
         { id: 5, image: "/images/sectors/2.avif" },

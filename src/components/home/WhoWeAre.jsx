@@ -11,7 +11,7 @@ const aboutUsData = [
         id: 1,
         title: "Who We Are",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio distinctio odit ab earum ipsum magni iste unde architecto quaerat cum. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque provident nesciunt sint.",
-        image: "/images/who-we-are/1.avif",
+        image: "/images/who-we-are/3.avif",
     },
     {
         id: 2,

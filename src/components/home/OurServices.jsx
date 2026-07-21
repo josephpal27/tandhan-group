@@ -61,7 +61,7 @@ const ServiceCard = ({ service, isOpen, cardRef, onToggle }) => {
                 `}
             >
                 <span className="
-                    text-white text-center text-[1.5rem] lg:text-[1.6rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold
+                    text-white text-center text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold
                 ">
                     {service.title}
                 </span>
