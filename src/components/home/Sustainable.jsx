@@ -78,7 +78,7 @@ const Sustainable = () => {
                         <div className="
                             absolute w-full h-full left-0 top-0 px-[1rem] sm:px-[5%] lg:px-[7%]
                             py-[4rem]
-                            flex flex-col justify-center text-white
+                            flex flex-col justify-end text-white
                         ">
                             <motion.h5
                                 variants={headingVariant}

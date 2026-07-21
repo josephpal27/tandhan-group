@@ -9,14 +9,10 @@ import { headingVariant } from "@/utils/animations";
 const aboutUsData = [
     {
         id: 1,
-        title: "Who We Are",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio distinctio odit ab earum ipsum magni iste unde architecto quaerat cum. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque provident nesciunt sint.",
         image: "/images/who-we-are/3.avif",
     },
     {
         id: 2,
-        title: "About The Founder",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio distinctio odit ab earum ipsum magni iste unde architecto quaerat cum. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque provident nesciunt sint.",
         image: "/images/who-we-are/2.avif",
     },
 ];
@@ -84,14 +80,20 @@ const WhoWeAre = () => {
             {/* Right Content */}
             <div className="w-full lg:w-[47%]">
                 <motion.h2
+                    className="text-[1.8rem] sm:text-[2rem] lg:text-[2.3rem] xl:text-[2.4rem] 2xl:text-[2.5rem]"
                     variants={headingVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    {activeItem.title}
+                    Diversified by Business. United by Purpose. Built on Instinct.
                 </motion.h2>
-                <p className="mt-[0.7rem] lg:mt-[1.5rem]">{activeItem.desc}</p>
+                <p className="mt-[0.7rem] lg:mt-[1.5rem]">
+                    For over three decades, Tandhan Group has grown by seeing opportunities where others saw uncertainty. What began as a trading enterprise has evolved into a diversified global group spanning industrial and agricultural protective solutions, textiles, power solutions, and hospitality.
+                </p>
+                <p className="mt-[0.7rem] lg:mt-[1rem]">
+                    Across industries, markets, and generations, one principle has remained constant: the instinct to anticipate change, act with conviction, and build for the future. Today, with operations across multiple countries and a growing global footprint, Tandhan continues to create products, businesses, and opportunities that empower progress - guided not by trends, but by the confidence to move ahead of them.
+                </p>
             </div>
 
         </section>
