@@ -112,3 +112,8 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* About Page Our Journey */
+.journey-slides p{
+    @apply text-[0.9rem] sm:text-[1rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem] mb-[0.5rem] mt-[0.1rem];
+}

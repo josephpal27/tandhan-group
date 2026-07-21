@@ -342,12 +342,12 @@ const Navbar = () => {
 
             {/* Mobile Overlay */}
             <div
-                className={`fixed inset-0 bg-black/40 z-50 transition-opacity duration-300 ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}
+                className={`fixed inset-0 bg-black/40 z-[998] transition-opacity duration-300 ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}
                 onClick={() => setOpen(false)}
             />
 
             {/* Mobile Drawer */}
-            <div className={`fixed top-0 left-0 h-full w-[70%] max-w-sm bg-[#f7f7f7] z-50 shadow-lg transform transition-transform duration-500 ${open ? "translate-x-0" : "-translate-x-full"}`}>
+            <div className={`fixed top-0 left-0 h-full w-[70%] max-w-sm bg-[#f7f7f7] z-[999] shadow-lg transform transition-transform duration-500 ${open ? "translate-x-0" : "-translate-x-full"}`}>
                 <div className="flex justify-between items-center px-[1rem] py-[1.5rem] border-b">
                     <Link href="/">
                         <img src="/images/logo/logo.png" alt="Tandhan Group" className="w-[110px]" />
