@@ -32,22 +32,25 @@ const footerData = [
 
 const contactLinks = [
     {
-        label: "Address",
-        url: "/",
+        label: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091",
+        url: "https://maps.app.goo.gl/e85z4x5RdPxFXoWG6",
         icon: <SlLocationPin />,
         target: "_blank",
+        align: "items-start",
     },
     {
-        label: "example@gmail.com",
-        url: "mailto:example@gmail.com",
+        label: "marketing@tandhangroup.com",
+        url: "mailto:marketing@tandhangroup.com",
         icon: <LuMessageSquareText />,
         target: "_self",
+        align: "items-center",
     },
     {
-        label: "+91 00000 00000",
-        url: "tel:+910000000000",
+        label: "+91 90511 61666",
+        url: "tel:919051161666",
         icon: <LuPhone />,
         target: "_self",
+        align: "items-center",
     },
 ]
 
@@ -115,7 +118,7 @@ const Footer = () => {
                     })}
 
                     {/* Get In Touch */}
-                    <div className="w-full lg:w-[32%] text-white">
+                    <div className="get-in-touch w-full lg:w-[32%] text-white">
                         <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold">
                             Get In Touch
                         </span>
@@ -123,9 +126,12 @@ const Footer = () => {
                             {contactLinks.map((item, index) => (
                                 <li key={index} className="mt-[0.5rem]">
                                     <a href={item.url} target={item.target}
-                                        className="flex items-center gap-[0.5rem] hover:text-[#e9e9e9] transition"
+                                        className={`flex ${item.align} gap-[0.5rem] hover:text-[#e9e9e9] transition`}
                                     >
-                                        {item.icon} {item.label}
+                                        <span className="text-[1.1rem] leading-[1.4] shrink-0 mt-[0.1rem]">
+                                            {item.icon}
+                                        </span>
+                                        <span>{item.label}</span>
                                     </a>
                                 </li>
                             ))}
