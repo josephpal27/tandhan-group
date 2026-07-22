@@ -15,64 +15,50 @@ const teamData = [
         name: "Amit Jalan",
         position: "Director",
         image: "/images/team/amit-jalan.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
     },
     {
         id: 2,
         name: "Ankit Jalan",
         position: "Director",
         image: "/images/team/ankit-jalan.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
     },
     {
         id: 3,
         name: "Anuj Jalan",
         position: "Director",
         image: "/images/team/anuj-jalan.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
     },
     {
         id: 4,
-        name: "Ashok Jalan",
-        position: "Chairman",
-        image: "/images/team/ashok-jalan.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
-    },
-    {
-        id: 5,
-        name: "Daivik Jalan",
-        position: "Director",
-        image: "/images/team/daivik-jalan.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
-    },
-    {
-        id: 6,
-        name: "Divyanshi Jalan",
-        position: "Director",
-        image: "/images/team/divyanshi-jalan.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
-    },
-    {
-        id: 7,
         name: "Prachi Jalan",
         position: "Director",
         image: "/images/team/prachi-jalan.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
+    },
+    {
+        id: 5,
+        name: "Divyanshi Jalan",
+        position: "Director",
+        image: "/images/team/divyanshi-jalan.avif",
+    },
+    {
+        id: 6,
+        name: "Daivik Jalan",
+        position: "Director",
+        image: "/images/team/daivik-jalan.avif",
+    },
+    {
+        id: 7,
+        name: "Sandeep Dahiya",
+        position: "CEO, Tandhan Denim",
+        image: "/images/team/sandeep-dahiya.avif",
     },
     {
         id: 8,
         name: "Harpreet Singh Chadha",
-        position: "CEO",
+        position: "CEO, Tandhan Power",
         image: "/images/team/harpreet-singh.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
     },
-    {
-        id: 9,
-        name: "Sandeep Dahiya",
-        position: "CEO",
-        image: "/images/team/sandeep-dahiya.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.",
-    },
+    
 ]
 
 const OurTeam = () => {
@@ -102,11 +88,8 @@ const OurTeam = () => {
                 >
                     Our <br /> Team
                 </motion.h6>
-                <p className={`
-                    mt-[0.7rem] lg:mt-[1.2rem]
-                    ${descVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"} transition-all duration-300
-                `}>
-                    {teamData[activeIndex]?.desc}
+                <p className="mt-[0.7rem] lg:mt-[1.2rem]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.
                 </p>
                 <Link href="/" className="
                     mt-[1.3rem] lg:mt-[2rem] block w-max bg-white hover:bg-primary text-primary hover:text-white font-semibold transition

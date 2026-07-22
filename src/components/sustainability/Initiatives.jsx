@@ -1,8 +1,8 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { headingVariant } from "@/utils/animations";
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import { headingVariantLeft } from "@/utils/animations";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { initiativesData } from "@/data/initiativesData";
@@ -10,7 +10,6 @@ import { initiativesData } from "@/data/initiativesData";
 const Initiatives = () => {
 
     const swiperRef = useRef(null);
-    const [activeIndex, setActiveIndex] = useState(0);
 
     return (
         <section className="
@@ -24,26 +23,16 @@ const Initiatives = () => {
                 pb-[1rem]
                 border-primary border-b-[2px]
             ">
-                {/* Slider */}
-                <div className="w-[90%]">
-                    <Swiper
-                        onSwiper={(swiper) => (swiperRef.current = swiper)}
-                        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-                        loop={true}
-                        autoHeight={true}
-                        speed={700}
-                        className="w-full"
+                {/* Heading */}
+                <div className="w-[90%] overflow-hidden">
+                    <motion.h6
+                        variants={headingVariantLeft}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                     >
-                        {initiativesData.map((item) => (
-                            <SwiperSlide key={item.id} className="relative">
-                                <span className="
-                                    text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold leading-[1.2]
-                                ">
-                                    {item.title}
-                                </span>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                        Recent Initiatives
+                    </motion.h6>
                 </div>
                 {/* Navigation */}
                 <div className="w-[4%] lg:w-[7%]">
@@ -66,35 +55,47 @@ const Initiatives = () => {
 
             {/* Initiatives */}
             <div className="mt-[1.5rem] lg:mt-[2.5rem] overflow-hidden">
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={activeIndex}
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="flex flex-wrap gap-[2%]"
-                    >
-                        {initiativesData[activeIndex].posts.map((post, index) => (
-                            <div key={index} className="w-full lg:w-[32%] mb-[1.5rem] lg:mb-0">
-                                <div>
-                                    <img src={post.image} alt={post.title} loading="lazy" className="w-full" />
-                                </div>
-                                <div className="mt-[1.1rem] lg:mt-[1.5rem]">
-                                    <span className="
+                <Swiper
+                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    slidesPerView={3}
+                    spaceBetween={20}
+                    loop={true}
+                    speed={700}
+                    className="w-full"
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1, // for mobile
+                            spaceBetween: 10,
+                        },
+                        640: {
+                            slidesPerView: 2, // tablet
+                            spaceBetween: 15,
+                        },
+                        991: {
+                            slidesPerView: 3, // tablet and up
+                            spaceBetween: 20,
+                        },
+                    }}
+                >
+                    {initiativesData.map((post) => (
+                        <SwiperSlide key={post.id} className="relative mb-[1.5rem] lg:mb-0">
+                            <div>
+                                <img src={post.image} alt={post.title} loading="lazy" className="w-full" />
+                            </div>
+                            <div className="mt-[1.1rem] lg:mt-[1.5rem]">
+                                <span className="
                                         text-[1.3rem] sm:text-[1.4rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] 
                                         leading-[1] font-semibold
                                     ">
-                                        {post.title}
-                                    </span>
-                                    <p className="mt-[0.5rem] lg:mt-[0.8rem]">
-                                        {post.description}
-                                    </p>
-                                </div>
+                                    {post.title}
+                                </span>
+                                <p className="mt-[0.5rem] lg:mt-[0.8rem]">
+                                    {post.description}
+                                </p>
                             </div>
-                        ))}
-                    </motion.div>
-                </AnimatePresence>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
 
         </section>

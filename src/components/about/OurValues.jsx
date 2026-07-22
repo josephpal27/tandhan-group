@@ -81,7 +81,7 @@ const OurValues = () => {
                             />
                             <div className={`
                                 absolute top-0 left-0 w-full h-full
-                                flex flex-col justify-end transition-all duration-300
+                                flex flex-col lg:justify-end transition-all duration-300
                                 p-[0.5rem] sm:p-[0.7rem] lg:p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]
                                 ${isActive ? "bg-primary/80 text-white shadow-2xl lg:scale-[1.05]" : "bg-transparent text-primary"}
                             `}>

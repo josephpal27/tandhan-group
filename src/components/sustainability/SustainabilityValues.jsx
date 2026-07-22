@@ -5,25 +5,25 @@ import { useState } from "react";
 const valuesData = [
     {
         id: 1,
-        title: "Responsible Manufacturing",
+        title: "Responsible <br/> Manufacturing",
         desc: "We adopt efficient manufacturing processes that reduce waste, optimise resources, and deliver products built for long-term performance.",
         image: "/images/sustainability/values/1.avif",
     },
     {
         id: 2,
-        title: "Resource Conservation",
+        title: "Resource <br/> Conservation",
         desc: "We adopt efficient manufacturing processes that reduce waste, optimise resources, and deliver products built for long-term performance.",
         image: "/images/sustainability/values/2.avif",
     },
     {
         id: 3,
-        title: "Renewable Energy",
+        title: "Renewable <br/> Energy",
         desc: "We continue to expand renewable energy adoption and advanced energy solutions that support a lower-carbon future.",
         image: "/images/sustainability/values/3.avif",
     },
     {
         id: 4,
-        title: "Innovation for Sustainability",
+        title: "Innovation for <br/> Sustainability",
         desc: "We develop products that improve efficiency, extend product life, and enable more sustainable agricultural, industrial, and infrastructure practices.",
         image: "/images/sustainability/values/4.avif",
     },
@@ -63,16 +63,14 @@ const SustainabilityValues = () => {
                             />
                             <div className={`
                                 absolute top-0 left-0 w-full h-full
-                                flex flex-col justify-end transition-all duration-300
+                                flex flex-col lg:justify-end transition-all duration-300
                                 p-[0.5rem] sm:p-[0.7rem] lg:p-[1.5rem] xl:p-[1.8rem] 2xl:p-[2rem]
                                 ${isActive ? "bg-primary/80 text-white shadow-2xl lg:scale-[1.05]" : "bg-transparent text-primary"}
                             `}>
                                 <span className="block text-[1.5rem] sm:text-[1.6rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] mb-[0.5rem] lg:mb-[1rem]">
                                     0{value.id}.
                                 </span>
-                                <span className="text-[1.1rem] sm:text-[1.2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold leading-[1.2]">
-                                    {value.title}
-                                </span>
+                                <span className="text-[1.1rem] sm:text-[1.2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold leading-[1.2]" dangerouslySetInnerHTML={{__html: value.title}} />
                                 <p className="mt-[0.7rem] lg:mt-[0.9rem] text-[0.8rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]">
                                     {value.desc}
                                 </p>
