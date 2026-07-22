@@ -21,14 +21,14 @@ const PolyplastSectorOverview = () => {
                 >
                     Sector <br/> Overview
                 </motion.h2>
-                <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tenetur asperiores nihil repellat.
+                <p className="mt-[0.7rem] lg:mt-[1.2rem] w-[90%]">
+                    From safeguarding harvests and infrastructure to protecting valuable assets, our Protective Solutions business is built to perform where durability matters most.
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] w-[80%] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
-                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing.
+                    From tarpaulins and geomembranes to advanced agri-solutions, our portfolio is engineered to withstand the most demanding environments.
                 </p>
                 <button className="
                     mt-[1rem] lg:mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
@@ -70,9 +70,9 @@ const PolyplastSectorOverview = () => {
             </div>
 
             {/* Right */}
-            <div className="w-full lg:w-[30%] flex items-end pb-[3rem] sm:pb-[1.5rem] lg:pb-[2rem] xl:pb-[2.5rem] 2xl:pb-[3rem] relative z-50 mt-[2rem] lg:mt-0">
+            <div className="w-full lg:w-[30%] flex items-end pb-[3rem] sm:pb-[1rem] lg:pb-[0.2rem] xl:pb-[0.5rem] 2xl:pb-[1rem] relative z-50 mt-[2rem] lg:mt-0">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima adipisicing tenetur asperiores nihil repellat pariatur explicabo tenetur exercitationem molestiae ducimus fugiat.
+                   Combining manufacturing excellence with continuous innovation, we deliver high-performance solutions trusted by customers across India and global markets. Every solution reflects our commitment to protecting what matters while enabling industries and communities to thrive. 
                 </p>
             </div>
 
