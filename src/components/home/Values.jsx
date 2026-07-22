@@ -26,7 +26,7 @@ const Values = () => {
                         whileInView="visible"
                         viewport={{ once: true }}
                     >
-                        Building From The East
+                        Building From <br/> The East
                     </motion.h3>
                     <p className="mt-[0.7rem] lg:mt-[1.8rem]">
                         Tandhan was built from the East because we saw potential where others saw limitations. Guided by instinct and strengthened by experience, we chose to invest in a region rich in talent, opportunity, and industrial promise.

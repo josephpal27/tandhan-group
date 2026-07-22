@@ -22,7 +22,7 @@ const CSR = () => {
                 CSR
             </motion.h4>
             <p className="mt-[0.7rem] lg:mt-[1.3rem] w-full lg:w-[60%]">
-                At Tandhan, growth is measured not only by business success but by the positive difference we create in people's lives. Through the Tandhan Foundation, we work to strengthen communities by expanding access to education, healthcare, skill development, and social welfare. 
+                At Tandhan, growth is measured not only by business success but by the positive difference we create in people's lives. Through the Tandhan Foundation, we work to strengthen communities by expanding access to education, healthcare, skill development, and social welfare. Every initiative reflects our belief that meaningful progress is achieved when businesses and communities grow together. 
             </p>
         </section>
     )
