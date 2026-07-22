@@ -22,13 +22,13 @@ const HospitalitySectorOverview = () => {
                     Sector <br /> Overview
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat. Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat. Lorem ipsum dolor sit amet consectetur elit.
+                    Hospitality, for us, is about creating experiences that leave a lasting impression. Our Hospitality business combines contemporary comfort, thoughtful service, and exceptional spaces to meet the evolving needs of business and leisure travellers alike.
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] w-[90%] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
-                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing. Lorem ipsum dolor sit amet consectetur elit architecto.
+                    From refined stays and memorable dining to versatile event venues, we are committed to delivering warm, seamless, and personalised experiences that reflect the trust and quality synonymous with the Tandhan Group.
                 </p>
                 <button className="
                     mt-[1rem] lg:mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
-import Link from "next/link";
+// import Link from "next/link";
 
 const Founder = () => {
     return (
@@ -41,16 +41,16 @@ const Founder = () => {
                 <div className="flex gap-[0.8rem] items-center mt-[0.7rem] lg:mt-[1rem]">
                     <div className="w-[30px] lg:w-[45px] h-[2px] bg-primary"></div>
                     <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem] font-semibold">
-                        John Doe
+                        Ashok Jalan
                     </span>
                 </div>
-                <Link href="/" className="
+                {/* <Link href="/" className="
                     mt-[1.5rem] sm:mt-[1.8rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem] block w-max bg-transparent hover:bg-primary text-primary hover:text-white font-semibold transition
                     border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
                     py-[0.4rem] px-[1.4rem]
                 ">
                     Read More
-                </Link>
+                </Link> */}
 
                 {/* Artboard */}
                 <img

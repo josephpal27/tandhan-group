@@ -75,7 +75,7 @@ const HospitalityBrandOverview = () => {
                         Brand <br /> Overview
                     </motion.h3>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita officia rem voluptatum mollitia consequatur, quaerat dolores voluptas dolor maiores sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        NX Hotels is Tandhan Group's hospitality brand, offering contemporary stays designed for today's business and leisure travellers. Strategically located on Kolkata's EM Bypass, the hotel combines modern accommodation, curated dining, elegant event spaces, and personalised service to create a comfortable and memorable guest experience. Every stay reflects our commitment to quality, and attention to detail.
                     </p>
                 </div>
             </div>

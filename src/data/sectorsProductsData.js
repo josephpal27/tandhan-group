@@ -178,20 +178,50 @@ export const sectorsProductsData = {
         products: [
             {
                 id: 1,
-                title: "Lorem Ipsum",
-                desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
+                title: "Premium Accommodation",
+                desc: "Thoughtfully designed rooms offering contemporary comfort, modern amenities and a seamless stay for every guest.",
                 image: "/images/sectors/hospitality/services/1.avif",
             },
             {
                 id: 2,
-                title: "Lorem Ipsum",
-                desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
+                title: "Fine Dining",
+                desc: "Multi-cuisine dining experiences crafted with exceptional flavours, quality ingredients and warm hospitality at Kitchen 165.",
                 image: "/images/sectors/hospitality/services/2.avif",
             },
             {
                 id: 3,
-                title: "Lorem Ipsum",
-                desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
+                title: "Banquets & Celebrations",
+                desc: "Elegant event spaces tailored for weddings, social gatherings, celebrations and memorable occasions of every scale.",
+                image: "/images/sectors/hospitality/services/3.avif",
+            },
+            {
+                id: 4,
+                title: "Corporate Meetings",
+                desc: "Well-equipped venues designed for conferences, board meetings, seminars and professional business events.",
+                image: "/images/sectors/hospitality/services/3.avif",
+            },
+            {
+                id: 5,
+                title: "Business Hospitality",
+                desc: "Convenient services and strategic connectivity catering to the needs of business travellers and corporate guests.",
+                image: "/images/sectors/hospitality/services/3.avif",
+            },
+            {
+                id: 6,
+                title: "Private Events",
+                desc: "Flexible event venues with personalised planning for intimate celebrations, parties and exclusive private gatherings.",
+                image: "/images/sectors/hospitality/services/3.avif",
+            },
+            {
+                id: 7,
+                title: "Guest Services",
+                desc: "Dedicated hospitality team delivering personalised assistance, in-room services and exceptional guest experiences throughout every stay.",
+                image: "/images/sectors/hospitality/services/3.avif",
+            },
+            {
+                id: 8,
+                title: "Lifestyle Amenities",
+                desc: "Modern facilities including Wi-Fi, parking, concierge and premium conveniences for a comfortable and relaxing experience.",
                 image: "/images/sectors/hospitality/services/3.avif",
             },
         ]

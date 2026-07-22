@@ -93,20 +93,28 @@ export const sectorsFaqData = {
         image: "/images/sectors/hospitality/faq.avif",
         faqs: [
             {
-                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+                question: "What makes NX Hotels different?",
+                answer: "NX Hotels combines contemporary design, personalised hospitality, and modern amenities to deliver a seamless experience for both business and leisure travellers.",
             },
             {
-                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+                question: "Where is NX Hotels located?",
+                answer: "NX Hotels is strategically located on EM Bypass, Kolkata, providing convenient access to major business districts, healthcare facilities, and key city attractions.",
             },
             {
-                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+                question: "What accommodation options are available?",
+                answer: "Guests can choose from Premium, Premium Deluxe, and Premium Super Deluxe rooms, each thoughtfully designed to offer comfort, functionality, and modern conveniences.",
             },
             {
-                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+                question: "Does NX Hotels offer dining and event facilities?",
+                answer: "Yes. NX Hotels features a multi-cuisine restaurant, banquet facilities, meeting spaces, and dedicated venues for social and corporate events.",
+            },
+            {
+                question: "Is NX Hotels suitable for business travellers?",
+                answer: "Absolutely. With high-speed connectivity, well-appointed workspaces, meeting facilities, and a strategic location, NX Hotels is designed to meet the needs of today's business traveller.",
+            },
+            {
+                question: "Can NX Hotels host weddings, celebrations, and corporate events?",
+                answer: "Yes. Our versatile banquet and event spaces are ideal for weddings, private celebrations, conferences, and corporate gatherings, supported by dedicated hospitality and event management services.",
             },
         ],
     },
