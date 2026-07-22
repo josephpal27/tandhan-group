@@ -12,7 +12,7 @@ const Impact = () => {
 
             {/* Image */}
             <div className="w-full lg:w-[55%]">
-                <img src="/images/sustainability/tree.avif" alt="Tree" loading="lazy" className="w-full" />
+                <img src="/images/sustainability/wall.avif" alt="Tree" loading="lazy" className="w-full" />
             </div>
 
             {/* Content */}
