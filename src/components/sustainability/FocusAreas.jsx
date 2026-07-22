@@ -74,8 +74,8 @@ const FocusAreas = () => {
                             />
                             <div className={`
                                 absolute top-0 left-0 w-full h-full
-                                flex flex-col justify-end transition-all duration-300
-                                p-[0.5rem] sm:p-[0.6rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
+                                flex flex-col lg:justify-end transition-all duration-300
+                                p-[0.7rem] sm:p-[0.8rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
                                 ${isActive ? "bg-primary/80 text-white shadow-2xl lg:scale-[1.05]" : "bg-transparent text-primary"}
                             `}>
                                 <span className="text-[1.1rem] sm:text-[1.2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold leading-[1.2]">
