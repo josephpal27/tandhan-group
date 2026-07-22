@@ -13,7 +13,7 @@ const Founder = () => {
             {/* Image */}
             <div className="w-full lg:w-[35%]">
                 <img
-                    src="/images/founder-demo.avif"
+                    src="/images/chairman.avif"
                     alt="Founder"
                     loading="lazy"
                     className="w-full"
