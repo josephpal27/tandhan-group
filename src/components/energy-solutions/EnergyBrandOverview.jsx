@@ -12,10 +12,6 @@ const energyOverviewData = [
         id: 1,
         image: "/images/sectors/energy-solutions/brand-overview/1.avif",
     },
-    {
-        id: 2,
-        image: "/images/sectors/energy-solutions/brand-overview/1.avif",
-    },
 ]
 
 const EnergyBrandOverview = () => {
@@ -88,7 +84,10 @@ const EnergyBrandOverview = () => {
                 {/* Arrows */}
                 <div className='bg-primary/60 w-full absolute bottom-0 z-10'>
                     <div className="flex justify-end z-20">
-                        <button
+                        <div className="w-[20%] h-[2rem] sm:h-[2.5rem] lg:h-[3.2rem] xl:h-[3.6rem] 2xl:h-[4rem]">
+
+                        </div>
+                        {/* <button
                             onClick={() => swiperRef.current?.slidePrev()}
                             className="
                                 w-[40px] sm:w-[45px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
@@ -111,7 +110,7 @@ const EnergyBrandOverview = () => {
                             aria-label="Next"
                         >
                             ›
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>

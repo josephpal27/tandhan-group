@@ -13,7 +13,7 @@ const aboutUsData = [
     },
     {
         id: 2,
-        image: "/images/who-we-are/2.avif",
+        image: "/images/who-we-are/4.avif",
     },
 ];
 

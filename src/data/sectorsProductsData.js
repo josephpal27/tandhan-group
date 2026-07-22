@@ -20,7 +20,7 @@ export const sectorsProductsData = {
                 id: 3,
                 title: "Tarpaulins",
                 desc: "Heavy-duty protective covers offering superior resistance against rain, dust, sunlight and harsh weather conditions.",
-                image: "/images/sectors/protective-solutions/products/",
+                image: "/images/sectors/protective-solutions/products/tarpaulins.png",
             },
             {
                 id: 4,
@@ -32,7 +32,7 @@ export const sectorsProductsData = {
                 id: 5,
                 title: "Mulching Sheet",
                 desc: "Conserves soil moisture, suppresses weeds and improves crop productivity by maintaining optimal growing conditions.",
-                image: "/images/sectors/protective-solutions/products/",
+                image: "/images/sectors/protective-solutions/products/mulching-sheet.png",
             },
             {
                 id: 6,
@@ -110,7 +110,7 @@ export const sectorsProductsData = {
                 id: 18,
                 title: "Thermal Net",
                 desc: "Insulating agricultural nets that protect crops from extreme temperatures while improving growing conditions throughout seasons.",
-                image: "/images/sectors/protective-solutions/products/",
+                image: "/images/sectors/protective-solutions/products/thermal-net.png",
             },
         ]
     },
