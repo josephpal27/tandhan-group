@@ -12,6 +12,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+    const [mobileBusinessOpen, setMobileBusinessOpen] = useState(false);
     const [activeSector, setActiveSector] = useState(0);
     const navRef = useRef(null);
     const hideTimeoutRef = useRef(null);
@@ -42,6 +43,16 @@ const Navbar = () => {
         setOpen(false);
         if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
     }, [pathname]);
+
+    useEffect(() => {
+        if (!open) {
+            const timer = setTimeout(() => {
+                setMobileBusinessOpen(false);
+            }, 1000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [open]);
 
     const handleMouseEnter = () => {
         if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
@@ -357,7 +368,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <ul className="flex flex-col gap-[1.3rem] p-[1rem] mt-[1rem]">
+                {/* <ul className="flex flex-col gap-[1.3rem] p-[1rem] mt-[1rem]">
                     {navLinks.map((link) => (
                         <li key={link.name}>
                             <Link href={link.href} onClick={() => setOpen(false)} className="font-[550] text-black">
@@ -365,6 +376,53 @@ const Navbar = () => {
                             </Link>
                         </li>
                     ))}
+                </ul> */}
+
+                <ul className="flex flex-col gap-[1.3rem] p-[1rem] mt-[1rem]">
+                    {navLinks.map((link) => {
+                        if (link.hasMega) {
+                            return (
+                                <li key={link.name}>
+                                    <button
+                                        onClick={() => setMobileBusinessOpen((prev) => !prev)}
+                                        className="flex items-center w-full font-[550] text-black"
+                                    >
+                                        {link.name}
+                                        <MdArrowDropDown
+                                            className={`text-[1.4rem] transition-transform duration-300 ${mobileBusinessOpen ? "rotate-180" : ""}`}
+                                        />
+                                    </button>
+
+                                    <div
+                                        className={`overflow-hidden transition-all duration-300 ${mobileBusinessOpen ? "max-h-[300px] mt-[1rem]" : "max-h-0"
+                                            }`}
+                                    >
+                                        <ul className="flex flex-col gap-[1rem] pl-[1rem] border-l-[2px] border-gray-300">
+                                            {sectorsData.map((sector, index) => (
+                                                <li key={index}>
+                                                    <Link
+                                                        href={sector.url}
+                                                        onClick={() => setOpen(false)}
+                                                        className="text-[0.9rem] text-gray-900 font-[550]"
+                                                    >
+                                                        {sector.sectorName}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </li>
+                            );
+                        }
+
+                        return (
+                            <li key={link.name}>
+                                <Link href={link.href} onClick={() => setOpen(false)} className="font-[550] text-black">
+                                    {link.name}
+                                </Link>
+                            </li>
+                        );
+                    })}
                 </ul>
 
                 <div className="p-[1rem] mt-[0.5rem]" onClick={() => setOpen(false)}>
