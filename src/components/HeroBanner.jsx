@@ -23,7 +23,7 @@ export default function HeroBanner({ image, mobileImage, title, desc }) {
     return (
         <section className={`
             relative overflow-hidden
-            ${isMedia ? 'h-[55vh] lg:h-[70vh]' : 'h-[70vh] lg:h-[112dvh]'}
+            ${isMedia ? 'h-[55vh] lg:h-[70vh]' : 'h-[72vh] lg:h-[112dvh]'}
         `}>
 
             {/* Parallax Background */}
@@ -51,7 +51,6 @@ export default function HeroBanner({ image, mobileImage, title, desc }) {
             {/* Content */}
             <div className={`
                 relative z-20 text-white flex flex-col justify-end h-full 
-                pb-[3rem] sm:pb-[4rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]
                 ${isMedia ? 'pb-[1.2rem] sm:pb-[1.5rem] lg:pb-[1.35rem] xl:pb-[1.7rem] 2xl:pb-[2rem]' : 'pb-[1rem] sm:pb-[2rem] lg:pb-[9rem] xl:pb-[10rem] 2xl:pb-[11rem]'}
             `}>
                 <motion.h1

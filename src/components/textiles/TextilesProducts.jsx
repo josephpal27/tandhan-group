@@ -10,10 +10,18 @@ import 'swiper/css';
 const textilesProductsData = [
     {
         id: 1,
-        image: "/images/sectors/textiles/products/1.avif",
+        image: "/images/sectors/textiles/products/2.avif",
     },
     {
         id: 2,
+        image: "/images/sectors/textiles/products/3.avif",
+    },
+    {
+        id: 3,
+        image: "/images/sectors/textiles/products/4.avif",
+    },
+    {
+        id: 4,
         image: "/images/sectors/textiles/products/1.avif",
     },
 ]
@@ -38,7 +46,7 @@ const TextilesProducts = () => {
                 <div className="
                     pr-[1rem] sm:pr-[1.5rem] lg:pr-[2.4rem] xl:pr-[2.7rem] 2xl:pr-[3rem]
                     pt-[1.5rem] sm:pt-[2rem] lg:pt-[2.9rem] xl:pt-[3.2rem] 2xl:pt-[3.5rem]
-                    pb-[3rem] sm:pb-[4rem] lg:pb-[6rem] xl:pb-[6.7rem] 2xl:pb-[7rem]
+                    pb-[3rem] sm:pb-[4rem] lg:pb-[5.4rem] xl:pb-[5.7rem] 2xl:pb-[6rem]
                 ">
                     <motion.h4
                         className="relative z-50"
@@ -47,7 +55,7 @@ const TextilesProducts = () => {
                         whileInView="visible"
                         viewport={{ once: true }}
                     >
-                        Explore <br /> Our Products
+                        Our Product
                     </motion.h4>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                         More than denim, we engineer fabrics that define tomorrow's fashion. Tandhan Denim blends advanced manufacturing, world-class technology and meticulous quality control to create premium denim for global brands. With sustainability, innovation and craftsmanship at the core of every process, we transform raw fibre into fabrics that deliver lasting performance and timeless appeal.

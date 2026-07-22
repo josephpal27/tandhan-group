@@ -11,7 +11,7 @@ const Founder = () => {
             flex justify-between flex-wrap
         ">
             {/* Image */}
-            <div className="w-full lg:w-[35%]">
+            <div className="w-[85%] lg:w-[35%]">
                 <img
                     src="/images/chairman.avif"
                     alt="Founder"
