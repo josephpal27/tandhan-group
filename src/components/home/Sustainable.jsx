@@ -15,12 +15,14 @@ const sustainableData = [
         title: "Sustainability",
         desc: "<b>Building for tomorrow begins with how we operate today</b>. Across our businesses, we are embedding responsible manufacturing, resource conservation, and operational efficiency into every stage of growth. From water recycling and renewable energy adoption to making products that sustain livelihoods, Tandhan is committed to creating long-term value while reducing its environmental footprint and strengthening the communities we serve.",
         image: "/images/sustainable-bg-2.avif",
+        mobImage: "/images/sustainable-mob-bg-2.avif",
     },
     {
         id: 2,
         title: "CSR",
         desc: "<b>Growth is meaningful only when it creates opportunities for others</b>. Through the Tandhan Foundation, we invest in education, skill development, healthcare, and community well-being. Our initiatives are designed to create lasting impact, empower future generations, and contribute to inclusive progress - ensuring that as our businesses grow, the communities around us grow stronger too.",
         image: "/images/sustainable-bg.avif",
+        mobImage: "/images/sustainable-mob-bg.avif",
     },
 ]
 
@@ -74,7 +76,18 @@ const Sustainable = () => {
             >
                 {sustainableData.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <img src={item.image} alt={item.title} loading="lazy" className="w-full h-[45vh] lg:h-auto object-cover" />
+                        <img 
+                            src={item.image} 
+                            alt={item.title} 
+                            loading="lazy" 
+                            className="w-full object-cover hidden lg:block" 
+                        />
+                        <img 
+                            src={item.mobImage} 
+                            alt={item.title} 
+                            loading="lazy" 
+                            className="w-full object-cover block lg:hidden" 
+                        />
                         <div className="
                             absolute w-full h-full left-0 top-0 px-[1rem] sm:px-[5%] lg:px-[7%]
                             py-[4rem]
