@@ -62,20 +62,28 @@ export const sectorsFaqData = {
         image: "/images/sectors/textiles/faq.avif",
         faqs: [
             {
-                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+                question: "What makes Tandhan Denim different?",
+                answer: "Tandhan Denim is Eastern India's only integrated denim manufacturer, combining advanced technology, precision manufacturing and stringent quality standards to produce premium denim fabrics.",
             },
             {
-                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+                question: "What types of denim fabrics does Tandhan Denim manufacture?",
+                answer: "We offer a diverse range of denim fabrics in varying weights, weaves, finishes and compositions, catering to fashion, lifestyle and apparel brands.",
             },
             {
-                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+                question: "Does Tandhan Denim supply international markets?",
+                answer: "Yes. Tandhan Denim serves both domestic and international customers, delivering globally competitive products backed by consistent quality and reliable manufacturing.",
             },
             {
-                question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-                answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quae.",
+                question: "How does Tandhan Denim ensure product quality?",
+                answer: "Every stage of production, from rope dyeing and weaving to finishing and testing, is supported by advanced technology and rigorous quality control processes.",
+            },
+            {
+                question: "Is sustainability integrated into your manufacturing process?",
+                answer: "Yes. Our manufacturing practices focus on responsible resource utilisation, efficient processes and sustainable production to minimise environmental impact.",
+            },
+            {
+                question: "Can Tandhan Denim develop customised fabrics?",
+                answer: "Absolutely. We collaborate with customers to develop denim fabrics tailored to specific design, performance and application requirements.",
             },
         ],
     },

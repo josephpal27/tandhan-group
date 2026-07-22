@@ -22,13 +22,13 @@ const TextilesSectorOverview = () => {
                     Sector <br/> Overview
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat.
+                    The textile industry is one of the world's largest and most resilient manufacturing sectors, driven by evolving consumer preferences, expanding global trade and continuous innovation. As demand grows for quality, sustainability and faster supply chains, manufacturers with integrated capabilities and diversified product portfolios are well positioned to serve both domestic and international markets.
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] w-[90%] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
-                    Lorem ipsum dolor sit amet consectetur elit. Architecto tenetur asperiores nihil repellat adipisicing.
+                    With a strong textile ecosystem and manufacturing expertise, India continues to strengthen its position as a preferred sourcing destination for the global fashion and apparel industry.
                 </p>
                 <button className="
                     mt-[1rem] lg:mt-[1.5rem] bg-white hover:bg-primary text-primary hover:text-white font-semibold transition

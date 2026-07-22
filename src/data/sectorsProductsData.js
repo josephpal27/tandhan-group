@@ -122,26 +122,50 @@ export const sectorsProductsData = {
         products: [
             {
                 id: 1,
-                title: "Lorem Ipsum",
-                desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
+                title: "SMF Battery",
+                desc: "Maintenance-free batteries delivering dependable backup power, longer service life and consistent performance across diverse applications.",
                 image: "/images/sectors/energy-solutions/products/1.avif",
             },
             {
                 id: 2,
-                title: "Lorem Ipsum",
-                desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
+                title: "TT Batteries",
+                desc: "High-performance tubular batteries engineered for extended backup, superior efficiency and long-lasting reliability in demanding conditions.",
                 image: "/images/sectors/energy-solutions/products/2.avif",
             },
             {
                 id: 3,
-                title: "Lorem Ipsum",
-                desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
+                title: "Solar Panels",
+                desc: "High-efficiency solar panels converting sunlight into clean, renewable energy for residential, commercial and industrial applications.",
                 image: "/images/sectors/energy-solutions/products/3.avif",
             },
             {
                 id: 4,
-                title: "Lorem Ipsum",
-                desc: "Lorem ipsum dolor sit amet consectetur, adipis elit. Consequatur, temporibus exercitationem elit temporibus voluptate.",
+                title: "Li-ion Battery",
+                desc: "Advanced lithium-ion batteries offering faster charging, higher energy density and extended lifecycle for modern energy needs.",
+                image: "/images/sectors/energy-solutions/products/4.avif",
+            },
+            {
+                id: 5,
+                title: "Inverter",
+                desc: "Intelligent inverters delivering uninterrupted power backup with efficient energy management for homes and businesses.",
+                image: "/images/sectors/energy-solutions/products/4.avif",
+            },
+            {
+                id: 6,
+                title: "HF Inverter",
+                desc: "Compact high-frequency inverters providing reliable power backup, enhanced efficiency and advanced protection for critical applications.",
+                image: "/images/sectors/energy-solutions/products/4.avif",
+            },
+            {
+                id: 7,
+                title: "Automotive Battery",
+                desc: "Robust automotive batteries delivering dependable starting power, durability and consistent performance across diverse vehicle types.",
+                image: "/images/sectors/energy-solutions/products/4.avif",
+            },
+            {
+                id: 8,
+                title: "Generator Battery",
+                desc: "Heavy-duty generator batteries ensuring reliable engine starting and uninterrupted power during emergency and standby operations.",
                 image: "/images/sectors/energy-solutions/products/4.avif",
             },
         ]

@@ -50,7 +50,7 @@ const TextilesProducts = () => {
                         Explore <br /> Our Products
                     </motion.h4>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatum dolor, vitae amet soluta sit inventore totam rerum sed laborum.
+                        More than denim, we engineer fabrics that define tomorrow's fashion. Tandhan Denim blends advanced manufacturing, world-class technology and meticulous quality control to create premium denim for global brands. With sustainability, innovation and craftsmanship at the core of every process, we transform raw fibre into fabrics that deliver lasting performance and timeless appeal.
                     </p>
                 </div>
 

@@ -53,7 +53,7 @@ const TextilesBrandOverview = () => {
                     Brand <br /> Overview
                 </motion.h3>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quisquam aliquam, nobis praesentium alias aspernatur nemo quibusdam quidem magni aut facilis, nisi hic repellendus reprehenderit. Eum, molestias sapiente. Lorem ipsum dolor, consectetur adipisicing elit.
+                    Tandhan's textile journey spans over three decades, evolving from a trusted name in traditional textiles to a diversified portfolio that serves multiple market segments. Today, the Group caters to evolving consumer and industry needs - from ethnic wear and fashion retail to world-class denim manufacturing. Backed by manufacturing excellence, design innovation and an unwavering commitment to quality, the Textile Division continues to build on its heritage while shaping the future of textiles.
                 </p>
             </div>
 
