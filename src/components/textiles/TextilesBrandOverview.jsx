@@ -14,7 +14,11 @@ const textilesOverviewData = [
     },
     {
         id: 2,
-        image: "/images/sectors/textiles/brand-overview/1.avif",
+        image: "/images/sectors/textiles/brand-overview/2.avif",
+    },
+    {
+        id: 3,
+        image: "/images/sectors/textiles/brand-overview/3.avif",
     },
 ]
 
@@ -73,14 +77,14 @@ const TextilesBrandOverview = () => {
                                 loading="lazy"
                                 className="w-full object-cover"
                             />
-                            <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-primary/20">
+                            {/* <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-primary/20">
                                 <img
                                     src="/images/logo/tandhan-denim.png"
                                     alt="Tandhan Denim Logo"
                                     loading="lazy"
                                     className="w-[35%] brightness-0 invert"
                                 />
-                            </div>
+                            </div> */}
                         </SwiperSlide>
                     ))}
                 </Swiper>
