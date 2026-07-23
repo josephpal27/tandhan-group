@@ -33,7 +33,8 @@ const OurPresence = () => {
     };
 
     return (
-        <section className="mt-[2.1rem] sm:mt-[2.5rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem] mb-[6rem] relative">
+        <section className="mt-[2.1rem] sm:mt-[2.5rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem] 
+        mb-[2.5rem] sm:mb-[3.5rem] lg:mb-[5rem] xl:mb-[5.5rem] 2xl:mb-[6rem] relative">
             {/* Head */}
             <div className="">
                 <motion.h6
@@ -111,7 +112,7 @@ const OurPresence = () => {
                 </div>
 
                 {/* Right — interactive globe box */}
-                <div className="w-full lg:w-[65%] h-[350px] lg:h-[83vh] relative">
+                <div className="w-full lg:w-[65%] h-[350px] lg:h-[83vh] relative mt-[1.2rem] lg:mt-0">
                     <Globe
                         activeLocation={{
                             country: {
