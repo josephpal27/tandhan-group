@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 
 const servicesData = [
@@ -9,6 +10,7 @@ const servicesData = [
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/2.avif",
         logos: ["/images/logo/tandhan-polyplast.png"],
+        url: "/protective-solutions",
     },
     {
         id: 2,
@@ -16,6 +18,7 @@ const servicesData = [
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/3.avif",
         logos: ["/images/logo/tandhan-power.png"],
+        url: "/energy-solutions",
     },
     {
         id: 3,
@@ -23,6 +26,7 @@ const servicesData = [
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/4.avif",
         logos: ["/images/logo/tandhan-denim.png", "/images/logo/tandhan-saree.png", "/images/logo/tandhan-fashion.png"],
+        url: "/textiles",
     },
     {
         id: 4,
@@ -30,6 +34,7 @@ const servicesData = [
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/1.avif",
         logos: ["/images/logo/nx-hotel.png"],
+        url: "/hospitality",
     },
 ]
 
@@ -68,7 +73,7 @@ const ServiceCard = ({ service, isOpen, cardRef, onToggle }) => {
             </div>
 
             {/* Box */}
-            <div
+            <Link href={service.url}
                 className={`
                     absolute bottom-0 left-0 w-[70%] lg:w-[85%] h-[70%] lg:h-[80%] p-[1rem] bg-white
                     flex flex-col justify-center items-center overflow-hidden
@@ -86,7 +91,7 @@ const ServiceCard = ({ service, isOpen, cardRef, onToggle }) => {
                         className="w-[80%] lg:w-[60%] pt-[0.6rem] lg:py-[0.8rem]"
                     />
                 ))}
-            </div>
+            </Link>
         </div>
     )
 }

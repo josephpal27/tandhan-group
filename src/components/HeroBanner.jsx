@@ -65,7 +65,7 @@ export default function HeroBanner({ image, mobileImage, title, desc }) {
                     {title}
                 </motion.h1>
                 <p className={`
-                    w-full lg:w-[40%]
+                    w-full lg:w-[50%]
                      ${isMedia ? 'mt-[0.7rem] lg:mt-[1rem]' : 'mt-[1rem] lg:mt-[1.5rem]'}
                 `}>
                     {desc}

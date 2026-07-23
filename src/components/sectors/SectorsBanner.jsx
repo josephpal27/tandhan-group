@@ -44,7 +44,7 @@ export default function SectorsBanner({image, title, desc, business}) {
                 >
                     {title}
                 </motion.h1>
-                <p className="mt-[1rem] lg:mt-[1.5rem] w-full lg:w-[40%]">
+                <p className="mt-[1rem] lg:mt-[1.5rem] w-full lg:w-[50%]">
                     {desc}
                 </p>
                 <p className="flex gap-[0.7rem] mt-[1.3rem] lg:mt-[1.7rem] font-semibold">

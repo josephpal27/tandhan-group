@@ -23,8 +23,8 @@ export default function Home() {
       <HeroBanner
         image="/images/banners/home-banner.avif"
         mobileImage="/images/banners/home-mob-banner.avif"
-        title={<>Lorem Ipsum <br /> Dolor Sit Amet</>}
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam."
+        title={<>Building Tomorrow. <br /> Across Every Industry.</>}
+        desc="From protective solutions and power to textiles and hospitality, we build enduring businesses that anticipate change, create value, and grow with confidence."
       />
       <HomeFeatures />
       <WhoWeAre />

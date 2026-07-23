@@ -86,10 +86,10 @@ const OurTeam = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Our <br /> Team
+                    Our <br /> Leaders
                 </motion.h6>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis magnam eum.
+                    Meet the leaders shaping Tandhan's future through purpose, experience, and vision.
                 </p>
                 <Link href="/" className="
                     mt-[1.3rem] lg:mt-[2rem] block w-max bg-white hover:bg-primary text-primary hover:text-white font-semibold transition

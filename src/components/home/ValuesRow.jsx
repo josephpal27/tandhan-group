@@ -12,25 +12,25 @@ const valuesData = [
         id: 1,
         value: 31,
         title: "Years of Experience",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing sit amet elit.",
+        desc: "Three decades of building trusted businesses with resilience, purpose, and long-term vision.",
     },
     {
         id: 2,
         value: 3000,
         title: "Clients Served",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing  elit.",
+        desc: "Trusted by businesses worldwide through quality, reliability, and enduring partnerships across industries.",
     },
     {
         id: 3,
         value: 25,
         title: "Country Presence",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing sit amet elit.",
+        desc: "Expanding our global footprint through manufacturing excellence, and strategic market reach.",
     },
     {
         id: 4,
         value: 2000,
         title: "Total Workforce",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing sit amet elit.",
+        desc: "Driven by passionate people shaping progress through expertise, collaboration, and shared ambition.",
     },
 ];
 

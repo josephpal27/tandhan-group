@@ -77,12 +77,6 @@ const Navbar = () => {
 
     const contactLinks = [
         {
-            icon: <SlLocationPin />,
-            label: "Visit Us",
-            value: "Demo Address, Demo City",
-            url: "/",
-        },
-        {
             icon: <LuPhone />,
             label: "Call Us",
             value: "+91 90511 61666",

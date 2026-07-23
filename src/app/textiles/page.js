@@ -23,7 +23,7 @@ export default function Textiles() {
       <SectorsBanner
         image="/images/banners/textiles-banner.avif"
         title="Textiles"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
+        desc="Driven by innovation and precision, we craft premium denim and textile solutions that combine quality, sustainability, and manufacturing excellence for global brands."
         business="Tandhan Denim"
       />
       <TextilesSectorOverview />
