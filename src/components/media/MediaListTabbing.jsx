@@ -4,12 +4,16 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import ArticleCard from "./ArticleCard";
 import BlogCard from "./BlogCard";
-import { blogsData } from "@/data/blogsData";
+import { eventsData } from "@/data/eventsData";
 import { articlesData } from "@/data/articlesData";
+import { blogsData } from "@/data/blogsData";
+import { pressReleasesData } from "@/data/pressReleasesData";
 
 const tabHeads = [
-    { id: 1, name: "Blogs" },
-    { id: 2, name: "Press Releases & Articles" },
+    { id: 1, name: "Events" },
+    { id: 2, name: "News & Articles" },
+    { id: 3, name: "Blogs" },
+    { id: 4, name: "Press Releases" },
 ]
 
 const MediaListTabbing = () => {
@@ -55,14 +59,14 @@ const MediaListTabbing = () => {
                 <AnimatePresence mode="wait">
                     {activeTab === 1 && (
                         <motion.div
-                            key="blogs"
+                            key="events"
                             initial={{ opacity: 0, y: 5 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 5 }}
                             transition={{ duration: 0.2, ease: "easeInOut" }}
                             className="flex flex-wrap gap-[3.5%]"
                         >
-                            {blogsData.map((blog) => (
+                            {eventsData.map((blog) => (
                                 <BlogCard key={blog.id} blog={blog} />
                             ))}
                         </motion.div>
@@ -81,6 +85,36 @@ const MediaListTabbing = () => {
                             ))}
                         </motion.div>
                     )}
+
+                    {activeTab === 3 && (
+                        <motion.div
+                            key="blogs"
+                            initial={{ opacity: 0, y: 5 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 5 }}
+                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                            className="flex flex-wrap gap-[3.5%]"
+                        >
+                            {blogsData.map((blog) => (
+                                <BlogCard key={blog.id} blog={blog} />
+                            ))}
+                        </motion.div>
+                    )}
+
+                    {activeTab === 4 && (
+                        <motion.div
+                            key="pressReleases"
+                            initial={{ opacity: 0, y: 5 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 5 }}
+                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                        >
+                            {pressReleasesData.map((article) => (
+                                <ArticleCard key={article.id} article={article} />
+                            ))}
+                        </motion.div>
+                    )}
+
                 </AnimatePresence>
             </div>
 

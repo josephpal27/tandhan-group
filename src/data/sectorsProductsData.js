@@ -2,7 +2,7 @@ export const sectorsProductsData = {
     protective: {
         title: "Our Products",
         background: "/images/sectors/protective-solutions/products-bg.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident magni.",
+        desc: "A comprehensive portfolio of high-performance protective solutions designed for durability, versatility, and demanding environments across industries.",
         products: [
             {
                 id: 1,
@@ -118,7 +118,7 @@ export const sectorsProductsData = {
     energy: {
         title: "Our Products",
         background: "/images/sectors/energy-solutions/products-bg.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident magni.",
+        desc: "A comprehensive range of power backup and energy solutions designed for dependable performance across residential, commercial, and industrial applications.",
         products: [
             {
                 id: 1,

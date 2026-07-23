@@ -24,7 +24,7 @@ export default function ProtectiveSolutions() {
       <SectorsBanner
         image="/images/banners/protective-solutions-banner.avif"
         title="Protective Solutions"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
+        desc="From agriculture to infrastructure, our high-performance protective solutions are engineered for durability, reliability, and long-term performance across diverse environments and applications."
         business="Polyplast"
       />
       <PolyplastSectorOverview />

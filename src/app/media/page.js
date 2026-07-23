@@ -13,7 +13,7 @@ export default function Media() {
             <HeroBanner
                 image="/images/banners/media-banner.avif"
                 title="Media"
-                desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
+                desc="Stay connected with the latest news, milestones, achievements, and stories that reflect Tandhan Group's journey of growth, innovation, and industry leadership."
             />
             <MediaListTabbing />
             {/* <RelatedBlogs /> */}

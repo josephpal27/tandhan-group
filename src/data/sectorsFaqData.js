@@ -1,6 +1,6 @@
 export const sectorsFaqData = {
     protective: {
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+        description: "Find answers to common questions about our products, capabilities, quality standards, and industry-specific protective solutions.",
         image: "/images/sectors/protective-solutions/faq.avif",
         faqs: [
             {
@@ -27,7 +27,7 @@ export const sectorsFaqData = {
     },
 
     energy: {
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+        description: "Find answers to common questions about our products, applications, performance, installation, and dependable power backup solutions.",
         image: "/images/sectors/energy-solutions/faq.avif",
         faqs: [
             {
@@ -58,7 +58,7 @@ export const sectorsFaqData = {
     },
 
     textiles: {
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+        description: "Find answers about our products, manufacturing capabilities, sustainability practices, certifications, and partnerships with leading apparel brands.",
         image: "/images/sectors/textiles/faq.avif",
         faqs: [
             {

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
+import Link from "next/link";
 
 const latestNewsData = [
     {
@@ -87,6 +88,16 @@ const LatestNews = () => {
                         </div>
                     )
                 })}
+            </div>
+
+            <div className="mt-[1rem] lg:mt-[1.5rem] flex justify-center">
+                <Link href="/media" className="
+                    bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
+                    border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
+                    py-[0.45rem] px-[1.4rem]
+                ">
+                    View All
+                </Link>
             </div>
         </section>
     )

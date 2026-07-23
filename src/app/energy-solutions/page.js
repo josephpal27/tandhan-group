@@ -24,7 +24,7 @@ export default function EnergySolutions() {
       <SectorsBanner
         image="/images/banners/energy-solutions-banner.avif"
         title="Energy Solutions"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
+        desc="Reliable power solutions engineered to keep homes, businesses, and industries running with dependable performance, energy efficiency, and technology built for tomorrow."
         business="Tandhan Power"
       />
       <EnergySectorOverview />
