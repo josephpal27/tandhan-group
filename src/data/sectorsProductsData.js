@@ -117,7 +117,7 @@ export const sectorsProductsData = {
 
     energy: {
         title: "Our Products",
-        background: "/images/sectors/protective-solutions/products-bg.avif",
+        background: "/images/sectors/energy-solutions/products-bg.avif",
         desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident magni.",
         products: [
             {
