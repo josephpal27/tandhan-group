@@ -4,7 +4,7 @@ export const sectorsCtaData = {
             title: "Lorem ipsum dolor",
             desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quas.",
             image: "/images/sectors/protective-solutions/cta.avif",
-            url: "/",
+            url: "https://www.tandhanpolyplast.com/",
         },
     },
 
@@ -13,7 +13,7 @@ export const sectorsCtaData = {
             title: "Lorem ipsum dolor",
             desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quas.",
             image: "/images/sectors/protective-solutions/cta.avif",
-            url: "/",
+            url: "https://www.tandhanpower.com/",
         },
     },
 
@@ -22,7 +22,7 @@ export const sectorsCtaData = {
             title: "Lorem ipsum dolor",
             desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quas.",
             image: "/images/sectors/textiles/cta.avif",
-            url: "/",
+            url: "https://www.tandhandenim.com/",
         },
     },
 
@@ -31,7 +31,7 @@ export const sectorsCtaData = {
             title: "Lorem ipsum dolor",
             desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quas.",
             image: "/images/sectors/hospitality/cta.avif",
-            url: "/",
+            url: "https://www.nxhotels.in/",
         },
     },
 }
