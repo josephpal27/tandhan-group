@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 
@@ -26,9 +25,9 @@ const SectorsCTA = ({cta}) => {
                 <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[70%]">
                     {cta.desc}
                 </p>
-                <Link href={cta.url} className="mt-[2rem] border-[2px] font-semibold border-white px-[1.5rem] py-[0.4rem] hover:bg-white hover:text-primary transition">
+                <a href={cta.url} target="_blank" className="mt-[2rem] border-[2px] font-semibold border-white px-[1.5rem] py-[0.4rem] hover:bg-white hover:text-primary transition">
                     Visit Site
-                </Link>
+                </a>
             </div>
         </section>
     )
