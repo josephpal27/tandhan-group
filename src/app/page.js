@@ -4,6 +4,7 @@ import GlobalPresence from "@/components/home/GlobalPresence";
 // import Highlights from "@/components/home/Highlights";
 import HomeFeatures from "@/components/home/HomeFeatures";
 import LatestNews from "@/components/home/LatestNews";
+import OurPresence from "@/components/home/OurPresence";
 import OurServices from "@/components/home/OurServices";
 import Sectors from "@/components/home/Sectors";
 import Sustainable from "@/components/home/Sustainable";
@@ -35,7 +36,8 @@ export default function Home() {
       <OurServices />
       <Sustainable />
       <LatestNews />
-      <GlobalPresence />
+      {/* <GlobalPresence /> */}
+      <OurPresence />
     </>
   );
 }
