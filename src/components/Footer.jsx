@@ -11,9 +11,9 @@ const footerData = [
         links: [
             { label: "Home", url: "/", },
             { label: "About Us", url: "/about", },
-            { label: "Our Businesses", url: "/businesses", },
-            { label: "Sustainability & Impact", url: "/sustainability-impact", },
+            { label: "Sustainability & Impact", url: "/sustainability", },
             { label: "Media", url: "/media", },
+            { label: "Global Presence", url: "/global-presence", },
             { label: "Careers", url: "/careers", },
             { label: "Contact Us", url: "/contact", },
         ]
