@@ -16,7 +16,7 @@ export const globalPresenceData = [
                 address: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png",],
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ export const globalPresenceData = [
                 address: "SKS Tower, Level-4, Lift No-14, 7, VIP Road, Mohakhali, Dhaka-1206, Bangladesh"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png",],
+        logo: ["/images/logo/tandhan-power.png",],
     },
     {
         id: 3,
@@ -46,7 +46,7 @@ export const globalPresenceData = [
                 address: "Room No. 703, 7th Floor, Central Tower, Anawrahtar Road, Bet: 39th & 40th, Yangon, Myanmar (Burma)"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
     },
     {
         id: 4,
@@ -61,7 +61,7 @@ export const globalPresenceData = [
                 address: "Abdul Al Rahim Mohammad Yousuf Buliding Shop No- 1, Near Naif Park, Satellite Market, Beside Homa Star Hotel, Naif, Deira, PO Box-377064, Dubai, UAE"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png",],
+        logo: ["/images/logo/tandhan-polyplast.png",],
     },
     {
         id: 5,
@@ -91,7 +91,7 @@ export const globalPresenceData = [
                 address: "209/8970, Road C. Off Enterprise Road, Industrial Area, Nairobi, Kenya"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png",],
     },
     {
         id: 7,
@@ -121,7 +121,7 @@ export const globalPresenceData = [
                 address: "6, Abimbola Street, Isolo Industrial Estate, Lagos State, Nigeria"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/tandhan-polyplast.png",],
     },
     {
         id: 9,
@@ -151,7 +151,7 @@ export const globalPresenceData = [
                 address: "Clearwater Office Park, Block L, 2nd floor, Atlas Road, Kempton Park, 1459"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-power.png"],
     },
     {
         id: 11,
@@ -181,7 +181,7 @@ export const globalPresenceData = [
                 address: "Abdul Al Rahim Mohammad Yousuf Buliding Shop No-1, Near Naif Park, Satellite Market, Beside Homa Star Hotel, Naif, Deira, PO Box-377064, Dubai, UAE"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/tandhan-polyplast.png",],
     },
     {
         id: 13,
@@ -211,7 +211,7 @@ export const globalPresenceData = [
                 address: "SUSTAINABLE AGRO Vridi Cite' Port, Abidjan, Co'te d' Ivoire 01 BP 12171, ABIDJAN 01"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-power.png"],
     },
     {
         id: 15,
@@ -231,7 +231,7 @@ export const globalPresenceData = [
         lat: 56.1304,
         lng: -106.3468,
         brands: [],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/tandhan-polyplast.png",],
     },
     {
         id: 17,
@@ -251,6 +251,6 @@ export const globalPresenceData = [
         lat: -25.2744,
         lng: 133.7751,
         brands: [],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png",],
     },
 ]
