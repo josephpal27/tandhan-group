@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 import { globalPresenceData } from "@/data/globalPresenceData";
 
 const fadeLeft = {
@@ -102,9 +103,14 @@ const CountryBrands = () => {
             <div className="flex px-[1rem] sm:px-[5%] lg:px-[7%]">
                 {/* Top Left */}
                 <div className="w-[65%]">
-                    <h3>
+                    <motion.h3
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
                         Lorem Ipsum
-                    </h3>
+                    </motion.h3>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[65%]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ex quis perferendis recusandae suscipit quo, quidem libero aut.
                     </p>
@@ -162,8 +168,8 @@ const CountryBrands = () => {
                             key={index}
                             className="relative flex items-center mb-[3.5rem]"
                         >
-                    {/* Dot */}
-                    <div className="absolute left-0 top-0 -translate-x-[55%] z-10">
+                            {/* Dot */}
+                            <div className="absolute left-0 top-0 -translate-x-[55%] z-10">
                                 <div
                                     className="
                                     bg-white
@@ -178,8 +184,8 @@ const CountryBrands = () => {
                                 </div>
                             </div>
 
-                    {/* Logo */}
-                    <div className="ml-[3.5rem]">
+                            {/* Logo */}
+                            <div className="ml-[3.5rem]">
                                 <img
                                     src={logo}
                                     alt=""

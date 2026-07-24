@@ -2,12 +2,17 @@
 
 import { globalPresenceData } from "@/data/globalPresenceData";
 import { useState, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { SlLocationPin } from "react-icons/sl";
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 import Globe from "./Globe";
 
 const OurPresence = () => {
+
+    const pathname = usePathname();
+    const isGlobalPresencePage = pathname === "/global-presence/";
+
     const [activeIndex, setActiveIndex] = useState(0);
     const [isDragging, setIsDragging] = useState(false);
     const controlsRef = useRef(null);
@@ -36,19 +41,21 @@ const OurPresence = () => {
         <section className="mt-[2.1rem] sm:mt-[2.5rem] lg:mt-[4rem] xl:mt-[4.5rem] 2xl:mt-[5rem] 
         mb-[2.5rem] sm:mb-[3.5rem] lg:mb-[5rem] xl:mb-[5.5rem] 2xl:mb-[6rem] relative">
             {/* Head */}
-            <div className="">
-                <motion.h6
-                    variants={headingVariant}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                >
-                    Global Presence
-                </motion.h6>
-                <p className="w-full lg:w-[70%] mt-[0.7rem] lg:mt-[1rem]">
-                    Tandhan's presence across multiple countries is driven by a simple belief: growth follows opportunity. By combining international ambition with local understanding, we continue to expand our impact across global markets.
-                </p>
-            </div>
+            {!isGlobalPresencePage && (
+                <div className="">
+                    <motion.h6
+                        variants={headingVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        Global Presence
+                    </motion.h6>
+                    <p className="w-full lg:w-[70%] mt-[0.7rem] lg:mt-[1rem]">
+                        Tandhan's presence across multiple countries is driven by a simple belief: growth follows opportunity. By combining international ambition with local understanding, we continue to expand our impact across global markets.
+                    </p>
+                </div>
+            )}
 
             <div className="relative mt-[1.5rem] sm:mt-[1.7rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem] flex flex-col lg:flex-row justify-between">
                 {/* Left controller — unchanged */}
