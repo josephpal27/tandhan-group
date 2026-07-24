@@ -1,4 +1,5 @@
 import CountryBrands from "@/components/global-presence/CountryBrands";
+import PresenceCTA from "@/components/global-presence/PresenceCTA";
 import PresenceOverview from "@/components/global-presence/PresenceOverview";
 import HeroBanner from "@/components/HeroBanner";
 import OurPresence from "@/components/home/OurPresence";
@@ -19,6 +20,7 @@ export default function GlobalPresence() {
       <PresenceOverview />
       <CountryBrands />
       <OurPresence />
+      <PresenceCTA />
     </>
   );
 }
