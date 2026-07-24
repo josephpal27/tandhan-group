@@ -1,3 +1,4 @@
+import CountryBrands from "@/components/global-presence/CountryBrands";
 import PresenceOverview from "@/components/global-presence/PresenceOverview";
 import HeroBanner from "@/components/HeroBanner";
 
@@ -15,6 +16,7 @@ export default function GlobalPresence() {
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
       />
       <PresenceOverview />
+      <CountryBrands />
     </>
   );
 }
