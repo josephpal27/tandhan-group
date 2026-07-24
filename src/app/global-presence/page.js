@@ -1,6 +1,7 @@
 import CountryBrands from "@/components/global-presence/CountryBrands";
 import PresenceOverview from "@/components/global-presence/PresenceOverview";
 import HeroBanner from "@/components/HeroBanner";
+import OurPresence from "@/components/home/OurPresence";
 
 export const metadata = {
   title: "Global Presence - Tandhan Group",
@@ -17,6 +18,7 @@ export default function GlobalPresence() {
       />
       <PresenceOverview />
       <CountryBrands />
+      <OurPresence />
     </>
   );
 }
