@@ -1,3 +1,4 @@
+import PresenceOverview from "@/components/global-presence/PresenceOverview";
 import HeroBanner from "@/components/HeroBanner";
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function GlobalPresence() {
         title="Global Presence"
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
       />
+      <PresenceOverview />
     </>
   );
 }
