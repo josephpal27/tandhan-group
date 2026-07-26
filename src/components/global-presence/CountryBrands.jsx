@@ -1,104 +1,107 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
+import gsap from "gsap";
 import { headingVariant } from "@/utils/animations";
 import { globalPresenceData } from "@/data/globalPresenceData";
-
-const fadeLeft = {
-    initial: {
-        opacity: 0,
-        x: 30,
-    },
-    animate: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: 0.45,
-            ease: "easeOut",
-        },
-    },
-    exit: {
-        opacity: 0,
-        x: -30,
-        transition: {
-            duration: 0.3,
-            ease: "easeIn",
-        },
-    },
-};
-
-// const container = {
-//     animate: {
-//         transition: {
-//             staggerChildren: 0.08,
-//         },
-//     },
-// };
-
-// const dot = {
-//     initial: {
-//         opacity: 0,
-//         scale: 0.5,
-//     },
-//     animate: {
-//         opacity: 1,
-//         scale: 1,
-//         transition: {
-//             duration: 0.28,
-//             ease: "easeOut",
-//         },
-//     },
-//     exit: {
-//         opacity: 0,
-//         scale: 0.5,
-//         transition: {
-//             duration: 0.18,
-//         },
-//     },
-// };
-
-// const logoImage = {
-//     initial: {
-//         opacity: 0,
-//     },
-//     animate: {
-//         opacity: 1,
-//         transition: {
-//             duration: 0.35,
-//         },
-//     },
-//     exit: {
-//         opacity: 0,
-//         transition: {
-//             duration: 0.2,
-//         },
-//     },
-// };
+import { motion } from "framer-motion"; // still used for the heading's whileInView
 
 const CountryBrands = () => {
-
     const [activeIndex, setActiveIndex] = useState(0);
-
     const activeCountry = globalPresenceData[activeIndex];
 
-    const nextCountry = () => {
-        setActiveIndex((prev) =>
-            prev === globalPresenceData.length - 1 ? 0 : prev + 1
-        );
+    const isAnimating = useRef(false);
+    const nameRef = useRef(null);
+    const flagRef = useRef(null);
+    const dotRefs = useRef([]);
+    const logoRefs = useRef([]);
+
+    // reset ref arrays every render before the map populates them
+    dotRefs.current = [];
+    logoRefs.current = [];
+
+    const goTo = (getNextIndex) => {
+        if (isAnimating.current) return;
+        isAnimating.current = true;
+
+        const tl = gsap.timeline({
+            onComplete: () => setActiveIndex(getNextIndex),
+        });
+
+        tl.to(nameRef.current, {
+            x: -30,
+            opacity: 0,
+            duration: 0.3,
+            ease: "power2.in",
+        })
+            .to(
+                flagRef.current,
+                { x: -30, opacity: 0, duration: 0.3, ease: "power2.in" },
+                "-=0.15"
+            )
+            .to(
+                dotRefs.current,
+                { scale: 0, duration: 0.25, ease: "power2.in", stagger: 0.1 },
+                "-=0.2"
+            )
+            .to(
+                logoRefs.current,
+                { opacity: 0, duration: 0.2, ease: "power2.in", stagger: 0.1 },
+                "<"
+            );
     };
 
-    const prevCountry = () => {
-        setActiveIndex((prev) =>
-            prev === 0 ? globalPresenceData.length - 1 : prev - 1
-        );
-    };
+    const nextCountry = () =>
+        goTo((prev) => (prev === globalPresenceData.length - 1 ? 0 : prev + 1));
+
+    const prevCountry = () =>
+        goTo((prev) => (prev === 0 ? globalPresenceData.length - 1 : prev - 1));
+
+    // enter animation whenever activeIndex changes (also runs on mount)
+    useEffect(() => {
+        gsap.set(nameRef.current, { x: 30, opacity: 0 });
+        gsap.set(flagRef.current, { x: 30, opacity: 0 });
+        gsap.set(dotRefs.current, { scale: 0 });
+        gsap.set(logoRefs.current, { opacity: 0 });
+
+        const tl = gsap.timeline({
+            onComplete: () => {
+                isAnimating.current = false;
+            },
+        });
+
+        tl.to(nameRef.current, {
+            x: 0,
+            opacity: 1,
+            duration: 0.45,
+            ease: "power2.out",
+        })
+            .to(
+                flagRef.current,
+                { x: 0, opacity: 1, duration: 0.45, ease: "power2.out" },
+                "-=0.2"
+            )
+            .to(
+                dotRefs.current,
+                {
+                    scale: 1,
+                    duration: 0.4,
+                    ease: "back.out(1.7)",
+                    stagger: 0.12,
+                },
+                "-=0.15"
+            )
+            .to(
+                logoRefs.current,
+                { opacity: 1, duration: 0.4, ease: "power2.out", stagger: 0.12 },
+                "<"
+            );
+
+        return () => tl.kill();
+    }, [activeIndex]);
 
     return (
-        <section className="
-            pt-[2rem] sm:pt-[3rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem] px-0
-        ">
-
+        <section className="pt-[2rem] sm:pt-[3rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem] px-0">
             {/* Top */}
             <div className="flex px-[1rem] sm:px-[5%] lg:px-[7%]">
                 {/* Top Left */}
@@ -117,19 +120,11 @@ const CountryBrands = () => {
 
                     {/* Flag */}
                     <div className="mt-[3rem]">
-                        <AnimatePresence mode="wait">
-                            <motion.span
-                                key={activeCountry.country}
-                                variants={fadeLeft}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className="block text-[3rem] font-semibold"
-                            >
-                                {activeCountry.country}
-                            </motion.span>
-                        </AnimatePresence>
+                        <span ref={nameRef} className="block text-[3rem] font-semibold">
+                            {activeCountry.country}
+                        </span>
                         <img
+                            ref={flagRef}
                             src={activeCountry.flag}
                             alt={activeCountry.country}
                             loading="lazy"
@@ -139,22 +134,28 @@ const CountryBrands = () => {
 
                     {/* Navigation */}
                     <div className="flex justify-end mr-[-3px]">
-                        <button className="
-                            w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
-                            h-[40px] sm:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
-                            flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
-                            text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
-                            border-primary border-[2px] lg:border-[3px] border-r-[2px]
-                        " onClick={prevCountry}>
+                        <button
+                            className="
+                                w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                                h-[40px] sm:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                                flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition
+                                text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                                border-primary border-[2px] lg:border-[3px] border-r-[2px]
+                            "
+                            onClick={prevCountry}
+                        >
                             ‹
                         </button>
-                        <button className="
-                            w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
-                            h-[40px] sm:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
-                            flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
-                            text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
-                            border-primary border-[2px] lg:border-[3px] border-l-[2px]
-                        " onClick={nextCountry}>
+                        <button
+                            className="
+                                w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
+                                h-[40px] sm:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                                flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition
+                                text-[1.8rem] sm:text-[1.8rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
+                                border-primary border-[2px] lg:border-[3px] border-l-[2px]
+                            "
+                            onClick={nextCountry}
+                        >
                             ›
                         </button>
                     </div>
@@ -162,23 +163,22 @@ const CountryBrands = () => {
 
                 {/* Top Right */}
                 <div className="w-[35%] border-primary border-l-[5px]">
-
                     {activeCountry.logo.map((logo, index) => (
-                        <div
-                            key={index}
-                            className="relative flex items-center mb-[3.5rem]"
-                        >
+                        <div key={index} className="relative flex items-center mb-[3.5rem]">
                             {/* Dot */}
                             <div className="absolute left-0 top-0 -translate-x-[55%] z-10">
                                 <div
+                                    ref={(el) => {
+                                        if (el) dotRefs.current[index] = el;
+                                    }}
                                     className="
-                                    bg-white
-                                    flex items-center justify-center
-                                    border-primary border-[4px]
-                                    rounded-full
-                                    w-[45px]
-                                    aspect-square
-                                "
+                                        bg-white
+                                        flex items-center justify-center
+                                        border-primary border-[4px]
+                                        rounded-full
+                                        w-[45px]
+                                        aspect-square
+                                    "
                                 >
                                     <div className="aspect-square w-[10px] bg-primary rounded-full"></div>
                                 </div>
@@ -187,6 +187,9 @@ const CountryBrands = () => {
                             {/* Logo */}
                             <div className="ml-[3.5rem]">
                                 <img
+                                    ref={(el) => {
+                                        if (el) logoRefs.current[index] = el;
+                                    }}
                                     src={logo}
                                     alt=""
                                     loading="lazy"
@@ -195,22 +198,22 @@ const CountryBrands = () => {
                             </div>
                         </div>
                     ))}
-
                 </div>
-            </div >
+            </div>
 
             {/* Bottom */}
-            < div className="flex flex-wrap" >
+            <div className="flex flex-wrap">
                 {/* Bottom Left */}
-                <div div className="w-[63.25%] p-[2rem] pl-[7%] bg-primary text-gray-300 flex flex-wrap" >
+                <div className="w-[63.25%] p-[2rem] pl-[7%] bg-primary text-gray-300 flex flex-wrap">
                     {globalPresenceData.map((item, index) => (
                         <div key={item.id} className="flex items-center">
                             <button
                                 onClick={() => setActiveIndex(index)}
-                                className={`transition ${index === activeIndex
-                                    ? "text-white font-semibold"
-                                    : "text-gray-300 hover:text-white"
-                                    }`}
+                                className={`transition ${
+                                    index === activeIndex
+                                        ? "text-white font-semibold"
+                                        : "text-gray-300 hover:text-white"
+                                }`}
                             >
                                 {item.country}
                             </button>
@@ -220,18 +223,17 @@ const CountryBrands = () => {
                             )}
                         </div>
                     ))}
-                </div >
+                </div>
 
                 {/* Bottom Right */}
-                <div div className="w-[36.75%] p-[2rem] pr-[7%] bg-[#a3a3a3]" >
+                <div className="w-[36.75%] p-[2rem] pr-[7%] bg-[#a3a3a3]">
                     <p className="text-white">
                         Lorem ipsum dolor sit amet consectetur adipisicing nam, quidem. Lorem ipsum dolor sit amet, adipisicing elit. Praesentium consectetur excepturi.
                     </p>
-                </div >
-            </div >
+                </div>
+            </div>
+        </section>
+    );
+};
 
-        </section >
-    )
-}
-
-export default CountryBrands
+export default CountryBrands;
