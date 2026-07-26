@@ -1,3 +1,4 @@
+import BannerSlider from "@/components/global-presence/BannerSlider";
 import CountryBrands from "@/components/global-presence/CountryBrands";
 import PresenceCTA from "@/components/global-presence/PresenceCTA";
 import PresenceOverview from "@/components/global-presence/PresenceOverview";
@@ -12,11 +13,16 @@ export const metadata = {
 export default function GlobalPresence() {
   return (
     <>
-      <HeroBanner
-        image="/images/banners/presence-banner.png"
-        title="Global Presence"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
-      />
+
+      <div className="relative">
+        <HeroBanner
+          image="/images/banners/presence-banner.png"
+          title="Global Presence"
+          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt."
+        />
+        <BannerSlider className="absolute top-[23%] left-0 z-10" />
+      </div>
+
       <PresenceOverview />
       <CountryBrands />
       <OurPresence />
