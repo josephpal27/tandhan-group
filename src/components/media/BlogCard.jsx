@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const BlogCard = ({ blog }) => {
+const BlogCard = ({ blog, type }) => {
     return (
-        <Link href={`/media/${blog.slug}`} className="
+        <Link href={`/media/${type}/${blog.slug}`} className="
             w-full lg:w-[31%] group
             mb-[2rem] sm:mb-[2.5rem] lg:mb-[2.6rem] xl:mb-[2.8rem] 2xl:mb-[3rem]
         ">
@@ -26,7 +26,7 @@ const BlogCard = ({ blog }) => {
                 lg:group-hover:translate-y-[-1rem] transition duration-300
             ">
                 <span className="
-                    text-[1.2rem] sm:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem] font-semibold line-clamp-1
+                    text-[1.2rem] sm:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem] font-semibold line-clamp-2
                 ">
                     {blog.title}
                 </span>

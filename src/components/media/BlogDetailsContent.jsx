@@ -1,6 +1,6 @@
 import LatestBlogs from "./LatestBlogs";
 
-const BlogDetailsContent = ({ blog }) => {
+const BlogDetailsContent = ({ blog, type = "blogs" }) => {
     return (
         <section className="
             pt-[2rem] sm:pt-[2.5rem] lg:pt-[3.5rem] xl:pt-[4rem] 2xl:pt-[4.5rem]
@@ -22,7 +22,7 @@ const BlogDetailsContent = ({ blog }) => {
 
                 {/* Latest Blogs */}
                 <div className="w-[46%] hidden lg:block">
-                    <LatestBlogs />
+                    <LatestBlogs type={type} />
                 </div>
 
             </div>
@@ -35,7 +35,7 @@ const BlogDetailsContent = ({ blog }) => {
 
             {/* Latest Blogs - Mobile Only */}
             <div className="block lg:hidden mt-[3rem]">
-                <LatestBlogs />
+                <LatestBlogs type={type} />
             </div>
 
         </section>
