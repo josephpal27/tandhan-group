@@ -30,7 +30,7 @@ const highlightsData = [
 const KeyHighlights = () => {
     return (
         <section className="
-            pt-[1.7rem] sm:pt-[2.2rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem] 
+            pt-[2rem] sm:pt-[2.5rem] lg:pt-[5rem] xl:pt-[5.5rem] 2xl:pt-[6rem] 
             pb-[1.7rem] sm:pb-[2rem] lg:pb-[1.5rem] xl:pb-[2rem] 2xl:pb-[2.5rem] 
             hidden lg:flex justify-center overflow-hidden lg:overflow-visible
         ">
