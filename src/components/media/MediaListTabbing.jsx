@@ -67,7 +67,7 @@ const MediaListTabbing = () => {
                             className="flex flex-wrap gap-[3.5%]"
                         >
                             {eventsData.map((blog) => (
-                                <BlogCard key={blog.id} blog={blog} />
+                                <BlogCard key={blog.id} blog={blog} type="events" />
                             ))}
                         </motion.div>
                     )}
@@ -96,7 +96,7 @@ const MediaListTabbing = () => {
                             className="flex flex-wrap gap-[3.5%]"
                         >
                             {blogsData.map((blog) => (
-                                <BlogCard key={blog.id} blog={blog} />
+                                <BlogCard key={blog.id} blog={blog} type="blogs" />
                             ))}
                         </motion.div>
                     )}
