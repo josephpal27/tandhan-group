@@ -187,15 +187,17 @@ const CountryBrands = () => {
 
                             {/* Logo */}
                             <div className="ml-[1.5rem] lg:ml-[3.5rem]">
-                                <img
-                                    ref={(el) => {
-                                        if (el) logoRefs.current[index] = el;
-                                    }}
-                                    src={logo}
-                                    alt=""
-                                    loading="lazy"
-                                    className="w-full h-[25px] sm:h-[30px] lg:h-[39px] xl:h-[42px] 2xl:h-[45px] object-contain"
-                                />
+                                <a href={activeCountry.url[index]} target="_blank" rel="noopener noreferrer">
+                                        <img
+                                        ref={(el) => {
+                                            if (el) logoRefs.current[index] = el;
+                                        }}
+                                        src={logo}
+                                        alt=""
+                                        loading="lazy"
+                                        className="w-full h-[25px] sm:h-[30px] lg:h-[39px] xl:h-[42px] 2xl:h-[45px] object-contain lg:hover:scale-[1.02]"
+                                    />
+                                </a>
                             </div>
                         </div>
                     ))}
