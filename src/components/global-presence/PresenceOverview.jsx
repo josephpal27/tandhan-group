@@ -7,16 +7,16 @@ const PresenceOverview = () => {
     return (
         <section className="
             pt-[2rem] sm:pt-[3rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem]
-            flex justify-between flex-wrap
+            flex justify-between flex-wrap flex-col-reverse lg:flex-row
         ">
 
             {/* Image */}
-            <div className="w-[45%]">
+            <div className="w-full lg:w-[45%] mt-[2rem] lg:mt-0">
                 <img src="/images/presence/overview.png" alt="Overview" loading="lazy" className="w-full" />
             </div>
 
             {/* Content */}
-            <div className="w-[50%]">
+            <div className="w-full lg:w-[50%]">
                 <motion.h2
                     variants={headingVariant}
                     initial="hidden"

@@ -111,6 +111,7 @@ const CountryBrands = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
+                        className="text-[1.5rem] sm:text-[1.7rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]"
                     >
                         Lorem Ipsum
                     </motion.h3>
@@ -119,7 +120,7 @@ const CountryBrands = () => {
                     </p>
 
                     {/* Flag */}
-                    <div className="mt-[3rem] sm:mt-[2rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]">
+                    <div className="mt-[1.5rem] sm:mt-[1.6rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]">
                         <span ref={nameRef} className="block text-[1.5rem] sm:text-[2rem] lg:text-[2.5rem] xl:text-[2.8rem] 2xl:text-[3rem] font-semibold">
                             {activeCountry.country}
                         </span>
@@ -128,12 +129,12 @@ const CountryBrands = () => {
                             src={activeCountry.flag}
                             alt={activeCountry.country}
                             loading="lazy"
-                            className="w-[40%] mt-[1rem]"
+                            className="w-[60%] lg:w-[40%] mt-[0.7rem] lg:mt-[1rem]"
                         />
                     </div>
 
                     {/* Navigation */}
-                    <div className="flex justify-end mr-[-3px]">
+                    <div className="flex justify-end mr-[-3px] mt-[0.5rem] lg:mt-0">
                         <button
                             className="
                                 w-[40px] sm:w-[45px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
@@ -162,9 +163,9 @@ const CountryBrands = () => {
                 </div>
 
                 {/* Top Right */}
-                <div className="w-[35%] border-primary border-l-[5px]">
+                <div className="w-[35%] border-primary border-l-[3px] lg:border-l-[5px]">
                     {activeCountry.logo.map((logo, index) => (
-                        <div key={index} className="relative flex items-center mb-[1.8rem] sm:mb-[2rem] lg:mb-[3rem] xl:mb-[3.3rem] 2xl:mb-[3.5rem]">
+                        <div key={index} className="relative flex items-center mb-[1.5rem] sm:mb-[1.6rem] lg:mb-[3rem] xl:mb-[3.3rem] 2xl:mb-[3.5rem]">
                             {/* Dot */}
                             <div className="absolute left-0 top-0 -translate-x-[55%] z-10">
                                 <div
@@ -174,18 +175,18 @@ const CountryBrands = () => {
                                     className="
                                         bg-white
                                         flex items-center justify-center
-                                        border-primary border-[4px]
+                                        border-primary border-[2.5px] lg:border-[4px]
                                         rounded-full
-                                        w-[45px] sm:w-[50px] lg:w-[39px] xl:w-[42px] 2xl:w-[45px]
+                                        w-[25px] sm:w-[30px] lg:w-[39px] xl:w-[42px] 2xl:w-[45px]
                                         aspect-square
                                     "
                                 >
-                                    <div className="aspect-square w-[10px] bg-primary rounded-full"></div>
+                                    <div className="aspect-square w-[5px] lg:w-[10px] bg-primary rounded-full"></div>
                                 </div>
                             </div>
 
                             {/* Logo */}
-                            <div className="ml-[3.5rem]">
+                            <div className="ml-[1.5rem] lg:ml-[3.5rem]">
                                 <img
                                     ref={(el) => {
                                         if (el) logoRefs.current[index] = el;
@@ -193,7 +194,7 @@ const CountryBrands = () => {
                                     src={logo}
                                     alt=""
                                     loading="lazy"
-                                    className="w-full h-[45px] sm:h-[50px] lg:h-[39px] xl:h-[42px] 2xl:h-[45px] object-contain"
+                                    className="w-full h-[25px] sm:h-[30px] lg:h-[39px] xl:h-[42px] 2xl:h-[45px] object-contain"
                                 />
                             </div>
                         </div>
@@ -204,7 +205,7 @@ const CountryBrands = () => {
             {/* Bottom */}
             <div className="flex flex-wrap">
                 {/* Bottom Left */}
-                <div className="w-[63.25%] p-[1.5rem] sm:p-[2rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] pl-[7%] bg-primary text-gray-300 flex flex-wrap">
+                <div className="w-full lg:w-[63.25%] p-[1rem] sm:p-[1.3rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] pl-[7%] bg-primary text-gray-300 flex flex-wrap">
                     {globalPresenceData.map((item, index) => (
                         <div key={item.id} className="flex items-center">
                             <button
@@ -219,14 +220,14 @@ const CountryBrands = () => {
                             </button>
 
                             {index !== globalPresenceData.length - 1 && (
-                                <span className="mx-3">|</span>
+                                <span className="mx-2 lg:mx-3 mb-2 lg:mb-0">|</span>
                             )}
                         </div>
                     ))}
                 </div>
 
                 {/* Bottom Right */}
-                <div className="w-[36.75%] p-[1.5rem] sm:p-[2rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] pr-[7%] bg-[#a3a3a3]">
+                <div className="w-full lg:w-[36.75%] p-[1rem] sm:p-[1.3rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] pr-[7%] bg-[#a3a3a3]">
                     <p className="text-white">
                         Lorem ipsum dolor sit amet consectetur adipisicing nam, quidem. Lorem ipsum dolor sit amet, adipisicing elit. Praesentium consectetur excepturi.
                     </p>
