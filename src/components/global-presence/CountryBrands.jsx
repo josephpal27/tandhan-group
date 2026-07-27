@@ -119,8 +119,8 @@ const CountryBrands = () => {
                     </p>
 
                     {/* Flag */}
-                    <div className="mt-[3rem]">
-                        <span ref={nameRef} className="block text-[3rem] font-semibold">
+                    <div className="mt-[3rem] sm:mt-[2rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]">
+                        <span ref={nameRef} className="block text-[1.5rem] sm:text-[2rem] lg:text-[2.5rem] xl:text-[2.8rem] 2xl:text-[3rem] font-semibold">
                             {activeCountry.country}
                         </span>
                         <img
@@ -164,7 +164,7 @@ const CountryBrands = () => {
                 {/* Top Right */}
                 <div className="w-[35%] border-primary border-l-[5px]">
                     {activeCountry.logo.map((logo, index) => (
-                        <div key={index} className="relative flex items-center mb-[3.5rem]">
+                        <div key={index} className="relative flex items-center mb-[1.8rem] sm:mb-[2rem] lg:mb-[3rem] xl:mb-[3.3rem] 2xl:mb-[3.5rem]">
                             {/* Dot */}
                             <div className="absolute left-0 top-0 -translate-x-[55%] z-10">
                                 <div
@@ -176,7 +176,7 @@ const CountryBrands = () => {
                                         flex items-center justify-center
                                         border-primary border-[4px]
                                         rounded-full
-                                        w-[45px]
+                                        w-[45px] sm:w-[50px] lg:w-[39px] xl:w-[42px] 2xl:w-[45px]
                                         aspect-square
                                     "
                                 >
@@ -193,7 +193,7 @@ const CountryBrands = () => {
                                     src={logo}
                                     alt=""
                                     loading="lazy"
-                                    className="w-full h-[45px] object-contain"
+                                    className="w-full h-[45px] sm:h-[50px] lg:h-[39px] xl:h-[42px] 2xl:h-[45px] object-contain"
                                 />
                             </div>
                         </div>
@@ -204,7 +204,7 @@ const CountryBrands = () => {
             {/* Bottom */}
             <div className="flex flex-wrap">
                 {/* Bottom Left */}
-                <div className="w-[63.25%] p-[2rem] pl-[7%] bg-primary text-gray-300 flex flex-wrap">
+                <div className="w-[63.25%] p-[1.5rem] sm:p-[2rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] pl-[7%] bg-primary text-gray-300 flex flex-wrap">
                     {globalPresenceData.map((item, index) => (
                         <div key={item.id} className="flex items-center">
                             <button
@@ -226,7 +226,7 @@ const CountryBrands = () => {
                 </div>
 
                 {/* Bottom Right */}
-                <div className="w-[36.75%] p-[2rem] pr-[7%] bg-[#a3a3a3]">
+                <div className="w-[36.75%] p-[1.5rem] sm:p-[2rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] pr-[7%] bg-[#a3a3a3]">
                     <p className="text-white">
                         Lorem ipsum dolor sit amet consectetur adipisicing nam, quidem. Lorem ipsum dolor sit amet, adipisicing elit. Praesentium consectetur excepturi.
                     </p>
