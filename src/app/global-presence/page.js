@@ -20,7 +20,7 @@ export default function GlobalPresence() {
           title="Global Presence"
           desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt."
         />
-        <BannerSlider className="absolute top-[23%] left-0 z-10" />
+        <BannerSlider className="absolute top-[22%] left-0 z-10" />
       </div>
 
       <PresenceOverview />
