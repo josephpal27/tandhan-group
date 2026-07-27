@@ -18,7 +18,7 @@ export default function GlobalPresence() {
         <HeroBanner
           image="/images/banners/presence-banner.png"
           title="Global Presence"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt."
+          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus reiciendis veniam deserunt."
         />
         <BannerSlider className="absolute top-[22%] left-0 z-10" />
       </div>
