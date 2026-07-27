@@ -91,7 +91,7 @@ const OurTeam = () => {
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
                     Meet the leaders shaping Tandhan's future through purpose, experience, and vision.
                 </p>
-                <Link href="/" className="
+                <Link href="/team" className="
                     mt-[1.3rem] lg:mt-[2rem] block w-max bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
                     border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
                     py-[0.4rem] px-[1.4rem]
