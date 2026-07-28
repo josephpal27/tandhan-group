@@ -6,9 +6,9 @@ import { headingVariant } from "@/utils/animations";
 const CSR = () => {
     return (
         <section className="
-            bg-[url('/images/sustainability/csr-banner.avif')] bg-cover bg-center bg-no-repeat text-white
-            pt-[7rem] sm:pt-[8rem] lg:pt-[9rem] xl:pt-[9.5rem] 2xl:pt-[10rem]
+            bg-[url('/images/sustainability/csr-mob-banner.avif')] lg:bg-[url('/images/sustainability/csr-banner.avif')] bg-cover bg-center bg-no-repeat text-white
             pb-[1rem] sm:pb-[1.5rem] lg:pb-[2rem] xl:pb-[2.5rem] 2xl:pb-[3rem]
+            h-[60dvh] lg:h-[80dvh] flex flex-col justify-end relative
 
             mt-[2rem] lg:mt-[5.5rem]
         ">
@@ -21,9 +21,12 @@ const CSR = () => {
             >
                 CSR
             </motion.h4>
-            <p className="mt-[0.7rem] lg:mt-[1.3rem] w-full lg:w-[60%]">
+            <p className="mt-[0.7rem] lg:mt-[1.3rem] w-full lg:w-[60%] relative z-10">
                 At Tandhan, growth is measured not only by business success but by the positive difference we create in people's lives. Through the Tandhan Foundation, we work to strengthen communities by expanding access to education, healthcare, skill development, and social welfare. Every initiative reflects our belief that meaningful progress is achieved when businesses and communities grow together. 
             </p>
+
+            {/* Layer */}
+            <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-primary/10 to-primary/100"></div>
         </section>
     )
 }
