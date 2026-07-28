@@ -13,7 +13,6 @@ const OurJourney = () => {
 
     const swiperRef = useRef(null);
     const [activeTab, setActiveTab] = useState(0);
-
     const [activeSlide, setActiveSlide] = useState(0);
 
     const activeContent = journeyData[activeTab].content;
