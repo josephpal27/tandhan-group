@@ -1,8 +1,8 @@
 export const blogsData = [
     {
         id: 1,
-        slug: "sustainable-manufacturing-practices",
-        title: "Sustainable Manufacturing Practices",
+        slug: "sustainable-manufacturing",
+        title: "Sustainable Manufacturing",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisi elit. Distinctio numquam.",
         date: "17th Jul, 2026",
         image: "/images/media/demo.avif",

@@ -7,24 +7,24 @@ import Link from "next/link";
 const latestNewsData = [
     {
         id: 1,
-        title: "Lorem ipsum dolor sit",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam soluta minus, dolores molestias Lorem.",
-        image: "/images/latest-news/1.avif",
-        url: "/",
+        title: "Blood Donation & Eye Check-Up Camp: Strengthening Community Healthcare Through Collective Action",
+        desc: "As part of its ongoing commitment to community welfare and preventive healthcare, Tandhan Foundation successfully organised a Blood Donation and Eye Check-Up Camp...",
+        image: "/images/media/events/1.avif",
+        url: "/media/events/blood-donation-and-eye-check-up-camp/",
     },
     {
         id: 2,
-        title: "Lorem ipsum dolor sit",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam soluta minus, dolores molestias Lorem.",
-        image: "/images/latest-news/2.avif",
-        url: "/",
+        title: "Tandhan Foundation Honoured with the JOYEE Award 2026 for Excellence in Community Impact",
+        desc: "Tandhan Foundation was honoured with the prestigious JOYEE Award 2026 on 23rd June 2026 at ITC Sonar, Kolkata, presented by the Confederation of Indian...",
+        image: "/images/media/events/2.avif",
+        url: "/media/events/tandhan-foundation-honoured-with-the-joyee-award-2026-for-excellence-in-community-impact/",
     },
     {
         id: 3,
-        title: "Lorem ipsum dolor sit",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim in ipsum sunt explicabo totam soluta minus, dolores molestias Lorem.",
-        image: "/images/latest-news/3.avif",
-        url: "/",
+        title: "World Environment Day 2026: Promoting Sustainability Through Tree Plantation",
+        desc: "In celebration of World Environment Day on 5th June 2026, Tandhan Denim organised a tree plantation drive at Tandhan Cotton Mills, reaffirming its commitment...",
+        image: "/images/media/events/3.avif",
+        url: "/media/events/world-environment-day-2026/",
     },
 ]
 
@@ -67,13 +67,13 @@ const LatestNews = () => {
                                 pt-[1rem] sm:pt-[1.1rem] lg:pt-[1.2rem] xl:pt-[1.4rem] 2xl:pt-[1.5rem]
                                 pb-[4.2rem] sm:pb-[5rem] lg:pb-[5.6rem] xl:pb-[5.8rem] 2xl:pb-[6rem]
                             ">
-                                <span className="text-[1.2rem] sm:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold">
+                                <span className="text-[1.2rem] sm:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] font-semibold line-clamp-2">
                                     {item.title}
                                 </span>
-                                <p className="mt-[0.5rem] text-[0.85rem] sm:text-[0.95rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">
+                                <p className="mt-[0.5rem] text-[0.85rem] sm:text-[0.95rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] line-clamp-2">
                                     {item.desc}
                                 </p>
-                                <a href="/" className="
+                                <Link href={item.url} className="
                                     absolute bottom-0 right-0 
                                     w-[50px] sm:w-[55px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px] 
                                     aspect-square bg-primary
@@ -83,7 +83,7 @@ const LatestNews = () => {
                                     transition duration-300 hover:bg-secondary 
                                 ">
                                     ›
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     )
