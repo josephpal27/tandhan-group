@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { headingVariant } from "@/utils/animations";
 import { globalPresenceData } from "@/data/globalPresenceData";
-import { motion } from "framer-motion"; // still used for the heading's whileInView
+import { motion } from "framer-motion";
 
 const CountryBrands = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -19,6 +19,20 @@ const CountryBrands = () => {
     // reset ref arrays every render before the map populates them
     dotRefs.current = [];
     logoRefs.current = [];
+
+    useEffect(() => {
+        globalPresenceData.forEach((item) => {
+            if (item.flag) {
+                const flagImg = new window.Image();
+                flagImg.src = item.flag;
+            }
+            item.logo?.forEach((src) => {
+                if (!src) return;
+                const logoImg = new window.Image();
+                logoImg.src = src;
+            });
+        });
+    }, []);
 
     const goTo = (getNextIndex) => {
         if (isAnimating.current) return;
@@ -188,7 +202,7 @@ const CountryBrands = () => {
                             {/* Logo */}
                             <div className="ml-[1.5rem] lg:ml-[3.5rem]">
                                 <a href={activeCountry.url[index]} target="_blank" rel="noopener noreferrer">
-                                        <img
+                                    <img
                                         ref={(el) => {
                                             if (el) logoRefs.current[index] = el;
                                         }}
@@ -212,11 +226,10 @@ const CountryBrands = () => {
                         <div key={item.id} className="flex items-center">
                             <button
                                 onClick={() => setActiveIndex(index)}
-                                className={`transition ${
-                                    index === activeIndex
+                                className={`transition ${index === activeIndex
                                         ? "text-white font-semibold"
                                         : "text-gray-300 hover:text-white"
-                                }`}
+                                    }`}
                             >
                                 {item.country}
                             </button>

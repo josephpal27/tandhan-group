@@ -16,7 +16,7 @@ export default function GlobalPresence() {
 
       <div className="relative">
         <HeroBanner
-          image="/images/banners/presence-banner.png"
+          image="/images/banners/presence-banner.avif"
           title="Global Presence"
           desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus reiciendis veniam deserunt."
         />
