@@ -12,7 +12,7 @@ const PresenceOverview = () => {
 
             {/* Image */}
             <div className="w-full lg:w-[45%] mt-[2rem] lg:mt-0">
-                <img src="/images/presence/overview.png" alt="Overview" loading="lazy" className="w-full" />
+                <img src="/images/presence/overview.avif" alt="Overview" loading="lazy" className="w-full" />
             </div>
 
             {/* Content */}

@@ -11,7 +11,7 @@ export default function Team() {
   return (
     <>
       <HeroBanner
-        image="/images/banners/presence-banner.png"
+        image="/images/banners/presence-banner.avif"
         title="Our Team"
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus reiciendis veniam deserunt."
       />
