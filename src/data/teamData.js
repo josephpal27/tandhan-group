@@ -4,7 +4,7 @@ export const teamData = [
         name: "Ashok Jalan",
         position: "Chairman",
         image: "/images/team/ashok-jalan.avif",
-        tab: 3,
+        tab: 1,
     },
     {
         id: 2,
@@ -53,14 +53,14 @@ export const teamData = [
         name: "Sandeep Dahiya",
         position: "CEO, Tandhan Denim",
         image: "/images/team/sandeep-dahiya.avif",
-        tab: 1,
+        tab: 3,
     },
     {
         id: 9,
         name: "Harpreet Singh Chadha",
         position: "CEO, Tandhan Power",
         image: "/images/team/harpreet-singh.avif",
-        tab: 1,
+        tab: 3,
     },
     
 ]

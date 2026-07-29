@@ -126,7 +126,7 @@ const OurJourney = () => {
                                             className={`
                                                 journey-slides group
                                                 h-full flex flex-col justify-end 
-                                                p-[0.8rem] sm:p-[1rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem] 
+                                                p-[1rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem] 
                                                 !pb-0
                                                 border-gray-200 border-r-[2px]
                                                 transition-all duration-300
@@ -134,7 +134,7 @@ const OurJourney = () => {
                                             `}
                                         >
                                             {/* Year */}
-                                            <span className="text-[2rem] sm:text-[2.2rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem] font-bold mt-[2rem]">
+                                            <span className="text-[2rem] sm:text-[2.2rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem] font-bold mt-[1rem] lg:mt-[2rem]">
                                                 {entry.year}
                                             </span>
 
@@ -150,10 +150,10 @@ const OurJourney = () => {
                                                 alt={entry.title}
                                                 loading="lazy"
                                                 className={`
-                                                    w-full mt-[2rem] sm:mt-[3rem] lg:mt-[3.6rem] xl:mt-[3.8rem] 2xl:mt-[4rem]
+                                                    w-full mt-[2.5rem] sm:mt-[3rem] lg:mt-[3.6rem] xl:mt-[3.8rem] 2xl:mt-[4rem]
                                                     transition duration-500
                                                     ${isActive
-                                                        ? "translate-y-[-0.8rem] sm:translate-y-[-1rem] lg:translate-y-[-1.1rem] xl:translate-y-[-1.2rem] 2xl:translate-y-[-1.3rem]"
+                                                        ? "translate-y-[-1rem] sm:translate-y-[-1.2rem] lg:translate-y-[-1.1rem] xl:translate-y-[-1.2rem] 2xl:translate-y-[-1.3rem]"
                                                         : ""}
                                                 `}
                                             />
