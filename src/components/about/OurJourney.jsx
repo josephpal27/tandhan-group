@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, FreeMode } from 'swiper/modules';
 import 'swiper/css';
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
@@ -25,17 +25,17 @@ const OurJourney = () => {
 
     return (
         <section className="
-            pt-[3rem] sm:pt-[3.3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] flex justify-between flex-wrap
+            pt-[3rem] sm:pt-[3.3rem] lg:pt-[4.5rem] xl:pt-[5rem] 2xl:pt-[5.5rem] flex justify-between flex-wrap
             px-0
         ">
 
             {/* Left Content */}
             <div className="
-                w-full lg:w-[33%]
+                w-full lg:w-[30%]
             ">
                 <div className="
                     pl-[1rem] sm:pl-[2rem] lg:pl-[3.6rem] xl:pl-[3.8rem] 2xl:pl-[4rem]
-                    mt-[0] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
+                    mt-[0] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                 ">
                     <motion.h3
                         variants={headingVariant}
@@ -46,7 +46,7 @@ const OurJourney = () => {
                         Our <br /> Journey
                     </motion.h3>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                        Lorem ipsum dolor sit amet, adipisic elit. Id ut vitae dolorum suscipit facilis, sint nisi nulla consequatur.
+                        Lorem ipsum dolor sit amet, adipisic elit. Id ut vitae dolorum suscipit facilis sint nisi.
                     </p>
                 </div>
 
@@ -57,7 +57,7 @@ const OurJourney = () => {
                         return (
                             <div key={index} onClick={() => handleTabClick(index)} className={`
                                 border-gray-200 border-b-[1.7px] last:border-none cursor-pointer
-                                py-[0.8rem] sm:py-[1rem] lg:py-[1.1rem] xl:py-[1.3rem] 2xl:py-[1.5rem]
+                                py-[0.8rem] sm:py-[1rem] lg:py-[0.9rem] xl:py-[1.1rem] 2xl:py-[1.3rem]
                                 pl-[1rem] sm:pl-[2rem] lg:pl-[3.6rem] xl:pl-[3.8rem] 2xl:pl-[4rem]
                                 pr-[1rem]
                                 flex justify-between items-center
@@ -87,7 +87,7 @@ const OurJourney = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="w-full lg:w-[62%] overflow-hidden mt-[1.2rem] lg:mt-0"
+                className="w-full lg:w-[65%] overflow-hidden mt-[1.2rem] lg:mt-0"
             >
                 <AnimatePresence mode="wait">
                     <motion.div
@@ -98,57 +98,50 @@ const OurJourney = () => {
                         transition={{ duration: 0.4, ease: "easeOut" }}
                     >
                         <Swiper
-                            modules={[Navigation]}
-                            slidesPerView={2.2}
-                            spaceBetween={20}
+                            modules={[Navigation, FreeMode]}
+                            slidesPerView={3.2}
+                            spaceBetween={0}
+                            grabCursor={true}
+                            freeMode={{
+                                enabled: true,
+                                momentum: true,
+                                momentumRatio: 1,
+                                momentumVelocityRatio: 1,
+                                sticky: false, // set true if you still want it to settle on a slide after release
+                            }}
                             loop={activeContent.length > 2}
                             breakpoints={{
-                                0: {
-                                    slidesPerView: 1.2, // for mobile
-                                    spaceBetween: 13,
-                                },
-                                640: {
-                                    slidesPerView: 2.2, // tablet
-                                    spaceBetween: 15,
-                                },
-                                991: {
-                                    slidesPerView: 2.2, // tablet and up
-                                    spaceBetween: 20,
-                                },
+                                0: { slidesPerView: 1.2, spaceBetween: 13 },
+                                640: { slidesPerView: 2.2, spaceBetween: 15 },
+                                991: { slidesPerView: 3.2, spaceBetween: 0 },
                             }}
-                            onSwiper={(swiper) => {
-                                swiperRef.current = swiper;
-                            }}
-                            onSlideChange={(swiper) => {
-                                setActiveSlide(swiper.realIndex);
-                            }}
+                            onSwiper={(swiper) => { swiperRef.current = swiper; }}
+                            onSlideChange={(swiper) => { setActiveSlide(swiper.realIndex); }}
                         >
                             {activeContent.map((entry, index) => (
                                 <SwiperSlide key={`${activeTab}-${index}`}>
                                     <div className={`
-                                        journey-slides
-                                        h-full bg-[#f2f3f9] flex flex-col justify-end p-[0.8rem] sm:p-[1rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem]
+                                        journey-slides group
+                                        h-full bg-[#fff] hover:bg-primary text-primary hover:text-[#fff] flex flex-col justify-end 
+                                        p-[0.8rem] sm:p-[1rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem] 
+                                        !pb-0
+                                        border-gray-200 border-r-[2px]
                                         transition-all duration-300
-                                        ${activeSlide === index
-                                            ? "bg-primary text-white"
-                                            : ""
-                                        }
-                                        
                                     `}>
                                         {/* Year */}
                                         <span className={`
-                                            text-[2rem] sm:text-[2.2rem] lg:text-[3.1rem] xl:text-[3.3rem] 2xl:text-[3.5rem] font-bold
-                                            mt-[1rem]
+                                            text-[2rem] sm:text-[2.2rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem] font-bold
+                                            mt-[2rem]
                                         `}>
                                             {entry.year}
                                         </span>
 
                                         {/* Title */}
                                         <span className={`
-                                            block
+                                            block leading-[1.3]
                                             text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold
-                                            mt-[0.4rem] lg:mt-[0.8rem] 
-                                            mb-[0.3rem] lg:mb-[0.5rem]
+                                            mt-[1rem] lg:mt-[1.7rem] 
+                                            mb-[0.5rem] lg:mb-[0.7rem]
                                         `}>
                                             {entry.title}
                                         </span>
@@ -161,7 +154,15 @@ const OurJourney = () => {
                                             src={journeyData[activeTab].image}
                                             alt={entry.title}
                                             loading="lazy"
-                                            className="w-full mt-[1rem] sm:mt-[1.2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]"
+                                            className="
+                                                w-full mt-[2rem] sm:mt-[3rem] lg:mt-[3.6rem] xl:mt-[3.8rem] 2xl:mt-[4rem]
+                                                group-hover:translate-y-[-0.8rem] 
+                                                sm:group-hover:translate-y-[-1rem] 
+                                                lg:group-hover:translate-y-[-1.1rem] 
+                                                xl:group-hover:translate-y-[-1.2rem] 
+                                                2xl:group-hover:translate-y-[-1.3rem]  
+                                                transition duration-500
+                                            "
                                         />
                                     </div>
                                 </SwiperSlide>
