@@ -107,7 +107,7 @@ const OurJourney = () => {
                                 momentum: true,
                                 momentumRatio: 1,
                                 momentumVelocityRatio: 1,
-                                sticky: false, // set true if you still want it to settle on a slide after release
+                                sticky: false,
                             }}
                             loop={activeContent.length > 2}
                             breakpoints={{
@@ -116,57 +116,51 @@ const OurJourney = () => {
                                 991: { slidesPerView: 3.2, spaceBetween: 0 },
                             }}
                             onSwiper={(swiper) => { swiperRef.current = swiper; }}
-                            onSlideChange={(swiper) => { setActiveSlide(swiper.realIndex); }}
                         >
-                            {activeContent.map((entry, index) => (
-                                <SwiperSlide key={`${activeTab}-${index}`}>
-                                    <div className={`
-                                        journey-slides group
-                                        h-full bg-[#fff] hover:bg-primary text-primary hover:text-[#fff] flex flex-col justify-end 
-                                        p-[0.8rem] sm:p-[1rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem] 
-                                        !pb-0
-                                        border-gray-200 border-r-[2px]
-                                        transition-all duration-300
-                                    `}>
-                                        {/* Year */}
-                                        <span className={`
-                                            text-[2rem] sm:text-[2.2rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem] font-bold
-                                            mt-[2rem]
-                                        `}>
-                                            {entry.year}
-                                        </span>
+                            {activeContent.map((entry, index) => {
+                                const isActive = activeSlide === index;
+                                return (
+                                    <SwiperSlide key={`${activeTab}-${index}`}>
+                                        <div
+                                            onMouseEnter={() => setActiveSlide(index)}
+                                            className={`
+                                                journey-slides group
+                                                h-full flex flex-col justify-end 
+                                                p-[0.8rem] sm:p-[1rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem] 
+                                                !pb-0
+                                                border-gray-200 border-r-[2px]
+                                                transition-all duration-300
+                                                ${isActive ? "bg-primary text-[#fff]" : "bg-[#fff] text-primary"}
+                                            `}
+                                        >
+                                            {/* Year */}
+                                            <span className="text-[2rem] sm:text-[2.2rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem] font-bold mt-[2rem]">
+                                                {entry.year}
+                                            </span>
 
-                                        {/* Title */}
-                                        <span className={`
-                                            block leading-[1.3]
-                                            text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold
-                                            mt-[1rem] lg:mt-[1.7rem] 
-                                            mb-[0.5rem] lg:mb-[0.7rem]
-                                        `}>
-                                            {entry.title}
-                                        </span>
+                                            {/* Title */}
+                                            <span className="block leading-[1.3] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold mt-[1rem] lg:mt-[1.7rem] mb-[0.5rem] lg:mb-[0.7rem]">
+                                                {entry.title}
+                                            </span>
 
-                                        <p>
-                                            {entry.desc}
-                                        </p>
+                                            <p>{entry.desc}</p>
 
-                                        <img
-                                            src={journeyData[activeTab].image}
-                                            alt={entry.title}
-                                            loading="lazy"
-                                            className="
-                                                w-full mt-[2rem] sm:mt-[3rem] lg:mt-[3.6rem] xl:mt-[3.8rem] 2xl:mt-[4rem]
-                                                group-hover:translate-y-[-0.8rem] 
-                                                sm:group-hover:translate-y-[-1rem] 
-                                                lg:group-hover:translate-y-[-1.1rem] 
-                                                xl:group-hover:translate-y-[-1.2rem] 
-                                                2xl:group-hover:translate-y-[-1.3rem]  
-                                                transition duration-500
-                                            "
-                                        />
-                                    </div>
-                                </SwiperSlide>
-                            ))}
+                                            <img
+                                                src={journeyData[activeTab].image}
+                                                alt={entry.title}
+                                                loading="lazy"
+                                                className={`
+                                                    w-full mt-[2rem] sm:mt-[3rem] lg:mt-[3.6rem] xl:mt-[3.8rem] 2xl:mt-[4rem]
+                                                    transition duration-500
+                                                    ${isActive
+                                                        ? "translate-y-[-0.8rem] sm:translate-y-[-1rem] lg:translate-y-[-1.1rem] xl:translate-y-[-1.2rem] 2xl:translate-y-[-1.3rem]"
+                                                        : ""}
+                                                `}
+                                            />
+                                        </div>
+                                    </SwiperSlide>
+                                );
+                            })}
                         </Swiper>
                     </motion.div>
                 </AnimatePresence>
