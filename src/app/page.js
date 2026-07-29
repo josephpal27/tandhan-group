@@ -1,5 +1,4 @@
 import HeroBanner from "@/components/HeroBanner";
-// import GlobalPresence from "@/components/home/GlobalPresence";
 import HomeFeatures from "@/components/home/HomeFeatures";
 import LatestNews from "@/components/home/LatestNews";
 import OurPresence from "@/components/home/OurPresence";
@@ -32,7 +31,6 @@ export default function Home() {
       <OurServices />
       <Sustainable />
       <LatestNews />
-      {/* <GlobalPresence /> */}
       <OurPresence />
     </>
   );
