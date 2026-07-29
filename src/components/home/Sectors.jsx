@@ -68,8 +68,8 @@ const Sectors = () => {
                             w-[48.5%]
                             relative overflow-hidden
                             mb-[0.7rem] sm:mb-[0.8rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
-                            ${index === 1 ? "mt-[2.5rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]" : ""}
-                            ${index === 2 ? "mt-[-2.5rem] sm:mt-[-4rem] lg:mt-[-2.6rem] xl:mt-[-2.8rem] 2xl:mt-[-3rem]" : ""}
+                            ${index === 1 ? "mt-[2.5rem] sm:mt-[2.8rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]" : ""}
+                            ${index === 2 ? "mt-[-2.5rem] sm:mt-[-2.8rem] lg:mt-[-2.6rem] xl:mt-[-2.8rem] 2xl:mt-[-3rem]" : ""}
                         `}
                     >
                         <img
