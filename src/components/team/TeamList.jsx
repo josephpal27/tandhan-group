@@ -62,10 +62,10 @@ const TeamList = () => {
 
             {/* Head */}
             <div className="
-                border-primary border-b-[3px] lg:border-b-[2px] xl:border-b-[2.5px] 2xl:border-b-[3px]
+                border-primary border-b-[2px] xl:border-b-[2.5px] 2xl:border-b-[3px]
                 pb-[0.7rem] sm:pb-[0.9rem] lg:pb-[0.8rem] xl:pb-[0.9rem] 2xl:pb-[1rem]
                 my-[1.5rem] sm:my-[2rem] lg:my-[2.6rem] xl:my-[2.8rem] 2xl:my-[3rem]
-                flex lg:justify-around gap-[1rem] lg:gap-[2rem] flex-wrap
+                flex lg:justify-around gap-[0.3rem] lg:gap-[2rem] flex-wrap
             ">
                 {tabHeads.map((head) => {
 
@@ -76,10 +76,8 @@ const TeamList = () => {
                             key={head.id}
                             onClick={() => setActiveTab(head.id)}
                             className={`
-                                text-[1.4rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
-                                font-semibold
-                                transition-colors duration-300
-                                cursor-pointer
+                                text-[1.3rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
+                                font-semibold cursor-pointer transition-colors duration-300 w-full lg:w-max text-left
                                 ${isActive ? "text-primary" : "text-[#c4c4c4]"}
                             `}
                         >
