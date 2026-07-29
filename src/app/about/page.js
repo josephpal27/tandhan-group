@@ -16,7 +16,7 @@ export default function About() {
     <>
       <HeroBanner
         image="/images/banners/about-banner.avif"
-        mobileImage="/images/banners/about-mob-banner.avif"
+        // mobileImage="/images/banners/about-mob-banner.avif"
         title="About Us"
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
       />
