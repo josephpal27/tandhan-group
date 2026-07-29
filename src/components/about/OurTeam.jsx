@@ -122,7 +122,7 @@ const OurTeam = () => {
                 {/* Pagination & Navigation */}
                 <div className="absolute bottom-0 right-0 flex justify-end lg:justify-between items-center z-[999] w-[47%]">
                     <div className="hidden lg:block">
-                        <div id="team-pagination" className="flex items-center gap-[0.4rem]" />
+                        <div id="team-pagination" className="flex items-center gap-[0.4rem] lg:gap-[0.3rem] xl:gap-[0.35rem] 2xl:gap-[0.4rem]" />
                     </div>
                     <div className="flex items-center">
                         <button className="
