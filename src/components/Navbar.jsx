@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { SlLocationPin } from "react-icons/sl";
 import { LuPhone } from "react-icons/lu";
 import { LuMessageSquareText } from "react-icons/lu";
 import { MdChevronRight, MdArrowDropDown } from "react-icons/md";
@@ -186,7 +185,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Left Links */}
-                    <ul className="hidden md:flex items-center gap-[2rem] sm:gap-[2rem] lg:gap-[2.3rem] xl:gap-[2.7rem] 2xl:gap-[3rem]">
+                    <ul className="hidden lg:flex items-center gap-[2rem] sm:gap-[2rem] lg:gap-[2.3rem] xl:gap-[2.7rem] 2xl:gap-[3rem]">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
                             return (
@@ -224,7 +223,7 @@ const Navbar = () => {
                     </ul>
 
                     {/* CTA */}
-                    <div className="hidden md:block z-10">
+                    <div className="hidden lg:block z-10">
                         <Link
                             href="/contact/"
                             className="bg-transparent hover:bg-white text-white hover:text-primary 
@@ -238,7 +237,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Mobile Hamburger */}
-                    <div className="md:hidden z-10 text-white mt-[0.2rem]">
+                    <div className="lg:hidden z-10 text-white mt-[0.2rem]">
                         <button onClick={() => setOpen(true)}>
                             <FiMenu size={26} />
                         </button>
