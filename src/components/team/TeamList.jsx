@@ -6,9 +6,9 @@ import { headingVariant } from "@/utils/animations";
 import { teamData } from "@/data/teamData";
 
 const tabHeads = [
-    { id: 1, name: "Management Committee" },
+    { id: 1, name: "Chairman" },
     { id: 2, name: "Board of Directors" },
-    { id: 3, name: "Chairman Emeritus" },
+    { id: 3, name: "Management Committee" },
 ]
 
 const TeamGrid = ({ members }) => (
