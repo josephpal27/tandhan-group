@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import { careersData } from "@/data/careersData";
+import CareerDetailsBanner from "@/components/careers/CareerDetailsBanner";
+import CareerDetailsContent from "@/components/careers/CareerDetailsContent";
 
 export async function generateStaticParams() {
     return careersData.map((post) => ({ slug: post.slug }));
@@ -19,7 +21,8 @@ export default async function CareerDetails({ params }) {
 
     return (
         <>
-
+            <CareerDetailsBanner />
+            <CareerDetailsContent post={post} />
         </>
     );
 }
