@@ -10,7 +10,7 @@ export default function Careers() {
   return (
     <>
       <HeroBanner
-        image="/images/banners/presence-banner.avif"
+        image="/images/banners/careers-banner.avif"
         title="Careers"
         desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus reiciendis veniam deserunt."
       />

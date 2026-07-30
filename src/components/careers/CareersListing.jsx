@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { motion } from "framer-motion";
+import { headingVariant } from "@/utils/animations";
 import CareersFilters from "./CareersFilters";
 import CareersPosts from "./CareersPosts";
 import { careersData } from "@/data/careersData";
@@ -45,7 +47,14 @@ const CareersListing = () => {
 
             {/* Head */}
             <div>
-                <h2>Bring Your Career Here</h2>
+                <motion.h2
+                    variants={headingVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
+                    Bring Your Career Here
+                </motion.h2>
                 <p className="mt-[0.8rem] lg:mt-[1.2rem] w-full lg:w-[55%]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minus recusandae itaque labore, asperiores reiciendis exercitationem nemo. Porro, voluptatem iusto.
                 </p>
@@ -53,9 +62,10 @@ const CareersListing = () => {
 
             {/* Listings */}
             <div className="
-                mt-[2rem] lg:mt-[3.5rem] flex justify-between flex-wrap 
-                gap-y-[2rem]
-                pb-[5rem]
+                mt-[2rem] sm:mt-[3rem] lg:mt-[2.9rem] xl:mt-[3.2rem] 2xl:mt-[3.5rem]
+                flex justify-between flex-wrap 
+                gap-y-[1.5rem]
+                pb-[2.5rem] sm:pb-[3rem] lg:pb-[4rem] xl:pb-[4.5rem] 2xl:pb-[5rem]
             ">
 
                 {/* Left */}

@@ -28,7 +28,7 @@ export const careersData = [
     },
     {
         id: 4,
-        title: "QA Engineer - Protective Gear",
+        title: "QA Engineer - Protective Sol",
         sector: "Protective Solutions",
         location: "Kolkata, West Bengal, India",
         type: "Full Time",
