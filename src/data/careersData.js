@@ -6,7 +6,8 @@ export const careersData = [
         sector: "Energy Solutions",
         location: "Kolkata, West Bengal, India",
         type: "Full Time",
-        date: "2026-07-09",
+        experience: "10 years",
+        date: "30-07-2026",
         description: "Lorem ipsum dolor sit amet adipisicing control consectetur adipisicing control elit tempora quia.",
     },
     {
@@ -16,7 +17,8 @@ export const careersData = [
         sector: "Textiles",
         location: "Howrah, West Bengal, India",
         type: "Full Time",
-        date: "2026-07-05",
+        experience: "5 years",
+        date: "30-07-2026",
         description: "Lorem ipsum dolor sit amet adipisicing control consectetur adipisicing control elit tempora quia.",
     },
     {
@@ -26,7 +28,8 @@ export const careersData = [
         sector: "Hospitality",
         location: "Digha, West Bengal, India",
         type: "Full Time",
-        date: "2026-07-12",
+        experience: "7 years",
+        date: "30-07-2026",
         description: "Lorem ipsum dolor sit amet adipisicing control consectetur adipisicing control elit tempora quia.",
     },
     {
@@ -36,7 +39,8 @@ export const careersData = [
         sector: "Protective Solutions",
         location: "Kolkata, West Bengal, India",
         type: "Full Time",
-        date: "2026-06-28",
+        experience: "10 years",
+        date: "30-07-2026",
         description: "Lorem ipsum dolor sit amet adipisicing control consectetur adipisicing control elit tempora quia.",
     },
     {
@@ -46,7 +50,8 @@ export const careersData = [
         sector: "Energy Solutions",
         location: "Bidhannagar, West Bengal, India",
         type: "Full Time",
-        date: "2026-07-15",
+        experience: "5 years",
+        date: "30-07-2026",
         description: "Lorem ipsum dolor sit amet adipisicing control consectetur adipisicing control elit tempora quia.",
     },
     {
@@ -56,7 +61,8 @@ export const careersData = [
         sector: "Textiles",
         location: "Kolkata, West Bengal, India",
         type: "Internship",
-        date: "2026-07-01",
+        experience: "5 years",
+        date: "30-07-2026",
         description: "Lorem ipsum dolor sit amet adipisicing control consectetur adipisicing control elit tempora quia.",
     },
     {
@@ -66,7 +72,8 @@ export const careersData = [
         sector: "Hospitality",
         location: "Puri, Odisha, India",
         type: "Full Time",
-        date: "2026-06-20",
+        experience: "10 years",
+        date: "30-07-2026",
         description: "Lorem ipsum dolor sit amet adipisicing control consectetur adipisicing control elit tempora quia.",
     },
     {
@@ -76,7 +83,8 @@ export const careersData = [
         sector: "Protective Solutions",
         location: "Kolkata, West Bengal, India",
         type: "Full Time",
-        date: "2026-06-25",
+        experience: "2 years",
+        date: "30-07-2026",
         description: "Lorem ipsum dolor sit amet adipisicing control consectetur adipisicing control elit tempora quia.",
     },
 ];
