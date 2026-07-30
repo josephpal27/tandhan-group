@@ -1,52 +1,47 @@
-const CareersPosts = ({
-    posts,
-    titleQuery,
-    locationQuery,
-    onTitleChange,
-    onLocationChange,
-}) => {
+const CareersPosts = ({ posts, titleQuery, locationQuery, onTitleChange, onLocationChange }) => {
     return (
         <div>
-            {/* Search bar */}
-            <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr_auto] gap-[0.8rem]">
+
+            {/* Search Bar */}
+            <div className="flex justify-between flex-wrap">
                 <input
                     type="text"
-                    placeholder="Job title or skill"
+                    placeholder="Job Title"
                     value={titleQuery}
                     onChange={(e) => onTitleChange(e.target.value)}
-                    className="border border-black/15 rounded-md px-[1rem] py-[0.7rem] text-sm outline-none"
+                    className="border border-primary/50 focus:border-primary rounded-md px-[1rem] py-[0.7rem] outline-none w-full lg:w-[49%] shadow-[0.5px_0.5px_5px_rgba(0,0,0,0.1)] focus:shadow-[0.7px_0.7px_5px_rgba(0,0,0,0.25)]"
                 />
                 <input
                     type="text"
-                    placeholder="City, State/Province or Country"
+                    placeholder="City, State or Country"
                     value={locationQuery}
                     onChange={(e) => onLocationChange(e.target.value)}
-                    className="border border-black/15 rounded-md px-[1rem] py-[0.7rem] text-sm outline-none"
+                    className="border border-primary/50 focus:border-primary rounded-md px-[1rem] py-[0.7rem] outline-none w-full lg:w-[49%] shadow-[0.5px_0.5px_5px_rgba(0,0,0,0.1)] focus:shadow-[0.7px_0.7px_5px_rgba(0,0,0,0.25)]"
                 />
             </div>
 
             {/* Posts */}
-            <div className="mt-[1.5rem] divide-y divide-black/10 border-t border-black/10">
+            <div className="mt-[1.5rem] divide-y divide-primary/20 border-t border-primary/10">
                 {posts.length === 0 ? (
-                    <p className="py-[2rem] text-sm text-black/60">
+                    <p className="py-[2rem] text-black/60">
                         No openings match your search right now.
                     </p>
                 ) : (
                     posts.map((post) => (
-                        <div key={post.id} className="py-[1.5rem]">
+                        <div key={post.id} className="py-[1.5rem] px-[1rem] cursor-pointer bg-white hover:bg-gray-50 transition">
                             <div className="flex items-start justify-between gap-[1rem]">
-                                <h3 className="text-lg font-medium hover:underline cursor-pointer">
+                                <span className="text-[1.3rem] font-medium hover:underline">
                                     {post.title}
-                                </h3>
+                                </span>
                                 <div className="text-right shrink-0">
-                                    <span className="text-sm font-medium">{post.type}</span>
-                                    <p className="text-xs text-black/50">{post.date}</p>
+                                    <span className="text-[1rem] font-medium">{post.type}</span>
+                                    <p className="text-[0.9rem] text-primary/50">{post.date}</p>
                                 </div>
                             </div>
-                            <p className="text-sm text-black/60 mt-[0.2rem]">
+                            <p className="text-[1rem] text-black/60">
                                 {post.location}
                             </p>
-                            <p className="mt-[0.6rem] text-sm text-black/70 line-clamp-2">
+                            <p className="mt-[0.5rem] text-[1rem] text-black/70 line-clamp-2">
                                 {post.description}
                             </p>
                         </div>
