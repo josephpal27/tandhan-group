@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const CareersPosts = ({ posts, titleQuery, locationQuery, onTitleChange, onLocationChange }) => {
     return (
         <div>
@@ -38,8 +40,8 @@ const CareersPosts = ({ posts, titleQuery, locationQuery, onTitleChange, onLocat
                     </p>
                 ) : (
                     posts.map((post) => (
-                        <div key={post.id} className="
-                            py-[1.2rem] sm:py-[1.3rem] lg:py-[1.3rem] xl:py-[1.4rem] 2xl:py-[1.5rem]
+                        <Link href={`/careers/${post.slug}`} key={post.id} className="
+                            block py-[1.2rem] sm:py-[1.3rem] lg:py-[1.3rem] xl:py-[1.4rem] 2xl:py-[1.5rem]
                             px-[0] lg:px-[0.8rem] xl:px-[0.9rem] 2xl:px-[1rem]
                             cursor-pointer bg-white lg:hover:bg-[#f6f6f6] transition group
                         ">
@@ -58,7 +60,7 @@ const CareersPosts = ({ posts, titleQuery, locationQuery, onTitleChange, onLocat
                             <p className="mt-[0.3rem] lg:mt-[0.5rem] text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-black/70 line-clamp-2">
                                 {post.description}
                             </p>
-                        </div>
+                        </Link>
                     ))
                 )}
             </div>

@@ -1,6 +1,7 @@
 export const careersData = [
     {
         id: 1,
+        slug: "business-development-manager",
         title: "Business Development Manager",
         sector: "Energy Solutions",
         location: "Kolkata, West Bengal, India",
@@ -10,6 +11,7 @@ export const careersData = [
     },
     {
         id: 2,
+        slug: "production-supervisor",
         title: "Production Supervisor",
         sector: "Textiles",
         location: "Howrah, West Bengal, India",
@@ -19,6 +21,7 @@ export const careersData = [
     },
     {
         id: 3,
+        slug: "guest-relations-executive",
         title: "Guest Relations Executive",
         sector: "Hospitality",
         location: "Digha, West Bengal, India",
@@ -28,6 +31,7 @@ export const careersData = [
     },
     {
         id: 4,
+        slug: "qa-engineer-protective-solutions",
         title: "QA Engineer - Protective Sol",
         sector: "Protective Solutions",
         location: "Kolkata, West Bengal, India",
@@ -37,6 +41,7 @@ export const careersData = [
     },
     {
         id: 5,
+        slug: "sales-executive-energy",
         title: "Sales Executive - Energy",
         sector: "Energy Solutions",
         location: "Bidhannagar, West Bengal, India",
@@ -47,6 +52,7 @@ export const careersData = [
     {
         id: 6,
         title: "Textile Design Intern",
+        slug: "textile-design-intern",
         sector: "Textiles",
         location: "Kolkata, West Bengal, India",
         type: "Internship",
@@ -55,6 +61,7 @@ export const careersData = [
     },
     {
         id: 7,
+        slug: "front-office-manager",
         title: "Front Office Manager",
         sector: "Hospitality",
         location: "Puri, Odisha, India",
@@ -64,6 +71,7 @@ export const careersData = [
     },
     {
         id: 8,
+        slug: "safety-compliance-officer",
         title: "Safety Compliance Officer",
         sector: "Protective Solutions",
         location: "Kolkata, West Bengal, India",
