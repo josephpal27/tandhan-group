@@ -1,9 +1,13 @@
 
 const CareersFilters = ({ sectors, activeSectors, onSectorToggle }) => {
     return (
-        <aside className="border border-primary/20 rounded-md p-[1rem] lg:p-[1.5rem] shadow-[1px_1px_5px_rgba(0,0,0,0.15)]">
+        <aside className="
+            border border-primary/20 rounded-md 
+            p-[1rem] sm:p-[1.1rem] lg:p-[1.15rem] xl:p-[1.35rem] 2xl:p-[1.5rem] 
+            shadow-[1px_1px_5px_rgba(0,0,0,0.15)]
+        ">
 
-            <span className="text-[1.6rem] font-semibold text-gray-500">
+            <span className="text-[1.4rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.45rem] 2xl:text-[1.6rem] font-semibold text-gray-500">
                 Sectors
             </span>
 
