@@ -64,7 +64,7 @@ export const careersData = [
     },
     {
         id: 8,
-        title: "Safety Compliance Officer ",
+        title: "Safety Compliance Officer",
         sector: "Protective Solutions",
         location: "Kolkata, West Bengal, India",
         type: "Full Time",
