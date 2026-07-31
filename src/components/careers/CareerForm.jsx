@@ -37,7 +37,7 @@ const CareerForm = () => {
 
     if (status === "success") {
         return (
-            <div className="bg-neutral-50 border border-primary/15 rounded-xl p-[2rem] lg:p-[2.5rem] text-center">
+            <div className="bg-neutral-50 border border-primary/15 rounded-md lg:rounded-xl p-[2rem] lg:p-[2.5rem] text-center">
                 <p className="text-[1.1rem] font-medium">Application received successfully.</p>
                 <p className="mt-[0.4rem] text-black/60 text-sm">
                     Thanks for applying - our team will reach out if there's a fit.
@@ -49,7 +49,7 @@ const CareerForm = () => {
     return (
         <form
             onSubmit={handleSubmit}
-            className="bg-neutral-50 border border-primary/30 rounded-xl shadow-lg p-[1rem] sm:p-[1.5rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]"
+            className="bg-neutral-50 border border-primary/30 rounded-md lg:rounded-xl shadow-lg p-[1.1rem] sm:p-[1.2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]"
         >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[1.5rem] gap-y-[1.2rem]">
                 {fields.map((field) => (
@@ -67,7 +67,7 @@ const CareerForm = () => {
                             required
                             className="
                                 mt-[0.5rem] w-full rounded-md border border-primary/30 bg-white
-                                px-[1rem] py-[0.8rem] sm:py-[0.9rem] lg:py-[0.7rem] xl:py-[0.8rem] 2xl:py-[0.9rem] outline-none
+                                px-[0.7rem] lg:px-[1rem] py-[0.7rem] sm:py-[0.8rem] lg:py-[0.7rem] xl:py-[0.8rem] 2xl:py-[0.9rem] outline-none
                                 focus:border-primary focus:shadow-[0.7px_0.7px_5px_rgba(0,0,0,0.1)] transition-colors
                             "
                         />
@@ -87,14 +87,14 @@ const CareerForm = () => {
                         onClick={() => fileInputRef.current?.click()}
                         className="
                             shrink-0 bg-neutral-100 hover:bg-neutral-200 transition-colors 
-                            px-[1rem] 
+                            px-[0.7rem] lg:px-[1rem] 
                             py-[0.7rem] sm:py-[0.9rem] lg:py-[0.7rem] xl:py-[0.8rem] 2xl:py-[0.9rem]
                             font-medium border-r border-primary/30
                         "
                     >
                         Choose File
                     </button>
-                    <span className="px-[1rem] text-primary/50 truncate">
+                    <span className="px-[0.7rem] lg:px-[1rem] text-primary/50 truncate">
                         {fileName || "No file chosen"}
                     </span>
                 </div>
@@ -115,9 +115,9 @@ const CareerForm = () => {
                 type="submit"
                 disabled={status === "submitting"}
                 className="
-                    mt-[1.8rem] bg-primary hover:bg-primary/90 disabled:opacity-60
+                    mt-[1.6rem] lg:mt-[1.8rem] bg-primary hover:bg-primary/90 disabled:opacity-60
                     text-white uppercase tracking-wide
-                    px-[2.2rem] py-[0.8rem] sm:py-[0.9rem] lg:py-[0.7rem] xl:py-[0.75rem] 2xl:py-[0.8rem] rounded-md transition-colors
+                    px-[1.8rem] lg:px-[2.2rem] py-[0.7rem] sm:py-[0.8rem] lg:py-[0.7rem] xl:py-[0.75rem] 2xl:py-[0.8rem] rounded-md transition-colors
                 "
             >
                 {status === "submitting" ? "Submitting..." : "Submit"}
