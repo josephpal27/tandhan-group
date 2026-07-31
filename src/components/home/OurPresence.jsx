@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { globalPresenceData } from "@/data/globalPresenceData";
 import { useState, useRef } from "react";
@@ -7,13 +7,14 @@ import { SlLocationPin } from "react-icons/sl";
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
 import Globe from "./Globe";
+import { useGlobalPresence } from "@/contexts/GlobalPresenceContext";
 
 const OurPresence = () => {
 
     const pathname = usePathname();
     const isGlobalPresencePage = pathname === "/global-presence/";
 
-    const [activeIndex, setActiveIndex] = useState(0);
+    const { activeIndex, setActiveIndex } = useGlobalPresence();
     const [isDragging, setIsDragging] = useState(false);
     const controlsRef = useRef(null);
     const dragClosestIndexRef = useRef(-1);

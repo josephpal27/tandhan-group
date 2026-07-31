@@ -1,10 +1,10 @@
 import BannerSlider from "@/components/global-presence/BannerSlider";
-import Offices from "@/components/global-presence/Offices";
-// import CountryBrands from "@/components/global-presence/CountryBrands";
+import Flags from "@/components/global-presence/Flags";
 import PresenceCTA from "@/components/global-presence/PresenceCTA";
 import PresenceOverview from "@/components/global-presence/PresenceOverview";
 import HeroBanner from "@/components/HeroBanner";
 import OurPresence from "@/components/home/OurPresence";
+import { GlobalPresenceProvider } from "@/contexts/GlobalPresenceContext";
 
 export const metadata = {
   title: "Global Presence - Tandhan Group",
@@ -14,7 +14,6 @@ export const metadata = {
 export default function GlobalPresence() {
   return (
     <>
-
       <div className="relative">
         <HeroBanner
           image="/images/banners/presence-banner.avif"
@@ -25,9 +24,10 @@ export default function GlobalPresence() {
       </div>
 
       <PresenceOverview />
-      {/* <CountryBrands /> */}
-      <Offices />
-      <OurPresence />
+      <GlobalPresenceProvider>
+        <Flags />
+        <OurPresence />
+      </GlobalPresenceProvider>
       <PresenceCTA />
     </>
   );
