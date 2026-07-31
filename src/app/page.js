@@ -8,6 +8,7 @@ import Sustainable from "@/components/home/Sustainable";
 import Values from "@/components/home/Values";
 import ValuesRow from "@/components/home/ValuesRow";
 import WhoWeAre from "@/components/home/WhoWeAre";
+import { GlobalPresenceProvider } from "@/contexts/GlobalPresenceContext";
 
 export const metadata = {
   title: "Tandhan Group",
@@ -31,7 +32,9 @@ export default function Home() {
       <OurServices />
       <Sustainable />
       <LatestNews />
-      <OurPresence />
+      <GlobalPresenceProvider>
+        <OurPresence />
+      </GlobalPresenceProvider>
     </>
   );
 }

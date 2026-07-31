@@ -50,9 +50,10 @@ section {
     @apply w-[25px] lg:w-[18px] xl:w-[22px] 2xl:w-[25px] opacity-[1] rounded-[7px] transition-all duration-300;
 }
 
-/* Home Page Swiper */
+/* Swiper Navigation */
 #home-features-swiper .swiper-pagination-bullet,
-#values-swiper .swiper-pagination-bullet {
+#values-swiper .swiper-pagination-bullet,
+#flags-swiper .swiper-pagination-bullet {
     background: #000;
     opacity: 0.5;
     width: 10px;
@@ -60,11 +61,20 @@ section {
 }
 
 #home-features-swiper .swiper-pagination-bullet-active,
-#values-swiper .swiper-pagination-bullet-active {
+#values-swiper .swiper-pagination-bullet-active,
+#flags-swiper .swiper-pagination-bullet-active {
     opacity: 1;
     width: 25px;
     border-radius: 7px;
     transition: width 0.3s ease;
+}
+
+#flags-swiper .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+}
+#flags-swiper .swiper-pagination-bullet-active {
+    width: 20px;
 }
 
 /* Sectors Page Gallery */
