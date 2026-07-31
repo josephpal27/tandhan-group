@@ -1,5 +1,6 @@
 import BannerSlider from "@/components/global-presence/BannerSlider";
-import CountryBrands from "@/components/global-presence/CountryBrands";
+import Offices from "@/components/global-presence/Offices";
+// import CountryBrands from "@/components/global-presence/CountryBrands";
 import PresenceCTA from "@/components/global-presence/PresenceCTA";
 import PresenceOverview from "@/components/global-presence/PresenceOverview";
 import HeroBanner from "@/components/HeroBanner";
@@ -24,7 +25,8 @@ export default function GlobalPresence() {
       </div>
 
       <PresenceOverview />
-      <CountryBrands />
+      {/* <CountryBrands /> */}
+      <Offices />
       <OurPresence />
       <PresenceCTA />
     </>
