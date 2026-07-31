@@ -26,6 +26,11 @@ const PolyplastSectorOverview = () => {
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] w-[80%] overflow-hidden transition-all duration-300
+                `}>
+                    From tarpaulins and geomembranes to advanced agri-solutions, our portfolio is engineered to withstand the most demanding environments.
+                </p>
+                {/* <p className={`
+                    mt-[0.7rem] lg:mt-[1rem] w-[80%] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
                     From tarpaulins and geomembranes to advanced agri-solutions, our portfolio is engineered to withstand the most demanding environments.
@@ -36,7 +41,7 @@ const PolyplastSectorOverview = () => {
                     py-[0.45rem] px-[1.4rem]
                 " onClick={() => setActive(!active)}>
                     {active ? "Read Less" : "Read More"}
-                </button>
+                </button> */}
             </div>
 
             {/* Center */}

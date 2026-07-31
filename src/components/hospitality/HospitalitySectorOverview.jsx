@@ -26,6 +26,11 @@ const HospitalitySectorOverview = () => {
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] w-[90%] overflow-hidden transition-all duration-300
+                `}>
+                    From refined stays and memorable dining to versatile event venues, we are committed to delivering warm, seamless, and personalised experiences that reflect the trust and quality synonymous with the Tandhan Group.
+                </p>
+                {/* <p className={`
+                    mt-[0.7rem] lg:mt-[1rem] w-[90%] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
                     From refined stays and memorable dining to versatile event venues, we are committed to delivering warm, seamless, and personalised experiences that reflect the trust and quality synonymous with the Tandhan Group.
@@ -36,7 +41,7 @@ const HospitalitySectorOverview = () => {
                     py-[0.45rem] px-[1.4rem]
                 " onClick={() => setActive(!active)}>
                     {active ? "Read Less" : "Read More"}
-                </button>
+                </button> */}
             </div>
 
             {/* Right */}

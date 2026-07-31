@@ -30,6 +30,11 @@ const PolyplastBrandOverview = () => {
                     </p>
                     <p className={`
                         mt-[0.7rem] lg:mt-[1rem] overflow-hidden transition-all duration-300
+                    `}>
+                        Backed by advanced manufacturing facilities, stringent quality standards, and a growing export footprint, the company produces durable, application-specific solutions that meet the evolving needs of agriculture, infrastructure, and industry.
+                    </p>
+                    {/* <p className={`
+                        mt-[0.7rem] lg:mt-[1rem] overflow-hidden transition-all duration-300
                         ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                     `}>
                         Backed by advanced manufacturing facilities, stringent quality standards, and a growing export footprint, the company produces durable, application-specific solutions that meet the evolving needs of agriculture, infrastructure, and industry.
@@ -40,7 +45,7 @@ const PolyplastBrandOverview = () => {
                         py-[0.45rem] px-[1.4rem] w-max
                     " onClick={() => setActive(!active)}>
                         {active ? "Read Less" : "Read More"}
-                    </button>
+                    </button> */}
                 </div>
                 <div className="w-full lg:w-[54%] relative mt-[2.5rem] lg:mt-0 pb-[1rem] lg:pb-0">
                     <img src="/images/sectors/protective-solutions/overview.avif" alt="Brand Overview" loading="lazy" className="w-full" />
