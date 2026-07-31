@@ -26,10 +26,7 @@ const PresenceOverview = () => {
                     Global Presence <br /> Overview
                 </motion.h2>
                 <p className="mt-[1rem] lg:mt-[1.5rem]">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, nesciunt enim. Enim porro totam aliquid reprehenderit repudiandae asperiores animi maxime nobis labore et consequatur, consequuntur facere doloribus accusamus veritatis voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quaerat.
-                </p>
-                <p className="mt-[0.7rem] lg:mt-[1rem]">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, nesciunt enim. Enim asperiores porro totam aliquid reprehenderit repudiandae asperiores animi maxime nobis adipisicing labore et consequatur.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, nesciunt enim. Enim porro totam aliquid reprehenderit repudiandae asperiores animi maxime nobis labore et consequatur, consequuntur facere doloribus accusamus veritatis voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
             </div>
 
