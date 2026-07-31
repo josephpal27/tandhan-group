@@ -26,6 +26,11 @@ const TextilesSectorOverview = () => {
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] w-[90%] overflow-hidden transition-all duration-300
+                `}>
+                    With a strong textile ecosystem and manufacturing expertise, India continues to strengthen its position as a preferred sourcing destination for the global fashion and apparel industry.
+                </p>
+                {/* <p className={`
+                    mt-[0.7rem] lg:mt-[1rem] w-[90%] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
                     With a strong textile ecosystem and manufacturing expertise, India continues to strengthen its position as a preferred sourcing destination for the global fashion and apparel industry.
@@ -36,7 +41,7 @@ const TextilesSectorOverview = () => {
                     py-[0.45rem] px-[1.4rem]
                 " onClick={() => setActive(!active)}>
                     {active ? "Read Less" : "Read More"}
-                </button>
+                </button> */}
 
                 {/* Artboard */}
                 <img src="/images/artboard.avif" alt="Artboard" loading="lazy" className="

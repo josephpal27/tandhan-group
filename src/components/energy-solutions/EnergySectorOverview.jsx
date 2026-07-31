@@ -46,6 +46,11 @@ const EnergySectorOverview = () => {
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] overflow-hidden transition-all duration-300
+                `}>
+                    From conventional power backup to next-generation solar and battery technologies, we combine engineering expertise with dependable execution to build resilient energy infrastructure that powers progress across emerging markets.
+                </p>
+                {/* <p className={`
+                    mt-[0.7rem] lg:mt-[1rem] overflow-hidden transition-all duration-300
                     ${active ? "max-h-40 opacity-100 mb-[1rem]" : "max-h-0 opacity-0"}
                 `}>
                     From conventional power backup to next-generation solar and battery technologies, we combine engineering expertise with dependable execution to build resilient energy infrastructure that powers progress across emerging markets.
@@ -56,7 +61,7 @@ const EnergySectorOverview = () => {
                     py-[0.45rem] px-[1.4rem]
                 " onClick={() => setActive(!active)}>
                     {active ? "Read Less" : "Read More"}
-                </button>
+                </button> */}
 
                 {/* Artboard */}
                 <img
