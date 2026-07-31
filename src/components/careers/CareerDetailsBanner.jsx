@@ -6,7 +6,7 @@ import { headingVariant } from "@/utils/animations";
 const CareerDetailsBanner = () => {
     return (
         <section className="
-            h-[65vh] bg-primary text-white flex flex-col justify-end pb-[3rem]
+            h-[50dvh] lg:h-[65vh] bg-primary text-white flex flex-col justify-end pb-[3rem]
         ">
             <motion.h1
                 variants={headingVariant}
