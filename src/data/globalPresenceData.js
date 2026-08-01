@@ -17,8 +17,8 @@ export const globalPresenceData = [
                 address: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png",],
-        url: ["https://www.tandhanpolyplast.com/", "https://www.tandhandenim.com/"],
+        logo: [],
+        url: [],
     },
     {
         id: 2,
@@ -34,7 +34,7 @@ export const globalPresenceData = [
                 address: "SKS Tower, Level-4, Lift No-14, 7, VIP Road, Mohakhali, Dhaka-1206, Bangladesh"
             },
         ],
-        logo: ["/images/logo/tandhan-dpt.png",],
+        logo: ["/images/logo/dpt.avif",],
         url: ["https://www.dhakapowertraders.com/"],
     },
     {
@@ -47,11 +47,11 @@ export const globalPresenceData = [
         lng: 95.956,
         brands: [
             {
-                brand: "San Taing Kyaw Company Ltd.",
-                address: "Room No. 703, 7th Floor, Central Tower, Anawrahtar Road, Bet: 39th & 40th, Yangon, Myanmar (Burma)"
+                brand: "Shin Thit Kyaw Company Ltd.",
+                address: "Room (5/B), Yadanar River View Condo, Block 67-C, Aung Dama Yeik Thar Road, Dagon Seikkan Township, Yangon, Myanmar"
             },
         ],
-        logo: ["/images/logo/tandhan-stk.png"],
+        logo: ["/images/logo/stk.avif"],
         url: ["https://stkmm.com/"],
     },
     {
@@ -68,7 +68,7 @@ export const globalPresenceData = [
                 address: "Abdul Al Rahim Mohammad Yousuf Buliding Shop No- 1, Near Naif Park, Satellite Market, Beside Homa Star Hotel, Naif, Deira, PO Box-377064, Dubai, UAE"
             },
         ],
-        logo: ["/images/logo/tandhan-pgt.png",],
+        logo: ["/images/logo/pgt.avif",],
         url: ["https://pglobalgt.com/"],
     },
     {
@@ -81,11 +81,11 @@ export const globalPresenceData = [
         lng: 22.9375,
         brands: [
             {
-                brand: "Rainbow Power Solutions",
-                address: "Unit F03, Longlake Edge Logistics Park, 25 Daventry Lane, Johannesburg Modderfontein, Sandton-1645, South Africa"
+                brand: "Rainbow Power Solutions Pvt. Ltd.",
+                address: "Unit F03, Longlake Edge Logistics Park, 25 Daventry Ln, Johannesburg Modderfontein, Sandton - 1645 Johannesburg,South Africa"
             },
         ],
-        logo: ["/images/logo/tandhan-rps.png"],
+        logo: ["/images/logo/rps.avif"],
         url: ["https://rainbowpower.co.za/"],
     },
     {
@@ -102,7 +102,7 @@ export const globalPresenceData = [
                 address: "209/8970, Road C. Off Enterprise Road, Industrial Area, Nairobi, Kenya"
             },
         ],
-        logo: ["/images/logo/tandhan-sss.png"],
+        logo: ["/images/logo/sss.avif"],
         url: ["https://www.simplifiedsolar.ke/"],
     },
     {
@@ -115,11 +115,11 @@ export const globalPresenceData = [
         lng: 30.2176,
         brands: [
             {
-                brand: "Global Power Traders",
+                brand: "Global Power Traders Co. Ltd.",
                 address: "Omdurman-Waha district Square 3 - building 51, Portsudan - Koria District Square 3 - Building 320"
             },
         ],
-        logo: ["/images/logo/tandhan-gpt.png"],
+        logo: ["/images/logo/gpt.avif"],
         url: ["https://globalpowertraders.com/"],
     },
     {
@@ -133,10 +133,10 @@ export const globalPresenceData = [
         brands: [
             {
                 brand: "Sustainable Global Power Tech Ltd.",
-                address: "6, Abimbola Street, Isolo Industrial Estate, Lagos State, Nigeria"
+                address: "6 Abimbola Street, Iyana Isolo, Lagos, Postal Code - 100268, Lagos, Nigeria"
             },
         ],
-        logo: ["/images/logo/tandhan-sgpt.png",],
+        logo: ["/images/logo/sgpt.avif",],
         url: ["https://sgp.ng/"],
     },
     {
@@ -150,10 +150,10 @@ export const globalPresenceData = [
         brands: [
             {
                 brand: "Ρaktika Ahmadi Trading Co. Ltd.",
-                address: "Shop no. 7 Hamidullah Business Centre Kota Sangi, Kabul, Afghanistan"
+                address: "Kabul Logar Road, Qalacha - Opposite to Alo Baba Trading Market, Kabul, Afghanistan"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/pat.avif"],
         url: [""],
     },
     {
@@ -166,11 +166,11 @@ export const globalPresenceData = [
         lng: 27.8493,
         brands: [
             {
-                brand: "Rainbow Power Solutions",
-                address: "Clearwater Office Park, Block L, 2nd floor, Atlas Road, Kempton Park, 1459"
+                brand: "Unisolar Industries Ltd.",
+                address: "Plot No. 34483, Villa 2, Parliament Lane/ Olympia, Lusaka, Zambia"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/usil.jpeg"],
         url: [""],
     },
     {
@@ -187,7 +187,7 @@ export const globalPresenceData = [
                 address: "Clearwater Office Park, Block L, 2nd floor, Atias Road, Kempton Park, 1459"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/rps.avif"],
         url: [""],
     },
     {
@@ -204,7 +204,7 @@ export const globalPresenceData = [
                 address: "Abdul Al Rahim Mohammad Yousuf Buliding Shop No-1, Near Naif Park, Satellite Market, Beside Homa Star Hotel, Naif, Deira, PO Box-377064, Dubai, UAE"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png",],
+        logo: ["/images/logo/pgt.avif",],
         url: [""],
     },
     {
@@ -221,7 +221,7 @@ export const globalPresenceData = [
                 address: "Abdul Al Rahim Mohammad Yousuf Buliding Shop No-1, Near Naif Park, Satellite Market, Beside Homa Star Hotel, Naif, Deira, PO Box-377064, Dubai, UAE"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-denim.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/pgt.avif"],
         url: [""],
     },
     {
@@ -234,11 +234,11 @@ export const globalPresenceData = [
         lng: -5.5471,
         brands: [
             {
-                brand: "Tandhan Sustainable Agro",
+                brand: "Sustainable Agro Ltd.",
                 address: "SUSTAINABLE AGRO Vridi Cite' Port, Abidjan, Co'te d' Ivoire 01 BP 12171, ABIDJAN 01"
             },
         ],
-        logo: ["/images/logo/tandhan-polyplast.png", "/images/logo/tandhan-power.png"],
+        logo: ["/images/logo/sal.jpg"],
         url: [""],
     },
     // {
