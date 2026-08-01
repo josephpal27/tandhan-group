@@ -107,6 +107,24 @@ const OurPresence = () => {
                                             </p>
                                         </div>
                                     </div>
+                                    {activeLocation.logo.length > 0 && (
+                                        <div className="mt-[1.7rem]">
+                                            <img 
+                                                src={activeLocation.logo[index] || activeLocation.logo[0]}
+                                                alt={item.brand}
+                                                loading="lazy" 
+                                                className="w-[35%]" 
+                                            />
+                                            <a 
+                                                href={activeLocation.url[index] || activeLocation.url[0] || "/"} 
+                                                target="_blank"
+                                                className="
+                                                    block w-max text-[1rem] mt-[0.7rem] underline underline-offset-[4px] font-medium
+                                                ">
+                                                Visit Site
+                                            </a>
+                                        </div>
+                                    )}
                                 </div>
                             ))
                         ) : (
