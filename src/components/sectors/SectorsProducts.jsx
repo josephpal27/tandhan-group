@@ -63,11 +63,12 @@ const SectorsProducts = ({ products }) => {
                         return (
                             <SwiperSlide key={index} className="relative group">
                                 <img src={product.image} alt={product.title} loading="lazy" className="
-                                    w-full lg:w-[70%] lg:group-hover:scale-[1.05] transition duration-500
+                                    w-full lg:w-[85%] lg:group-hover:scale-[1.05] transition duration-500
+                                    pb-0 lg:pb-[5rem] xl:pb-[5.5rem] 2xl:pb-[6rem]
                                 " />
                                 <div className="
-                                    relative lg:absolute top-0 lg:top-1/2 lg:-translate-y-1/2
-                                    left-0 w-full lg:w-[65%] ml-0 lg:ml-[35%] lg:pr-[5px]
+                                    relative lg:absolute bottom-[0.5rem]
+                                    left-0 w-full lg:w-[95%] ml-0 lg:ml-[5%] lg:pr-[5px]
                                     flex justify-end
                                     origin-right
                                     scale-x-100
@@ -78,7 +79,7 @@ const SectorsProducts = ({ products }) => {
                                     ease-in-out
                                 ">
                                     <div className="
-                                        bg-white p-0 lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem] text-black 
+                                        bg-white p-0 lg:p-[1.3rem] xl:p-[1.5rem] 2xl:p-[1.7rem] text-black 
                                         min-h-[55%] lg:shadow-[1px_1px_10px_rgba(0,0,0,0.3)]
                                     ">
                                         <span className="
