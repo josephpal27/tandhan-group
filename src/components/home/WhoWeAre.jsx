@@ -80,13 +80,13 @@ const WhoWeAre = () => {
             {/* Right Content */}
             <div className="w-full lg:w-[47%]">
                 <motion.h2
-                    className="text-[1.8rem] sm:text-[2rem] lg:text-[2.3rem] xl:text-[2.4rem] 2xl:text-[2.5rem]"
+                    className="text-[1.8rem] sm:text-[2rem] lg:text-[2.5rem] xl:text-[2.7rem] 2xl:text-[2.8rem]"
                     variants={headingVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Diversified by Business. United by Purpose. Built on Instinct.
+                    Diversified by Business. <br/> United by Purpose.
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.5rem]">
                     For over three decades, Tandhan Group has grown by seeing opportunities where others saw uncertainty. What began as a trading enterprise has evolved into a diversified global group spanning industrial and agricultural protective solutions, textiles, power solutions, and hospitality.

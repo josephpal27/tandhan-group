@@ -78,10 +78,7 @@ const Footer = () => {
                             className="w-[140px] sm:w-[145px] lg:w-[150px] xl:w-[170px] 2xl:w-[190px]"
                         />
                         <p className="font-[500] mt-[1.2rem] lg:mt-[1.5rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit error enim assumenda pariatur, delectus consequatur eos! Id, sed corrupti.
-                        </p>
-                        <p className="font-[500] mt-[0.5rem] lg:mt-[1rem]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit error enim assumenda pariatur.
+                            Founded in Eastern India, Tandhan Group has grown into a multi-business enterprise with a presence across 25+ countries. Through strong manufacturing capabilities, strategic partnerships, and a commitment to quality, we continue to deliver impactful solutions and sustainable growth worldwide.
                         </p>
                     </div>
                 </div>
