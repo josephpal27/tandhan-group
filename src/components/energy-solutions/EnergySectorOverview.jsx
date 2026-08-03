@@ -10,28 +10,21 @@ const EnergySectorOverview = () => {
 
     return (
         <section className="
-            pb-[4rem] sm:pb-[4.5rem] lg:pb-[3.5rem] xl:pb-[4rem] 2xl:pb-[4.5rem]
             flex justify-between flex-wrap flex-col-reverse lg:flex-row overflow-hidden lg:overflow-visible
         ">
 
             {/* Image */}
-            <div className="w-full lg:w-[53%] relative h-max mt-[2rem] lg:mt-0">
-                <img
-                    src="/images/sectors/energy-solutions/solar-bg.avif"
-                    alt="Solar Background"
-                    loading="lazy"
-                    className="w-full relative z-50"
-                />
+            <div className="w-full lg:w-[53%] h-max mt-[2rem] lg:mt-0">
                 <img
                     src="/images/sectors/energy-solutions/solar.avif"
-                    alt="Solar Panel"
+                    alt="Solar Background"
                     loading="lazy"
-                    className="w-[97%] scale-[1.2] lg:w-full absolute bottom-[-1.5rem] lg:bottom-[-4rem] z-50 ml-[1.5%] lg:ml-0"
+                    className="w-full relative z-50 lg:ml-[-2.2rem]"
                 />
             </div>
 
             {/* Content */}
-            <div className="w-full lg:w-[40%] pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] relative">
+            <div className="w-full lg:w-[43%] pt-[2rem] sm:pt-[3rem] lg:pt-[4rem] xl:pt-[4.5rem] 2xl:pt-[5rem] relative">
                 <motion.h2
                     className="relative z-50"
                     variants={headingVariant}
