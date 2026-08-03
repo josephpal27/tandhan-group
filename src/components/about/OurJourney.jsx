@@ -109,7 +109,7 @@ const OurJourney = () => {
                                 momentumVelocityRatio: 1,
                                 sticky: false,
                             }}
-                            loop={activeContent.length > 2}
+                            loop={false}
                             breakpoints={{
                                 0: { slidesPerView: 1.2, spaceBetween: 13 },
                                 640: { slidesPerView: 2.2, spaceBetween: 15 },
