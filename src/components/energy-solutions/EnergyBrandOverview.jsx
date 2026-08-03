@@ -20,7 +20,7 @@ const EnergyBrandOverview = () => {
 
     return (
         <section className="
-            pt-[1rem] sm:pt-[1.5rem] lg:pt-[13rem] xl:pt-[13.5rem] 2xl:pt-[14rem]
+            pt-[2.5rem] sm:pt-[3rem] lg:pt-[13rem] xl:pt-[13.5rem] 2xl:pt-[14rem]
             flex justify-between flex-wrap relative
             mb-[2rem] sm:mb-[3rem] lg:mb-[4rem] xl:mb-[4.5rem] 2xl:mb-[5rem]
         ">
