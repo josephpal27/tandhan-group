@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
+import Link from "next/link";
 import "swiper/css";
 
 const InTheNews = ({ news }) => {
@@ -89,22 +90,30 @@ const InTheNews = ({ news }) => {
             {/* Right */}
             <div className="w-full lg:w-[35%] flex flex-col justify-end mt-[1rem] lg:mt-0">
                 <span className="
-                    text-[1.4rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem] font-semibold
+                    text-[1.4rem] sm:text-[1.5rem] lg:text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.6rem] font-semibold line-clamp-3
                 ">
                     {activeData.title}
                 </span>
-                <p className="mt-[0.3rem] lg:mt-[1.2rem]">
+                <p className="mt-[0.3rem] lg:mt-[1.2rem] line-clamp-2">
                     {activeData.description}
                 </p>
 
+                <Link href="/media" className="
+                    bg-white hover:bg-primary text-primary hover:text-white font-semibold transition
+                    border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
+                    py-[0.45rem] px-[1.4rem] w-max mt-[1.2rem] block
+                ">
+                    View All
+                </Link>
+
                 {/* Next Btn */}
                 <button className="
-                    mt-[0.5rem] sm:mt-[1rem] lg:mt-[3.5rem] xl:mt-[3.8rem] 2xl:mt-[4rem]
+                    mt-[0.5rem] sm:mt-[1rem] lg:mt-[4.5rem] xl:mt-[4.8rem] 2xl:mt-[5rem]
                     w-[45px] sm:w-[50px] lg:w-[40px] xl:w-[45px] 2xl:w-[50px]
                     h-[45px] sm:h-[50px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                     flex items-center justify-center bg-white hover:bg-primary text-primary hover:text-white transition 
                     text-[2.1rem] sm:text-[2.5rem] lg:text-[1.8rem] xl:text-[2rem] 2xl:text-[2.2rem]
-                    active:scale-[0.85] border-primary border-[2px] lg:border-[3px] border-r-[2px]
+                    active:scale-[0.85] border-primary border-[2px] sm:border-[2.5px] lg:border-[2px] xl:border-[2.5px] 2xl:border-[3px]
                     ml-auto lg:ml-0
                 " id="news-next" onClick={handleNext}>
                     ›
