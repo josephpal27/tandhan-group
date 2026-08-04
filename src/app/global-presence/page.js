@@ -18,7 +18,7 @@ export default function GlobalPresence() {
         <HeroBanner
           image="/images/banners/presence-banner.avif"
           title="Global Presence"
-          desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus reiciendis veniam deserunt."
+          desc="Expanding beyond borders, Tandhan Group serves diverse markets through manufacturing excellence, strategic partnerships, and a growing global presence."
         />
         <BannerSlider className="absolute top-[22%] left-0 z-10" />
       </div>

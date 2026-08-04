@@ -10,24 +10,14 @@ import { headingVariant } from "@/utils/animations";
 
 const slides = [
     {
-        image: '/images/our-story/1.avif',
-        title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
+        image: "/images/our-story/1.avif",
+        title: "Easter Roots",
+        description: "Founded in Eastern India, Tandhan's journey began with entrepreneurial conviction, strong relationships, and a vision for long-term growth. ",
     },
     {
-        image: '/images/our-story/4.avif',
-        title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
-    },
-    {
-        image: '/images/our-story/3.avif',
-        title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
-    },
-    {
-        image: '/images/our-story/2.avif',
-        title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elitfuhu. Commodi quaerat unde, vero incidunt accusantium odited fugit maiores itaque eveniet, dolor amet recusandae.',
+        image: "/images/our-story/4.avif",
+        title: "Manufacturing Strength ",
+        description: "Large-scale manufacturing capabilities across multiple sectors enable quality, consistency, and dependable supply for diverse markets worldwide.",
     },
 ];
 
@@ -66,14 +56,14 @@ const OurStory = () => {
                                         className="w-full h-full object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary" />
-                                    {/* <div className="absolute bottom-0 left-0 right-0 p-[0.8rem] lg:p-[2rem]" dir="ltr">
-                                        <span className="text-white font-semibold text-[1.5rem] sm:text-[1.7rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem]">
+                                    <div className="absolute bottom-0 left-0 right-0 p-[0.8rem] lg:p-[2rem]" dir="ltr">
+                                        <span className="text-white font-semibold text-[1.5rem] sm:text-[1.7rem] lg:text-[1.9rem] xl:text-[2.1rem] 2xl:text-[2.3rem]">
                                             {slide.title}
                                         </span>
                                         <p className="text-white mt-[0.3rem] lg:mt-[0.7rem] text-[0.8rem] sm:text-[0.9rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
                                             {slide.description}
                                         </p>
-                                    </div> */}
+                                    </div>
                                 </div>
                             </SwiperSlide>
                         ))}
