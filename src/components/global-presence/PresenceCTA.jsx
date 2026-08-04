@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
+import Link from "next/link";
 
 const PresenceCTA = () => {
     return (
@@ -20,11 +21,14 @@ const PresenceCTA = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Lorem Ipsum
+                    Get in Touch
                 </motion.h6>
-                <p className="mt-[0.8rem] lg:mt-[1.4rem] w-full lg:w-[60%]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vero aspernatur fugiat sapiente iste quaerat ratione suscipit tenetur doloremque numquam maiores.
+                <p className="mt-[0.8rem] lg:mt-[1.4rem] w-full lg:w-[55%]">
+                    Whether you're seeking solutions, partnerships, or opportunities, our team is ready to connect, collaborate, and help you take the next step forward.
                 </p>
+                <Link href="/contact" className="mt-[2rem] border-[2px] font-semibold border-white px-[1.5rem] py-[0.4rem] hover:bg-white hover:text-primary transition">
+                    Contact US
+                </Link> 
             </div>
         </section>
     )
