@@ -50,7 +50,7 @@ const OurValues = () => {
                     Our Values
                 </motion.h4>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[55%]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing Illo perferendis adipisicing quibusdam ipsam alias harum ut pariatur nesciunt quod tenetur modi.
+                    Our values shape every decision we make - guiding how we build businesses, foster partnerships, empower people, and pursue growth with responsibility, integrity, and purpose.
                 </p>
             </div>
 

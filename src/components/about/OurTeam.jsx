@@ -10,6 +10,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import {teamData} from "@/data/teamData";
 
+const sliderTeamData = teamData.filter((member) => member.tab !== 1);
+
 const OurTeam = () => {
 
     const swiperRef = useRef(null);
@@ -88,7 +90,7 @@ const OurTeam = () => {
                     }}
                     className="w-full"
                 >
-                    {teamData.map((item, index) => {
+                    {sliderTeamData.map((item, index) => {
 
                         const isActive = index === activeIndex;
 
