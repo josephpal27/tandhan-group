@@ -6,6 +6,7 @@ import SectorsFAQ from "@/components/sectors/SectorsFAQ";
 import TextilesSectorOverview from "@/components/textiles/TextilesSectorOverview";
 import TextilesBrandOverview from "@/components/textiles/TextilesBrandOverview";
 import TextilesProducts from "@/components/textiles/TextilesProducts";
+import RelatedSectors from "@/components/sectors/RelatedSectors";
 
 import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
@@ -40,6 +41,7 @@ export default function Textiles() {
       <InTheNews
         news={inTheNewsData.textiles.news}
       />
+      <RelatedSectors />
       <SectorsCTA
         cta={sectorsCtaData.textiles.cta}
       />

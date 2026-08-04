@@ -6,6 +6,7 @@ import SectorsCTA from "@/components/sectors/SectorsCTA";
 import SectorsFAQ from "@/components/sectors/SectorsFAQ";
 import HospitalitySectorOverview from "@/components/hospitality/HospitalitySectorOverview";
 import HospitalityBrandOverview from "@/components/hospitality/HospitalityBrandOverview";
+import RelatedSectors from "@/components/sectors/RelatedSectors";
 
 import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
@@ -29,10 +30,10 @@ export default function Hospitality() {
       />
       <HospitalitySectorOverview />
       <HospitalityBrandOverview />
-      <SectorsProducts 
+      <SectorsProducts
         products={sectorsProductsData.hospitality}
       />
-      <SectorsGallery 
+      <SectorsGallery
         gallery={sectorsGalleryData.hospitality}
       />
       <SectorsFAQ
@@ -43,7 +44,8 @@ export default function Hospitality() {
       <InTheNews
         news={inTheNewsData.hospitality.news}
       />
-      <SectorsCTA 
+      <RelatedSectors />
+      <SectorsCTA
         cta={sectorsCtaData.hospitality.cta}
       />
     </>
