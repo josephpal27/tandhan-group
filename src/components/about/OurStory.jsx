@@ -66,14 +66,14 @@ const OurStory = () => {
                                         className="w-full h-full object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary" />
-                                    <div className="absolute bottom-0 left-0 right-0 p-[0.8rem] lg:p-[2rem]" dir="ltr">
+                                    {/* <div className="absolute bottom-0 left-0 right-0 p-[0.8rem] lg:p-[2rem]" dir="ltr">
                                         <span className="text-white font-semibold text-[1.5rem] sm:text-[1.7rem] lg:text-[2.1rem] xl:text-[2.3rem] 2xl:text-[2.5rem]">
                                             {slide.title}
                                         </span>
                                         <p className="text-white mt-[0.3rem] lg:mt-[0.7rem] text-[0.8rem] sm:text-[0.9rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]">
                                             {slide.description}
                                         </p>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </SwiperSlide>
                         ))}

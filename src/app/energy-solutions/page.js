@@ -6,6 +6,7 @@ import SectorsCTA from "@/components/sectors/SectorsCTA";
 import SectorsFAQ from "@/components/sectors/SectorsFAQ";
 import EnergySectorOverview from "@/components/energy-solutions/EnergySectorOverview";
 import EnergyBrandOverview from "@/components/energy-solutions/EnergyBrandOverview";
+import RelatedSectors from "@/components/sectors/RelatedSectors";
 
 import { sectorsFaqData } from "@/data/sectorsFaqData";
 import { inTheNewsData } from "@/data/inTheNewsData";
@@ -29,10 +30,10 @@ export default function EnergySolutions() {
       />
       <EnergySectorOverview />
       <EnergyBrandOverview />
-      <SectorsProducts 
+      <SectorsProducts
         products={sectorsProductsData.energy}
       />
-      <SectorsGallery 
+      <SectorsGallery
         gallery={sectorsGalleryData.energy}
       />
       <SectorsFAQ
@@ -43,7 +44,8 @@ export default function EnergySolutions() {
       <InTheNews
         news={inTheNewsData.energy.news}
       />
-      <SectorsCTA 
+      <RelatedSectors />
+      <SectorsCTA
         cta={sectorsCtaData.energy.cta}
       />
     </>

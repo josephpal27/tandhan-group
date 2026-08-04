@@ -5,6 +5,7 @@ import SectorsGallery from "@/components/sectors/SectorsGallery";
 import SectorsProducts from "@/components/sectors/SectorsProducts";
 import SectorsBanner from "@/components/sectors/SectorsBanner";
 import SectorsCTA from "@/components/sectors/SectorsCTA";
+import RelatedSectors from "@/components/sectors/RelatedSectors";
 import SectorsFAQ from "@/components/sectors/SectorsFAQ";
 
 import { sectorsFaqData } from "@/data/sectorsFaqData";
@@ -43,6 +44,7 @@ export default function ProtectiveSolutions() {
       <InTheNews
         news={inTheNewsData.protective.news}
       />
+      <RelatedSectors />
       <SectorsCTA
         cta={sectorsCtaData.protective.cta}
       />
