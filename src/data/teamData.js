@@ -23,7 +23,7 @@ export const teamData = [
     {
         id: 4,
         name: "Anuj Jalan",
-        position: "Director",
+        position: "Managing Director",
         image: "/images/team/anuj-jalan.avif",
         tab: 2,
     },

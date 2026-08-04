@@ -46,7 +46,7 @@ const OurJourney = () => {
                         Our <br /> Journey
                     </motion.h3>
                     <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                        Lorem ipsum dolor sit amet, adipisic elit. Id ut vitae dolorum suscipit facilis sint nisi.
+                        Key moments that shaped our journey, reflecting growth, resilience, innovation, and diversification.
                     </p>
                 </div>
 
