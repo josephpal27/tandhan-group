@@ -26,7 +26,7 @@ const CSR = () => {
             </p>
 
             {/* Layer */}
-            <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-primary/10 to-primary/100"></div>
+            <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-transparent to-primary/60"></div>
         </section>
     )
 }
