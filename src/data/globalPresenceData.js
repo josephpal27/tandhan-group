@@ -9,12 +9,12 @@ export const globalPresenceData = [
         lng: 78.9629,
         brands: [
             {
-                brand: "Tandhan Polyplast Ltd.",
-                address: "JL-15, Kashyabpur, Uluberia-Amta Rd, Kulgachia, Howrah-711303, West Bengal, India"
+                brand: "Tandhan Denim (Corporate Office)",
+                address: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091"
             },
             {
-                brand: "Tandhan Denim",
-                address: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091"
+                brand: "Tandhan Polyplast Ltd. (Factory)",
+                address: "JL-15, Kashyabpur, Uluberia-Amta Rd, Kulgachia, Howrah-711303, West Bengal, India"
             },
         ],
         logo: [],
