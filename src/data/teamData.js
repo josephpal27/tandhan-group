@@ -1,30 +1,30 @@
 export const teamData = [
     {
         id: 1,
+        name: "Anuj Jalan",
+        position: "Managing Director",
+        image: "/images/team/anuj-jalan.avif",
+        tab: 2,
+    },
+    {
+        id: 2,
         name: "Ashok Jalan",
         position: "Chairman",
         image: "/images/team/ashok-jalan.avif",
         tab: 1,
     },
     {
-        id: 2,
+        id: 3,
         name: "Amit Jalan",
         position: "Director",
         image: "/images/team/amit-jalan.avif",
         tab: 2,
     },
     {
-        id: 3,
+        id: 4,
         name: "Ankit Jalan",
         position: "Director",
         image: "/images/team/ankit-jalan.avif",
-        tab: 2,
-    },
-    {
-        id: 4,
-        name: "Anuj Jalan",
-        position: "Managing Director",
-        image: "/images/team/anuj-jalan.avif",
         tab: 2,
     },
     {
@@ -62,5 +62,4 @@ export const teamData = [
         image: "/images/team/harpreet-singh.avif",
         tab: 3,
     },
-    
 ]

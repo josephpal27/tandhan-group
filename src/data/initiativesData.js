@@ -19,7 +19,7 @@ export const initiativesData = [
     },
     {
         id: 4,
-        image: "/images/sustainability/initiatives/4.png",
+        image: "/images/sustainability/initiatives/4.avif",
         title: "Osteopathy Camp",
         description: "Offering expert musculoskeletal assessments and osteopathic care to promote mobility, relief, and overall wellbeing.",
     },
