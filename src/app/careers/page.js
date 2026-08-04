@@ -12,7 +12,7 @@ export default function Careers() {
       <HeroBanner
         image="/images/banners/careers-banner.avif"
         title="Careers"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus reiciendis veniam deserunt."
+        desc="At Tandhan, we believe great businesses are built by great people. Discover opportunities to learn, lead, and make an impact."
       />
       <CareersListing />
     </>

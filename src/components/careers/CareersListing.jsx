@@ -53,10 +53,10 @@ const CareersListing = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Bring Your Career Here
+                    Build The Future With Us
                 </motion.h2>
                 <p className="mt-[0.8rem] lg:mt-[1.2rem] w-full lg:w-[55%]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minus recusandae itaque labore, asperiores reiciendis exercitationem nemo. Porro, voluptatem iusto.
+                    From manufacturing and energy to hospitality and textiles, discover opportunities to build a rewarding career across Tandhan's diverse businesses.
                 </p>
             </div>
 

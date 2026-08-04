@@ -42,7 +42,7 @@ const InTheNews = ({ news }) => {
                 </motion.h6>
                 <div className="relative z-50">
                     <p className="mt-[0.7rem] lg:mt-[1rem] w-full lg:w-[50%] hidden lg:block">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem.
+                        Stay connected with the latest developments across Tandhan Group - from business milestones and industry recognitions to innovations, partnerships, and stories shaping our journey forward.
                     </p>
                 </div>
 

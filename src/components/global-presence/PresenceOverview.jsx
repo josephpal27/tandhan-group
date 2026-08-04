@@ -23,11 +23,14 @@ const PresenceOverview = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Global Presence <br /> Overview
+                    Global Reach. <br /> Enduring Partnerships.
                 </motion.h2>
                 <p className="mt-[1rem] lg:mt-[1.5rem]">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, nesciunt enim. Enim porro totam aliquid reprehenderit repudiandae asperiores animi maxime nobis labore et consequatur, consequuntur facere doloribus accusamus veritatis voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    From its roots in Eastern India, Tandhan Group has steadily expanded its footprint across global markets, building relationships that span continents and industries. Today, our businesses serve customers in over 25 countries across Asia, Africa, the Middle East, and beyond. Backed by strong manufacturing capabilities, strategic market understanding, and a commitment to quality, we continue to create value across diverse geographies. 
                 </p>
+                {/* <p className="mt-[0.6rem] lg:mt-[1rem]">
+                    Our international presence is strengthened by long-term partnerships, efficient supply chains, and the ability to adapt to evolving market needs. Whether through protective solutions, textiles, power solutions, or hospitality, Tandhan Group combines local expertise with global ambition, delivering products, services, and experiences that meet the expectations of customers worldwide. 
+                </p> */}
             </div>
 
         </section>
