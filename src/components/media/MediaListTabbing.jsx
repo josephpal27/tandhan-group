@@ -23,10 +23,9 @@ const tabHeads = [
 const categories = [
     "All Categories",
     "Corporate",
+    "Polyplast",
+    "Denim ",
     "Hospitality",
-    "Real Estate",
-    "Education",
-    "Healthcare",
 ];
 
 const MediaListTabbing = () => {
@@ -190,9 +189,9 @@ const MediaListTabbing = () => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 5 }}
                             transition={{ duration: 0.2, ease: "easeInOut" }}
-                            className="flex flex-wrap gap-[2%]"
+                            className="flex flex-wrap gap-[5%] lg:gap-[2%]"
                         >
-                            {newslettersData.map((newsletter) => (
+                            {[...newslettersData].reverse().map((newsletter) => (
                                 <NewsletterCard key={newsletter.id} newsletter={newsletter} />
                             ))}
                         </motion.div>

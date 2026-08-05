@@ -9,7 +9,7 @@ export const pressReleasesData = [
     },
     {
         id: 2,
-        category: "Healthcare",
+        category: "Polyplast",
         title: "Industry Recognition for Excellence",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam.",
         image: "/images/media/demo-1.avif",
@@ -17,7 +17,7 @@ export const pressReleasesData = [
     },
     {
         id: 3,
-        category: "Education",
+        category: "Denim",
         title: "Lorem ipsum dolor sit amet consectetur",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam.",
         image: "/images/media/demo-1.avif",
