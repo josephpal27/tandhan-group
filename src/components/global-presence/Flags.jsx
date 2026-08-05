@@ -30,6 +30,9 @@ const FlagCard = ({ flag, isActive, onClick }) => (
 );
 
 const Flags = () => {
+
+    const flagsData = globalPresenceData.filter(item => item.id !== 2);
+
     const { activeIndex, setActiveIndex } = useGlobalPresence();
     const swiperRef = useRef(null);
 
@@ -55,12 +58,16 @@ const Flags = () => {
                     id="flags-swiper"
                     className="!pb-[3rem] !overflow-visible"
                 >
-                    {globalPresenceData.map((flag, index) => (
-                        <SwiperSlide key={flag.id ?? index}>
+                    {flagsData.map((flag) => (
+                        <SwiperSlide key={flag.id}>
                             <FlagCard
                                 flag={flag}
-                                isActive={activeIndex === index}
-                                onClick={() => setActiveIndex(index)}
+                                isActive={globalPresenceData[activeIndex].id === flag.id}
+                                onClick={() =>
+                                    setActiveIndex(
+                                        globalPresenceData.findIndex(item => item.id === flag.id)
+                                    )
+                                }
                             />
                         </SwiperSlide>
                     ))}
@@ -69,12 +76,16 @@ const Flags = () => {
 
             {/* Desktop: Original Grid */}
             <div className="hidden lg:grid lg:grid-cols-7 gap-[2.4rem] xl:gap-[2.7rem] 2xl:gap-[3rem]">
-                {globalPresenceData.map((flag, index) => (
+                {flagsData.map((flag) => (
                     <FlagCard
-                        key={flag.id ?? index}
+                        key={flag.id}
                         flag={flag}
-                        isActive={activeIndex === index}
-                        onClick={() => setActiveIndex(index)}
+                        isActive={globalPresenceData[activeIndex].id === flag.id}
+                        onClick={() =>
+                            setActiveIndex(
+                                globalPresenceData.findIndex(item => item.id === flag.id)
+                            )
+                        }
                     />
                 ))}
             </div>

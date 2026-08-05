@@ -9,12 +9,8 @@ export const globalPresenceData = [
         lng: 78.9629,
         brands: [
             {
-                brand: "Tandhan Denim (Corporate Office)",
+                brand: "Tandhan Group",
                 address: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091"
-            },
-            {
-                brand: "Tandhan Polyplast Ltd. (Factory)",
-                address: "JL-15, Kashyabpur, Uluberia-Amta Rd, Kulgachia, Howrah-711303, West Bengal, India"
             },
         ],
         logo: [],
@@ -22,6 +18,27 @@ export const globalPresenceData = [
     },
     {
         id: 2,
+        country: "India (Factories)",
+        flag: "/images/presence/flags/india.png",
+        banner: "/images/presence/banners/india.avif",
+        industryImage: "/images/presence//industry/india.avif",
+        lat: 20.5937,
+        lng: 78.9629,
+        brands: [
+            {
+                brand: "Tandhan Denim",
+                address: "Tandhan Cotton Mills Pvt Ltd (Tandhan Denim) JL- 38, Sabsit, West Bengal 711303"
+            },
+            {
+                brand: "Tandhan Polyplast Ltd.",
+                address: "JL-15, Kashyabpur, Uluberia-Amta Rd, Kulgachia, Howrah-711303, West Bengal, India"
+            },
+        ],
+        logo: [],
+        url: [],
+    },
+    {
+        id: 3,
         country: "Bangladesh",
         flag: "/images/presence/flags/bangladesh.png",
         banner: "/images/presence/banners/bangladesh.avif",
@@ -38,7 +55,7 @@ export const globalPresenceData = [
         url: ["https://www.dhakapowertraders.com/"],
     },
     {
-        id: 3,
+        id: 4,
         country: "Myanmar",
         flag: "/images/presence/flags/myanmar.png",
         banner: "/images/presence/banners/myanmar.avif",
@@ -55,7 +72,7 @@ export const globalPresenceData = [
         url: ["https://stkmm.com/"],
     },
     {
-        id: 4,
+        id: 5,
         country: "Dubai",
         flag: "/images/presence/flags/dubai.png",
         banner: "/images/presence/banners/dubai.avif",
@@ -72,7 +89,7 @@ export const globalPresenceData = [
         url: ["https://pglobalgt.com/"],
     },
     {
-        id: 5,
+        id: 6,
         country: "South Africa",
         flag: "/images/presence/flags/south-africa.png",
         banner: "/images/presence/banners/south-africa.avif",
@@ -89,7 +106,7 @@ export const globalPresenceData = [
         url: ["https://rainbowpower.co.za/"],
     },
     {
-        id: 6,
+        id: 7,
         country: "Kenya",
         flag: "/images/presence/flags/kenya.png",
         banner: "/images/presence/banners/kenya.avif",
@@ -106,7 +123,7 @@ export const globalPresenceData = [
         url: ["https://www.simplifiedsolar.ke/"],
     },
     {
-        id: 7,
+        id: 8,
         country: "Sudan",
         flag: "/images/presence/flags/sudan.png",
         banner: "/images/presence/banners/sudan.avif",
@@ -123,7 +140,7 @@ export const globalPresenceData = [
         url: ["https://globalpowertraders.com/"],
     },
     {
-        id: 8,
+        id: 9,
         country: "Nigeria",
         flag: "/images/presence/flags/nigeria.png",
         banner: "/images/presence/banners/nigeria.avif",
@@ -140,7 +157,7 @@ export const globalPresenceData = [
         url: ["https://sgp.ng/"],
     },
     {
-        id: 9,
+        id: 10,
         country: "Afghanistan",
         flag: "/images/presence/flags/afghanistan.png",
         banner: "/images/presence/banners/afghanistan.avif",
@@ -157,7 +174,7 @@ export const globalPresenceData = [
         url: [""],
     },
     {
-        id: 10,
+        id: 11,
         country: "Zambia",
         flag: "/images/presence/flags/zambia.png",
         banner: "/images/presence/banners/zambia.avif",
@@ -174,7 +191,7 @@ export const globalPresenceData = [
         url: [""],
     },
     {
-        id: 11,
+        id: 12,
         country: "Tanzania",
         flag: "/images/presence/flags/tanzania.png",
         banner: "/images/presence/banners/tanzania.avif",
@@ -191,7 +208,7 @@ export const globalPresenceData = [
         url: [""],
     },
     {
-        id: 12,
+        id: 13,
         country: "DRC",
         flag: "/images/presence/flags/drc.png",
         banner: "/images/presence/banners/drc.avif",
@@ -208,7 +225,7 @@ export const globalPresenceData = [
         url: [""],
     },
     {
-        id: 13,
+        id: 14,
         country: "Azerbaijan",
         flag: "/images/presence/flags/azerbaijan.png",
         banner: "/images/presence/banners/azerbaijan.avif",
@@ -225,7 +242,7 @@ export const globalPresenceData = [
         url: [""],
     },
     {
-        id: 14,
+        id: 15,
         country: "Ivory Coast",
         flag: "/images/presence/flags/ivory-coast.png",
         banner: "/images/presence/banners/ivory-coast.avif",
@@ -242,7 +259,7 @@ export const globalPresenceData = [
         url: [""],
     },
     // {
-    //     id: 15,
+    //     id: 16,
     //     country: "Germany",
     //     flag: "/images/presence/flags/germany.png",
     //     banner: "/images/presence/banners/germany.avif",
@@ -254,7 +271,7 @@ export const globalPresenceData = [
     //     url: [""],
     // },
     // {
-    //     id: 16,
+    //     id: 17,
     //     country: "Canada",
     //     flag: "/images/presence/flags/canada.png",
     //     banner: "/images/presence/banners/canada.avif",
@@ -266,7 +283,7 @@ export const globalPresenceData = [
     //     url: [""],
     // },
     // {
-    //     id: 17,
+    //     id: 18,
     //     country: "Brazil",
     //     flag: "/images/presence/flags/brazil.png",
     //     banner: "/images/presence/banners/brazil.avif",
@@ -278,7 +295,7 @@ export const globalPresenceData = [
     //     url: [""],
     // },
     // {
-    //     id: 18,
+    //     id: 19,
     //     country: "Australia",
     //     flag: "/images/presence/flags/australia.png",
     //     banner: "/images/presence/banners/australia.avif",
