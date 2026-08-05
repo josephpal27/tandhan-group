@@ -8,12 +8,15 @@ import { eventsData } from "@/data/eventsData";
 import { articlesData } from "@/data/articlesData";
 import { blogsData } from "@/data/blogsData";
 import { pressReleasesData } from "@/data/pressReleasesData";
+import { newslettersData } from "@/data/newslettersData";
+import NewsletterCard from "./NewsletterCard";
 
 const tabHeads = [
     { id: 1, name: "Events" },
     { id: 2, name: "News & Articles" },
     { id: 3, name: "Blogs" },
     { id: 4, name: "Press Releases" },
+    { id: 5, name: "Newsletters" },
 ]
 
 const MediaListTabbing = () => {
@@ -109,6 +112,21 @@ const MediaListTabbing = () => {
                         >
                             {pressReleasesData.map((article) => (
                                 <ArticleCard key={article.id} article={article} />
+                            ))}
+                        </motion.div>
+                    )}
+
+                    {activeTab === 5 && (
+                        <motion.div
+                            key="newsletters"
+                            initial={{ opacity: 0, y: 5 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 5 }}
+                            transition={{ duration: 0.2, ease: "easeInOut" }}
+                            className="flex flex-wrap gap-[2%]"
+                        >
+                            {newslettersData.map((newsletter) => (
+                                <NewsletterCard key={newsletter.id} newsletter={newsletter} />
                             ))}
                         </motion.div>
                     )}
