@@ -11,8 +11,8 @@ export default function Team() {
     <>
       <HeroBanner
         image="/images/banners/presence-banner.avif"
-        title="Our Team"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus reiciendis veniam deserunt."
+        title="Our Leaders"
+        desc="Meet the leaders shaping Tandhan's future through purpose, experience, and vision."
       />
       <TeamList />
     </>

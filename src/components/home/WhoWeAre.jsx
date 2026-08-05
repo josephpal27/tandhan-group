@@ -9,7 +9,7 @@ import { headingVariant } from "@/utils/animations";
 const aboutUsData = [
     {
         id: 1,
-        image: "/images/who-we-are/3.avif",
+        image: "/images/who-we-are/2.avif",
     },
     {
         id: 2,
