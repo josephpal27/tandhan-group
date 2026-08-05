@@ -4,12 +4,13 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import ArticleCard from "./ArticleCard";
 import BlogCard from "./BlogCard";
+import NewsletterCard from "./NewsletterCard";
+
 import { eventsData } from "@/data/eventsData";
 import { articlesData } from "@/data/articlesData";
 import { blogsData } from "@/data/blogsData";
 import { pressReleasesData } from "@/data/pressReleasesData";
 import { newslettersData } from "@/data/newslettersData";
-import NewsletterCard from "./NewsletterCard";
 
 const tabHeads = [
     { id: 1, name: "Events" },
@@ -19,9 +20,38 @@ const tabHeads = [
     { id: 5, name: "Newsletters" },
 ]
 
+const categories = [
+    "All Categories",
+    "Corporate",
+    "Hospitality",
+    "Real Estate",
+    "Education",
+    "Healthcare",
+];
+
 const MediaListTabbing = () => {
 
     const [activeTab, setActiveTab] = useState(1);
+    const [selectedCategory, setSelectedCategory] = useState("All Categories");
+
+    const handleTabChange = (tabId) => {
+        setActiveTab(tabId);
+        setSelectedCategory("All Categories");
+    };
+
+    const filteredArticles =
+        selectedCategory === "All Categories"
+            ? articlesData
+            : articlesData.filter(
+                (item) => item.category === selectedCategory
+            );
+
+    const filteredPressReleases =
+        selectedCategory === "All Categories"
+            ? pressReleasesData
+            : pressReleasesData.filter(
+                (item) => item.category === selectedCategory
+            );
 
     return (
         <section className="
@@ -42,7 +72,7 @@ const MediaListTabbing = () => {
                     return (
                         <button
                             key={head.id}
-                            onClick={() => setActiveTab(head.id)}
+                            onClick={() => handleTabChange(head.id)}
                             className={`
                                 text-[1.3rem] sm:text-[1.4rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
                                 font-semibold transition-colors duration-300 cursor-pointer w-full lg:w-max text-left
@@ -54,6 +84,37 @@ const MediaListTabbing = () => {
                     )
                 })}
             </div>
+
+            {/* Category Dropdown */}
+            {(activeTab === 2 || activeTab === 4) && (
+                <div className="flex justify-end mb-[2rem]">
+                    <select
+                        value={selectedCategory}
+                        onChange={(e) =>
+                            setSelectedCategory(e.target.value)
+                        }
+                        className="
+                            w-full lg:w-[280px]
+                            border border-gray-300
+                            rounded-md
+                            bg-white
+                            px-4
+                            py-3
+                            outline-none
+                            cursor-pointer
+                        "
+                    >
+                        {categories.map((category) => (
+                            <option
+                                key={category}
+                                value={category}
+                            >
+                                {category}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+            )}
 
             {/* List */}
             <div>
@@ -81,8 +142,11 @@ const MediaListTabbing = () => {
                             exit={{ opacity: 0, y: 5 }}
                             transition={{ duration: 0.2, ease: "easeInOut" }}
                         >
-                            {articlesData.map((article) => (
-                                <ArticleCard key={article.id} article={article} />
+                            {filteredArticles.map((article) => (
+                                <ArticleCard
+                                    key={article.id}
+                                    article={article}
+                                />
                             ))}
                         </motion.div>
                     )}
@@ -110,8 +174,11 @@ const MediaListTabbing = () => {
                             exit={{ opacity: 0, y: 5 }}
                             transition={{ duration: 0.2, ease: "easeInOut" }}
                         >
-                            {pressReleasesData.map((article) => (
-                                <ArticleCard key={article.id} article={article} />
+                            {filteredPressReleases.map((article) => (
+                                <ArticleCard
+                                    key={article.id}
+                                    article={article}
+                                />
                             ))}
                         </motion.div>
                     )}
