@@ -10,10 +10,10 @@ const NewsletterCard = ({newsletter}) => {
                 src={newsletter.image} 
                 alt={newsletter.title} 
                 loading="lazy"
-                className="w-full"
+                className="w-full aspect-[5/7]"
             />
             <span className="
-                block text-center font-medium group-hover:underline
+                block text-center font-semibold group-hover:underline
                 mt-[1rem]
                 text-[1rem]
             ">

@@ -54,10 +54,10 @@ const TeamList = () => {
                 viewport={{ once: true }}
                 className="text-center"
             >
-                Our Leaders
+                The Force Behind Tandhan
             </motion.h2>
-            <p className="mt-[0.8rem] lg:mt-[1.2rem] w-full lg:w-[55%] mx-auto text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quaerat labore accusantium doloremque natus ipsa quod voluptas ullam quisquam corporis.
+            <p className="mt-[0.8rem] lg:mt-[1.2rem] w-full lg:w-[60%] mx-auto text-center">
+                A leadership team united by ambition, grounded in values, and committed to creating businesses that generate lasting value across markets and communities.
             </p>
 
             {/* Head */}

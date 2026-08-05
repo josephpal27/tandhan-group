@@ -11,7 +11,7 @@ import { headingVariant } from "@/utils/animations";
 const slides = [
     {
         image: "/images/our-story/1.avif",
-        title: "Easter Roots",
+        title: "Eastern Roots",
         description: "Founded in Eastern India, Tandhan's journey began with entrepreneurial conviction, strong relationships, and a vision for long-term growth. ",
     },
     {
