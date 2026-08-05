@@ -2,9 +2,9 @@
 const NewsletterCard = ({newsletter}) => {
     return (
         <a 
-            href="/"
+            href={newsletter.link}
             target="_blank"
-            className="w-full lg:w-[23.5%] bg-gray-100 p-[0.8rem] mb-[1.8rem] shadow-[0px_3px_7px_rgba(0,0,0,0.2)]  group"
+            className="w-full lg:w-[23.5%] bg-gray-100 p-[0.8rem] mb-[2.2rem] shadow-[0px_3px_7px_rgba(0,0,0,0.2)] hover:bg-gray-50 transition duration-300 group"
         >
             <img 
                 src={newsletter.image} 
@@ -12,6 +12,13 @@ const NewsletterCard = ({newsletter}) => {
                 loading="lazy"
                 className="w-full"
             />
+            <span className="
+                block text-center font-medium group-hover:underline
+                mt-[1rem]
+                text-[1rem]
+            ">
+                Tandhan Newsletter - {newsletter.title}
+            </span>
         </a>
     )
 }
