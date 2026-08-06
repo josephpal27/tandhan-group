@@ -5,7 +5,7 @@ const ArticleCard = ({ article }) => {
             flex justify-between flex-wrap group shadow-[1px_1px_10px_rgba(0,0,0,0.3)] 
             hover:bg-[#fbfbfb] transition duration-300
             mb-[1.7rem] lg:mb-[2rem] last:mb-[2.3rem] lg:last:mb-[3rem]
-            p-[0.7rem] sm:p-[1rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
+            p-[0.7rem] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.95rem] 2xl:p-[1.1rem]
             border-[#c0bebe] border-b-[1px] last:border-b-0
         ">
             {/* Image */}

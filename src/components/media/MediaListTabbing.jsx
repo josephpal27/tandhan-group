@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ArticleCard from "./ArticleCard";
 import BlogCard from "./BlogCard";
 import NewsletterCard from "./NewsletterCard";
+import CategoryDropdown from "./CategoryDropdown";
 
 import { eventsData } from "@/data/eventsData";
 import { articlesData } from "@/data/articlesData";
@@ -87,31 +88,11 @@ const MediaListTabbing = () => {
             {/* Category Dropdown */}
             {(activeTab === 2 || activeTab === 4) && (
                 <div className="flex justify-end mb-[2rem]">
-                    <select
-                        value={selectedCategory}
-                        onChange={(e) =>
-                            setSelectedCategory(e.target.value)
-                        }
-                        className="
-                            w-full lg:w-[280px]
-                            border border-gray-300
-                            rounded-md
-                            bg-white
-                            px-4
-                            py-3
-                            outline-none
-                            cursor-pointer
-                        "
-                    >
-                        {categories.map((category) => (
-                            <option
-                                key={category}
-                                value={category}
-                            >
-                                {category}
-                            </option>
-                        ))}
-                    </select>
+                    <CategoryDropdown
+                        categories={categories}
+                        selectedCategory={selectedCategory}
+                        setSelectedCategory={setSelectedCategory}
+                    />
                 </div>
             )}
 
