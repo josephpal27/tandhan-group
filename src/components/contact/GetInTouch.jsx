@@ -11,7 +11,7 @@ const contactDetails = [
     {
         id: 1,
         icon: <FaLocationDot />,
-        label: "Head Office Address",
+        label: "Corporate Office",
         content: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091",
         url: "https://maps.app.goo.gl/e85z4x5RdPxFXoWG6",
         target: "_blank",

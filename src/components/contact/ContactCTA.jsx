@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { headingVariant } from "@/utils/animations";
+import Link from "next/link";
 
 const ContactCTA = () => {
     return (
@@ -20,9 +21,12 @@ const ContactCTA = () => {
             >
                 Connect with <br/> Tandhan Globally
             </motion.h3>
-            <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[60%]">
-                For a closer look into the heart of Tandhan, and to journey with us through every innovation, project, and milestone, connect with us on our social platforms.
+            <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[55%]">
+                Our international presence reflects decades of growth, enabling us to serve customers and partners across diverse global markets.
             </p>
+            <Link href="/global-presence" className="mt-[2rem] border-[2px] font-semibold border-white px-[1.5rem] py-[0.4rem] hover:bg-white hover:text-primary transition">
+                Know More
+            </Link>
 
             {/* Blurred background layer */}
             <div className="
