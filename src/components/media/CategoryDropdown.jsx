@@ -19,7 +19,7 @@ const CategoryDropdown = ({ categories, selectedCategory, setSelectedCategory })
     }, []);
 
     return (
-        <div ref={dropdownRef} className="relative w-full lg:w-[270px]">
+        <div ref={dropdownRef} className="relative w-full sm:w-[200px] lg:w-[230px] xl:w-[250px] 2xl:w-[270px]">
             <button
                 type="button"
                 onClick={() => setOpen((prev) => !prev)}
@@ -31,7 +31,7 @@ const CategoryDropdown = ({ categories, selectedCategory, setSelectedCategory })
                     outline-none cursor-pointer
                 `}
             >
-                <span className="font-medium">{selectedCategory}</span>
+                <span className="font-medium text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]">{selectedCategory}</span>
                 <motion.div
                     animate={{ rotate: open ? 180 : 0 }}
                     transition={{ duration: 0.2 }}
@@ -65,7 +65,7 @@ const CategoryDropdown = ({ categories, selectedCategory, setSelectedCategory })
                                         setOpen(false);
                                     }}
                                     className={`
-                                        px-4 py-2.5 text-[0.95rem] cursor-pointer
+                                        px-4 py-3 text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] cursor-pointer
                                         transition-colors duration-150
                                         ${isSelected
                                             ? "bg-black text-white font-medium"
