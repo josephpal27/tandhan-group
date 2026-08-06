@@ -15,9 +15,8 @@ const NewsletterCard = ({newsletter}) => {
             <span className="
                 block text-center font-semibold group-hover:underline
                 mt-[0.6rem] sm:mt-[0.7rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
-                text-[1rem] sm:text-[1.1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
             ">
-                <span className="hidden lg:block">Tandhan Newsletter - </span> {newsletter.title}
+                <span className="hidden lg:block">Tandhan Newsletter</span> {newsletter.title}
             </span>
         </a>
     )
