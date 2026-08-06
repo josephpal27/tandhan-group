@@ -15,7 +15,7 @@ const slides = [
         description: "Founded in Eastern India, Tandhan's journey began with entrepreneurial conviction, strong relationships, and a vision for long-term growth. ",
     },
     {
-        image: "/images/our-story/4.avif",
+        image: "/images/our-story/2.avif",
         title: "Manufacturing Strength ",
         description: "Large-scale manufacturing capabilities across multiple sectors enable quality, consistency, and dependable supply for diverse markets worldwide.",
     },
