@@ -15,7 +15,7 @@ export default function Contact() {
             <HeroBanner
                 image="/images/banners/contact-banner.avif"
                 title="Contact Us"
-                desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
+                desc="Connect with our team to explore opportunities, partnerships, solutions, and conversations that drive meaningful growth together."
             />
             <GetInTouch />
             <ContactCTA />
