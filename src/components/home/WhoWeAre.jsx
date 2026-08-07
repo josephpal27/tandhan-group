@@ -9,11 +9,13 @@ import { headingVariant } from "@/utils/animations";
 const aboutUsData = [
     {
         id: 1,
+        type: "image",
         image: "/images/who-we-are/2.avif",
     },
     {
         id: 2,
-        image: "/images/who-we-are/1.avif",
+        type: "video",
+        videoUrl: "https://www.youtube.com/embed/b0X_-U5Z_ac?si=kAOXyV5jqIPkuthJ",
     },
 ];
 
@@ -36,12 +38,25 @@ const WhoWeAre = () => {
                 >
                     {aboutUsData.map((item) => (
                         <SwiperSlide key={item.id}>
-                            <img
-                                src={item.image}
-                                alt={item.title}
-                                loading="lazy"
-                                className="w-full aspect-[3/2] object-cover"
-                            />
+                            {item.type === "video" ? (
+                                <div className="w-full aspect-[16/9]">
+                                    <iframe
+                                        src={item.videoUrl}
+                                        title="Tandhan Group Corporate AV"
+                                        className="w-full h-full"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerPolicy="strict-origin-when-cross-origin"
+                                        allowFullScreen
+                                    />
+                                </div>
+                            ) : (
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    className="w-full aspect-[3/2] object-cover"
+                                />
+                            )}
                         </SwiperSlide>
                     ))}
                 </Swiper>
@@ -86,7 +101,7 @@ const WhoWeAre = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Diversified by Business. <br/> United by Purpose.
+                    Diversified by Business. <br /> United by Purpose.
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.5rem]">
                     For over three decades, Tandhan Group has grown by seeing opportunities where others saw uncertainty. What began as a trading enterprise has evolved into a diversified global group spanning industrial and agricultural protective solutions, textiles, power solutions, and hospitality.
