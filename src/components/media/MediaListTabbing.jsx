@@ -25,7 +25,7 @@ const categories = [
     "All Categories",
     "Corporate",
     "Polyplast",
-    "Denim ",
+    "Denim",
     "Hospitality",
 ];
 
