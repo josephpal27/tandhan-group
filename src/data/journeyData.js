@@ -47,7 +47,7 @@ export const journeyData = [
                 desc: "Strengthened global trade and international sourcing capabilities.",
             },
             {
-                year: "2018",
+                year: "2021",
                 title: "Dhaka Power Traders (Bangladesh)",
                 desc: "Entered the power solutions sector with operations in Bangladesh.",
             }
@@ -107,13 +107,18 @@ export const journeyData = [
             },
             {
                 year: "2025",
-                title: "Shin Thit Kyaw Co. Ltd. (Myanmar)",
-                desc: "Reinforced Tandhan's long-term commitment to Myanmar.",
+                title: "Swaminath Trading Corporation",
+                desc: "Entered Tanzania, expanding Tandhan’s presence across Africa.",
             },
             {
-                year: "2025",
-                title: "Paktika Ahmadi – Tandhan Power Authorized Service Centre (Afghanistan)",
-                desc: "Strengthened customer support with a dedicated service centre.",
+                year: "2026",
+                title: "Sustainable Global Private Limited",
+                desc: "Expanded into Asia with the establishment of an office in Nepal.",
+            },
+            {
+                year: "2026",
+                title: "NX Elit",
+                desc: "Added a new property to the Group’s growing hospitality portfolio.",
             },
         ] 
     },
