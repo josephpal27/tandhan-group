@@ -207,40 +207,40 @@ export const globalPresenceData = [
         logo: ["/images/logo/rps.avif"],
         url: [""],
     },
-    {
-        id: 13,
-        country: "DRC",
-        flag: "/images/presence/flags/drc.png",
-        banner: "/images/presence/banners/drc.avif",
-        industryImage: "/images/presence/industry/drc.avif",
-        lat: -4.0383,
-        lng: 21.7587,
-        brands: [
-            {
-                brand: "Power Global General Trading L.L.C",
-                address: "Abdul Al Rahim Mohammad Yousuf Buliding Shop No-1, Near Naif Park, Satellite Market, Beside Homa Star Hotel, Naif, Deira, PO Box-377064, Dubai, UAE"
-            },
-        ],
-        logo: ["/images/logo/pgt.avif",],
-        url: [""],
-    },
-    {
-        id: 14,
-        country: "Azerbaijan",
-        flag: "/images/presence/flags/azerbaijan.png",
-        banner: "/images/presence/banners/azerbaijan.avif",
-        industryImage: "/images/presence/industry/azerbaijan.avif",
-        lat: 40.1431,
-        lng: 47.5769,
-        brands: [
-            {
-                brand: "Power Global General Trading L.L.C",
-                address: "Abdul Al Rahim Mohammad Yousuf Buliding Shop No-1, Near Naif Park, Satellite Market, Beside Homa Star Hotel, Naif, Deira, PO Box-377064, Dubai, UAE"
-            },
-        ],
-        logo: ["/images/logo/pgt.avif"],
-        url: [""],
-    },
+    // {
+    //     id: 13,
+    //     country: "DRC",
+    //     flag: "/images/presence/flags/drc.png",
+    //     banner: "/images/presence/banners/drc.avif",
+    //     industryImage: "/images/presence/industry/drc.avif",
+    //     lat: -4.0383,
+    //     lng: 21.7587,
+    //     brands: [
+    //         {
+    //             brand: "Power Global General Trading L.L.C",
+    //             address: "Abdul Al Rahim Mohammad Yousuf Buliding Shop No-1, Near Naif Park, Satellite Market, Beside Homa Star Hotel, Naif, Deira, PO Box-377064, Dubai, UAE"
+    //         },
+    //     ],
+    //     logo: ["/images/logo/pgt.avif",],
+    //     url: [""],
+    // },
+    // {
+    //     id: 14,
+    //     country: "Azerbaijan",
+    //     flag: "/images/presence/flags/azerbaijan.png",
+    //     banner: "/images/presence/banners/azerbaijan.avif",
+    //     industryImage: "/images/presence/industry/azerbaijan.avif",
+    //     lat: 40.1431,
+    //     lng: 47.5769,
+    //     brands: [
+    //         {
+    //             brand: "Power Global General Trading L.L.C",
+    //             address: "Abdul Al Rahim Mohammad Yousuf Buliding Shop No-1, Near Naif Park, Satellite Market, Beside Homa Star Hotel, Naif, Deira, PO Box-377064, Dubai, UAE"
+    //         },
+    //     ],
+    //     logo: ["/images/logo/pgt.avif"],
+    //     url: [""],
+    // },
     {
         id: 15,
         country: "Ivory Coast",

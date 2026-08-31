@@ -75,7 +75,7 @@ const Flags = () => {
             </div>
 
             {/* Desktop: Original Grid */}
-            <div className="hidden lg:grid lg:grid-cols-7 gap-[2.4rem] xl:gap-[2.7rem] 2xl:gap-[3rem]">
+            <div className="hidden lg:grid lg:grid-cols-6 gap-[2.4rem] xl:gap-[2.7rem] 2xl:gap-[3rem]">
                 {flagsData.map((flag) => (
                     <FlagCard
                         key={flag.id}
