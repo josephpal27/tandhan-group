@@ -8,25 +8,25 @@ const ourValuesData = [
     {
         id: 1,
         title: "Integrity",
-        desc: "We uphold the highest standards of honesty, accountability, and transparency. Every decision we make is guided by ethics, earning the trust of our customers, partners, employees, and communities.",
+        desc: "We uphold the highest standards of honesty, accountability and transparency, wherever we do business. Guided by ethics, we respect the principles and perspectives of every market we enter, building trust that transcends borders and strengthens every relationship.",
         image: "/images/values/1.avif",
     },
     {
         id: 2,
         title: "Foresight",
-        desc: "We look beyond the immediate, anticipating change and identifying opportunities before they become obvious. Guided by experience and sound judgment, we make decisions that create enduring value.",
+        desc: "We look beyond the immediate and beyond familiar horizons, anticipating change and recognising opportunities across evolving markets. Guided by experience and sound judgment, we turn global possibilities into enduring value.",
         image: "/images/values/2.avif",
     },
     {
         id: 3,
         title: "Sustainability",
-        desc: "We believe growth should create a positive impact. Through responsible manufacturing, resource stewardship, and conscious business practices, we are building a more resilient future for generations to come.",
+        desc: "We believe responsible growth should create a positive impact wherever we operate. By embracing responsible manufacturing, resource stewardship and conscious business practices, we work towards a more resilient future for the communities and markets we are part of.",
         image: "/images/values/3.avif",
     },
     {
         id: 4,
         title: "Inclusivity",
-        desc: "We believe meaningful progress is achieved together. By fostering a culture of respect, collaboration, and equal opportunity, we empower people, strengthen communities, and create shared success.",
+        desc: "We believe progress becomes greater when different people, perspectives and cultures come together. By fostering respect, collaboration and equal opportunity across diverse communities, we create an environment where everyone can contribute and shared success can transcend borders.",
         image: "/images/values/4.avif",
     },
 ]
@@ -49,8 +49,8 @@ const OurValues = () => {
                 >
                     Our Values
                 </motion.h4>
-                <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[55%]">
-                    Our values shape every decision we make - guiding how we build businesses, foster partnerships, empower people, and pursue growth with responsibility, integrity, and purpose.
+                <p className="mt-[0.7rem] lg:mt-[1.2rem] w-full lg:w-[65%]">
+                    Our values shape every decision we make no matter in which part of the world - guiding how we build businesses, foster partnerships, empower people and pursue growth with responsibility, integrity and purpose.
                 </p>
             </div>
 

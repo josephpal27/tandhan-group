@@ -7,14 +7,14 @@ const missionVisionData = [
     {
         id: 1,
         title: "Our Purpose",
-        desc: "To create enduring value by building businesses that anticipate change, strengthen communities, and unlock opportunities. Guided by instinct and driven by responsibility, we strive to deliver solutions that empower progress, foster resilience, and contribute to a more sustainable future.",
+        desc: "As an Eastern Indian brand, our purpose is to see opportunity beyond boundaries and turn it into enduring value. Guided by instinct, we build businesses that connect markets, strengthen communities, empower progress and respond to a changing world, while fostering resilience and bearing the responsibility to create a stronger, more sustainable future.",
         image: "/images/mission.avif",
         mobImage: "/images/mission-mob.avif",
     },
     {
         id: 2,
         title: "Our Belief",
-        desc: "We believe that growth comes to those willing to see potential before it becomes obvious. Our vision is to build enduring enterprises that create value, empower communities, and inspire progress - guided by instinct, strengthened by experience, and driven by a commitment to the future.",
+        desc: "We believe potential knows no boundaries. It belongs to those willing to see what could be before it becomes obvious. Our vision is to build enduring enterprises across multiple countries that create value, empower communities and inspire progress - guided by instinct, strengthened by experience and driven by a commitment to the future.",
         image: "/images/vision.avif",
         mobImage: "/images/vision-mob.avif",
     },
