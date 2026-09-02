@@ -146,7 +146,7 @@ const OurJourney = () => {
                                             <p>{entry.desc}</p>
 
                                             <img
-                                                src={journeyData[activeTab].image}
+                                                src={entry.image}
                                                 alt={entry.title}
                                                 loading="lazy"
                                                 className={`
