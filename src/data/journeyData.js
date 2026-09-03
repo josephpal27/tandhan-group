@@ -13,7 +13,7 @@ export const journeyData = [
                 year: "2001",
                 title: "Tandhan Fashion Pvt. Ltd. (India)",
                 desc: "Expanded into textiles, strengthening the Group's manufacturing footprint.",
-                image: "/images/journey/1.avif",
+                image: "/images/journey/2001-india.avif",
             },
             {
                 year: "2002",
@@ -49,7 +49,7 @@ export const journeyData = [
                 year: "2018",
                 title: "Tandhan Power Technologies Pvt. Ltd. (India)",
                 desc: "Strengthened global trade and international sourcing capabilities.",
-                image: "/images/journey/1.avif",
+                image: "/images/journey/2018-power.avif",
             },
             {
                 year: "2021",
