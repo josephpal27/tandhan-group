@@ -108,7 +108,7 @@ const MediaListTabbing = () => {
                             transition={{ duration: 0.2, ease: "easeInOut" }}
                             className="flex flex-wrap gap-[3.5%]"
                         >
-                            {eventsData.map((blog) => (
+                            {[...eventsData].reverse().map((blog) => (
                                 <BlogCard key={blog.id} blog={blog} type="events" />
                             ))}
                         </motion.div>

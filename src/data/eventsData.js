@@ -22,6 +22,27 @@ export const eventsData = [
     },
     {
         id: 2,
+        slug: "world-environment-day-2026",
+        title: "World Environment Day 2026: Promoting Sustainability Through Tree Plantation",
+        desc: "In celebration of World Environment Day on 5th June 2026, Tandhan Denim organised a tree plantation drive at Tandhan...",
+        date: "17th Jul, 2026",
+        image: "/images/media/events/3.avif",
+        content: `
+            <p>
+                In celebration of World Environment Day on 5th June 2026, Tandhan Denim organised a tree plantation drive at Tandhan Cotton Mills, reaffirming its commitment to environmental stewardship and sustainable development. The initiative reflected the organisation's belief that meaningful environmental action begins with collective responsibility and consistent efforts towards preserving natural resources for future generations.
+            </p>
+
+            <p>
+                The plantation drive witnessed enthusiastic participation from employees and team members, who came together to contribute to a greener and healthier environment. By planting saplings across the premises, the initiative aimed to enhance green cover, support biodiversity, improve air quality, and reinforce the importance of ecological balance. The activity also served as an opportunity to raise awareness about the vital role individuals and organisations play in addressing environmental challenges and promoting sustainable practices.
+            </p>
+
+            <p>
+                At Tandhan Denim, sustainability is an integral part of its corporate values and long-term vision. The World Environment Day initiative underscores the organisation's continued focus on responsible growth, environmental conservation, and community engagement. Through such initiatives, Tandhan Denim remains dedicated to creating a positive environmental impact while fostering a culture of sustainability, accountability, and shared responsibility for building a cleaner, greener, and more resilient future.
+            </p>
+        `,
+    },
+    {
+        id: 3,
         slug: "tandhan-foundation-honoured-with-the-joyee-award-2026-for-excellence-in-community-impact",
         title: "Tandhan Foundation Honoured with the JOYEE Award 2026 for Excellence in Community Impact",
         desc: "Tandhan Foundation was honoured with the prestigious JOYEE Award 2026 on 23rd June 2026 at ITC Sonar, Kolkata...",
@@ -46,23 +67,19 @@ export const eventsData = [
         `,
     },
     {
-        id: 3,
-        slug: "world-environment-day-2026",
-        title: "World Environment Day 2026: Promoting Sustainability Through Tree Plantation",
-        desc: "In celebration of World Environment Day on 5th June 2026, Tandhan Denim organised a tree plantation drive at Tandhan...",
-        date: "17th Jul, 2026",
-        image: "/images/media/events/3.avif",
+        id: 4,
+        slug: "tandhan-fashion-at-kolkata-couture-expo-2026",
+        title: "TANDHAN Fashion at Kolkata Couture Expo 2026: Showcasing Contemporary Fashion, Creative Excellence & New-Age Design",
+        desc: "TANDHAN Fashion participated in the Kolkata Couture Expo 2026, held on 6th–7th August 2026 at Milan Mela, Kolkata. ...",
+        date: "6th-7th Aug, 2026",
+        image: "/images/media/events/4.avif",
         content: `
             <p>
-                In celebration of World Environment Day on 5th June 2026, Tandhan Denim organised a tree plantation drive at Tandhan Cotton Mills, reaffirming its commitment to environmental stewardship and sustainable development. The initiative reflected the organisation's belief that meaningful environmental action begins with collective responsibility and consistent efforts towards preserving natural resources for future generations.
+                TANDHAN Fashion participated in the Kolkata Couture Expo 2026, held on 6th–7th August 2026 at Milan Mela, Kolkata. The event brought together leading fashion brands, designers, customers, and industry professionals.
             </p>
 
             <p>
-                The plantation drive witnessed enthusiastic participation from employees and team members, who came together to contribute to a greener and healthier environment. By planting saplings across the premises, the initiative aimed to enhance green cover, support biodiversity, improve air quality, and reinforce the importance of ecological balance. The activity also served as an opportunity to raise awareness about the vital role individuals and organisations play in addressing environmental challenges and promoting sustainable practices.
-            </p>
-
-            <p>
-                At Tandhan Denim, sustainability is an integral part of its corporate values and long-term vision. The World Environment Day initiative underscores the organisation's continued focus on responsible growth, environmental conservation, and community engagement. Through such initiatives, Tandhan Denim remains dedicated to creating a positive environmental impact while fostering a culture of sustainability, accountability, and shared responsibility for building a cleaner, greener, and more resilient future.
+                The brand showcased its latest collections, highlighting contemporary designs, quality craftsmanship, and evolving fashion trends. The stall welcomed numerous customers and industry professionals, creating valuable opportunities for engagement, networking, and business collaborations.
             </p>
         `,
     },
