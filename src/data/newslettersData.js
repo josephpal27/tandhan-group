@@ -95,4 +95,10 @@ export const newslettersData = [
         image: "/images/media/newsletters/jul-2026.avif",
         link: "/pdf/newsletters/jul-26.pdf",
     },
+    {
+        id: 17,
+        title: "August 2026",
+        image: "/images/media/newsletters/aug-2026.avif",
+        link: "/pdf/newsletters/aug-26.pdf",
+    },
 ];

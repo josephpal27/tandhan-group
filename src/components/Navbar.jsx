@@ -95,6 +95,7 @@ const Navbar = () => {
         { name: "Tandhan Denim", image: "/images/logo/tandhan-denim.png" },
         { name: "Tandhan Fashion", image: "/images/logo/tandhan-fashion.png" },
         { name: "Tandhan Sarees", image: "/images/logo/tandhan-saree.png" },
+        { name: "Tandhan Industries Ltd", image: "/images/logo/tandhan-industries.png" },
         { name: "NX Hotel", image: "/images/logo/nx-hotel-2.png" },
     ];
 
