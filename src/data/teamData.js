@@ -51,7 +51,7 @@ export const teamData = [
     {
         id: 8,
         name: "Sandeep Dahiya",
-        position: "CEO, Tandhan Denim",
+        position: "Business Head, Tandhan Denim",
         image: "/images/team/sandeep-dahiya.avif",
         tab: 3,
     },

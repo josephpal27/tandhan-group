@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 const valuesData = [
     {
         id: 1,
-        value: 31,
+        value: 32,
         title: "Years of Experience",
         desc: "Three decades of building trusted businesses with resilience, purpose, and long-term vision.",
     },
@@ -28,7 +28,7 @@ const valuesData = [
     },
     {
         id: 4,
-        value: 2000,
+        value: 1500,
         title: "Total Workforce",
         desc: "Driven by passionate people shaping progress through expertise, collaboration, and shared ambition.",
     },

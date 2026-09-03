@@ -107,7 +107,7 @@ const WhoWeAre = () => {
                     For over three decades, Tandhan Group has grown by seeing opportunities where others saw uncertainty. What began as a trading enterprise has evolved into a diversified global group spanning industrial and agricultural protective solutions, textiles, power solutions, and hospitality.
                 </p>
                 <p className="mt-[0.7rem] lg:mt-[1rem]">
-                    Across industries, markets, and generations, one principle has remained constant: the instinct to anticipate change, act with conviction, and build for the future. Today, with operations across multiple countries and a growing global footprint, Tandhan continues to create products, businesses, and opportunities that empower progress - guided not by trends, but by the confidence to move ahead of them.
+                    Across industries, markets, and generations, one principle has remained constant: the foresight to anticipate change, act with conviction, and build for the future. Today, with operations across multiple countries and a growing global footprint, Tandhan continues to create products, businesses, and opportunities that empower progress - guided not by trends, but by the confidence to move ahead of them.
                 </p>
             </div>
 
