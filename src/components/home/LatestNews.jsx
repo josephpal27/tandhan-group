@@ -7,10 +7,10 @@ import Link from "next/link";
 const latestNewsData = [
     {
         id: 1,
-        title: "Blood Donation & Eye Check-Up Camp: Strengthening Community Healthcare Through Collective Action",
-        desc: "As part of its ongoing commitment to community welfare and preventive healthcare, Tandhan Foundation successfully organised a Blood Donation and Eye Check-Up Camp...",
-        image: "/images/media/events/1.avif",
-        url: "/media/events/blood-donation-and-eye-check-up-camp/",
+        title: "Tandhan Fashion at Kolkata Couture Expo 2026: Showcasing Contemporary Fashion, Creative Excellence & New-Age Design",
+        desc: "Tandhan Fashion participated in the Kolkata Couture Expo 2026, held on 6th–7th August 2026 at Milan Mela, Kolkata. The event brought together leading fashion brands, designers, customers, and industry professionals...",
+        image: "/images/media/events/4.avif",
+        url: "/media/events/tandhan-fashion-at-kolkata-couture-expo-2026/",
     },
     {
         id: 2,

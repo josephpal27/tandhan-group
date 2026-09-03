@@ -69,13 +69,13 @@ export const eventsData = [
     {
         id: 4,
         slug: "tandhan-fashion-at-kolkata-couture-expo-2026",
-        title: "TANDHAN Fashion at Kolkata Couture Expo 2026: Showcasing Contemporary Fashion, Creative Excellence & New-Age Design",
-        desc: "TANDHAN Fashion participated in the Kolkata Couture Expo 2026, held on 6th–7th August 2026 at Milan Mela, Kolkata. ...",
+        title: "Tandhan Fashion at Kolkata Couture Expo 2026: Showcasing Contemporary Fashion, Creative Excellence & New-Age Design",
+        desc: "Tandhan Fashion participated in the Kolkata Couture Expo 2026, held on 6th–7th August 2026 at Milan Mela, Kolkata. ...",
         date: "6th-7th Aug, 2026",
         image: "/images/media/events/4.avif",
         content: `
             <p>
-                TANDHAN Fashion participated in the Kolkata Couture Expo 2026, held on 6th–7th August 2026 at Milan Mela, Kolkata. The event brought together leading fashion brands, designers, customers, and industry professionals.
+                Tandhan Fashion participated in the Kolkata Couture Expo 2026, held on 6th–7th August 2026 at Milan Mela, Kolkata. The event brought together leading fashion brands, designers, customers, and industry professionals.
             </p>
 
             <p>
