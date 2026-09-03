@@ -41,15 +41,15 @@ const MediaListTabbing = () => {
 
     const filteredArticles =
         selectedCategory === "All Categories"
-            ? articlesData
-            : articlesData.filter(
+            ? [...articlesData].reverse()
+            : [...articlesData].reverse().filter(
                 (item) => item.category === selectedCategory
             );
 
     const filteredPressReleases =
         selectedCategory === "All Categories"
-            ? pressReleasesData
-            : pressReleasesData.filter(
+            ? [...pressReleasesData].reverse()
+            : [...pressReleasesData].reverse().filter(
                 (item) => item.category === selectedCategory
             );
 
@@ -140,7 +140,7 @@ const MediaListTabbing = () => {
                             transition={{ duration: 0.2, ease: "easeInOut" }}
                             className="flex flex-wrap gap-[3.5%]"
                         >
-                            {blogsData.map((blog) => (
+                            {[...blogsData].reverse().map((blog) => (
                                 <BlogCard key={blog.id} blog={blog} type="blogs" />
                             ))}
                         </motion.div>
