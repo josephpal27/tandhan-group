@@ -15,16 +15,16 @@ export const teamData = [
     },
     {
         id: 3,
-        name: "Amit Jalan",
-        position: "Director",
-        image: "/images/team/amit-jalan.avif",
+        name: "Ankit Jalan",
+        position: "Managing Director",
+        image: "/images/team/ankit-jalan.avif",
         tab: 2,
     },
     {
         id: 4,
-        name: "Ankit Jalan",
+        name: "Amit Jalan",
         position: "Director",
-        image: "/images/team/ankit-jalan.avif",
+        image: "/images/team/amit-jalan.avif",
         tab: 2,
     },
     {

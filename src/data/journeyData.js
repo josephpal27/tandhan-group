@@ -7,7 +7,7 @@ export const journeyData = [
                 year: "1994",
                 title: "Jalan Sarees Pvt. Ltd. (India)",
                 desc: "Laid the foundation for Tandhan's entrepreneurial journey.",
-                image: "/images/journey/1.avif",
+                image: "/images/journey/1994-india.avif",
             },
             {
                 year: "2001",
@@ -21,12 +21,12 @@ export const journeyData = [
                 desc: "Entered Myanmar, marking Tandhan's first international venture.",
                 image: "/images/journey/2002-myanmar.avif",
             },
-            {
-                year: "2007",
-                title: "FMJ Saree Pvt. Ltd. (India)",
-                desc: "Expanded the textile business, strengthening market presence.",
-                image: "/images/journey/1.avif",
-            },
+            // {
+            //     year: "2007",
+            //     title: "FMJ Saree Pvt. Ltd. (India)",
+            //     desc: "Expanded the textile business, strengthening market presence.",
+            //     image: "/images/journey/1.avif",
+            // },
         ]
     },
     {

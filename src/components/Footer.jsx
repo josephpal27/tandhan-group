@@ -20,12 +20,13 @@ const footerData = [
     },
     {
         id: 2,
-        title: "Our Sectors",
+        title: "Sectors",
         links: [
-            { label: "Protective Solutions", url: "/protective-solutions", },
-            { label: "Energy Solutions", url: "/energy-solutions", },
-            { label: "Textiles", url: "/textiles", },
-            { label: "Hospitality", url: "/hospitality", },
+            { label: "Tandhan Polyplast", url: "/protective-solutions", target: "_self" },
+            { label: "Tandhan Denim", url: "/textiles", target: "_self" },
+            { label: "Tandhan Power", url: "/energy-solutions", target: "_self" },
+            { label: "NX Hotel", url: "/hospitality", target: "_self" },
+            { label: "Tandhan Industries", url: "https://sanmitracommercial.com", target: "_blank" },
         ]
     },
 ]
@@ -101,14 +102,26 @@ const Footer = () => {
                                 </span>
                                 <ul className="mt-[0.7rem] sm:mt-[0.8rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]">
                                     {item.links.map((link, index) => {
+                                        const isExternal = link.target === "_blank";
                                         return (
                                             <li key={index} className="mt-[0.5rem]">
-                                                <Link href={link.url} className="
-                                                    flex items-center gap-[0.1rem]
-                                                    hover:text-[#e9e9e9] transition
-                                                ">
-                                                    <BsDot /> {link.label}
-                                                </Link>
+                                                {isExternal ? (
+                                                    <a
+                                                        href={link.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="flex items-center gap-[0.1rem] hover:text-[#e9e9e9] transition"
+                                                    >
+                                                        <BsDot /> {link.label}
+                                                    </a>
+                                                ) : (
+                                                    <Link href={link.url} className="
+                                                        flex items-center gap-[0.1rem]
+                                                        hover:text-[#e9e9e9] transition
+                                                    ">
+                                                        <BsDot /> {link.label}
+                                                    </Link>
+                                                )}
                                             </li>
                                         )
                                     })}

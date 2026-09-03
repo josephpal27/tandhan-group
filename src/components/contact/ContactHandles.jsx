@@ -4,9 +4,9 @@ import { FaFacebookF, FaXTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "r
 const handleIcons = [
     {   id: 1, icon: <FaFacebookF />, url: "https://www.facebook.com/tandhan.official" },
     {   id: 2, icon: <FaXTwitter />, url: "https://x.com/Tandhanofficial" },
-    {   id: 3, icon: <FaInstagram />, url: "https://www.instagram.com/tandhan.official/" },
+    {   id: 3, icon: <FaInstagram />, url: "https://www.instagram.com/tandhangroup/" },
     {   id: 4, icon: <FaLinkedinIn />, url: "https://www.linkedin.com/company/tandhan-group" },
-    {   id: 5, icon: <FaYoutube />, url: "https://www.youtube.com/channel/UCBN4sdODzzdx32Yw8anJ_sQ" },
+    {   id: 5, icon: <FaYoutube />, url: "https://www.youtube.com/@TandhanGroup" },
 ]
 
 const ContactHandles = () => {
