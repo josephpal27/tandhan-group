@@ -121,3 +121,15 @@ input[type="number"]::-webkit-outer-spin-button {
 .journey-slides p{
     @apply text-[0.9rem] sm:text-[1rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem];
 }
+
+/* Careers Page */
+.career-desc span{
+    @apply block font-semibold text-primary text-[1.3rem] sm:text-[1.4rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem] mt-[1.3rem];
+}
+.career-desc p,
+.career-desc ul{
+    @apply mt-[0.5rem];
+}
+.career-desc ul{
+    @apply list-disc ml-[1.5rem];
+}

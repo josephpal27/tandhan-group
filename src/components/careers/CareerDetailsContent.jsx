@@ -32,9 +32,11 @@ const CareerDetailsContent = ({ post }) => {
                     <p>
                         Location : {post.location}
                     </p>
-                    <p>
-                        Description : {post.description}
-                    </p>
+
+                    <div 
+                        className="career-desc mt-[2rem]" 
+                        dangerouslySetInnerHTML={{__html: post.description}}
+                    />
                 </div>
             </div>
 

@@ -58,7 +58,7 @@ const CareersPosts = ({ posts, titleQuery, locationQuery, onTitleChange, onLocat
                                 {post.location}
                             </p>
                             <p className="mt-[0.3rem] lg:mt-[0.5rem] text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] text-black/70 line-clamp-2">
-                                {post.description}
+                                {post.overview}
                             </p>
                         </Link>
                     ))

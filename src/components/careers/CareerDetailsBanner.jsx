@@ -16,9 +16,9 @@ const CareerDetailsBanner = () => {
             >
                 Careers
             </motion.h1>
-            <p className="mt-[0.8rem] lg:mt-[1.2rem] w-full lg:w-[55%]">
+            {/* <p className="mt-[0.8rem] lg:mt-[1.2rem] w-full lg:w-[55%]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minus recusandae itaque labore, asperiores reiciendis exercitationem nemo. Porro, voluptatem iusto.
-            </p>
+            </p> */}
         </section>
     )
 }
