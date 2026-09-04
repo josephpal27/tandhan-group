@@ -1,11 +1,11 @@
 export const blogsData = [
     {
-        // id: 1,
-        // slug: "sustainable-manufacturing",
-        // title: "Sustainable Manufacturing",
+        id: 1,
+        slug: "sustainable-manufacturing",
+        title: "Sustainable Manufacturing",
         // desc: "Lorem ipsum dolor sit amet, consectetur adipisi elit. Distinctio numquam.",
-        // date: "17th Jul, 2026",
-        // image: "/images/media/demo.avif",
+        date: "17th Jul, 2026",
+        image: "/images/media/demo.avif",
         // content: `
         //     <em>
         //         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veritatis illo. Unde illo, reprehenderit labore nostrum odit autem. Sint qui consequatur vero rerum omnis iusto.
