@@ -3,6 +3,7 @@ import { BsDot } from "react-icons/bs";
 import { SlLocationPin } from "react-icons/sl";
 import { LuPhone } from "react-icons/lu";
 import { LuMessageSquareText } from "react-icons/lu";
+import NewsletterForm from "./NewsletterForm";
 
 const footerData = [
     {
@@ -33,7 +34,7 @@ const footerData = [
 
 const contactLinks = [
     {
-        label: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091",
+        label: "Martin Burn Business Park, 18th floor, Plot 3, Salt Lake Bypass, BP Block, Sector V, Bidhannagar, Kolkata, West Bengal, 700091",
         url: "https://maps.app.goo.gl/e85z4x5RdPxFXoWG6",
         icon: <SlLocationPin />,
         target: "_blank",
@@ -94,7 +95,7 @@ const Footer = () => {
                     {footerData.map((item, index) => {
                         return (
                             <div key={index} className="
-                                w-full lg:w-[32%] text-white
+                                w-full lg:w-[30%] text-white
                                 mb-[1rem] lg:mb-0
                             ">
                                 <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold">
@@ -131,7 +132,7 @@ const Footer = () => {
                     })}
 
                     {/* Get In Touch */}
-                    <div className="get-in-touch w-full lg:w-[32%] text-white">
+                    <div className="get-in-touch w-full lg:w-[35%] text-white">
                         <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold">
                             Get In Touch
                         </span>
@@ -149,6 +150,11 @@ const Footer = () => {
                                 </li>
                             ))}
                         </ul>
+
+                        <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold block mt-[2rem]">
+                            Subscribe to Newsletter
+                        </span>
+                        <NewsletterForm />
                     </div>
 
                 </div>

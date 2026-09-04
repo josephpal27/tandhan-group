@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmoothScroll from './../components/SmoothScroll';
+import { Toaster } from "sonner";
 
 const anekBangla = Anek_Bangla({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <Footer />
+          <Toaster position="bottom-right" richColors />
         </SmoothScroll>
       </body>
     </html>
