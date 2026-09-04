@@ -5,7 +5,7 @@ export const journeyData = [
         content: [
             {
                 year: "1994",
-                title: "Jalan Sarees Pvt. Ltd. (India)",
+                title: "Jalan Sarees Pvt. Ltd. <br/> (India)",
                 desc: "Laid the foundation for Tandhan's entrepreneurial journey.",
                 image: "/images/journey/1994-india.avif",
             },
@@ -35,13 +35,13 @@ export const journeyData = [
         content: [
             {
                 year: "2017",
-                title: "NX Hotel Pvt. Ltd. (India)",
+                title: "NX Hotel Pvt. Ltd. <br/> (India)",
                 desc: "Diversified into hospitality, broadening the Group's portfolio.",
                 image: "/images/journey/2017-nx-hotel.avif",
             },
             {
                 year: "2018",
-                title: "Tandhan Polyplast Ltd. (India)",
+                title: "Tandhan Polyplast Ltd. <br/> (India)",
                 desc: "Entered protective solutions through advanced manufacturing.",
                 image: "/images/journey/2018-polyplast.avif",
             },
@@ -53,7 +53,7 @@ export const journeyData = [
             },
             {
                 year: "2021",
-                title: "Dhaka Power Traders (Bangladesh)",
+                title: "Dhaka Power Traders <br/> (Bangladesh)",
                 desc: "Entered the power solutions sector with operations in Bangladesh.",
                 image: "/images/journey/2021-bangladesh.avif",
             }
@@ -77,7 +77,7 @@ export const journeyData = [
             },
             {
                 year: "2023",
-                title: "Tandhan Cotton Mills Pvt. Ltd. (India)",
+                title: "Tandhan Cotton Mills Pvt. Ltd. <br/> (India)",
                 desc: "Strengthened textile integration with expanded manufacturing.",
                 image: "/images/journey/2023-india.avif",
             },
@@ -95,7 +95,7 @@ export const journeyData = [
             },
             {
                 year: "2023",
-                title: "Simplified Solar Solutions Ltd. (Kenya)",
+                title: "Simplified Solar Solutions Ltd. <br/> (Kenya)",
                 desc: "Expanded the renewable energy footprint in East Africa.",
                 image: "/images/journey/2023-kenya.avif",
             }
@@ -113,25 +113,25 @@ export const journeyData = [
             },
             {
                 year: "2024",
-                title: "Unisolar Industries Ltd. (Zambia)",
+                title: "Unisolar Industries Ltd. <br/> (Zambia)",
                 desc: "Extended the Group's renewable energy presence in Africa.",
                 image: "/images/journey/2024-zambia.avif",
             },
             {
                 year: "2025",
-                title: "Swaminath Trading Corporation",
+                title: "Swaminath Trading Corporation (Tanzania)",
                 desc: "Entered Tanzania, expanding Tandhan’s presence across Africa.",
                 image: "/images/journey/2025-tanzania.avif",
             },
             {
                 year: "2026",
-                title: "Sustainable Global Private Limited",
+                title: "Sustainable Global Private Limited (Nepal)",
                 desc: "Expanded into Asia with the establishment of an office in Nepal.",
                 image: "/images/journey/2026-nepal.avif",
             },
             {
                 year: "2026",
-                title: "NX Elit",
+                title: "NX Elit <br/> (India)",
                 desc: "Added a new property to the Group’s growing hospitality portfolio.",
                 image: "/images/journey/2026-nx-elit.avif",
             },
