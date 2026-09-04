@@ -14,7 +14,7 @@ const ourValuesData = [
     {
         id: 2,
         title: "Foresight",
-        desc: "We look beyond the immediate and beyond familiar horizons, anticipating change and recognising opportunities across evolving markets. Guided by experience and sound judgment, we turn global possibilities into enduring value.",
+        desc: "We look beyond the immediate and beyond familiar horizons, anticipating change and recognising opportunities across evolving markets. Guided by experience and sound judgment, we turn global possibilities into enduring value. We see what’s next, before it becomes obvious.",
         image: "/images/values/2.avif",
     },
     {

@@ -139,8 +139,8 @@ const OurJourney = () => {
                                             </span>
 
                                             {/* Title */}
-                                            <span className="block leading-[1.3] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold mt-[1rem] lg:mt-[1.7rem] mb-[0.5rem] lg:mb-[0.7rem]">
-                                                {entry.title}
+                                            <span className="block leading-[1.3] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold mt-[1rem] lg:mt-[1.7rem] mb-[0.5rem] lg:mb-[0.7rem]" dangerouslySetInnerHTML={{__html: entry.title}}>
+                                                {/* {entry.title} */}
                                             </span>
 
                                             <p>{entry.desc}</p>

@@ -65,7 +65,7 @@ export const journeyData = [
         content: [
             {
                 year: "2022",
-                title: "Global Power Traders (Sudan)",
+                title: "Global Power Traders <br/> (Sudan)",
                 desc: "Expanded the Group's energy business into Sudan.",
                 image: "/images/journey/2022-sudan.avif",
             },

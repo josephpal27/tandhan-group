@@ -16,8 +16,8 @@ import { newslettersData } from "@/data/newslettersData";
 const tabHeads = [
     { id: 1, name: "Events" },
     { id: 2, name: "News & Articles" },
-    { id: 3, name: "Blogs" },
-    { id: 4, name: "Press Releases" },
+    // { id: 3, name: "Blogs" },
+    // { id: 4, name: "Press Releases" },
     { id: 5, name: "Newsletters" },
 ]
 

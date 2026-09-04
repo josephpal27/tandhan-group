@@ -20,11 +20,11 @@ const highlightsData = [
         top: "85%", left: "101.5%",
         align: "left",
     },
-    {
-        text: "Responsible manufacturing practices",
-        top: "103%", left: "36%",
-        align: "center",
-    },
+    // {
+    //     text: "Responsible manufacturing practices",
+    //     top: "103%", left: "36%",
+    //     align: "center",
+    // },
 ];
 
 const KeyHighlights = () => {
@@ -36,7 +36,7 @@ const KeyHighlights = () => {
         ">
             <div className="relative w-[55%]">
                 <img
-                    src="/images/sustainability/circle.avif"
+                    src="/images/sustainability/circle.png"
                     alt="Highlights"
                     loading="lazy"
                     className="w-full"
