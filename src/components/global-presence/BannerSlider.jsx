@@ -4,6 +4,9 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { globalPresenceData } from "@/data/globalPresenceData";
 
+const REPEAT = 4;
+const SHIFT_PERCENT = 100 / REPEAT;
+
 const BannerSlider = ({ className = "" }) => {
     const topRowRef = useRef(null);
     const bottomRowRef = useRef(null);
@@ -17,12 +20,12 @@ const BannerSlider = ({ className = "" }) => {
             gsap.fromTo(
                 topRowRef.current,
                 { xPercent: 0 },
-                { xPercent: -50, duration: 50, ease: "none", repeat: -1 }
+                { xPercent: -SHIFT_PERCENT, duration: 50, ease: "none", repeat: -1 }
             );
 
             gsap.fromTo(
                 bottomRowRef.current,
-                { xPercent: -50 },
+                { xPercent: -SHIFT_PERCENT },
                 { xPercent: 0, duration: 50, ease: "none", repeat: -1 }
             );
         });

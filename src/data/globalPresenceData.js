@@ -20,7 +20,7 @@ export const globalPresenceData = [
         id: 2,
         country: "India (Factories)",
         flag: "/images/presence/flags/india.png",
-        banner: "/images/presence/banners/india.avif",
+        banner: "/images/presence/banners/india-factory.avif",
         industryImage: "/images/presence//industry/india.avif",
         lat: 20.5937,
         lng: 78.9629,
