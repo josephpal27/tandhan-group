@@ -5,32 +5,30 @@ import { LuPhone } from "react-icons/lu";
 import { LuMessageSquareText } from "react-icons/lu";
 import NewsletterForm from "./NewsletterForm";
 
-const footerData = [
-    {
-        id: 1,
-        title: "Quick Links",
-        links: [
-            { label: "Home", url: "/", },
-            { label: "About Us", url: "/about", },
-            { label: "Sustainability & Impact", url: "/sustainability", },
-            { label: "Media", url: "/media", },
-            { label: "Global Presence", url: "/global-presence", },
-            { label: "Careers", url: "/careers", },
-            { label: "Contact Us", url: "/contact", },
-        ]
-    },
-    {
-        id: 2,
-        title: "Sectors",
-        links: [
-            { label: "Tandhan Polyplast", url: "/protective-solutions", target: "_self" },
-            { label: "Tandhan Denim", url: "/textiles", target: "_self" },
-            { label: "Tandhan Power", url: "/energy-solutions", target: "_self" },
-            { label: "NX Hotel", url: "/hospitality", target: "_self" },
-            { label: "Tandhan Industries", url: "https://sanmitracommercial.com", target: "_blank" },
-        ]
-    },
-]
+const quickLinks = [
+    { label: "Home", url: "/", },
+    { label: "About Us", url: "/about", },
+    { label: "Sustainability & Impact", url: "/sustainability", },
+    { label: "Media", url: "/media", },
+    { label: "Global Presence", url: "/global-presence", },
+    { label: "Careers", url: "/careers", },
+    { label: "Contact Us", url: "/contact", },
+];
+
+const sectorLinks = [
+    { label: "Protective Solutions", url: "/protective-solutions", target: "_self" },
+    { label: "Energy Solutions", url: "/energy-solutions", target: "_self" },
+    { label: "Textiles", url: "/textiles", target: "_self" },
+    { label: "Hospitality", url: "/hospitality", target: "_self" },
+];
+
+const businessLinks = [
+    { label: "Tandhan Polyplast", url: "https://www.tandhanpolyplast.com/", target: "_blank" },
+    { label: "Tandhan Denim", url: "https://www.tandhandenim.com/", target: "_blank" },
+    { label: "Tandhan Power", url: "https://www.tandhanpower.com/", target: "_blank" },
+    { label: "NX Hotel", url: "https://www.nxhotels.in/", target: "_blank" },
+    { label: "Tandhan Industries", url: "https://sanmitracommercial.com", target: "_blank" },
+];
 
 const contactLinks = [
     {
@@ -55,6 +53,41 @@ const contactLinks = [
         align: "items-center",
     },
 ]
+
+// Reusable link list renderer
+const FooterLinkList = ({ title, links }) => (
+    <div>
+        <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold">
+            {title}
+        </span>
+        <ul className="mt-[0.7rem] sm:mt-[0.8rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]">
+            {links.map((link, index) => {
+                const isExternal = link.target === "_blank";
+                return (
+                    <li key={index} className="mt-[0.4rem]">
+                        {isExternal ? (
+                            <a
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-[0.1rem] hover:text-[#e9e9e9] transition"
+                            >
+                                <BsDot /> {link.label}
+                            </a>
+                        ) : (
+                            <Link href={link.url} className="
+                                flex items-center gap-[0.1rem]
+                                hover:text-[#e9e9e9] transition
+                            ">
+                                <BsDot /> {link.label}
+                            </Link>
+                        )}
+                    </li>
+                )
+            })}
+        </ul>
+    </div>
+);
 
 const Footer = () => {
     return (
@@ -89,56 +122,27 @@ const Footer = () => {
                 </div>
 
                 {/* Right */}
-                <div className="w-full lg:w-[60%] pt-[1.5rem] sm:pt-[2rem] lg:pt-[3rem] xl:pt-[3.5rem] 2xl:pt-[4rem] flex justify-between flex-wrap px-[1rem] lg:px-0">
+                <div className="w-full lg:w-[60%] pt-[1.5rem] sm:pt-[1.7rem] lg:pt-[1.4rem] xl:pt-[1.7rem] 2xl:pt-[2rem] flex justify-between flex-wrap px-[1rem] lg:px-0">
 
-                    {/* Quick Links & Sectors */}
-                    {footerData.map((item, index) => {
-                        return (
-                            <div key={index} className="
-                                w-full lg:w-[30%] text-white
-                                mb-[1rem] lg:mb-0
-                            ">
-                                <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold">
-                                    {item.title}
-                                </span>
-                                <ul className="mt-[0.7rem] sm:mt-[0.8rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]">
-                                    {item.links.map((link, index) => {
-                                        const isExternal = link.target === "_blank";
-                                        return (
-                                            <li key={index} className="mt-[0.5rem]">
-                                                {isExternal ? (
-                                                    <a
-                                                        href={link.url}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="flex items-center gap-[0.1rem] hover:text-[#e9e9e9] transition"
-                                                    >
-                                                        <BsDot /> {link.label}
-                                                    </a>
-                                                ) : (
-                                                    <Link href={link.url} className="
-                                                        flex items-center gap-[0.1rem]
-                                                        hover:text-[#e9e9e9] transition
-                                                    ">
-                                                        <BsDot /> {link.label}
-                                                    </Link>
-                                                )}
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        )
-                    })}
+                    {/* Quick Links */}
+                    <div className="w-full lg:w-[28%] text-white mb-[1.5rem] lg:mb-0">
+                        <FooterLinkList title="Quick Links" links={quickLinks} />
+                    </div>
+
+                    {/* Sectors (top) + Businesses (bottom), stacked */}
+                    <div className="w-full lg:w-[30%] text-white mb-[1.5rem] lg:mb-0 flex flex-col gap-[1.5rem]">
+                        <FooterLinkList title="Our Sectors" links={sectorLinks} />
+                        <FooterLinkList title="Our Businesses" links={businessLinks} />
+                    </div>
 
                     {/* Get In Touch */}
                     <div className="get-in-touch w-full lg:w-[35%] text-white">
                         <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold">
                             Get In Touch
                         </span>
-                        <ul className="mt-[0.7rem] sm:mt-[0.8rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]">
+                        <ul className="mt-[0.7rem] sm:mt-[0.8rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]">
                             {contactLinks.map((item, index) => (
-                                <li key={index} className="mt-[0.5rem]">
+                                <li key={index} className="mt-[0.6rem]">
                                     <a href={item.url} target={item.target}
                                         className={`flex ${item.align} gap-[0.5rem] hover:text-[#e9e9e9] transition`}
                                     >
@@ -151,7 +155,7 @@ const Footer = () => {
                             ))}
                         </ul>
 
-                        <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold block mt-[2rem]">
+                        <span className="text-[1.3rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.35rem] 2xl:text-[1.5rem] font-semibold block mt-[2rem] lg:mt-[1.5rem] xl:mt-[1.8rem] 2xl:mt-[2rem]">
                             Subscribe to Newsletter
                         </span>
                         <NewsletterForm />

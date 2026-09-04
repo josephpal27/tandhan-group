@@ -47,13 +47,13 @@ const NewsletterForm = () => {
                 value={email}
                 autoComplete="off"
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full py-[0.6rem] px-[0.9rem] bg-transparent border border-white text-white placeholder:text-white outline-none ring-white"
+                className="w-full py-[0.6rem] lg:py-[0.45rem] xl:py-[0.55rem] 2xl:py-[0.6rem] px-[0.9rem] lg:px-[0.7rem] xl:px-[0.8rem] 2xl:px-[0.9rem] bg-transparent border border-white text-white placeholder:text-white outline-none ring-white text-[1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]"
             />
             <button
                 type="submit"
                 className="absolute right-[1rem] top-[50%] translate-y-[-50%]"
             >
-                <LiaTelegram className="hover:text-[#e9e9e9] transition text-[1.5rem]" />
+                <LiaTelegram className="hover:text-[#e9e9e9] transition text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]" />
             </button>
         </form>
     );

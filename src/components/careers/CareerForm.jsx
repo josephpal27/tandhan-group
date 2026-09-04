@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { toast } from "sonner";
 
 const fields = [
     { name: "firstName", label: "First Name", type: "text" },
@@ -15,9 +16,9 @@ const fields = [
     { name: "noticePeriod", label: "Notice Period (In Days)", type: "number" },
 ];
 
-const CareerForm = () => {
+const CareerForm = ({ jobTitle }) => {
     const [fileName, setFileName] = useState("");
-    const [status, setStatus] = useState("idle"); // idle | submitting | success
+    const [loading, setLoading] = useState(false);
     const fileInputRef = useRef(null);
 
     const handleFileChange = (e) => {
@@ -26,31 +27,47 @@ const CareerForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setStatus("submitting");
+        setLoading(true);
 
         const formData = new FormData(e.target);
-        // wire this up to your API route / email service
-        console.log(Object.fromEntries(formData));
+        const data = Object.fromEntries(formData.entries());
 
-        setStatus("success");
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    access_key: "9ae99fce-f6f9-4a38-ab5b-7caafb88fce6",
+                    subject: "New Career Application - Tandhan Group",
+                    from_name: "Tandhan Group Careers",
+                    ...data,
+                }),
+            });
+
+            const result = await res.json();
+
+            if (result.success) {
+                toast.success("Application received! We'll reach out if there's a fit.");
+                e.target.reset();
+                setFileName("");
+            } else {
+                toast.error("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            toast.error("Something went wrong. Please try again.");
+        } finally {
+            setLoading(false);
+        }
     };
-
-    if (status === "success") {
-        return (
-            <div className="bg-neutral-50 border border-primary/15 rounded-md lg:rounded-xl p-[2rem] lg:p-[2.5rem] text-center">
-                <p className="text-[1.1rem] font-medium">Application received successfully.</p>
-                <p className="mt-[0.4rem] text-black/60 text-sm">
-                    Thanks for applying - our team will reach out if there's a fit.
-                </p>
-            </div>
-        );
-    }
 
     return (
         <form
             onSubmit={handleSubmit}
             className="bg-neutral-50 border border-primary/30 rounded-md lg:rounded-xl shadow-lg p-[1.1rem] sm:p-[1.2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]"
         >
+
+            <input type="hidden" name="Applying For" value={jobTitle || ""} />
+            
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[1.5rem] gap-y-[1.2rem]">
                 {fields.map((field) => (
                     <div key={field.name}>
@@ -76,7 +93,7 @@ const CareerForm = () => {
             </div>
 
             {/* Resume Upload */}
-            <div className="mt-[1.2rem]">
+            {/* <div className="mt-[1.2rem]">
                 <label htmlFor="resume" className="block font-medium text-primary/80">
                     Upload Resume <span className="text-red-500">*</span>
                 </label>
@@ -109,18 +126,18 @@ const CareerForm = () => {
                     onChange={handleFileChange}
                     className="hidden"
                 />
-            </div>
+            </div> */}
 
             <button
                 type="submit"
-                disabled={status === "submitting"}
+                disabled={loading}
                 className="
                     mt-[1.6rem] lg:mt-[1.8rem] bg-primary hover:bg-primary/90 disabled:opacity-60
                     text-white uppercase tracking-wide
                     px-[1.8rem] lg:px-[2.2rem] py-[0.7rem] sm:py-[0.8rem] lg:py-[0.7rem] xl:py-[0.75rem] 2xl:py-[0.8rem] rounded-md transition-colors
                 "
             >
-                {status === "submitting" ? "Submitting..." : "Submit"}
+                {loading ? "Submitting..." : "Submit"}
             </button>
         </form>
     );

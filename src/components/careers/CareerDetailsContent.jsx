@@ -44,7 +44,7 @@ const CareerDetailsContent = ({ post }) => {
                     Applying For - {post.title}
                 </h3>
                 <div className="mt-[1.5rem]">
-                    <CareerForm />
+                    <CareerForm jobTitle={post.title} />
                 </div>
             </div>
 
