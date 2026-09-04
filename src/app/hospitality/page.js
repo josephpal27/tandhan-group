@@ -25,7 +25,7 @@ export default function Hospitality() {
       <SectorsBanner
         image="/images/banners/hospitality-banner.avif"
         title="Hospitality"
-        desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam nihil voluptatibus laboriosam reiciendis veniam deserunt, quas voluptatem molestias deleniti vitae exercitationem."
+        desc="From business travel to leisure escapes, our premium accommodations are designed for contemporary comfort, personalized service, and seamless guest experiences across all properties."
         business="NX Hotel"
       />
       <HospitalitySectorOverview />

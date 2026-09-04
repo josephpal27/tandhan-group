@@ -89,7 +89,7 @@ export const sectorsFaqData = {
     },
 
     hospitality: {
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident.",
+        description: "Find answers to common questions about our accommodations, exclusive amenities, service standards, and tailored hospitality solutions.",
         image: "/images/sectors/hospitality/faq.avif",
         faqs: [
             {

@@ -38,7 +38,7 @@ export const sectorsGalleryData = {
     },
 
     hospitality: {
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident magni.",
+        desc: "A visual journey through our thoughtfully designed spaces, world-class dining experiences, and the guests we proudly serve every day.",
         images: [
             { id: 1, image: "/images/sectors/hospitality/gallery/1.avif", },
             { id: 2, image: "/images/sectors/hospitality/gallery/2.avif", },

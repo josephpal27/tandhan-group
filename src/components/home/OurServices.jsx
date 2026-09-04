@@ -7,7 +7,6 @@ const servicesData = [
     {
         id: 1,
         title: "Protective Solutions",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/2.avif",
         logos: ["/images/logo/tandhan-polyplast.png"],
         url: "/protective-solutions",
@@ -15,7 +14,6 @@ const servicesData = [
     {
         id: 2,
         title: "Energy Solutions",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/3.avif",
         logos: ["/images/logo/tandhan-power.png"],
         url: "/energy-solutions",
@@ -23,7 +21,6 @@ const servicesData = [
     {
         id: 3,
         title: "Textiles",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/4.avif",
         logos: ["/images/logo/tandhan-denim.png", "/images/logo/tandhan-saree.png", "/images/logo/tandhan-fashion.png"],
         url: "/textiles",
@@ -31,7 +28,6 @@ const servicesData = [
     {
         id: 4,
         title: "Hospitality",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consectetur distinctio odit ab consectetur earum ipsum magni iste unde architecto quaerat.",
         image: "/images/services/1.avif",
         logos: ["/images/logo/nx-hotel.png"],
         url: "/hospitality",

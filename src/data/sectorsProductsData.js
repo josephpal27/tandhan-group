@@ -186,7 +186,7 @@ export const sectorsProductsData = {
     hospitality: {
         title: "Our Services",
         background: "/images/sectors/hospitality/services-bg.avif",
-        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident magni.",
+        desc: "A curated portfolio of premium hospitality services designed for modern luxury, culinary excellence, and exceptional stays across our locations.",
         products: [
             {
                 id: 1,

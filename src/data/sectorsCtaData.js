@@ -29,7 +29,7 @@ export const sectorsCtaData = {
     hospitality: {
         cta: {
             title: "Explore Our Portfolio",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, temporibus exercitationem voluptate odio dolorem sit enim provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, quas.",
+            desc: "Discover NX Hotels in greater detail - from our complete portfolio of premium accommodations and world-class amenities to exquisite dining, event capabilities, and the exceptional service defining every guest experience.",
             image: "/images/sectors/hospitality/cta.avif",
             url: "https://www.nxhotels.in/",
         },

@@ -21,9 +21,9 @@ const OfficeLocation = () => {
                 >
                     Head Office Address
                 </motion.h4>
-                <p className="mt-[0.7rem] lg:mt-[1rem] w-full lg:w-[60%]">
+                {/* <p className="mt-[0.7rem] lg:mt-[1rem] w-full lg:w-[60%]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis adipisicing quam ad quas, consectetur enim doloremque adipisicing fugiat itaque cumque veritatis.
-                </p>
+                </p> */}
             </div>
 
             {/* Map */}
