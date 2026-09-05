@@ -31,7 +31,7 @@ const PolyplastBrandOverview = () => {
                     <p className={`
                         mt-[0.7rem] lg:mt-[1rem] overflow-hidden transition-all duration-300
                     `}>
-                        Backed by advanced manufacturing facilities, stringent quality standards, and a growing export footprint, the company produces durable, application-specific solutions that meet the evolving needs of agriculture, infrastructure, and industry.
+                        Backed by advanced manufacturing facilities, stringent quality standards, and a growing export footprint, the company produces durable, application-specific LLDPE and HDPE solutions that meet the evolving needs of agriculture, infrastructure, and industry.
                     </p>
                     {/* <p className={`
                         mt-[0.7rem] lg:mt-[1rem] overflow-hidden transition-all duration-300

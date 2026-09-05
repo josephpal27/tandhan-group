@@ -125,7 +125,7 @@ const OurJourney = () => {
                                             onMouseEnter={() => setActiveSlide(index)}
                                             className={`
                                                 journey-slides group
-                                                h-full flex flex-col justify-end 
+                                                h-full flex flex-col justify-between 
                                                 p-[1rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem] 
                                                 !pb-0
                                                 border-gray-200 border-r-[2px]
@@ -133,17 +133,19 @@ const OurJourney = () => {
                                                 ${isActive ? "bg-primary text-[#fff]" : "bg-[#fff] text-primary"}
                                             `}
                                         >
-                                            {/* Year */}
-                                            <span className="text-[2rem] sm:text-[2.2rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem] font-bold mt-[1rem] lg:mt-[2rem]">
-                                                {entry.year}
-                                            </span>
+                                            <div>
+                                                {/* Year */}
+                                                <span className="text-[2rem] sm:text-[2.2rem] lg:text-[2.6rem] xl:text-[2.8rem] 2xl:text-[3rem] font-bold mt-[1rem] lg:mt-[2rem]">
+                                                    {entry.year}
+                                                </span>
 
-                                            {/* Title */}
-                                            <span className="block leading-[1.3] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold mt-[1rem] lg:mt-[1.7rem] mb-[0.5rem] lg:mb-[0.7rem]" dangerouslySetInnerHTML={{__html: entry.title}}>
-                                                {/* {entry.title} */}
-                                            </span>
+                                                {/* Title */}
+                                                <span className="block leading-[1.3] text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem] font-semibold mt-[1rem] lg:mt-[1.7rem] mb-[0.5rem] lg:mb-[0.7rem]" dangerouslySetInnerHTML={{ __html: entry.title }}>
+                                                    {/* {entry.title} */}
+                                                </span>
 
-                                            <p>{entry.desc}</p>
+                                                <p>{entry.desc}</p>
+                                            </div>
 
                                             <img
                                                 src={entry.image}

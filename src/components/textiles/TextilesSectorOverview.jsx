@@ -22,12 +22,15 @@ const TextilesSectorOverview = () => {
                     Sector <br/> Overview
                 </motion.h2>
                 <p className="mt-[0.7rem] lg:mt-[1.2rem]">
-                    The textile industry is one of the world's largest and most resilient manufacturing sectors, driven by evolving consumer preferences, expanding global trade and continuous innovation. As demand grows for quality, sustainability and faster supply chains, manufacturers with integrated capabilities and diversified product portfolios are well positioned to serve both domestic and international markets.
+                    From the fabric that shapes everyday wear to the materials that define modern fashion, our Textiles business is built to deliver quality at scale.
+                </p>
+                <p className="mt-[0.7rem] lg:mt-[1rem]">
+                    Our portfolio brings together manufacturing expertise, product versatility, and a growing presence across domestic and international markets. With a focus on quality, consistency, and evolving customer needs, we create textile solutions that meet the demands of a dynamic global marketplace.
                 </p>
                 <p className={`
                     mt-[0.7rem] lg:mt-[1rem] w-[90%] overflow-hidden transition-all duration-300
                 `}>
-                    With a strong textile ecosystem and manufacturing expertise, India continues to strengthen its position as a preferred sourcing destination for the global fashion and apparel industry.
+                    Driven by manufacturing excellence and continuous growth, Tandhan is building a textile business with the capabilities, reach, and ambition to compete across markets.
                 </p>
                 {/* <p className={`
                     mt-[0.7rem] lg:mt-[1rem] w-[90%] overflow-hidden transition-all duration-300

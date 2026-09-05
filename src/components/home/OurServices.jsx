@@ -22,14 +22,14 @@ const servicesData = [
         id: 3,
         title: "Textiles",
         image: "/images/services/4.avif",
-        logos: ["/images/logo/tandhan-denim.png", "/images/logo/tandhan-saree.png", "/images/logo/tandhan-fashion.png"],
+        logos: ["/images/logo/tandhan-denim.png", "/images/logo/tandhan-fashion.png", "/images/logo/tandhan-saree.png"],
         url: "/textiles",
     },
     {
         id: 4,
         title: "Hospitality",
         image: "/images/services/1.avif",
-        logos: ["/images/logo/nx-hotel.png"],
+        logos: ["/images/logo/nx-hotel-2.png", "/images/logo/nx-elit.avif"],
         url: "/hospitality",
     },
 ]

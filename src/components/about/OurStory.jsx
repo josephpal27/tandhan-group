@@ -113,7 +113,7 @@ const OurStory = () => {
                     Founded in Kolkata in 1994, Tandhan Group has spent over three decades building businesses that solve real-world challenges. Today, with a presence across 25+ countries, we operate across protective solutions, textiles, energy, and hospitality.
                 </p>
                 <p className="mt-[0.3rem] lg:mt-[1rem]">
-                    Driven by innovation, integrity, and manufacturing excellence, our 1,500+ people create more than products - they build partnerships, livelihoods, and opportunities. Every venture we etiquette is guided by a shared belief: meaningful growth is achieved when business success creates value for people, communities, and markets alike.
+                    Driven by innovation, integrity, and manufacturing excellence, our 1,500+ people create more than products - they build partnerships, livelihoods, and opportunities. Every venture we enter into, is guided by a shared belief: meaningful growth is achieved when business success creates value for people, communities, and markets alike.
                 </p>
             </div>
 

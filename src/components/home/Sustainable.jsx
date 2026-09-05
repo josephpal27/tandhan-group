@@ -67,8 +67,8 @@ const Sustainable = () => {
                 grabCursor={true}
                 speed={1000}
                 autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
+                    delay: 4000,
+                    disableOnInteraction: true,
                 }}
                 pagination={{
                     clickable: true,

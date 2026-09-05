@@ -26,7 +26,7 @@ export default function Hospitality() {
         image="/images/banners/hospitality-banner.avif"
         title="Hospitality"
         desc="From business travel to leisure escapes, our premium accommodations are designed for contemporary comfort, personalized service, and seamless guest experiences across all properties."
-        business="NX Hotel"
+        business="NX"
       />
       <HospitalitySectorOverview />
       <HospitalityBrandOverview />

@@ -47,7 +47,7 @@ export const journeyData = [
             },
             {
                 year: "2018",
-                title: "Tandhan Power Technologies Pvt. Ltd. (India)",
+                title: "Tandhan Power Technologies Pvt. Ltd. (Formerly Tandhan Impex)",
                 desc: "Strengthened global trade and international sourcing capabilities.",
                 image: "/images/journey/2018-power.avif",
             },
@@ -95,7 +95,7 @@ export const journeyData = [
             },
             {
                 year: "2023",
-                title: "Simplified Solar Solutions Ltd. <br/> (Kenya)",
+                title: "Simplified Solar Solutions Ltd. (Kenya)",
                 desc: "Expanded the renewable energy footprint in East Africa.",
                 image: "/images/journey/2023-kenya.avif",
             }
@@ -125,15 +125,15 @@ export const journeyData = [
             },
             {
                 year: "2026",
-                title: "Sustainable Global Private Limited (Nepal)",
-                desc: "Expanded into Asia with the establishment of an office in Nepal.",
-                image: "/images/journey/2026-nepal.avif",
-            },
-            {
-                year: "2026",
                 title: "NX Elit <br/> (India)",
                 desc: "Added a new property to the Group’s growing hospitality portfolio.",
                 image: "/images/journey/2026-nx-elit.avif",
+            },
+            {
+                year: "2026",
+                title: "Sustainable Global Private Limited (Nepal)",
+                desc: "Expanded into Asia with the establishment of an office in Nepal.",
+                image: "/images/journey/2026-nepal.avif",
             },
         ] 
     },

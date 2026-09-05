@@ -26,7 +26,7 @@ export const globalPresenceData = [
         lng: 78.9629,
         brands: [
             {
-                brand: "Tandhan Denim",
+                brand: "Tandhan Cotton Mills",
                 address: "Tandhan Cotton Mills Pvt Ltd (Tandhan Denim) JL- 38, Sabsit, West Bengal 711303"
             },
             {
@@ -133,7 +133,7 @@ export const globalPresenceData = [
         brands: [
             {
                 brand: "Global Power Traders Co. Ltd.",
-                address: "Omdurman-Waha district Square 3 - building 51, Portsudan - Koria District Square 3 - Building 320"
+                address: "Omdurman-Waha district Square 3 - Building 51, Portsudan - Koria District Square 3 - Building 320"
             },
         ],
         logo: ["/images/logo/gpt.avif"],
@@ -252,7 +252,7 @@ export const globalPresenceData = [
         brands: [
             {
                 brand: "Sustainable Agro Ltd.",
-                address: "SUSTAINABLE AGRO Vridi Cite' Port, Abidjan, Co'te d' Ivoire 01 BP 12171, ABIDJAN 01"
+                address: "Sustainable Agro Vridi Cite' Port, Abidjan, Co'te d' Ivoire 01 BP 12171, ABIDJAN 01"
             },
         ],
         logo: ["/images/logo/sal.jpg"],
